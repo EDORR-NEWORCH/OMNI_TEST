@@ -1,0 +1,16 @@
+# Reference this view as referentiel__v_prm_categorie_prd
+schema: REFERENTIEL
+table_name: V_PRM_CATEGORIE_PRD
+
+dimensions:
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  prd_categorie:
+    sql: '"PRD_CATEGORIE"'
+    description: Catégorie produit
+
+measures:
+  count:
+    aggregate_type: count

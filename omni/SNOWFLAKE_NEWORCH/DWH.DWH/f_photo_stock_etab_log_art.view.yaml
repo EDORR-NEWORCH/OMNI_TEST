@@ -1,0 +1,37 @@
+# Reference this view as dwh_dwh__f_photo_stock_etab_log_art
+catalog: DWH
+schema: DWH
+table_name: F_PHOTO_STOCK_ETAB_LOG_ART
+
+dimensions:
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Date photo
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code depot
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  loge_code:
+    sql: '"LOGE_CODE"'
+    description: Code loge
+
+  loge_code_transit_destination:
+    sql: '"LOGE_CODE_TRANSIT_DESTINATION"'
+    description: Code depot de destination
+
+  ph_stk_qte_approuvee:
+    sql: '"PH_STK_QTE_APPROUVEE"'
+    description: Quantité approuvée
+
+  ph_stk_qte_affectee:
+    sql: '"PH_STK_QTE_AFFECTEE"'
+    description: Quantité affectée
+
+measures:
+  count:
+    aggregate_type: count

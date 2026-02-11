@@ -1,0 +1,37 @@
+# Reference this view as dwh_dwh__f_web_cmd_reglement
+catalog: DWH
+schema: DWH
+table_name: F_WEB_CMD_REGLEMENT
+
+dimensions:
+  web_cmd:
+    sql: '"WEB_CMD"'
+    description: Numéro de la commande WEB
+
+  reg_date:
+    sql: '"REG_DATE"'
+    description: Date du règlement
+
+  reg_ligne:
+    sql: '"REG_LIGNE"'
+    description: N° de la ligne de de règlement
+
+  reg_type:
+    sql: '"REG_TYPE"'
+    description: Type de règlement
+
+  reg_dev:
+    sql: '"REG_DEV"'
+    description: Code devise du règlement
+
+  reg_mnt:
+    sql: '"REG_MNT"'
+    description: Montant du règlement
+
+  date_mdf:
+    sql: '"DATE_MDF"'
+    description: Date de modification pour incrémental Qlik
+
+measures:
+  count:
+    aggregate_type: count

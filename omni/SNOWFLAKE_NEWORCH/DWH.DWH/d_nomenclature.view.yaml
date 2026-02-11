@@ -1,0 +1,45 @@
+# Reference this view as dwh_dwh__d_nomenclature
+catalog: DWH
+schema: DWH
+table_name: D_NOMENCLATURE
+
+dimensions:
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  prd_code_composant:
+    sql: '"PRD_CODE_COMPOSANT"'
+    description: Code composant produit
+
+  nom_key:
+    sql: '"NOM_KEY"'
+    description: Clé Produit|Composant produit
+
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Clé produit
+
+  nom_type:
+    sql: '"NOM_TYPE"'
+    description: Type ensemble produit
+
+  prd_key_composant:
+    sql: '"PRD_KEY_COMPOSANT"'
+    description: Clé composant
+
+  nom_sequence:
+    sql: '"NOM_SEQUENCE"'
+    description: Nom séquence
+
+  nom_quantite:
+    sql: '"NOM_QUANTITE"'
+    description: Nom quantité
+
+  nom_unite:
+    sql: '"NOM_UNITE"'
+    description: Nom unité
+
+measures:
+  count:
+    aggregate_type: count

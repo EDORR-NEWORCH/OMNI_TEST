@@ -1,0 +1,173 @@
+# Reference this view as dwh_dwh__f_ligne_livraison_cdv
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_LIVRAISON_CDV
+
+dimensions:
+  llc_soc_code:
+    sql: '"LLC_SOC_CODE"'
+    description: Code société
+
+  llc_num_ligne_ordre:
+    sql: '"LLC_NUM_LIGNE_ORDRE"'
+    description: N° ligne ordre
+
+  llc_num_cdv:
+    sql: '"LLC_NUM_CDV"'
+    description: N° CDV
+
+  llc_index_livraison:
+    sql: '"LLC_INDEX_LIVRAISON"'
+    description: Index livraison
+
+  llc_ligne_suffixe:
+    sql: '"LLC_LIGNE_SUFFIXE"'
+    description: Ligne suffixe
+
+  llc_etab_code:
+    sql: '"LLC_ETAB_CODE"'
+    description: Code établissement
+
+  llc_depot_code:
+    sql: '"LLC_DEPOT_CODE"'
+    description: Code dépôt
+
+  llc_type_ligne:
+    sql: '"LLC_TYPE_LIGNE"'
+    description: Type ligne
+
+  llc_article_code:
+    sql: '"LLC_ARTICLE_CODE"'
+    description: Code article
+
+  llc_client_code:
+    sql: '"LLC_CLIENT_CODE"'
+    description: Code client
+
+  llc_payeur_code:
+    sql: '"LLC_PAYEUR_CODE"'
+    description: Code payeur
+
+  llc_priorite:
+    sql: '"LLC_PRIORITE"'
+    description: Priorité
+
+  llc_statut_haut:
+    sql: '"LLC_STATUT_HAUT"'
+    description: Statut haut
+
+  llc_date_liv_planifiee:
+    sql: '"LLC_DATE_LIV_PLANIFIEE"'
+    description: Date livraison planifiée
+
+  llc_heure_livraison:
+    sql: '"LLC_HEURE_LIVRAISON"'
+    description: Heure livraison
+
+  llc_numero_facture:
+    sql: '"LLC_NUMERO_FACTURE"'
+    description: N° facture
+
+  llc_annee_facture:
+    sql: '"LLC_ANNEE_FACTURE"'
+    description: Année facture
+
+  llc_date_facture:
+    sql: '"LLC_DATE_FACTURE"'
+    description: Date facture
+
+  llc_heure_facture:
+    sql: '"LLC_HEURE_FACTURE"'
+    description: Heure facture
+
+  llc_taux_facture:
+    sql: '"LLC_TAUX_FACTURE"'
+    description: Taux facture
+
+  llc_devise_facture:
+    sql: '"LLC_DEVISE_FACTURE"'
+    description: Devise facture
+
+  llc_date_comptable:
+    sql: '"LLC_DATE_COMPTABLE"'
+    description: Date comptable
+
+  llc_cond_paiement:
+    sql: '"LLC_COND_PAIEMENT"'
+    description: Condition de paiement
+
+  llc_qte_livree_um_base:
+    sql: '"LLC_QTE_LIVREE_UM_BASE"'
+    description: Quantité livrée unité de base
+
+  llc_qte_livree_um_remp:
+    sql: '"LLC_QTE_LIVREE_UM_REMP"'
+    description: Quantité livrée unité alternative
+
+  llc_um_pv_qte_livree:
+    sql: '"LLC_UM_PV_QTE_LIVREE"'
+    description: Quantité livrée dans l'unité de vente principale
+
+  llc_qte_fac_unm_base:
+    sql: '"LLC_QTE_FAC_UNM_BASE"'
+    description: Quantité facturée dans l'unité de vente principale
+
+  llc_qte_fac_unm_remp:
+    sql: '"LLC_QTE_FAC_UNM_REMP"'
+    description: Quantité facturée dans l’unité alternative
+
+  llc_qte_fac_unm_pv:
+    sql: '"LLC_QTE_FAC_UNM_PV"'
+    description: Quantité facturée dans l'unité du calcul du prix de vente
+
+  llc_ecart_qte:
+    sql: '"LLC_ECART_QTE"'
+    description: Ecart de quantité
+
+  llc_prix_vente:
+    sql: '"LLC_PRIX_VENTE"'
+    description: Prix de vente
+
+  llc_prix_net:
+    sql: '"LLC_PRIX_NET"'
+    description: Prix net
+
+  llc_pcb_vente:
+    sql: '"LLC_PCB_VENTE"'
+    description: Quantité utilisée pour calcul du prix de vente
+
+  llc_origine_prix:
+    sql: '"LLC_ORIGINE_PRIX"'
+    description: Prix d'origine
+
+  llc_mt_ligne_dev:
+    sql: '"LLC_MT_LIGNE_DEV"'
+    description: Montant ligne devise
+
+  llc_prix_cession_interne:
+    sql: '"LLC_PRIX_CESSION_INTERNE"'
+    description: Prix de cession interne
+
+  llc_devise_cession_interne:
+    sql: '"LLC_DEVISE_CESSION_INTERNE"'
+    description: Devise cession interne
+
+  llc_produit_principal:
+    sql: '"LLC_PRODUIT_PRINCIPAL"'
+    description: Produit principal
+
+  llc_qte_ret_um_remp:
+    sql: '"LLC_QTE_RET_UM_REMP"'
+    description: Quantité retournée unité alternative
+
+  llc_qte_ret_um_base:
+    sql: '"LLC_QTE_RET_UM_BASE"'
+    description: Quantité retournée unité de base
+
+  llc_numero_projet:
+    sql: '"LLC_NUMERO_PROJET"'
+    description: N° projet
+
+measures:
+  count:
+    aggregate_type: count

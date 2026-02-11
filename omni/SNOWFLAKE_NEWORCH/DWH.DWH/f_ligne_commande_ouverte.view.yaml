@@ -1,0 +1,57 @@
+# Reference this view as dwh_dwh__f_ligne_commande_ouverte
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_COMMANDE_OUVERTE
+
+dimensions:
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  cdo_quantite:
+    sql: '"CDO_QUANTITE"'
+    description: Quantité commandée
+
+  cli_code:
+    sql: '"CLI_CODE"'
+    description: Code client
+
+  cdo_code:
+    sql: '"CDO_CODE"'
+    description: Code commande
+
+  cdo_libelle:
+    sql: '"CDO_LIBELLE"'
+    description: Libellé commande
+
+  cdo_prix:
+    sql: '"CDO_PRIX"'
+    description: Prix commande
+
+  dev_code:
+    sql: '"DEV_CODE"'
+    description: Code devise
+
+  statut_cdo_code:
+    sql: '"STATUT_CDO_CODE"'
+    description: Code statut commande
+
+  sais_code:
+    sql: '"SAIS_CODE"'
+    description: Code saison
+
+  trf_code:
+    sql: '"TRF_CODE"'
+    description: Code tarif
+
+  statut_cdo_lib:
+    sql: '"STATUT_CDO_LIB"'
+    description: Libellé statut commande
+
+measures:
+  count:
+    aggregate_type: count

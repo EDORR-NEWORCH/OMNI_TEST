@@ -1,0 +1,21 @@
+# Reference this view as dwh_dwh__d_evt_mag
+catalog: DWH
+schema: DWH
+table_name: D_EVT_MAG
+
+dimensions:
+  evt_mag_key:
+    sql: '"EVT_MAG_KEY"'
+    description: Code événement magasin
+
+  evt_mag_lib:
+    sql: '"EVT_MAG_LIB"'
+    description: Libellé événement magasin
+
+  evt_ouv_ferm:
+    sql: '"EVT_OUV_FERM"'
+    description: Flag Ouverture / Fermeture
+
+measures:
+  count:
+    aggregate_type: count

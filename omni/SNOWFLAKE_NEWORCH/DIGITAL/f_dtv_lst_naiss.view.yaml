@@ -1,0 +1,314 @@
+# Reference this view as digital__f_dtv_lst_naiss
+schema: DIGITAL
+table_name: F_DTV_LST_NAISS
+
+dimensions:
+  cletechqlik:
+    sql: '"CLETECHQLIK"'
+
+  lst_id:
+    sql: '"LST_ID"'
+    format: ID
+    description: ID de la liste
+
+  cons_code:
+    sql: '"CONS_CODE"'
+    description: Code client lié à la liste
+
+  lst_num_ligne:
+    sql: '"LST_NUM_LIGNE"'
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Magasin d'ouverture de la liste
+
+  date_ouverture:
+    sql: '"DATE_OUVERTURE"'
+    description: Date d'ouverture de la liste
+
+  lst_date_key:
+    sql: '"LST_DATE_KEY"'
+
+  lst_etb_crea:
+    sql: '"LST_ETB_CREA"'
+
+  annee_semaine_ouverture:
+    sql: '"ANNEE_SEMAINE_OUVERTURE"'
+    description: Année semaine d'ouverture de la liste
+
+  annee_mois_ouverture:
+    sql: '"ANNEE_MOIS_OUVERTURE"'
+    description: Année mois d'ouverture de la liste
+
+  date_ouverture_n1:
+    sql: '"DATE_OUVERTURE_N1"'
+    description: Date d'ouverture N-1 de la liste
+
+  statut_liste:
+    sql: '"STATUT_LISTE"'
+    description: Libelle du statut de la liste
+
+  lst_part_rest:
+    sql: '"LST_PART_REST"'
+    description: Montant de la participation restante
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  prd_ln_type:
+    sql: '"PRD_LN_TYPE"'
+    description: Code type liste
+
+  prd_ln_type_lib:
+    sql: '"PRD_LN_TYPE_LIB"'
+    description: Libellé type liste
+
+  code_statut_ligne:
+    sql: '"CODE_STATUT_LIGNE"'
+    description: Code statut de la ligne de la liste
+
+  statut_ligne:
+    sql: '"STATUT_LIGNE"'
+    description: Statut de la ligne de la liste
+
+  date_retrait:
+    sql: '"DATE_RETRAIT"'
+    description: Date de retrait du produit
+
+  annee_semaine_retrait:
+    sql: '"ANNEE_SEMAINE_RETRAIT"'
+    description: Année semaine retrait du produit
+
+  annee_mois_retrait:
+    sql: '"ANNEE_MOIS_RETRAIT"'
+    description: Année mois retrait du produit
+
+  date_retrait_n1:
+    sql: '"DATE_RETRAIT_N1"'
+    description: Date de retrait N-1 du produit
+
+  ca_ttc:
+    sql: '"CA_TTC"'
+    description: CA TTC de la ligne
+
+  ca_potentiel:
+    sql: '"CA_POTENTIEL"'
+    description: CA potentiel de la ligne
+
+  prix_paye:
+    sql: '"PRIX_PAYE"'
+    description: Prix payé
+
+  prd_activite_lib:
+    sql: '"PRD_ACTIVITE_LIB"'
+    description: Libellé activité
+
+  prd_univers_lib:
+    sql: '"PRD_UNIVERS_LIB"'
+    description: Libellé univers
+
+  prd_rayon_lib:
+    sql: '"PRD_RAYON_LIB"'
+    description: Libellé rayon
+
+  prd_famille_lib:
+    sql: '"PRD_FAMILLE_LIB"'
+    description: Libellé famille
+
+  prd_sous_famille_lib:
+    sql: '"PRD_SOUS_FAMILLE_LIB"'
+    description: Libellé sous famille
+
+  prd_marque_lib:
+    sql: '"PRD_MARQUE_LIB"'
+    description: Libellé marque
+
+  prd_cdt_stat_vente_code:
+    sql: '"PRD_CDT_STAT_VENTE_CODE"'
+    description: Marque ou MDD
+
+  prd_top_1400:
+    sql: '"PRD_TOP_1400"'
+    description: Puériculture textile
+
+  prd_type_puer:
+    sql: '"PRD_TYPE_PUER"'
+    description: Typologie puériculture
+
+  flag_courtoisie:
+    sql: '"FLAG_COURTOISIE"'
+    description: FLag liste de courtoisie
+
+  pays_ouverture:
+    sql: '"PAYS_OUVERTURE"'
+    description: Pays d'ouverture
+
+  pays_retrait:
+    sql: '"PAYS_RETRAIT"'
+    description: Pays de retrait
+
+  mag_contrat_ouverture:
+    sql: '"MAG_CONTRAT_OUVERTURE"'
+    description: COntrat ouverture magasin
+
+  mag_contrat_retrait:
+    sql: '"MAG_CONTRAT_RETRAIT"'
+    description: Contrat retrait magasin
+
+  mag_ouverture:
+    sql: '"MAG_OUVERTURE"'
+    description: Libellé magasin ouverture
+
+  code_mag_ouverture:
+    sql: '"CODE_MAG_OUVERTURE"'
+    description: Code magasin ouverture
+
+  mag_retrait:
+    sql: '"MAG_RETRAIT"'
+    description: Libellé magasin retrait
+
+  code_mag_retrait:
+    sql: '"CODE_MAG_RETRAIT"'
+    description: Code magasin retrait
+
+  lien_photo:
+    sql: '"LIEN_PHOTO"'
+    description: Lien photo du produit
+
+  ville_ouv:
+    sql: '"VILLE_OUV"'
+    description: Ville du magasin d'ouverture
+
+  code_postal_ouv:
+    sql: '"CODE_POSTAL_OUV"'
+    description: Code postal du magasin d'ouverture
+
+  ville_ret:
+    sql: '"VILLE_RET"'
+    description: Ville du magasin de retrait
+
+  code_postal_ret:
+    sql: '"CODE_POSTAL_RET"'
+    description: Code postal magasin de retrait
+
+  region_ouv:
+    sql: '"REGION_OUV"'
+    description: Région du magasin d'ouverture
+
+  region_retrait:
+    sql: '"REGION_RETRAIT"'
+    description: Région du magasin de retrait
+
+  flag_liste_sans_emport:
+    sql: '"FLAG_LISTE_SANS_EMPORT"'
+    description: Flag liste sans emport
+
+  prd_description_courte:
+    sql: '"PRD_DESCRIPTION_COURTE"'
+    description: Description courte du pays
+
+  prd_description_longue:
+    sql: '"PRD_DESCRIPTION_LONGUE"'
+    description: Description longue du produit
+
+  lst_carte_fidelite_id:
+    sql: '"LST_CARTE_FIDELITE_ID"'
+    format: ID
+    description: ID carte club
+
+  date_paiement:
+    sql: '"DATE_PAIEMENT"'
+    description: Date de paiement
+
+  annee_semaine_paiement:
+    sql: '"ANNEE_SEMAINE_PAIEMENT"'
+    description: Année semaine du paiement
+
+  annee_mois_paiement:
+    sql: '"ANNEE_MOIS_PAIEMENT"'
+    description: Année mois du paiement
+
+  date_paiement_n1:
+    sql: '"DATE_PAIEMENT_N1"'
+    description: Date N-1 de paiement
+
+  date_cmd:
+    sql: '"DATE_CMD"'
+    description: Date de la commande
+
+  ln_cmd_orig:
+    sql: '"LN_CMD_ORIG"'
+    description: Origine commande LN
+
+  pays_paiement:
+    sql: '"PAYS_PAIEMENT"'
+    description: Pays magasin de paiement
+
+  mag_contrat_paiement:
+    sql: '"MAG_CONTRAT_PAIEMENT"'
+    description: Contrat magasin de paiement
+
+  region_paiement:
+    sql: '"REGION_PAIEMENT"'
+    description: Région magasin de paiement
+
+  mag_paiement:
+    sql: '"MAG_PAIEMENT"'
+    description: Libellé magasin de paiement
+
+  code_mag_paiement:
+    sql: '"CODE_MAG_PAIEMENT"'
+    description: Code magasin de paiement
+
+  type_paiement:
+    sql: '"TYPE_PAIEMENT"'
+    description: Type de paiement
+
+  date_fermeture:
+    sql: '"DATE_FERMETURE"'
+    description: Date de fermeture de la liste
+
+  date_mdf_entete:
+    sql: '"DATE_MDF_ENTETE"'
+    description: Date de modification de l'en-tête pour incrémental Qlik
+
+  date_mdf_ligne:
+    sql: '"DATE_MDF_LIGNE"'
+    description: Date de modification de la ligne pour incrémental Qlik
+
+  nb_jours_ouverts:
+    sql: '"NB_JOURS_OUVERTS"'
+    description: Nbre de jours d'ouverture de la liste
+
+  nb_prd_emp:
+    sql: '"NB_PRD_EMP"'
+    description: Nbre de produits emportés
+
+  canal:
+    sql: '"CANAL"'
+    description: Canal de création de la liste (Web VS Magasin)
+
+  prd_type_marque:
+    sql: '"PRD_TYPE_MARQUE"'
+    description: Type de marque du produit (Nationale VS Propre)
+
+  flag_mis_de_cote:
+    sql: '"FLAG_MIS_DE_COTE"'
+    description: FLag mis de côté OUI/NON
+
+  flag_commande:
+    sql: '"FLAG_COMMANDE"'
+    description: FLag commandé OUI/NON
+
+  stk_magasin:
+    sql: '"STK_MAGASIN"'
+    description: Stock en magasin
+
+  prd_dereference:
+    sql: '"PRD_DEREFERENCE"'
+    description: Flag produit déréférencé OUI/NON
+
+measures:
+  count:
+    aggregate_type: count

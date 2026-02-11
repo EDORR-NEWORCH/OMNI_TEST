@@ -1,0 +1,262 @@
+# Reference this view as dwh_dwh__v_entete_ticket_sku
+catalog: DWH
+schema: DWH
+table_name: V_ENTETE_TICKET_SKU
+
+dimensions:
+  tck_id:
+    sql: '"TCK_ID"'
+    format: ID
+    description: ID ticket
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code magasin
+
+  dep_nom:
+    sql: '"DEP_NOM"'
+    description: Nom magasin
+
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Date calendaire du ticket (numérique)
+
+  cal_dt_jour:
+    sql: '"CAL_DT_JOUR"'
+    description: Date calendaire du ticket (date)
+
+  qte:
+    sql: '"QTE"'
+    description: Quantité
+
+  qte_retour:
+    sql: '"QTE_RETOUR"'
+    description: Quantité retour
+
+  mt_ht_conso:
+    sql: '"MT_HT_CONSO"'
+    description: MT HT conso
+
+  mt_ht_loc:
+    sql: '"MT_HT_LOC"'
+    description: MT HT locale
+
+  mt_ttc_conso:
+    sql: '"MT_TTC_CONSO"'
+    description: MT TTC consolidé
+
+  mt_ttc_loc:
+    sql: '"MT_TTC_LOC"'
+    description: MT TTC local
+
+  mt_pv_conso:
+    sql: '"MT_PV_CONSO"'
+    description: MT Prix de vente consolidé
+
+  mt_pv_loc:
+    sql: '"MT_PV_LOC"'
+    description: MT Prix de vente local
+
+  mt_pre_conso:
+    sql: '"MT_PRE_CONSO"'
+    description: MT Prix de revient conso
+
+  mt_pre_loc:
+    sql: '"MT_PRE_LOC"'
+    description: MT Prix de revient locale
+
+  marge_conso:
+    sql: '"MARGE_CONSO"'
+    description: MT Marge conso
+
+  marge_loc:
+    sql: '"MARGE_LOC"'
+    description: MT Marge locale
+
+  demarque_conso:
+    sql: '"DEMARQUE_CONSO"'
+    description: Démarque consolidée
+
+  demarque_loc:
+    sql: '"DEMARQUE_LOC"'
+    description: Démarque locale
+
+  qte_club:
+    sql: '"QTE_CLUB"'
+    description: Quantité Club
+
+  qte_retour_club:
+    sql: '"QTE_RETOUR_CLUB"'
+    description: Quantité Retour Club
+
+  mt_ht_conso_club:
+    sql: '"MT_HT_CONSO_CLUB"'
+    description: MT HT CLUB conso
+
+  mt_ht_loc_club:
+    sql: '"MT_HT_LOC_CLUB"'
+    description: MT HT CLUB locale
+
+  mt_ttc_conso_club:
+    sql: '"MT_TTC_CONSO_CLUB"'
+    description: MT TTC CLUB consolidé
+
+  mt_ttc_loc_club:
+    sql: '"MT_TTC_LOC_CLUB"'
+    description: MT TTC CLUB local
+
+  mt_pv_conso_club:
+    sql: '"MT_PV_CONSO_CLUB"'
+    description: MT Prix de vente CLUB consolidé
+
+  mt_pv_loc_club:
+    sql: '"MT_PV_LOC_CLUB"'
+    description: MT Prix de vente CLUB local
+
+  mt_pre_conso_club:
+    sql: '"MT_PRE_CONSO_CLUB"'
+    description: MT Prix de revient CLUB conso
+
+  mt_pre_loc_club:
+    sql: '"MT_PRE_LOC_CLUB"'
+    description: MT Prix de revient CLUB locale
+
+  marge_conso_club:
+    sql: '"MARGE_CONSO_CLUB"'
+    description: MT Marge conso CLUB
+
+  marge_loc_club:
+    sql: '"MARGE_LOC_CLUB"'
+    description: MT Marge locale CLUB
+
+  demarque_conso_club:
+    sql: '"DEMARQUE_CONSO_CLUB"'
+    description: Démarque consolidée CLUB
+
+  demarque_loc_club:
+    sql: '"DEMARQUE_LOC_CLUB"'
+    description: Démarque locale CLUB
+
+  nb_tick_total:
+    sql: '"NB_TICK_TOTAL"'
+    description: Nbre de tickets total
+
+  nb_tick_net:
+    sql: '"NB_TICK_NET"'
+    description: Nbre de tickets net
+
+  nb_tick_ret:
+    sql: '"NB_TICK_RET"'
+    description: Nbre de tickets retour
+
+  nb_tick_club:
+    sql: '"NB_TICK_CLUB"'
+    description: Nbre de tickets club
+
+  nb_tick_hors_club:
+    sql: '"NB_TICK_HORS_CLUB"'
+    description: Nbre de tickets hors club
+
+  nb_crea_carte:
+    sql: '"NB_CREA_CARTE"'
+    description: Nbre de création de carte
+
+  nb_vte_carte:
+    sql: '"NB_VTE_CARTE"'
+    description: Nbre de vente de cartes
+
+  nb_renouv_carte:
+    sql: '"NB_RENOUV_CARTE"'
+    description: Nbre de renouvellement de carte
+
+  ca_vte_carte:
+    sql: '"CA_VTE_CARTE"'
+    description: CHiffre d'affaire sur les ventes de carte
+
+  devise_loc:
+    sql: '"DEVISE_LOC"'
+    description: Devise locale
+
+  nb_tick_adh_abo:
+    sql: '"NB_TICK_ADH_ABO"'
+    description: Nbre de tickets d'adhésion à un abonnement
+
+  nb_renouv_adh_abo:
+    sql: '"NB_RENOUV_ADH_ABO"'
+    description: Nombre de renouvellement d'abonnement
+
+  mt_adh_abo:
+    sql: '"MT_ADH_ABO"'
+    description: Montant adhésion abonnement
+
+  mt_adh_autres:
+    sql: '"MT_ADH_AUTRES"'
+    description: Montant autres adhésion
+
+  nb_renouv_adh_abo_annuel:
+    sql: '"NB_RENOUV_ADH_ABO_ANNUEL"'
+    description: Nbre de renouvellement d'abonnement annuel
+
+  date_mdf_tck:
+    sql: '"DATE_MDF_TCK"'
+    description: Date création/modification du ticket pour incrémental qlik
+
+  mt_ht_conso_accessoire:
+    sql: '"MT_HT_CONSO_ACCESSOIRE"'
+    description: Montant HT EUR de l'activité ACCESSOIRE
+
+  mt_ttc_conso_accessoire:
+    sql: '"MT_TTC_CONSO_ACCESSOIRE"'
+    description: Montant TTC EUR de l'activité ACCESSOIRE
+
+  mt_ht_conso_chaussure:
+    sql: '"MT_HT_CONSO_CHAUSSURE"'
+    description: Montant HT EUR de l'activité CHAUSSURE
+
+  mt_ttc_conso_chaussure:
+    sql: '"MT_TTC_CONSO_CHAUSSURE"'
+    description: Montant TTC EUR de l'activité CHAUSSURE
+
+  mt_ht_conso_cosmetique:
+    sql: '"MT_HT_CONSO_COSMETIQUE"'
+    description: Montant HT EUR de l'activité COSMETIQUE
+
+  mt_ttc_conso_cosmetique:
+    sql: '"MT_TTC_CONSO_COSMETIQUE"'
+    description: Montant TTC EUR de l'activité COSMETIQUE
+
+  mt_ht_conso_habillement:
+    sql: '"MT_HT_CONSO_HABILLEMENT"'
+    description: Montant HT EUR de l'activité HABILLEMENT
+
+  mt_ttc_conso_habillement:
+    sql: '"MT_TTC_CONSO_HABILLEMENT"'
+    description: Montant TTC EUR de l'activité HABILLEMENT
+
+  mt_ht_conso_puericulture:
+    sql: '"MT_HT_CONSO_PUERICULTURE"'
+    description: Montant HT EUR de l'activité PUERICULTURE
+
+  mt_ttc_conso_puericulture:
+    sql: '"MT_TTC_CONSO_PUERICULTURE"'
+    description: Montant TTC EUR de l'activité PUERICULTURE
+
+  mt_ht_conso_autres:
+    sql: '"MT_HT_CONSO_AUTRES"'
+    description: Montant HT EUR des activités autres
+
+  mt_ttc_conso_autres:
+    sql: '"MT_TTC_CONSO_AUTRES"'
+    description: Montant TTC EUR des activités autres
+
+  tck_club:
+    sql: '"TCK_CLUB"'
+    description: Ticket club
+
+  nb_tick_recrut:
+    sql: '"NB_TICK_RECRUT"'
+    description: Nbre de tickets recrutables
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,25 @@
+# Reference this view as dwh_dwh__d_mode_regl
+catalog: DWH
+schema: DWH
+table_name: D_MODE_REGL
+
+dimensions:
+  regl_code:
+    sql: '"REGL_CODE"'
+    description: Code mode règlement
+
+  regl_lib:
+    sql: '"REGL_LIB"'
+    description: Libellé mode règlement
+
+  regl_code_type:
+    sql: '"REGL_CODE_TYPE"'
+    description: Code type mode règlement
+
+  regl_code_categorie:
+    sql: '"REGL_CODE_CATEGORIE"'
+    description: Code catégorie mode règlement
+
+measures:
+  count:
+    aggregate_type: count

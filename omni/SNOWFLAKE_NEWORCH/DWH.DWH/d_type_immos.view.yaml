@@ -1,0 +1,85 @@
+# Reference this view as dwh_dwh__d_type_immos
+catalog: DWH
+schema: DWH
+table_name: D_TYPE_IMMOS
+
+dimensions:
+  tim_soc_code:
+    sql: '"TIM_SOC_CODE"'
+    description: Code société
+
+  tim_num_immos:
+    sql: '"TIM_NUM_IMMOS"'
+    description: N° immos
+
+  tim_sous_num_immos:
+    sql: '"TIM_SOUS_NUM_IMMOS"'
+    description: Sous numéro
+
+  tim_statut:
+    sql: '"TIM_STATUT"'
+    description: Statut
+
+  tim_typ_immos:
+    sql: '"TIM_TYP_IMMOS"'
+    description: Type immos
+
+  tim_typ_amor:
+    sql: '"TIM_TYP_AMOR"'
+    description: Type amortissement
+
+  tim_methode_amor:
+    sql: '"TIM_METHODE_AMOR"'
+    description: Méthode amortissement
+
+  tim_cycle_immos:
+    sql: '"TIM_CYCLE_IMMOS"'
+    description: Cycle amortissement
+
+  tim_duree_mois:
+    sql: '"TIM_DUREE_MOIS"'
+    description: Durée mois
+
+  tim_ajust_mi_annee:
+    sql: '"TIM_AJUST_MI_ANNEE"'
+    description: Ajustement mi année
+
+  tim_part_amor:
+    sql: '"TIM_PART_AMOR"'
+    description: Part amortissement
+
+  tim_last_periode_plan_amo:
+    sql: '"TIM_LAST_PERIODE_PLAN_AMO"'
+    description: Dernière période du plan d'amortissement
+
+  tim_auto_periode_change:
+    sql: '"TIM_AUTO_PERIODE_CHANGE"'
+    description: Auto période change
+
+  tim_periode_transfert_degressif:
+    sql: '"TIM_PERIODE_TRANSFERT_DEGRESSIF"'
+    description: Période transfert dégressif
+
+  tim_date_saisie:
+    sql: '"TIM_DATE_SAISIE"'
+    description: Date de saisie
+
+  tim_heure_saisie:
+    sql: '"TIM_HEURE_SAISIE"'
+    description: Heure de saisie
+
+  tim_date_mod:
+    sql: '"TIM_DATE_MOD"'
+    description: Date de modification
+
+  tim_num_mod:
+    sql: '"TIM_NUM_MOD"'
+    description: N° de modification
+
+  tim_user_mod:
+    sql: '"TIM_USER_MOD"'
+    description: Utilisateur à l'origine de la modification
+
+measures:
+  count:
+    aggregate_type: count

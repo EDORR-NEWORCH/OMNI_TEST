@@ -1,0 +1,181 @@
+# Reference this view as dwh_dwh__v_photo_stock_etab_log_art
+catalog: DWH
+schema: DWH
+table_name: V_PHOTO_STOCK_ETAB_LOG_ART
+
+dimensions:
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Date
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code varchar
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code varchar
+
+  depot_destination:
+    sql: '"DEPOT_DESTINATION"'
+    description: Code varchar
+
+  depot_emetteur:
+    sql: '"DEPOT_EMETTEUR"'
+    description: Code varchar
+
+  type_article_parent:
+    sql: '"TYPE_ARTICLE_PARENT"'
+    description: Code varchar
+
+  code_parent:
+    sql: '"CODE_PARENT"'
+    description: Code varchar
+
+  stk_approuvee:
+    sql: '"STK_APPROUVEE"'
+    description: Code varchar
+
+  stk_log_rejete:
+    sql: '"STK_LOG_REJETE"'
+    description: Code varchar
+
+  stk_log_maroc:
+    sql: '"STK_LOG_MAROC"'
+    description: Code varchar
+
+  stk_log_grece:
+    sql: '"STK_LOG_GRECE"'
+    description: Code varchar
+
+  stk_log_web:
+    sql: '"STK_LOG_WEB"'
+    description: Code varchar
+
+  stk_log_domtom:
+    sql: '"STK_LOG_DOMTOM"'
+    description: Code varchar
+
+  stk_log_negoge:
+    sql: '"STK_LOG_NEGOGE"'
+    description: Code varchar
+
+  stk_log_bloque:
+    sql: '"STK_LOG_BLOQUE"'
+    description: Code varchar
+
+  stk_log_ecart:
+    sql: '"STK_LOG_ECART"'
+    description: Code varchar
+
+  stk_transit:
+    sql: '"STK_TRANSIT"'
+    description: Code varchar
+
+  stk_transit_entrant:
+    sql: '"STK_TRANSIT_ENTRANT"'
+    description: Code varchar
+
+  stk_affectee:
+    sql: '"STK_AFFECTEE"'
+    description: Code varchar
+
+  stk_dispo:
+    sql: '"STK_DISPO"'
+    description: Code varchar
+
+  stk_dropship:
+    sql: '"STK_DROPSHIP"'
+    description: Code varchar
+
+  stk_log_vitrine:
+    sql: '"STK_LOG_VITRINE"'
+    description: Code varchar
+
+  stk_log_defectueux:
+    sql: '"STK_LOG_DEFECTUEUX"'
+    description: Code varchar
+
+  stk_approuvee_n1:
+    sql: '"STK_APPROUVEE_N1"'
+    description: Code varchar
+
+  stk_log_rejete_n1:
+    sql: '"STK_LOG_REJETE_N1"'
+    description: Code varchar
+
+  stk_log_maroc_n1:
+    sql: '"STK_LOG_MAROC_N1"'
+    description: Code varchar
+
+  stk_log_grece_n1:
+    sql: '"STK_LOG_GRECE_N1"'
+    description: Code varchar
+
+  stk_log_web_n1:
+    sql: '"STK_LOG_WEB_N1"'
+    description: Code varchar
+
+  stk_log_domtom_n1:
+    sql: '"STK_LOG_DOMTOM_N1"'
+    description: Code varchar
+
+  stk_log_negoge_n1:
+    sql: '"STK_LOG_NEGOGE_N1"'
+    description: Code varchar
+
+  stk_log_bloque_n1:
+    sql: '"STK_LOG_BLOQUE_N1"'
+    description: Code varchar
+
+  stk_log_ecart_n1:
+    sql: '"STK_LOG_ECART_N1"'
+    description: Code varchar
+
+  stk_transit_n1:
+    sql: '"STK_TRANSIT_N1"'
+    description: Code varchar
+
+  stk_transit_entrant_n1:
+    sql: '"STK_TRANSIT_ENTRANT_N1"'
+    description: Code varchar
+
+  stk_affectee_n1:
+    sql: '"STK_AFFECTEE_N1"'
+    description: Code varchar
+
+  stk_dispo_n1:
+    sql: '"STK_DISPO_N1"'
+    description: Code varchar
+
+  stk_dropship_n1:
+    sql: '"STK_DROPSHIP_N1"'
+    description: Code varchar
+
+  stk_log_vitrine_n1:
+    sql: '"STK_LOG_VITRINE_N1"'
+    description: Code varchar
+
+  stk_log_defectueux_n1:
+    sql: '"STK_LOG_DEFECTUEUX_N1"'
+    description: Code varchar
+
+  pre_stock:
+    sql: '"PRE_STOCK"'
+    description: Code varchar
+
+  saison_vente:
+    sql: '"SAISON_VENTE"'
+    description: Code varchar
+
+  periode_co:
+    sql: '"PERIODE_CO"'
+    description: Code varchar
+
+  periode_n:
+    sql: '"PERIODE_N"'
+    description: Code varchar
+
+measures:
+  count:
+    aggregate_type: count

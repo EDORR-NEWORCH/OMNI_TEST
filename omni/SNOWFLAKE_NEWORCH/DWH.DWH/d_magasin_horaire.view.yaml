@@ -1,0 +1,62 @@
+# Reference this view as dwh_dwh__d_magasin_horaire
+catalog: DWH
+schema: DWH
+table_name: D_MAGASIN_HORAIRE
+
+dimensions:
+  mag_h_mag_key:
+    sql: '"MAG_H_MAG_KEY"'
+    description: Code magasin
+
+  mag_h_code:
+    sql: '"MAG_H_CODE"'
+    description: Code magasin
+
+  mag_h_lib:
+    sql: '"MAG_H_LIB"'
+    description: Nom magasin
+
+  mag_h_date_debut:
+    sql: '"MAG_H_DATE_DEBUT"'
+    description: Date de début de validité de l'horaire
+
+  mag_h_date_fin:
+    sql: '"MAG_H_DATE_FIN"'
+    description: Date de fin de validité de l'horaire
+
+  mag_h_no_jour_id:
+    sql: '"MAG_H_NO_JOUR_ID"'
+    format: ID
+    description: Numéro de jour de la semaine
+
+  mag_h_no_jour_lib:
+    sql: '"MAG_H_NO_JOUR_LIB"'
+    description: Jour de la semaine
+
+  mag_h_flag_ouv:
+    sql: '"MAG_H_FLAG_OUV"'
+    description: Flag magasin ouvert-fermé
+
+  mag_h_flag_ouv_lib:
+    sql: '"MAG_H_FLAG_OUV_LIB"'
+    description: Libellé flag magasin ouvert-fermé
+
+  mag_h_ouv_deb_am:
+    sql: '"MAG_H_OUV_DEB_AM"'
+    description: Heures d'ouvertures matin
+
+  mag_h_ouv_fin_am:
+    sql: '"MAG_H_OUV_FIN_AM"'
+    description: Heures de fermeture matin
+
+  mag_h_ouv_deb_pm:
+    sql: '"MAG_H_OUV_DEB_PM"'
+    description: Heures d'ouvertures après-midi
+
+  mag_h_ouv_fin_pm:
+    sql: '"MAG_H_OUV_FIN_PM"'
+    description: Heures de fermeture après-midi
+
+measures:
+  count:
+    aggregate_type: count

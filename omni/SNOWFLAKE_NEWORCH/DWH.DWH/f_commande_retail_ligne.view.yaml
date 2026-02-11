@@ -1,0 +1,89 @@
+# Reference this view as dwh_dwh__f_commande_retail_ligne
+catalog: DWH
+schema: DWH
+table_name: F_COMMANDE_RETAIL_LIGNE
+
+dimensions:
+  cmd_souche:
+    sql: '"CMD_SOUCHE"'
+    description: Souche de la commande
+
+  cmd_numero:
+    sql: '"CMD_NUMERO"'
+    description: N° de la commande
+
+  cmd_num_ligne:
+    sql: '"CMD_NUM_LIGNE"'
+    description: N° ligne de la commande
+
+  cmd_date_liv:
+    sql: '"CMD_DATE_LIV"'
+    description: Date livraison de la ligne de la commande
+
+  cmd_date_liv_num:
+    sql: '"CMD_DATE_LIV_NUM"'
+    description: Date livraison de la ligne de la commande au format numérique
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code article commandé
+
+  cmd_qte_cmd:
+    sql: '"CMD_QTE_CMD"'
+    description: Quantité commandée de la ligne de la commande
+
+  cmd_qte_rec:
+    sql: '"CMD_QTE_REC"'
+    description: Quantité réceptionnée de la ligne de la commande
+
+  cmd_qte_reg:
+    sql: '"CMD_QTE_REG"'
+    description: Quantité réglée de la ligne de la commande
+
+  cmd_date_rec:
+    sql: '"CMD_DATE_REC"'
+    description: Date réception de la ligne de la commande
+
+  cmd_date_rec_num:
+    sql: '"CMD_DATE_REC_NUM"'
+    description: Date réception de la ligne de la commande au format numérique
+
+  cmd_date_reg:
+    sql: '"CMD_DATE_REG"'
+    description: Date règlement de la ligne de la commande
+
+  cmd_date_reg_num:
+    sql: '"CMD_DATE_REG_NUM"'
+    description: Date règlement de la ligne de la commande au format numérique
+
+  cmd_taux_remise:
+    sql: '"CMD_TAUX_REMISE"'
+    description: Taux de remise de la ligne de la commande
+
+  cmd_taux_taxe:
+    sql: '"CMD_TAUX_TAXE"'
+    description: Taux de taxe de la ligne de la commande
+
+  cmd_prix_unit:
+    sql: '"CMD_PRIX_UNIT"'
+    description: Prix unitaire de la ligne de la commande
+
+  cmd_mt_remise_loc:
+    sql: '"CMD_MT_REMISE_LOC"'
+    description: Montant de la remise de la ligne de la commande en devise locale
+
+  cmd_mt_remise_conso:
+    sql: '"CMD_MT_REMISE_CONSO"'
+    description: Montant de la remise de la ligne de la commande en devise EURO
+
+  cmd_mt_ligne_loc:
+    sql: '"CMD_MT_LIGNE_LOC"'
+    description: Montant de la ligne de la commande en devise EURO
+
+  cmd_mt_ligne_conso:
+    sql: '"CMD_MT_LIGNE_CONSO"'
+    description: Montant de la ligne de la commande en devise EURO
+
+measures:
+  count:
+    aggregate_type: count

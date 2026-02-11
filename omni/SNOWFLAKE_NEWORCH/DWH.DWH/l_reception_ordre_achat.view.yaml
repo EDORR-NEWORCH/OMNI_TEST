@@ -1,0 +1,117 @@
+# Reference this view as dwh_dwh__l_reception_ordre_achat
+catalog: DWH
+schema: DWH
+table_name: L_RECEPTION_ORDRE_ACHAT
+
+dimensions:
+  lie_oa_rf_key:
+    sql: '"LIE_OA_RF_KEY"'
+    description: Clé réception ordre achat
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Clé dépôt
+
+  oa_key:
+    sql: '"OA_KEY"'
+    description: Clé ordre achat
+
+  oa_numero_ordre_achat:
+    sql: '"OA_NUMERO_ORDRE_ACHAT"'
+    description: Numéro ordre achat
+
+  oa_ligne_ordre_achat:
+    sql: '"OA_LIGNE_ORDRE_ACHAT"'
+    description: Numéro de ligne ordre achat
+
+  oa_sous_numero_ligne:
+    sql: '"OA_SOUS_NUMERO_LIGNE"'
+    description: Sous numéro de ligne ordre achat
+
+  lie_oa_rf_suffixe_ligne_oa:
+    sql: '"LIE_OA_RF_SUFFIXE_LIGNE_OA"'
+    description: Suffixe ligne ordre achat
+
+  rf_numero_bon_livraison:
+    sql: '"RF_NUMERO_BON_LIVRAISON"'
+    description: Numéro bon de livraison
+
+  lie_oa_rf_numero_reception:
+    sql: '"LIE_OA_RF_NUMERO_RECEPTION"'
+    description: Numéro réception
+
+  four_key:
+    sql: '"FOUR_KEY"'
+    description: Clé fournisseur
+
+  four_code:
+    sql: '"FOUR_CODE"'
+    description: Code fournisseur
+
+  rf_date_bon_livraison:
+    sql: '"RF_DATE_BON_LIVRAISON"'
+    description: Date bon de livraison
+
+  lie_oa_rf_statut_ordre_achat:
+    sql: '"LIE_OA_RF_STATUT_ORDRE_ACHAT"'
+    description: Statut ordre achat
+
+  lie_oa_rf_point_controle:
+    sql: '"LIE_OA_RF_POINT_CONTROLE"'
+    description: Point de contrôle
+
+  lie_oa_rf_quantite_enregistree:
+    sql: '"LIE_OA_RF_QUANTITE_ENREGISTREE"'
+    description: Quantité enregistrée
+
+  lie_oa_rf_date_transaction:
+    sql: '"LIE_OA_RF_DATE_TRANSACTION"'
+    description: Date transaction
+
+  lie_oa_rf_responsable:
+    sql: '"LIE_OA_RF_RESPONSABLE"'
+    description: Responsable
+
+  lie_oa_rf_connaissement:
+    sql: '"LIE_OA_RF_CONNAISSEMENT"'
+    description: Connaissement
+
+  lie_oa_rf_nom_transporteur:
+    sql: '"LIE_OA_RF_NOM_TRANSPORTEUR"'
+    description: Nom transporteur
+
+  lie_oa_rf_date_expedition:
+    sql: '"LIE_OA_RF_DATE_EXPEDITION"'
+    description: Date expédition
+
+  lie_oa_rf_nombre_colis:
+    sql: '"LIE_OA_RF_NOMBRE_COLIS"'
+    description: Nombre de colis
+
+  lie_oa_rf_reference_transitaire:
+    sql: '"LIE_OA_RF_REFERENCE_TRANSITAIRE"'
+    description: Référence transitaire
+
+  lie_oa_rf_index_livraison:
+    sql: '"LIE_OA_RF_INDEX_LIVRAISON"'
+    description: Index livraison
+
+  rf_numero_contrat:
+    sql: '"RF_NUMERO_CONTRAT"'
+    description: Numéro de contrat
+
+  rf_numero_colis:
+    sql: '"RF_NUMERO_COLIS"'
+    description: Numéro de colis
+
+  rf_numero_lot:
+    sql: '"RF_NUMERO_LOT"'
+    description: Numéro du lot
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,21 @@
+# Reference this view as dwh_dwh__d_famille
+catalog: DWH
+schema: DWH
+table_name: D_FAMILLE
+
+dimensions:
+  fam_code:
+    sql: '"FAM_CODE"'
+    description: Code hiérarchie
+
+  fam_lib_long:
+    sql: '"FAM_LIB_LONG"'
+    description: Libellé court
+
+  fam_lib_court:
+    sql: '"FAM_LIB_COURT"'
+    description: Libellé long
+
+measures:
+  count:
+    aggregate_type: count

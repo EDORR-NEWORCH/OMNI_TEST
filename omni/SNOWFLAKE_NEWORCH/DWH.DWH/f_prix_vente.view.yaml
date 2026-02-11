@@ -1,0 +1,59 @@
+# Reference this view as dwh_dwh__f_prix_vente
+catalog: DWH
+schema: DWH
+table_name: F_PRIX_VENTE
+
+dimensions:
+  prv_key:
+    sql: '"PRV_KEY"'
+    description: Clé prix de vente
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Clé produit
+
+  trf_code:
+    sql: '"TRF_CODE"'
+    description: Code tarif
+
+  trf_key:
+    sql: '"TRF_KEY"'
+    description: Clé tarif
+
+  cmp_code:
+    sql: '"CMP_CODE"'
+    description: Code campagne
+
+  trf_client:
+    sql: '"TRF_CLIENT"'
+    description: Code client
+
+  trf_date_debut_validite:
+    sql: '"TRF_DATE_DEBUT_VALIDITE"'
+    description: Date début validité tarif
+
+  trf_date_fin_validite:
+    sql: '"TRF_DATE_FIN_VALIDITE"'
+    description: Date fin validité tarif
+
+  trf_devise:
+    sql: '"TRF_DEVISE"'
+    description: Code devise
+
+  prv_prix:
+    sql: '"PRV_PRIX"'
+
+  prv_unite_prix:
+    sql: '"PRV_UNITE_PRIX"'
+
+  trf_date_debut_m3:
+    sql: '"TRF_DATE_DEBUT_M3"'
+    description: Date début validité du tarif
+
+measures:
+  count:
+    aggregate_type: count

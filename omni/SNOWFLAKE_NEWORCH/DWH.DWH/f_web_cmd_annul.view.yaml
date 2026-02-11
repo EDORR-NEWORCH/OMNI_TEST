@@ -1,0 +1,53 @@
+# Reference this view as dwh_dwh__f_web_cmd_annul
+catalog: DWH
+schema: DWH
+table_name: F_WEB_CMD_ANNUL
+
+dimensions:
+  web_cmd:
+    sql: '"WEB_CMD"'
+    description: Numéro de la commande WEB
+
+  web_num_split:
+    sql: '"WEB_NUM_SPLIT"'
+    description: Numéro de split de la commande
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code magasin
+
+  web_dep_prep:
+    sql: '"WEB_DEP_PREP"'
+    description: Code magasin
+
+  web_prd_key:
+    sql: '"WEB_PRD_KEY"'
+    description: Code produit
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  web_date:
+    sql: '"WEB_DATE"'
+    description: Date de l'annulation
+
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Clé date annulation
+
+  web_qte:
+    sql: '"WEB_QTE"'
+    description: Quantité annulée
+
+  web_ref_cdv:
+    sql: '"WEB_REF_CDV"'
+    description: Référence de la commande dans l'ERP (si commande entrepôt)
+
+  web_ref_cdv_num_ligne:
+    sql: '"WEB_REF_CDV_NUM_LIGNE"'
+    description: Référence de la ligne commande dans l'ERP (si commande entrepôt)
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,101 @@
+# Reference this view as dwh_dwh__d_plm_cotations
+catalog: DWH
+schema: DWH
+table_name: D_PLM_COTATIONS
+
+dimensions:
+  cotation:
+    sql: '"COTATION"'
+    description: Code de la cotation
+
+  date_creation:
+    sql: '"DATE_CREATION"'
+    description: Date de création de la cotation
+
+  fournisseur:
+    sql: '"FOURNISSEUR"'
+    description: Libellé fournisseur de la cotation
+
+  reference:
+    sql: '"REFERENCE"'
+    description: Référence produit de la cotation
+
+  saison:
+    sql: '"SAISON"'
+    description: Saison de la cotation
+
+  usine:
+    sql: '"USINE"'
+    description: Libellé usine de la cotation
+
+  estprincipal:
+    sql: '"ESTPRINCIPAL"'
+    description: Flag cotation principal
+
+  devise:
+    sql: '"DEVISE"'
+    description: Devise de la cotation
+
+  prix_achat:
+    sql: '"PRIX_ACHAT"'
+    description: Prix achat de la cotation
+
+  target_pa_devise:
+    sql: '"TARGET_PA_DEVISE"'
+    description: Prix d'achat cible de la cotation
+
+  pre_euro:
+    sql: '"PRE_EURO"'
+    description: Prix de revient de la cotation en EURO
+
+  pre_cible:
+    sql: '"PRE_CIBLE"'
+    description: Prix de revient cible de la cotation en EURO
+
+  marge_pct:
+    sql: '"MARGE_PCT"'
+    description: Marge en pourcentage
+
+  marge_cible_pct:
+    sql: '"MARGE_CIBLE_PCT"'
+    description: Marge cible en %
+
+  prix_achat_euro:
+    sql: '"PRIX_ACHAT_EURO"'
+    description: Prix achat de la cotation en EURO
+
+  target_pa_euro:
+    sql: '"TARGET_PA_EURO"'
+    description: Prix d'achat cible de la cotation en EURO
+
+  incoterm:
+    sql: '"INCOTERM"'
+    description: Incoterm
+
+  suppliernumber_four:
+    sql: '"SUPPLIERNUMBER_FOUR"'
+    description: Code fournisseur de la cotation
+
+  suppliernumber_agent:
+    sql: '"SUPPLIERNUMBER_AGENT"'
+    description: Code agent de la cotation
+
+  country_usine:
+    sql: '"COUNTRY_USINE"'
+    description: Pays de l'usine
+
+  country_four:
+    sql: '"COUNTRY_FOUR"'
+    description: pays du fournisseur
+
+  currentrevision:
+    sql: '"CURRENTREVISION"'
+    description: Numéro de revision
+
+  flag_revision:
+    sql: '"FLAG_REVISION"'
+    description: Flag révision actuel
+
+measures:
+  count:
+    aggregate_type: count

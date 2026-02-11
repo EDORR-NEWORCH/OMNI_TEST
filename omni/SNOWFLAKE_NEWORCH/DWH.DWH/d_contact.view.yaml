@@ -1,0 +1,45 @@
+# Reference this view as dwh_dwh__d_contact
+catalog: DWH
+schema: DWH
+table_name: D_CONTACT
+
+dimensions:
+  cons_code:
+    sql: '"CONS_CODE"'
+    description: Code client
+
+  ctc_numero:
+    sql: '"CTC_NUMERO"'
+    description: Numéro du contact
+
+  ctc_prenom:
+    sql: '"CTC_PRENOM"'
+    description: Prénom du contact
+
+  ctc_nom:
+    sql: '"CTC_NOM"'
+    description: Nom du contact
+
+  ctc_dt_anniv:
+    sql: '"CTC_DT_ANNIV"'
+    description: Date de naissance
+
+  ctc_genre_code:
+    sql: '"CTC_GENRE_CODE"'
+    description: Code genre
+
+  ctc_genre_lib:
+    sql: '"CTC_GENRE_LIB"'
+    description: Libellé genre
+
+  ctc_lien_code:
+    sql: '"CTC_LIEN_CODE"'
+    description: Code lien de parenté
+
+  ctc_lien_lib:
+    sql: '"CTC_LIEN_LIB"'
+    description: Libellé lien de parenté
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,61 @@
+# Reference this view as dwh_dwh__d_definition_segment
+catalog: DWH
+schema: DWH
+table_name: D_DEFINITION_SEGMENT
+
+dimensions:
+  dsg_div_code:
+    sql: '"DSG_DIV_CODE"'
+    description: Code division
+
+  dsg_soc_code:
+    sql: '"DSG_SOC_CODE"'
+    description: Code société
+
+  dsg_struct_segm:
+    sql: '"DSG_STRUCT_SEGM"'
+    description: Code structure segment
+
+  dsg_id_struct_comptable:
+    sql: '"DSG_ID_STRUCT_COMPTABLE"'
+    description: Id structure comptable
+
+  dsg_niv_struct:
+    sql: '"DSG_NIV_STRUCT"'
+    description: Niveau structure
+
+  dsg_segm_libelle:
+    sql: '"DSG_SEGM_LIBELLE"'
+    description: Libellé segment
+
+  dsg_segm_nom:
+    sql: '"DSG_SEGM_NOM"'
+    description: Nom segment
+
+  dsg_responsable:
+    sql: '"DSG_RESPONSABLE"'
+    description: Responsable
+
+  dsg_date_saisie:
+    sql: '"DSG_DATE_SAISIE"'
+    description: Date de saisie du segment
+
+  dsg_heure_saisie:
+    sql: '"DSG_HEURE_SAISIE"'
+    description: Heure de saisie du segment
+
+  dsg_date_mod:
+    sql: '"DSG_DATE_MOD"'
+    description: Date de modification
+
+  dsg_num_mod:
+    sql: '"DSG_NUM_MOD"'
+    description: N° de modification
+
+  dsg_user_mod:
+    sql: '"DSG_USER_MOD"'
+    description: Utilisateurs à l'origine de la modification
+
+measures:
+  count:
+    aggregate_type: count

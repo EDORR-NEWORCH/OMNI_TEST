@@ -1,0 +1,105 @@
+# Reference this view as dwh_dwh__f_suivi_ordre_achat
+catalog: DWH
+schema: DWH
+table_name: F_SUIVI_ORDRE_ACHAT
+
+dimensions:
+  oa_numero_ordre_achat:
+    sql: '"OA_NUMERO_ORDRE_ACHAT"'
+    description: N° ordre d'achat
+
+  oa_ligne_ordre_achat:
+    sql: '"OA_LIGNE_ORDRE_ACHAT"'
+    description: Ligne ordre d'achat
+
+  oa_sous_numero_ligne:
+    sql: '"OA_SOUS_NUMERO_LIGNE"'
+    description: Sous ligne ordre d'achat
+
+  oa_date_prod_planifiee:
+    sql: '"OA_DATE_PROD_PLANIFIEE"'
+    description: Date mise en production planifiée
+
+  oa_date_prod_previ:
+    sql: '"OA_DATE_PROD_PREVI"'
+    description: Date mise en production prévisionnelle
+
+  oa_date_prod_reel:
+    sql: '"OA_DATE_PROD_REEL"'
+    description: Date mise en production réelle
+
+  oa_date_okcc_planifiee:
+    sql: '"OA_DATE_OKCC_PLANIFIEE"'
+    description: Date OKCC planifiée (certificat de conformité)
+
+  oa_date_okcc_previ:
+    sql: '"OA_DATE_OKCC_PREVI"'
+    description: Date OKCC prévisionnelle (certificat de conformité)
+
+  oa_date_okcc_reel:
+    sql: '"OA_DATE_OKCC_REEL"'
+    description: Date OKCC réelle (certificat de conformité)
+
+  oa_date_etd_planifiee:
+    sql: '"OA_DATE_ETD_PLANIFIEE"'
+    description: Date départ planifiée (ETD)
+
+  oa_date_etd_previ:
+    sql: '"OA_DATE_ETD_PREVI"'
+    description: Date départ plrévisionnelle (ETD)
+
+  oa_date_etd_reel:
+    sql: '"OA_DATE_ETD_REEL"'
+    description: Date départ réelle (ETD)
+
+  oa_date_stuffing:
+    sql: '"OA_DATE_STUFFING"'
+    description: Date stuffing  (remplissage conteneur)
+
+  oa_date_arrivee_port_planifiee:
+    sql: '"OA_DATE_ARRIVEE_PORT_PLANIFIEE"'
+    description: Date arrivée port planifiée (ETA)
+
+  oa_date_arrivee_port_previ:
+    sql: '"OA_DATE_ARRIVEE_PORT_PREVI"'
+    description: Date arrivée port prévisionnelle (ETA)
+
+  oa_date_arrivee_port_reel:
+    sql: '"OA_DATE_ARRIVEE_PORT_REEL"'
+    description: Date arrivée port réelle (ETA)
+
+  oa_date_entrepot_planifiee:
+    sql: '"OA_DATE_ENTREPOT_PLANIFIEE"'
+    description: Date arrivée entrepôt planifiée (ETA)
+
+  oa_date_entrepot_previ:
+    sql: '"OA_DATE_ENTREPOT_PREVI"'
+    description: Date arrivée entrepôt prévisionnelle (ETA)
+
+  oa_date_entrepot_reel:
+    sql: '"OA_DATE_ENTREPOT_REEL"'
+    description: Date arrivée entrepôt réelle (ETA)
+
+  oa_date_declench_planifiee:
+    sql: '"OA_DATE_DECLENCH_PLANIFIEE"'
+    description: Date déclenchement planifiée
+
+  oa_date_declench_previ:
+    sql: '"OA_DATE_DECLENCH_PREVI"'
+    description: Date déclenchement prévisionnelle
+
+  oa_date_declench_reel:
+    sql: '"OA_DATE_DECLENCH_REEL"'
+    description: Date déclenchement réelle
+
+  oa_date_mep:
+    sql: '"OA_DATE_MEP"'
+    description: Date MEP
+
+  oa_motif_rebut:
+    sql: '"OA_MOTIF_REBUT"'
+    description: Motif rebut
+
+measures:
+  count:
+    aggregate_type: count

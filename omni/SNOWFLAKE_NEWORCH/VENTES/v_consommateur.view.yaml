@@ -1,0 +1,68 @@
+# Reference this view as ventes__v_consommateur
+schema: VENTES
+table_name: V_CONSOMMATEUR
+
+dimensions:
+  cons_code:
+    sql: '"CONS_CODE"'
+    description: Code consommateur
+
+  cons_nom:
+    sql: '"CONS_NOM"'
+    description: Nom
+
+  cons_prenom:
+    sql: '"CONS_PRENOM"'
+    description: Prénom
+
+  cons_email:
+    sql: '"CONS_EMAIL"'
+    description: Email
+
+  cons_adr_princ_1:
+    sql: '"CONS_ADR_PRINC_1"'
+    description: Adresse1
+
+  cons_adr_princ_2:
+    sql: '"CONS_ADR_PRINC_2"'
+    description: Adresse2
+
+  cons_adr_princ_3:
+    sql: '"CONS_ADR_PRINC_3"'
+    description: Adresse3
+
+  cons_adr_princ_code_postal:
+    sql: '"CONS_ADR_PRINC_CODE_POSTAL"'
+    description: Code postal
+
+  cons_adr_princ_ville:
+    sql: '"CONS_ADR_PRINC_VILLE"'
+    description: Ville
+
+  pays_code:
+    sql: '"PAYS_CODE"'
+    description: Code Pays
+
+  pays_libelle:
+    sql: '"PAYS_LIBELLE"'
+    description: Pays
+
+  cons_telephone_1:
+    sql: '"CONS_TELEPHONE_1"'
+    description: Mobile
+
+  cons_flag_passage:
+    sql: '"CONS_FLAG_PASSAGE"'
+    description: Flag client de passage
+
+  cons_est_fictif:
+    sql: '"CONS_EST_FICTIF"'
+    description: Flag client fermé
+
+  cons_dt_creation:
+    sql: '"CONS_DT_CREATION"'
+    description: Date de création client
+
+measures:
+  count:
+    aggregate_type: count

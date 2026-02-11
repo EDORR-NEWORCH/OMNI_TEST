@@ -1,0 +1,213 @@
+# Reference this view as dwh_dwh__f_segment_comptable
+catalog: DWH
+schema: DWH
+table_name: F_SEGMENT_COMPTABLE
+
+dimensions:
+  segc_div_code:
+    sql: '"SEGC_DIV_CODE"'
+    description: Code division
+
+  segc_soc_code:
+    sql: '"SEGC_SOC_CODE"'
+    description: Code société
+
+  segc_segm_num:
+    sql: '"SEGC_SEGM_NUM"'
+    description: N° segment comptable
+
+  segc_segm_valeur:
+    sql: '"SEGC_SEGM_VALEUR"'
+    description: Valeur segment comptable
+
+  segc_segm_grp:
+    sql: '"SEGC_SEGM_GRP"'
+    description: Groupe segment comptable
+
+  segc_segm_libelle:
+    sql: '"SEGC_SEGM_LIBELLE"'
+    description: Libellé segment
+
+  segc_segm_nom:
+    sql: '"SEGC_SEGM_NOM"'
+    description: Nom segment
+
+  segc_cpt_est_bilan:
+    sql: '"SEGC_CPT_EST_BILAN"'
+    description: Flag segment bilan
+
+  segc_cpt_est_resultat:
+    sql: '"SEGC_CPT_EST_RESULTAT"'
+    description: Flag segment résultat
+
+  segc_cpt_est_client:
+    sql: '"SEGC_CPT_EST_CLIENT"'
+    description: Flag segment client
+
+  segc_cpt_est_fournisseur:
+    sql: '"SEGC_CPT_EST_FOURNISSEUR"'
+    description: Flag segment fournisseur
+
+  segc_type_cpt_tva:
+    sql: '"SEGC_TYPE_CPT_TVA"'
+    description: Type de TVA
+
+  segc_cpt_est_interne:
+    sql: '"SEGC_CPT_EST_INTERNE"'
+    description: Flag segment interne
+
+  segc_cpt_est_reeval:
+    sql: '"SEGC_CPT_EST_REEVAL"'
+    description: Flag segment réévaluation
+
+  segc_cpt_est_cout:
+    sql: '"SEGC_CPT_EST_COUT"'
+    description: Flag segment coût
+
+  segc_cpt_est_immos:
+    sql: '"SEGC_CPT_EST_IMMOS"'
+    description: Flag segment compte actif
+
+  segc_cpt_est_abonn:
+    sql: '"SEGC_CPT_EST_ABONN"'
+    description: Flag segment période
+
+  segc_cpt_est_epur:
+    sql: '"SEGC_CPT_EST_EPUR"'
+    description: Flag segment épurement
+
+  segc_cpt_est_ident_bloc:
+    sql: '"SEGC_CPT_EST_IDENT_BLOC"'
+    description: Flag segment identité de compte bloqué
+
+  segc_cpt_est_realise:
+    sql: '"SEGC_CPT_EST_REALISE"'
+    description: Flag segment réalisé
+
+  segc_cpt_est_budgete:
+    sql: '"SEGC_CPT_EST_BUDGETE"'
+    description: Flag segment budgétisé
+
+  segc_cpt_est_cpt_indus:
+    sql: '"SEGC_CPT_EST_CPT_INDUS"'
+    description: Flag segment compte indus
+
+  segc_date_deb_cal:
+    sql: '"SEGC_DATE_DEB_CAL"'
+    description: Date de début de validité
+
+  segc_date_fin_cal:
+    sql: '"SEGC_DATE_FIN_CAL"'
+    description: Date de fin de validité
+
+  segc_archivage:
+    sql: '"SEGC_ARCHIVAGE"'
+    description: Flag archivage
+
+  segc_cpt_ref_croise_segm2:
+    sql: '"SEGC_CPT_REF_CROISE_SEGM2"'
+    description: Code de l’identité comptable pour le segment 2
+
+  segc_cpt_ref_croise_segm3:
+    sql: '"SEGC_CPT_REF_CROISE_SEGM3"'
+    description: Code de l’identité comptable pour le segment 3
+
+  segc_cpt_ref_croise_segm4:
+    sql: '"SEGC_CPT_REF_CROISE_SEGM4"'
+    description: Code de l’identité comptable pour le segment 4
+
+  segc_cpt_ref_croise_segm5:
+    sql: '"SEGC_CPT_REF_CROISE_SEGM5"'
+    description: Code de l’identité comptable pour le segment 5
+
+  segc_cpt_ref_croise_segm6:
+    sql: '"SEGC_CPT_REF_CROISE_SEGM6"'
+    description: Code de l’identité comptable pour le segment 6
+
+  segc_cpt_ref_croise_segm7:
+    sql: '"SEGC_CPT_REF_CROISE_SEGM7"'
+    description: Code de l’identité comptable pour le segment 7
+
+  segc_cpt_ref_croise_tva:
+    sql: '"SEGC_CPT_REF_CROISE_TVA"'
+    description: Code de l’identité comptable pour le type de TVA
+
+  segc_cpt_ref_croise_budg2:
+    sql: '"SEGC_CPT_REF_CROISE_BUDG2"'
+    description: Code de l’identité comptable pour le segment 2 (budgétisé)
+
+  segc_cpt_ref_croise_budg3:
+    sql: '"SEGC_CPT_REF_CROISE_BUDG3"'
+    description: Code de l’identité comptable pour le segment 3 (budgétisé)
+
+  segc_cpt_ref_croise_budg4:
+    sql: '"SEGC_CPT_REF_CROISE_BUDG4"'
+    description: Code de l’identité comptable pour le segment 4 (budgétisé)
+
+  segc_cpt_ref_croise_budg5:
+    sql: '"SEGC_CPT_REF_CROISE_BUDG5"'
+    description: Code de l’identité comptable pour le segment 5 (budgétisé)
+
+  segc_cpt_ref_croise_budg6:
+    sql: '"SEGC_CPT_REF_CROISE_BUDG6"'
+    description: Code de l’identité comptable pour le segment 6 (budgétisé)
+
+  segc_cpt_ref_croise_budg7:
+    sql: '"SEGC_CPT_REF_CROISE_BUDG7"'
+    description: Code de l’identité comptable pour le segment 7 (budgétisé)
+
+  segc_devise_connexion:
+    sql: '"SEGC_DEVISE_CONNEXION"'
+    description: Devise de la transaction comptable
+
+  segc_devise:
+    sql: '"SEGC_DEVISE"'
+    description: Devise d'origine de la transaction
+
+  segc_lettrage:
+    sql: '"SEGC_LETTRAGE"'
+    description: Nature de l'écriture
+
+  segc_est_cpt_caisse:
+    sql: '"SEGC_EST_CPT_CAISSE"'
+    description: Flag compte caisse
+
+  segc_est_cpt_banque:
+    sql: '"SEGC_EST_CPT_BANQUE"'
+    description: Flag compte banque
+
+  segc_est_cpt_attente:
+    sql: '"SEGC_EST_CPT_ATTENTE"'
+    description: Flag compte en attente
+
+  segc_est_cpt_stock:
+    sql: '"SEGC_EST_CPT_STOCK"'
+    description: Flag compte stock
+
+  segc_date_saisie:
+    sql: '"SEGC_DATE_SAISIE"'
+    description: Jour de saisie
+
+  segc_heure_saisie:
+    sql: '"SEGC_HEURE_SAISIE"'
+    description: Heure de saisie
+
+  segc_date_mod:
+    sql: '"SEGC_DATE_MOD"'
+    description: Date de modification
+
+  segc_num_mod:
+    sql: '"SEGC_NUM_MOD"'
+    description: N° de modification
+
+  segc_user_mod:
+    sql: '"SEGC_USER_MOD"'
+    description: Utilisateur à l'origine de la modification
+
+  segc_methode_conso:
+    sql: '"SEGC_METHODE_CONSO"'
+    description: Méthode de conso
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,117 @@
+# Reference this view as ventes__v_ventes_comp
+schema: VENTES
+table_name: DT_VENTES_COMP
+
+dimensions:
+  periode:
+    sql: '"PERIODE"'
+    label: Période de la vente (N, N-1 ORCHESTRA, N-1 CALENDAIRE)
+
+  date_comp:
+    sql: '"DATE_COMP"'
+    label: Date de comparaison de la période
+
+  comp_j:
+    sql: '"COMP_J"'
+    label: Flag de comparabilité au jour
+
+  date_jour:
+    sql: '"DATE_JOUR"'
+    label: Date du jour de la vente
+
+  code_depot:
+    sql: '"CODE_DEPOT"'
+    label: Code magasin
+
+  code_produit:
+    sql: '"CODE_PRODUIT"'
+    label: Code produit
+
+  club:
+    sql: '"CLUB"'
+    label: Flag de fidelité du ticket (club ou non club)
+
+  code_saison:
+    sql: '"CODE_SAISON"'
+    label: Code saison du produit
+
+  mtt_ttc_eur:
+    sql: '"MTT_TTC_EUR"'
+    label: Montant TTC en EURO
+
+  marge_eur:
+    sql: '"MARGE_EUR"'
+    label: Marge en EURO
+
+  qte:
+    sql: '"QTE"'
+    label: Quantité vendue ou retournée
+
+  tck_id:
+    sql: '"TCK_ID"'
+    label: Identifiant du ticket
+    format: ID
+    hidden: true
+
+  mtt_ht_eur:
+    sql: '"MTT_HT_EUR"'
+    description: Montant HT en EURO
+
+measures:
+  count:
+    aggregate_type: count
+
+  mtt_ttc_eur_sum:
+    sql: ${ventes__v_ventes_comp.mtt_ttc_eur}
+    label: Montant TTC en EURO Sum
+    description: Sum of all sales amounts including tax (TTC) expressed in Euros en fr
+    aggregate_type: sum
+    synonyms: [ Total Sales EUR, Revenue with Tax, Gross Amount EUR ]
+
+  qte_sum:
+    sql: ${ventes__v_ventes_comp.qte}
+    label: Quantité vendue ou retournée Sum
+    aggregate_type: sum
+
+  tck_id_count_distinct_N:
+    sql: ${ventes__v_ventes_comp.tck_id}
+    label: Nbre de tickets N
+    format: NUMBER_0
+    aggregate_type: count_distinct
+    filters:
+      periode:
+        is: N
+
+  tck_id_count_distinct_NM1_ORCHESTRA:
+    sql: ${ventes__v_ventes_comp.tck_id}
+    label: Nbre de tickets N-1 Orchestra
+    format: NUMBER_0
+    aggregate_type: count_distinct
+    filters:
+      periode:
+        is: N-1 ORCHESTRA
+
+  tck_id_count_distinct_NM1_CALENDAIRE:
+    sql: ${ventes__v_ventes_comp.tck_id}
+    label: Nbre de tickets N-1 Calendaire
+    format: NUMBER_0
+    aggregate_type: count_distinct
+    filters:
+      periode:
+        is: N-1 CALENDAIRE
+
+  evolution_n_1_calendaire:
+    sql: COALESCE(${ventes__v_ventes_comp.tck_id_count_distinct_N}, 0) -
+      COALESCE(${ventes__v_ventes_comp.tck_id_count_distinct_NM1_CALENDAIRE}, 0)
+    label: Evolution N-1 Calendaire
+
+  omni__volution_tickets_n_vs_n_1_orchestra:
+    sql: CASE WHEN ${ventes__v_ventes_comp.tck_id_count_distinct_NM1_ORCHESTRA} = 0
+      THEN 0 ELSE CASE WHEN
+      ${ventes__v_ventes_comp.tck_id_count_distinct_NM1_ORCHESTRA} = 0 THEN NULL
+      ELSE COALESCE(COALESCE(${ventes__v_ventes_comp.tck_id_count_distinct_N},
+      0) -
+      COALESCE(${ventes__v_ventes_comp.tck_id_count_distinct_NM1_ORCHESTRA}, 0),
+      0) / ${ventes__v_ventes_comp.tck_id_count_distinct_NM1_ORCHESTRA} END END
+    label: Évolution % tickets N vs N-1 Orchestra
+    format: PERCENT_1

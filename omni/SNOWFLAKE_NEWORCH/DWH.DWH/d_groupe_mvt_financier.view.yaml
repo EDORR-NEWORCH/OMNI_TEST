@@ -1,0 +1,17 @@
+# Reference this view as dwh_dwh__d_groupe_mvt_financier
+catalog: DWH
+schema: DWH
+table_name: D_GROUPE_MVT_FINANCIER
+
+dimensions:
+  grp_mvt_fin_code:
+    sql: '"GRP_MVT_FIN_CODE"'
+    description: Code
+
+  grp_mvt_fin_lib:
+    sql: '"GRP_MVT_FIN_LIB"'
+    description: Libellé
+
+measures:
+  count:
+    aggregate_type: count

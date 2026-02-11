@@ -1,0 +1,37 @@
+# Reference this view as dwh_dwh__f_easycomptage
+catalog: DWH
+schema: DWH
+table_name: F_EASYCOMPTAGE
+
+dimensions:
+  easy_mag_code:
+    sql: '"EASY_MAG_CODE"'
+    description: Code magasin
+
+  easy_dep_key:
+    sql: '"EASY_DEP_KEY"'
+    description: Code magasin
+
+  easy_cal_key:
+    sql: '"EASY_CAL_KEY"'
+    description: Date
+
+  easy_heure:
+    sql: '"EASY_HEURE"'
+    description: Heure
+
+  easy_comptage_entree:
+    sql: '"EASY_COMPTAGE_ENTREE"'
+    description: Entrée
+
+  easy_comptage_sortie:
+    sql: '"EASY_COMPTAGE_SORTIE"'
+    description: Sortie
+
+  easy_validite:
+    sql: '"EASY_VALIDITE"'
+    description: Statut validité
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,105 @@
+# Reference this view as dwh_dwh__f_mvt_financier
+catalog: DWH
+schema: DWH
+table_name: F_MVT_FINANCIER
+
+dimensions:
+  fin_tck_id:
+    sql: '"FIN_TCK_ID"'
+    format: ID
+    description: ID
+
+  fin_fina_id:
+    sql: '"FIN_FINA_ID"'
+    format: ID
+    description: Mvt financier
+
+  fin_ligne_id:
+    sql: '"FIN_LIGNE_ID"'
+    format: ID
+    description: Numéro ligne
+
+  fin_ett_id:
+    sql: '"FIN_ETT_ID"'
+    format: ID
+    description: ID Magasin
+
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Code dépôt
+
+  fin_canal:
+    sql: '"FIN_CANAL"'
+    description: Canal de vente
+
+  fin_date:
+    sql: '"FIN_DATE"'
+    description: Date
+
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Date
+
+  fin_cons_id:
+    sql: '"FIN_CONS_ID"'
+    format: ID
+    description: ID Consommateur
+
+  fin_cons_id_master:
+    sql: '"FIN_CONS_ID_MASTER"'
+
+  cons_key:
+    sql: '"CONS_KEY"'
+    description: Code consommateur
+
+  fin_devise_id_conso:
+    sql: '"FIN_DEVISE_ID_CONSO"'
+    description: ID devise consolidation
+
+  dev_key_conso:
+    sql: '"DEV_KEY_CONSO"'
+    description: Code devise consolidation
+
+  fin_devise_id_loc:
+    sql: '"FIN_DEVISE_ID_LOC"'
+    description: ID devise
+
+  dev_key:
+    sql: '"DEV_KEY"'
+    description: Code devise
+
+  fin_tx_tax:
+    sql: '"FIN_TX_TAX"'
+    description: Taux de taxe
+
+  fin_mt_ht_conso:
+    sql: '"FIN_MT_HT_CONSO"'
+    description: MT HT Consolidé
+
+  fin_mt_ht_loc:
+    sql: '"FIN_MT_HT_LOC"'
+    description: MT HT Locale
+
+  fin_mt_ttc_conso:
+    sql: '"FIN_MT_TTC_CONSO"'
+    description: MT TTC Consolidé
+
+  fin_mt_ttc_loc:
+    sql: '"FIN_MT_TTC_LOC"'
+    description: MT TTC Locale
+
+  fin_num_ref_externe:
+    sql: '"FIN_NUM_REF_EXTERNE"'
+    description: Numéro de référence externe
+
+  fin_num_ref_interne:
+    sql: '"FIN_NUM_REF_INTERNE"'
+    description: Numéro de référence interne
+
+  fin_club:
+    sql: '"FIN_CLUB"'
+    description: Ticket club
+
+measures:
+  count:
+    aggregate_type: count

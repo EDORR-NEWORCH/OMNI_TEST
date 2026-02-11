@@ -1,0 +1,258 @@
+# Reference this view as dwh_dwh__f_ligne_compta_generale
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_COMPTA_GENERALE
+
+dimensions:
+  cptg_div_code:
+    sql: '"CPTG_DIV_CODE"'
+    description: Code division
+
+  cptg_soc_code:
+    sql: '"CPTG_SOC_CODE"'
+    description: Code société
+
+  cptg_annee:
+    sql: '"CPTG_ANNEE"'
+    description: Année
+
+  cptg_num_journal:
+    sql: '"CPTG_NUM_JOURNAL"'
+    description: N° journal comptable
+
+  cptg_num_seq_journal:
+    sql: '"CPTG_NUM_SEQ_JOURNAL"'
+    description: N° séquence journal comptable
+
+  cptg_trans_code:
+    sql: '"CPTG_TRANS_CODE"'
+    description: Code transaction
+
+  cptg_piece_just_type:
+    sql: '"CPTG_PIECE_JUST_TYPE"'
+    description: Type pièce justificative
+
+  cptg_piece_just_num:
+    sql: '"CPTG_PIECE_JUST_NUM"'
+    description: N° pièce justificative
+
+  cptg_gcf_id:
+    sql: '"CPTG_GCF_ID"'
+    format: ID
+    description: Identification de saisie GCF
+
+  cptg_fonc_gcf:
+    sql: '"CPTG_FONC_GCF"'
+    description: Fonction GCF
+
+  cptg_txt40:
+    sql: '"CPTG_TXT40"'
+    description: Description GCF
+
+  cptg_txt15:
+    sql: '"CPTG_TXT15"'
+    description: Nom GCF
+
+  cptg_trans_desc:
+    sql: '"CPTG_TRANS_DESC"'
+    description: Description transaction
+
+  cptg_piece_just_desc:
+    sql: '"CPTG_PIECE_JUST_DESC"'
+    description: Description pièce justificative
+
+  cptg_trans_interne:
+    sql: '"CPTG_TRANS_INTERNE"'
+    description: Transaction interne
+
+  cptg_date_compta:
+    sql: '"CPTG_DATE_COMPTA"'
+    description: Date comptable
+
+  cptg_date_trans:
+    sql: '"CPTG_DATE_TRANS"'
+    description: Date transfo
+
+  cptg_date_lettrage_int:
+    sql: '"CPTG_DATE_LETTRAGE_INT"'
+    description: Date lettrage interne
+
+  cptg_code_lettrage_int:
+    sql: '"CPTG_CODE_LETTRAGE_INT"'
+    description: Code lettrage interne
+
+  cptg_date_tva:
+    sql: '"CPTG_DATE_TVA"'
+    description: Date TVA
+
+  cptg_segment1:
+    sql: '"CPTG_SEGMENT1"'
+    description: Segment comptable 1
+
+  cptg_segment2:
+    sql: '"CPTG_SEGMENT2"'
+    description: Segment comptable 2
+
+  cptg_segment3:
+    sql: '"CPTG_SEGMENT3"'
+    description: Segment comptable 3
+
+  cptg_segment4:
+    sql: '"CPTG_SEGMENT4"'
+    description: Segment comptable 4
+
+  cptg_segment5:
+    sql: '"CPTG_SEGMENT5"'
+    description: Segment comptable 5
+
+  cptg_segment6:
+    sql: '"CPTG_SEGMENT6"'
+    description: Segment comptable 6
+
+  cptg_segment7:
+    sql: '"CPTG_SEGMENT7"'
+    description: Segment comptable 7
+
+  cptg_piece_just_text:
+    sql: '"CPTG_PIECE_JUST_TEXT"'
+    description: Texte pièce justificative
+
+  cptg_qte:
+    sql: '"CPTG_QTE"'
+    description: Quantité
+
+  cptg_mt:
+    sql: '"CPTG_MT"'
+    description: Montant enregistré
+
+  cptg_deb_cred:
+    sql: '"CPTG_DEB_CRED"'
+    description: Débit / crédit
+
+  cptg_devise:
+    sql: '"CPTG_DEVISE"'
+    description: Devise locale
+
+  cptg_type_taux:
+    sql: '"CPTG_TYPE_TAUX"'
+    description: Type de taux
+
+  cptg_taux:
+    sql: '"CPTG_TAUX"'
+    description: Taux
+
+  cptg_mt_dev:
+    sql: '"CPTG_MT_DEV"'
+    description: Montant en devise locale
+
+  cptg_devise_tier:
+    sql: '"CPTG_DEVISE_TIER"'
+    description: Devise tier
+
+  cptg_type_taux_tier:
+    sql: '"CPTG_TYPE_TAUX_TIER"'
+    description: Type taux tier
+
+  cptg_taux_tier:
+    sql: '"CPTG_TAUX_TIER"'
+    description: Taux tier
+
+  cptg_mt_dev_tier:
+    sql: '"CPTG_MT_DEV_TIER"'
+    description: Montant à la devise du tier
+
+  cptg_type_cpt_tva:
+    sql: '"CPTG_TYPE_CPT_TVA"'
+    description: Type de compte TVA
+
+  cptg_code_cpt_tva:
+    sql: '"CPTG_CODE_CPT_TVA"'
+    description: Code compte TVA
+
+  cptg_pourc_tva1:
+    sql: '"CPTG_POURC_TVA1"'
+    description: Pourcentage TVA 1
+
+  cptg_mt_tva1:
+    sql: '"CPTG_MT_TVA1"'
+    description: Montant TVA 1
+
+  cptg_pourc_tva2:
+    sql: '"CPTG_POURC_TVA2"'
+    description: Pourcentage TVA 2
+
+  cptg_mt_tva2:
+    sql: '"CPTG_MT_TVA2"'
+    description: Montant TVA 2
+
+  cptg_mt_tva3:
+    sql: '"CPTG_MT_TVA3"'
+    description: Montant TVA 3
+
+  cptg_mt_tva4:
+    sql: '"CPTG_MT_TVA4"'
+    description: Montant TVA 4
+
+  cptg_pays_cible:
+    sql: '"CPTG_PAYS_CIBLE"'
+    description: Pays cible
+
+  cptg_pays_source:
+    sql: '"CPTG_PAYS_SOURCE"'
+    description: Pays source
+
+  cptg_date_saisie:
+    sql: '"CPTG_DATE_SAISIE"'
+    description: Date de saisie
+
+  cptg_heure_saisie:
+    sql: '"CPTG_HEURE_SAISIE"'
+    description: Heure de saisie
+
+  cptg_date_mod:
+    sql: '"CPTG_DATE_MOD"'
+    description: Date de modification
+
+  cptg_num_mod:
+    sql: '"CPTG_NUM_MOD"'
+    description: N° de modification
+
+  cptg_user_mod:
+    sql: '"CPTG_USER_MOD"'
+    description: Utilisateur à l'origine de la modification
+
+  cptg_user_auto:
+    sql: '"CPTG_USER_AUTO"'
+    description: Utilisateur autorisé
+
+  cptg_paie_auto:
+    sql: '"CPTG_PAIE_AUTO"'
+    description: Paiement approuvé
+
+  cptg_num_tva:
+    sql: '"CPTG_NUM_TVA"'
+    description: N° immatriculation TVA
+
+  cptg_date_hrs_sys:
+    sql: '"CPTG_DATE_HRS_SYS"'
+    description: Date / heure système
+
+  cptg_num_seq_bon:
+    sql: '"CPTG_NUM_SEQ_BON"'
+    description: N° de séquence
+
+  cptg_deduct_tva1:
+    sql: '"CPTG_DEDUCT_TVA1"'
+    description: TVA déductible
+
+  cptg_tva_enrg:
+    sql: '"CPTG_TVA_ENRG"'
+    description: TVA reportée
+
+  cptg_tva_enrg_flag:
+    sql: '"CPTG_TVA_ENRG_FLAG"'
+    description: Flag d'enregistrement de la TVA
+
+measures:
+  count:
+    aggregate_type: count

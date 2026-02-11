@@ -1,0 +1,21 @@
+# Reference this view as dwh_dwh__v_statut_od
+catalog: DWH
+schema: DWH
+table_name: V_STATUT_OD
+
+dimensions:
+  statut_od_key:
+    sql: '"STATUT_OD_KEY"'
+    description: Clé statut ordre distribution
+
+  statut_od_code:
+    sql: '"STATUT_OD_CODE"'
+    description: Code statut ordre distribution
+
+  statut_od_lib:
+    sql: '"STATUT_OD_LIB"'
+    description: Libellé statut ordre distribution
+
+measures:
+  count:
+    aggregate_type: count

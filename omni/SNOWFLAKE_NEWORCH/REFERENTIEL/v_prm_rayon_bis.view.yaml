@@ -1,0 +1,16 @@
+# Reference this view as referentiel__v_prm_rayon_bis
+schema: REFERENTIEL
+table_name: V_PRM_RAYON_BIS
+
+dimensions:
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  prd_rayon_bis:
+    sql: '"PRD_RAYON_BIS"'
+    description: Rayon bis produit
+
+measures:
+  count:
+    aggregate_type: count

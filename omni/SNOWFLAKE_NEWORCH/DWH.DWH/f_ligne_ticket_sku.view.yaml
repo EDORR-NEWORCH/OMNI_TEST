@@ -1,0 +1,208 @@
+# Reference this view as dwh_dwh__f_ligne_ticket_sku
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_TICKET_SKU
+
+dimensions:
+  tck_key:
+    sql: '"TCK_KEY"'
+    description: Clé ticket
+
+  tck_id:
+    sql: '"TCK_ID"'
+    format: ID
+    description: ID ticket
+
+  tck_num_ligne:
+    sql: '"TCK_NUM_LIGNE"'
+    description: Numéro de ligne
+
+  tck_annee:
+    sql: '"TCK_ANNEE"'
+    description: Année
+
+  tck_date:
+    sql: '"TCK_DATE"'
+    description: Date & heure
+
+  tck_heure:
+    sql: '"TCK_HEURE"'
+    description: Heure en seconde
+
+  tck_date_ss_heure:
+    sql: '"TCK_DATE_SS_HEURE"'
+    description: Date sans heure
+
+  tck_prd_id:
+    sql: '"TCK_PRD_ID"'
+    format: ID
+    description: Code produit
+
+  tck_ett_id:
+    sql: '"TCK_ETT_ID"'
+    format: ID
+    description: Code magasin
+
+  tck_cons_id:
+    sql: '"TCK_CONS_ID"'
+    format: ID
+    description: Code consommateur
+
+  tck_cons_id_master:
+    sql: '"TCK_CONS_ID_MASTER"'
+
+  tck_vend_id:
+    sql: '"TCK_VEND_ID"'
+    format: ID
+    description: Code vendeur
+
+  tck_dev_id_conso:
+    sql: '"TCK_DEV_ID_CONSO"'
+    description: Code devise consolidée
+
+  tck_dev_id_loc:
+    sql: '"TCK_DEV_ID_LOC"'
+    description: Code devise locale
+
+  tck_nature_ligne:
+    sql: '"TCK_NATURE_LIGNE"'
+    description: Nature de la ligne (vente,retour)
+
+  tck_tx_tax:
+    sql: '"TCK_TX_TAX"'
+    description: Taux de TVA
+
+  tck_tx_op:
+    sql: '"TCK_TX_OP"'
+    description: Taux de remise
+
+  tck_qte:
+    sql: '"TCK_QTE"'
+    description: Quantité
+
+  tck_prx_unit_ttc_conso:
+    sql: '"TCK_PRX_UNIT_TTC_CONSO"'
+    description: PU TTC consolidé
+
+  tck_prx_unit_ttc_loc:
+    sql: '"TCK_PRX_UNIT_TTC_LOC"'
+    description: PU TTC local
+
+  tck_prx_unit_ht_conso:
+    sql: '"TCK_PRX_UNIT_HT_CONSO"'
+    description: PU HT consolidé
+
+  tck_prx_unit_ht_loc:
+    sql: '"TCK_PRX_UNIT_HT_LOC"'
+    description: PU HT local
+
+  tck_mt_remise_conso:
+    sql: '"TCK_MT_REMISE_CONSO"'
+    description: MT remise consolidé
+
+  tck_mt_remise_loc:
+    sql: '"TCK_MT_REMISE_LOC"'
+    description: MT remise locale
+
+  tck_mt_ht_conso:
+    sql: '"TCK_MT_HT_CONSO"'
+    description: MT HT conso
+
+  tck_mt_ht_loc:
+    sql: '"TCK_MT_HT_LOC"'
+    description: MT HT locale
+
+  tck_mt_ttc_conso:
+    sql: '"TCK_MT_TTC_CONSO"'
+    description: MT TTC consolidé
+
+  tck_mt_ttc_loc:
+    sql: '"TCK_MT_TTC_LOC"'
+    description: MT TTC local
+
+  tck_motif_ret_id:
+    sql: '"TCK_MOTIF_RET_ID"'
+    format: ID
+    description: ID motif retour
+
+  tck_motif_ret_lib:
+    sql: '"TCK_MOTIF_RET_LIB"'
+    description: Libellé motif retour
+
+  tck_num_ref_externe:
+    sql: '"TCK_NUM_REF_EXTERNE"'
+    description: Ref externe
+
+  tck_num_ref_interne:
+    sql: '"TCK_NUM_REF_INTERNE"'
+    description: Ref interne
+
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Clé dépôt
+
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Clé produit
+
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Clé calendrier
+
+  dev_key_conso:
+    sql: '"DEV_KEY_CONSO"'
+    description: Clé devise consolidée
+
+  dev_key:
+    sql: '"DEV_KEY"'
+    description: Clé devise locale
+
+  cons_key:
+    sql: '"CONS_KEY"'
+    description: Clé consommateur
+
+  tck_club:
+    sql: '"TCK_CLUB"'
+    description: Ticket club
+
+  tck_canal:
+    sql: '"TCK_CANAL"'
+    description: Canal de vente (Mag/Web)
+
+  tck_mt_prx_vente_loc:
+    sql: '"TCK_MT_PRX_VENTE_LOC"'
+    description: MT Prix de vente locale
+
+  tck_mt_prx_vente_conso:
+    sql: '"TCK_MT_PRX_VENTE_CONSO"'
+    description: MT Prix de vente conso
+
+  tck_mt_prx_revient_loc:
+    sql: '"TCK_MT_PRX_REVIENT_LOC"'
+    description: MT Prix de revient locale
+
+  tck_mt_prx_revient_conso:
+    sql: '"TCK_MT_PRX_REVIENT_CONSO"'
+    description: MT Prix de revient conso
+
+  tck_mt_marge_loc:
+    sql: '"TCK_MT_MARGE_LOC"'
+    description: MT Marge locale
+
+  tck_mt_marge_conso:
+    sql: '"TCK_MT_MARGE_CONSO"'
+    description: MT Marge conso
+
+  tck_per_saison:
+    sql: '"TCK_PER_SAISON"'
+
+  tck_per_periode:
+    sql: '"TCK_PER_PERIODE"'
+
+  date_mdf_tck:
+    sql: '"DATE_MDF_TCK"'
+    description: Date création/modification du ticket pour incrémental qlik
+
+measures:
+  count:
+    aggregate_type: count

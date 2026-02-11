@@ -1,0 +1,28 @@
+# Reference this view as referentiel__v_dtv_weeklist
+schema: REFERENTIEL
+table_name: V_DTV_WEEKLIST
+
+dimensions:
+  cal_annee_sem:
+    sql: '"CAL_ANNEE_SEM"'
+    description: Année Semaine Calendrier (au format YYYYMM)
+
+  cal_key_deb:
+    sql: '"CAL_KEY_DEB"'
+    description: Premier jour de la semaine de l'année N
+
+  cal_key_deb_n1:
+    sql: '"CAL_KEY_DEB_N1"'
+    description: Premier jour de la semaine de l'année N-1
+
+  cal_key_fin:
+    sql: '"CAL_KEY_FIN"'
+    description: Dernier jour de la semaine de l'année N
+
+  cal_key_fin_n1:
+    sql: '"CAL_KEY_FIN_N1"'
+    description: Dernier jour de la semaine de l'année N-1
+
+measures:
+  count:
+    aggregate_type: count

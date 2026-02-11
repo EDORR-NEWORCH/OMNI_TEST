@@ -1,0 +1,93 @@
+# Reference this view as dwh_dwh__f_transit_a_date_warehouses
+catalog: DWH
+schema: DWH
+table_name: F_TRANSIT_A_DATE_WAREHOUSES
+
+dimensions:
+  societe:
+    sql: '"SOCIETE"'
+    description: Société
+
+  etablissement:
+    sql: '"ETABLISSEMENT"'
+    description: Etablissement
+
+  code_depot_orig:
+    sql: '"CODE_DEPOT_ORIG"'
+    description: Code dépôt origine
+
+  transit:
+    sql: '"TRANSIT"'
+    description: Code transit
+
+  code_depot_dest:
+    sql: '"CODE_DEPOT_DEST"'
+    description: Code dépôt destinataire
+
+  libelle_destinataire:
+    sql: '"LIBELLE_DESTINATAIRE"'
+    description: Libellé dépôt de destination
+
+  num_od:
+    sql: '"NUM_OD"'
+    description: N° ordre de distribution
+
+  type_od:
+    sql: '"TYPE_OD"'
+    description: Type ordre de distribution
+
+  date_od:
+    sql: '"DATE_OD"'
+    description: Date ordre de distribution
+
+  article:
+    sql: '"ARTICLE"'
+    description: Code article
+
+  pre_loc:
+    sql: '"PRE_LOC"'
+    description: Prix de revient local
+
+  valo_loc:
+    sql: '"VALO_LOC"'
+    description: Valorisation locale
+
+  devise_pre:
+    sql: '"DEVISE_PRE"'
+    description: Devise
+
+  trqt:
+    sql: '"TRQT"'
+    description: Quantité
+
+  date_transit:
+    sql: '"DATE_TRANSIT"'
+    description: Date du transit
+
+  saison:
+    sql: '"SAISON"'
+    description: Saison
+
+  code_reference:
+    sql: '"CODE_REFERENCE"'
+    description: Référence article
+
+  taux_change:
+    sql: '"TAUX_CHANGE"'
+    description: Taux de change
+
+  pre_consolide:
+    sql: '"PRE_CONSOLIDE"'
+    description: Prix de revient consolidé
+
+  valo_consolide:
+    sql: '"VALO_CONSOLIDE"'
+    description: Valorisation consolidée
+
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Date de la photo de stock
+
+measures:
+  count:
+    aggregate_type: count

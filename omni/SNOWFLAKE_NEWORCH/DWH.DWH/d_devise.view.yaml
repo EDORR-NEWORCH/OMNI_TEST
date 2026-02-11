@@ -1,0 +1,21 @@
+# Reference this view as dwh_dwh__d_devise
+catalog: DWH
+schema: DWH
+table_name: D_DEVISE
+
+dimensions:
+  dev_code:
+    sql: '"DEV_CODE"'
+    description: Code devise
+
+  dev_key:
+    sql: '"DEV_KEY"'
+    description: Clé devise
+
+  dev_lib:
+    sql: '"DEV_LIB"'
+    description: Libellé devise
+
+measures:
+  count:
+    aggregate_type: count

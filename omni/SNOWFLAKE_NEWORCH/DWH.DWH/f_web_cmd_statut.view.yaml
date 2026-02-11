@@ -1,0 +1,58 @@
+# Reference this view as dwh_dwh__f_web_cmd_statut
+catalog: DWH
+schema: DWH
+table_name: F_WEB_CMD_STATUT
+
+dimensions:
+  web_cmd:
+    sql: '"WEB_CMD"'
+    description: Numéro de commande
+
+  action:
+    sql: '"ACTION"'
+    description: Action
+
+  object_type:
+    sql: '"OBJECT_TYPE"'
+    description: Type concerné par l'action
+
+  web_dt_hr_action:
+    sql: '"WEB_DT_HR_ACTION"'
+    description: Date Heure de l'action
+
+  web_date:
+    sql: '"WEB_DATE"'
+    description: Date de l'action
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  index_from:
+    sql: '"INDEX_FROM"'
+    description: Index premier article
+
+  index_to:
+    sql: '"INDEX_TO"'
+    description: Index dernier article
+
+  ancien_statut:
+    sql: '"ANCIEN_STATUT"'
+    description: Ancien statut
+
+  nouveau_statut:
+    sql: '"NOUVEAU_STATUT"'
+    description: Nouveau statut
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  object_id:
+    sql: '"OBJECT_ID"'
+    format: ID
+    description: Dépend de l'action
+
+measures:
+  count:
+    aggregate_type: count

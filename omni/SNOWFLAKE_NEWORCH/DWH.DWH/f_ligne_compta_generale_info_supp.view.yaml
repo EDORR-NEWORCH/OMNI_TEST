@@ -1,0 +1,49 @@
+# Reference this view as dwh_dwh__f_ligne_compta_generale_info_supp
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_COMPTA_GENERALE_INFO_SUPP
+
+dimensions:
+  cgis_div_code:
+    sql: '"CGIS_DIV_CODE"'
+    description: Code division
+
+  cgis_soc_code:
+    sql: '"CGIS_SOC_CODE"'
+    description: Code société
+
+  cgis_annee:
+    sql: '"CGIS_ANNEE"'
+    description: Année
+
+  cgis_num_journal:
+    sql: '"CGIS_NUM_JOURNAL"'
+    description: N° journal comptable
+
+  cgis_num_seq_journal:
+    sql: '"CGIS_NUM_SEQ_JOURNAL"'
+    description: N° séquence journal comptable
+
+  cgis_code_type_info_supp:
+    sql: '"CGIS_CODE_TYPE_INFO_SUPP"'
+    description: Code info supplémentaire
+
+  cgis_lib_type_info_supp:
+    sql: '"CGIS_LIB_TYPE_INFO_SUPP"'
+    description: Libellé info supplémentaire
+
+  cgis_info_supp:
+    sql: '"CGIS_INFO_SUPP"'
+    description: Info supplémentaire
+
+  cgis_num_seq_info_supp:
+    sql: '"CGIS_NUM_SEQ_INFO_SUPP"'
+    description: Numéro séquence info supplémentaire
+
+  cgis_text_ident:
+    sql: '"CGIS_TEXT_IDENT"'
+    description: Identité du texte
+
+measures:
+  count:
+    aggregate_type: count

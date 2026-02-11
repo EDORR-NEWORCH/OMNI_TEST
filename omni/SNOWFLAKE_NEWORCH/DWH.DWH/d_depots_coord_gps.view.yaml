@@ -1,0 +1,18 @@
+# Reference this view as dwh_dwh__d_depots_coord_gps
+catalog: DWH
+schema: DWH
+table_name: D_DEPOTS_COORD_GPS
+
+dimensions:
+  magasincodem3:
+    sql: '"MAGASINCODEM3"'
+
+  magasingpsx:
+    sql: '"MAGASINGPSX"'
+
+  magasingpsy:
+    sql: '"MAGASINGPSY"'
+
+measures:
+  count:
+    aggregate_type: count

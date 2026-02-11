@@ -1,0 +1,56 @@
+# Reference this view as digital__v_dtv_cmd_web_j
+schema: DIGITAL
+table_name: V_DTV_CMD_WEB_J
+
+dimensions:
+  web_dt_cmd:
+    sql: '"WEB_DT_CMD"'
+    description: Date & heure de commande
+
+  wce_canal_origine:
+    sql: '"WCE_CANAL_ORIGINE"'
+    description: Canal origine
+
+  wce_site_origine:
+    sql: '"WCE_SITE_ORIGINE"'
+    description: Libellé site origine commande
+
+  wce_num_commande:
+    sql: '"WCE_NUM_COMMANDE"'
+    description: Numéro commande
+
+  web_dt_hr_cmd:
+    sql: '"WEB_DT_HR_CMD"'
+    description: Date heure de la commande
+
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Clé produit
+
+  psa_saison_code:
+    sql: '"PSA_SAISON_CODE"'
+    description: Code saison
+
+  jour_j:
+    sql: '"JOUR_J"'
+    description: Jour calendaire
+
+  ca_ttc_j_j1:
+    sql: '"CA_TTC_J_J1"'
+    description: Chiffre daffaire TTC de la commande
+
+  fdp_j_j1:
+    sql: '"FDP_J_J1"'
+    description: Frais de port de la commande
+
+  qte_j_j1:
+    sql: '"QTE_J_J1"'
+    description: Quantité de la commande
+
+  wce_date_create:
+    sql: '"WCE_DATE_CREATE"'
+    description: Date de création de la commande
+
+measures:
+  count:
+    aggregate_type: count

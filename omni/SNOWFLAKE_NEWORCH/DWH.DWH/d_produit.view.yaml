@@ -1,0 +1,405 @@
+# Reference this view as dwh_dwh__d_produit
+catalog: DWH
+schema: DWH
+table_name: D_PRODUIT
+
+dimensions:
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Code
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code
+
+  prd_date_creation:
+    sql: '"PRD_DATE_CREATION"'
+    description: Date de création
+
+  prd_reference:
+    sql: '"PRD_REFERENCE"'
+    description: Code référence
+
+  prd_parent:
+    sql: '"PRD_PARENT"'
+    description: Code parent
+
+  prd_type_code:
+    sql: '"PRD_TYPE_CODE"'
+    description: Type
+
+  prd_type_lib:
+    sql: '"PRD_TYPE_LIB"'
+    description: Libellé type
+
+  prd_statut_code:
+    sql: '"PRD_STATUT_CODE"'
+    description: Statut
+
+  prd_statut_lib:
+    sql: '"PRD_STATUT_LIB"'
+    description: Libellé statut
+
+  prd_nom_appel:
+    sql: '"PRD_NOM_APPEL"'
+    description: Nom appel
+
+  prd_code_bar_princ:
+    sql: '"PRD_CODE_BAR_PRINC"'
+    description: Code barre principale
+
+  prd_code_bar_sec:
+    sql: '"PRD_CODE_BAR_SEC"'
+    description: Code barre secondaire
+
+  prd_description_courte:
+    sql: '"PRD_DESCRIPTION_COURTE"'
+    description: Description courte
+
+  prd_description_longue:
+    sql: '"PRD_DESCRIPTION_LONGUE"'
+    description: Description longue
+
+  prd_saison:
+    sql: '"PRD_SAISON"'
+    description: Saison
+
+  prd_collection:
+    sql: '"PRD_COLLECTION"'
+    description: Collection
+
+  prd_type_ensemble:
+    sql: '"PRD_TYPE_ENSEMBLE"'
+    description: Type ensemble
+
+  prd_groupe_code:
+    sql: '"PRD_GROUPE_CODE"'
+    description: Groupe
+
+  prd_groupe_lib:
+    sql: '"PRD_GROUPE_LIB"'
+    description: Libellé groupe
+
+  prd_hierarchie_niveau_1:
+    sql: '"PRD_HIERARCHIE_NIVEAU_1"'
+    description: Hiérarchie niveau 1
+
+  prd_hierarchie_niveau_2:
+    sql: '"PRD_HIERARCHIE_NIVEAU_2"'
+    description: Hiérarchie niveau 2
+
+  prd_hierarchie_niveau_3:
+    sql: '"PRD_HIERARCHIE_NIVEAU_3"'
+    description: Hiérarchie niveau 3
+
+  prd_hierarchie_niveau_4:
+    sql: '"PRD_HIERARCHIE_NIVEAU_4"'
+    description: Hiérarchie niveau 4
+
+  prd_hierarchie_niveau_5:
+    sql: '"PRD_HIERARCHIE_NIVEAU_5"'
+    description: Hiérarchie niveau 5
+
+  prd_activite_code:
+    sql: '"PRD_ACTIVITE_CODE"'
+    description: Activité
+
+  prd_activite_lib:
+    sql: '"PRD_ACTIVITE_LIB"'
+    description: Libellé activité
+
+  prd_univers_code:
+    sql: '"PRD_UNIVERS_CODE"'
+    description: Univers
+
+  prd_univers_lib:
+    sql: '"PRD_UNIVERS_LIB"'
+    description: Libellé univers
+
+  prd_rayon_code:
+    sql: '"PRD_RAYON_CODE"'
+    description: Rayon
+
+  prd_rayon_lib:
+    sql: '"PRD_RAYON_LIB"'
+    description: Libellé rayon
+
+  prd_famille_code:
+    sql: '"PRD_FAMILLE_CODE"'
+    description: Famille
+
+  prd_famille_lib:
+    sql: '"PRD_FAMILLE_LIB"'
+    description: Libellé famille
+
+  prd_sous_famille_code:
+    sql: '"PRD_SOUS_FAMILLE_CODE"'
+    description: Sous famille
+
+  prd_sous_famille_lib:
+    sql: '"PRD_SOUS_FAMILLE_LIB"'
+    description: Libellé sous famille
+
+  prd_theme_code:
+    sql: '"PRD_THEME_CODE"'
+    description: Thème
+
+  prd_theme_lib:
+    sql: '"PRD_THEME_LIB"'
+    description: Libellé thème
+
+  prd_fonction_code:
+    sql: '"PRD_FONCTION_CODE"'
+    description: Fonction
+
+  prd_fonction_lib:
+    sql: '"PRD_FONCTION_LIB"'
+    description: Libellé fonction
+
+  prd_marque_code:
+    sql: '"PRD_MARQUE_CODE"'
+    description: Marque
+
+  prd_marque_lib:
+    sql: '"PRD_MARQUE_LIB"'
+    description: Libellé marque
+
+  prd_licence_code:
+    sql: '"PRD_LICENCE_CODE"'
+    description: Licence
+
+  prd_licence_lib:
+    sql: '"PRD_LICENCE_LIB"'
+    description: Libellé licence
+
+  prd_procede_fabrication_code:
+    sql: '"PRD_PROCEDE_FABRICATION_CODE"'
+    description: Fabrication
+
+  prd_procede_fabrication_lib:
+    sql: '"PRD_PROCEDE_FABRICATION_LIB"'
+    description: Libellé fabrication
+
+  prd_spec_pays_code:
+    sql: '"PRD_SPEC_PAYS_CODE"'
+    description: Classification LN
+
+  prd_spec_pays_lib:
+    sql: '"PRD_SPEC_PAYS_LIB"'
+    description: Libellé classification LN
+
+  prd_kit_nb_colis:
+    sql: '"PRD_KIT_NB_COLIS"'
+    description: Nombre élément du kit
+
+  prd_kit_num_composant:
+    sql: '"PRD_KIT_NUM_COMPOSANT"'
+    description: Numéro élément du kit
+
+  prd_groupe_taille_code:
+    sql: '"PRD_GROUPE_TAILLE_CODE"'
+    description: Groupe de taille
+
+  prd_taille_code:
+    sql: '"PRD_TAILLE_CODE"'
+    description: Taille
+
+  prd_taille_lib:
+    sql: '"PRD_TAILLE_LIB"'
+    description: Libellé taille
+
+  prd_couleur_code:
+    sql: '"PRD_COULEUR_CODE"'
+    description: Couleur
+
+  prd_couleur_lib:
+    sql: '"PRD_COULEUR_LIB"'
+    description: Libellé couleur
+
+  prd_bonnet_code:
+    sql: '"PRD_BONNET_CODE"'
+    description: Bonnet
+
+  prd_bonnet_lib:
+    sql: '"PRD_BONNET_LIB"'
+    description: Libellé bonnet
+
+  prd_actua_rajout:
+    sql: '"PRD_ACTUA_RAJOUT"'
+    description: Ajout article en cours de saison
+
+  prd_chef_produit:
+    sql: '"PRD_CHEF_PRODUIT"'
+    description: Chef de produit
+
+  prd_partenaire:
+    sql: '"PRD_PARTENAIRE"'
+    description: Partenaire
+
+  prd_modeliste:
+    sql: '"PRD_MODELISTE"'
+    description: Modeliste
+
+  prd_taille_lot:
+    sql: '"PRD_TAILLE_LOT"'
+    description: Taille lot
+
+  prd_poids_net:
+    sql: '"PRD_POIDS_NET"'
+    description: Poids net
+
+  prd_poids_brut:
+    sql: '"PRD_POIDS_BRUT"'
+    description: Poids brut
+
+  prd_volume:
+    sql: '"PRD_VOLUME"'
+    description: Volume
+
+  prd_hauteur:
+    sql: '"PRD_HAUTEUR"'
+    description: Hauteur
+
+  prd_longueur:
+    sql: '"PRD_LONGUEUR"'
+    description: Longueur
+
+  prd_largeur:
+    sql: '"PRD_LARGEUR"'
+    description: Largeur
+
+  prd_unite_mesure:
+    sql: '"PRD_UNITE_MESURE"'
+    description: Unité mesure
+
+  prd_grp_appro_code:
+    sql: '"PRD_GRP_APPRO_CODE"'
+    description: Groupe approvisionnement
+
+  prd_grp_appro_lib:
+    sql: '"PRD_GRP_APPRO_LIB"'
+    description: Libellé groupe approvisionnement
+
+  prd_gestion_stock_code:
+    sql: '"PRD_GESTION_STOCK_CODE"'
+    description: Gérer en stock
+
+  prd_gestion_stock_lib:
+    sql: '"PRD_GESTION_STOCK_LIB"'
+    description: Libellé gérer en stock
+
+  prd_cdt_stat_vente_code:
+    sql: '"PRD_CDT_STAT_VENTE_CODE"'
+    description: Marque ou MDD
+
+  prd_cdt_stat_vente_lib:
+    sql: '"PRD_CDT_STAT_VENTE_LIB"'
+    description: Libellé marque ou MDD
+
+  prd_cat_douaniere:
+    sql: '"PRD_CAT_DOUANIERE"'
+    description: Catégorie douanière
+
+  prd_code_config_assort:
+    sql: '"PRD_CODE_CONFIG_ASSORT"'
+    description: Configuration assortiment
+
+  prd_soumis_royalties:
+    sql: '"PRD_SOUMIS_ROYALTIES"'
+    description: Soumis royalities
+
+  prd_personnage_code:
+    sql: '"PRD_PERSONNAGE_CODE"'
+    description: Personnage
+
+  prd_personnage_lib:
+    sql: '"PRD_PERSONNAGE_LIB"'
+    description: Libellé personnage
+
+  prd_secteur_activite_code:
+    sql: '"PRD_SECTEUR_ACTIVITE_CODE"'
+    description: Secteur activité
+
+  prd_secteur_activite_lib:
+    sql: '"PRD_SECTEUR_ACTIVITE_LIB"'
+    description: Libellé secteur activité
+
+  prd_top_1400:
+    sql: '"PRD_TOP_1400"'
+    description: Puériculture textile
+
+  prd_hierarchie_niveau_1_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_1_LIB"'
+    description: Libellé hiérarchie niveau 1
+
+  prd_hierarchie_niveau_2_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_2_LIB"'
+    description: Libellé hiérarchie niveau 2
+
+  prd_hierarchie_niveau_3_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_3_LIB"'
+    description: Libellé hiérarchie niveau 3
+
+  prd_hierarchie_niveau_4_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_4_LIB"'
+    description: Libellé hiérarchie niveau 4
+
+  prd_hierarchie_niveau_5_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_5_LIB"'
+    description: Libellé hiérarchie niveau 5
+
+  prd_perimetre:
+    sql: '"PRD_PERIMETRE"'
+    description: Périmètre
+
+  prd_pays_origine:
+    sql: '"PRD_PAYS_ORIGINE"'
+    description: Pays origine
+
+  prd_livraison_directe_code:
+    sql: '"PRD_LIVRAISON_DIRECTE_CODE"'
+    description: Commande directe
+
+  prd_livraison_directe_lib:
+    sql: '"PRD_LIVRAISON_DIRECTE_LIB"'
+    description: Libellé commande directe
+
+  prd_date_mep:
+    sql: '"PRD_DATE_MEP"'
+    description: Date prochaine commande
+
+  prd_appli_ori:
+    sql: '"PRD_APPLI_ORI"'
+    description: Origine
+
+  prd_pers_licence:
+    sql: '"PRD_PERS_LICENCE"'
+    description: Licence
+
+  prd_groupe_taille_lib:
+    sql: '"PRD_GROUPE_TAILLE_LIB"'
+    description: Libellé groupe taille
+
+  prd_essentiel_ln:
+    sql: '"PRD_ESSENTIEL_LN"'
+    description: Classification LN
+
+  prd_prix_achat:
+    sql: '"PRD_PRIX_ACHAT"'
+    description: Prix achat (MITMAS)
+
+  prd_mod_cout:
+    sql: '"PRD_MOD_COUT"'
+    description: Modèle cout
+
+  prd_mod_cout_e18:
+    sql: '"PRD_MOD_COUT_E18"'
+    description: Modèle cout E18
+
+  prd_type_puer:
+    sql: '"PRD_TYPE_PUER"'
+    description: Type puériculture (HARD, SOFT)
+
+measures:
+  count:
+    aggregate_type: count

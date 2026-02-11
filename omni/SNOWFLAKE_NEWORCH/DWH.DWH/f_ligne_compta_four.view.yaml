@@ -1,0 +1,181 @@
+# Reference this view as dwh_dwh__f_ligne_compta_four
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_COMPTA_FOUR
+
+dimensions:
+  cptf_div_code:
+    sql: '"CPTF_DIV_CODE"'
+    description: Code division
+
+  cptf_soc_code:
+    sql: '"CPTF_SOC_CODE"'
+    description: Code société
+
+  cptf_annee:
+    sql: '"CPTF_ANNEE"'
+    description: Année
+
+  cptf_num_journal:
+    sql: '"CPTF_NUM_JOURNAL"'
+    description: N° journal comptable
+
+  cptf_num_seq_journal:
+    sql: '"CPTF_NUM_SEQ_JOURNAL"'
+    description: N° séquence journal comptable
+
+  cptf_trans_code:
+    sql: '"CPTF_TRANS_CODE"'
+    description: Code transformation
+
+  cptf_beneficiaire:
+    sql: '"CPTF_BENEFICIAIRE"'
+    description: Bénéficiaire
+
+  cptf_fournisseur:
+    sql: '"CPTF_FOURNISSEUR"'
+    description: fournisseur
+
+  cptf_num_fact:
+    sql: '"CPTF_NUM_FACT"'
+    description: N° facture
+
+  cptf_annee_fact:
+    sql: '"CPTF_ANNEE_FACT"'
+    description: Année de la facture
+
+  cptf_piece_just_type:
+    sql: '"CPTF_PIECE_JUST_TYPE"'
+    description: Type pièce justificative
+
+  cptf_piece_just_num:
+    sql: '"CPTF_PIECE_JUST_NUM"'
+    description: N° pièce justificative
+
+  cptf_type_info:
+    sql: '"CPTF_TYPE_INFO"'
+    description: Type info
+
+  cptf_libelle_trans:
+    sql: '"CPTF_LIBELLE_TRANS"'
+    description: Libellé transformation
+
+  cptf_user_auto:
+    sql: '"CPTF_USER_AUTO"'
+    description: Utilisateur auto
+
+  cptf_blocage_paie:
+    sql: '"CPTF_BLOCAGE_PAIE"'
+    description: Blocage paie
+
+  cptf_bloque_par:
+    sql: '"CPTF_BLOQUE_PAR"'
+    description: Bloquée par
+
+  cptf_date_blocage:
+    sql: '"CPTF_DATE_BLOCAGE"'
+    description: Date de blocage
+
+  cptf_paie_auto:
+    sql: '"CPTF_PAIE_AUTO"'
+    description: Paiement automatique
+
+  cptf_grp_four:
+    sql: '"CPTF_GRP_FOUR"'
+    description: Groupe fournisseur
+
+  cptf_num_banque:
+    sql: '"CPTF_NUM_BANQUE"'
+    description: N° banque
+
+  cptf_devise:
+    sql: '"CPTF_DEVISE"'
+    description: Code devise
+
+  cptf_type_taux:
+    sql: '"CPTF_TYPE_TAUX"'
+    description: Type de taux
+
+  cptf_taux:
+    sql: '"CPTF_TAUX"'
+    description: Taux
+
+  cptf_mt_dev:
+    sql: '"CPTF_MT_DEV"'
+    description: Montant en devise locale
+
+  cptf_mt_tva:
+    sql: '"CPTF_MT_TVA"'
+    description: Montant TVA
+
+  cptf_date_fact:
+    sql: '"CPTF_DATE_FACT"'
+    description: Date facturation
+
+  cptf_date_echea:
+    sql: '"CPTF_DATE_ECHEA"'
+    description: Date échéance
+
+  cptf_date_compta:
+    sql: '"CPTF_DATE_COMPTA"'
+    description: Date comptable
+
+  cptf_cond_escompte:
+    sql: '"CPTF_COND_ESCOMPTE"'
+    description: Condition escompte
+
+  cptf_type_paie:
+    sql: '"CPTF_TYPE_PAIE"'
+    description: Type de paiement
+
+  cptf_mod_paie:
+    sql: '"CPTF_MOD_PAIE"'
+    description: Mode de paiement
+
+  cptf_cond_paie:
+    sql: '"CPTF_COND_PAIE"'
+    description: Condition de paiement
+
+  cptf_code_lettrage:
+    sql: '"CPTF_CODE_LETTRAGE"'
+    description: Code lettrage
+
+  cptf_date_lettrage:
+    sql: '"CPTF_DATE_LETTRAGE"'
+    description: Date lettrage
+
+  cptf_statut_paie:
+    sql: '"CPTF_STATUT_PAIE"'
+    description: Statut paiement
+
+  cptf_statut_remise_paie:
+    sql: '"CPTF_STATUT_REMISE_PAIE"'
+    description: Statut remise paiement
+
+  cptf_date_saisie:
+    sql: '"CPTF_DATE_SAISIE"'
+    description: Date de saisie
+
+  cptf_heure_saisie:
+    sql: '"CPTF_HEURE_SAISIE"'
+    description: Heure de saisie
+
+  cptf_date_mod:
+    sql: '"CPTF_DATE_MOD"'
+    description: Date de modification
+
+  cptf_num_mod:
+    sql: '"CPTF_NUM_MOD"'
+    description: N° de modification
+
+  cptf_user_mod:
+    sql: '"CPTF_USER_MOD"'
+    description: Utilisateur à l'origine de la modification
+
+  cptf_liv_date:
+    sql: '"CPTF_LIV_DATE"'
+    description: Date de livraison
+
+measures:
+  count:
+    aggregate_type: count

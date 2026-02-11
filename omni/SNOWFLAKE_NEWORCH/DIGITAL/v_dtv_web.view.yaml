@@ -1,0 +1,459 @@
+# Reference this view as digital__v_dtv_web
+schema: DIGITAL
+table_name: V_DTV_WEB
+
+dimensions:
+  web_cmd:
+    sql: '"WEB_CMD"'
+    description: Numéro commande
+
+  cletechqlik:
+    sql: '"CLETECHQLIK"'
+    description: Clé technique pour incrémental Qlik
+
+  web_prd_key:
+    sql: '"WEB_PRD_KEY"'
+    description: Code article
+
+  web_prd_code:
+    sql: '"WEB_PRD_CODE"'
+    description: Produit
+
+  web_prx_unit:
+    sql: '"WEB_PRX_UNIT"'
+    description: Prix unitaire payé
+
+  web_prx_base:
+    sql: '"WEB_PRX_BASE"'
+    description: Prix de base
+
+  web_sais_actuel:
+    sql: '"WEB_SAIS_ACTUEL"'
+    description: Saison actuelle
+
+  web_statut:
+    sql: '"WEB_STATUT"'
+    description: Statut
+
+  web_mono_multi:
+    sql: '"WEB_MONO_MULTI"'
+    description: Cmd MONO / MULT
+
+  web_cat_cmd:
+    sql: '"WEB_CAT_CMD"'
+    description: Catégorie commande
+
+  web_dt_cmd:
+    sql: '"WEB_DT_CMD"'
+    description: Date & heure de commande
+
+  web_qte_cmd:
+    sql: '"WEB_QTE_CMD"'
+    description: Quantité
+
+  web_mt_ht_cmd:
+    sql: '"WEB_MT_HT_CMD"'
+    description: Montant HT commande WEB
+
+  web_mt_ttc_cmd:
+    sql: '"WEB_MT_TTC_CMD"'
+    description: Montant TTC commande WEB
+
+  web_rem_cmd:
+    sql: '"WEB_REM_CMD"'
+    description: Montant remise commande WEB
+
+  web_marge_cmd:
+    sql: '"WEB_MARGE_CMD"'
+    description: Marge commande WEB
+
+  web_pre_cmd:
+    sql: '"WEB_PRE_CMD"'
+    description: Prix revient commande WEB
+
+  web_site_ori_key:
+    sql: '"WEB_SITE_ORI_KEY"'
+    description: Site origine
+
+  web_sit_ori:
+    sql: '"WEB_SIT_ORI"'
+    description: Libellé site origine commande
+
+  web_canal_ori:
+    sql: '"WEB_CANAL_ORI"'
+    description: Canal origine
+
+  web_canal_rgp:
+    sql: '"WEB_CANAL_RGP"'
+    description: Regroupement Canal
+
+  web_tx_tva:
+    sql: '"WEB_TX_TVA"'
+    description: Taux TVA
+
+  web_devise:
+    sql: '"WEB_DEVISE"'
+    description: Devise
+
+  web_client:
+    sql: '"WEB_CLIENT"'
+    description: Code client
+
+  web_club:
+    sql: '"WEB_CLUB"'
+    description: Club
+
+  web_dep_pre:
+    sql: '"WEB_DEP_PRE"'
+    description: Code dépôt préparation commande WEB
+
+  web_dt_exp:
+    sql: '"WEB_DT_EXP"'
+    description: Date expédition commande WEB
+
+  web_qte_exp:
+    sql: '"WEB_QTE_EXP"'
+    description: Quantité expédiée commande WEB
+
+  web_mt_ht_exp:
+    sql: '"WEB_MT_HT_EXP"'
+    description: Montant HT expédié
+
+  web_mt_ttc_exp:
+    sql: '"WEB_MT_TTC_EXP"'
+    description: Montant TTC expédié
+
+  web_rem_exp:
+    sql: '"WEB_REM_EXP"'
+    description: Montant remise expédié
+
+  web_marge_exp:
+    sql: '"WEB_MARGE_EXP"'
+    description: Montant marge expédié
+
+  web_delai_exp:
+    sql: '"WEB_DELAI_EXP"'
+    description: Délai expédition
+
+  web_mod_liv:
+    sql: '"WEB_MOD_LIV"'
+    description: Mode livraison
+
+  rgp_web_mod_liv:
+    sql: '"RGP_WEB_MOD_LIV"'
+    description: Regroupement mode livraison
+
+  web_transport:
+    sql: '"WEB_TRANSPORT"'
+    description: Transport
+
+  web_mag_liv:
+    sql: '"WEB_MAG_LIV"'
+    description: Code magasin de livraison
+
+  web_mag_liv_lbl:
+    sql: '"WEB_MAG_LIV_LBL"'
+    description: Code et nom du magasin de livraison
+
+  web_cp_mag_liv:
+    sql: '"WEB_CP_MAG_LIV"'
+    description: Code postal magasin de livraison
+
+  web_ville_mag_liv:
+    sql: '"WEB_VILLE_MAG_LIV"'
+    description: Ville magasin de livraison
+
+  web_pays_mag_liv:
+    sql: '"WEB_PAYS_MAG_LIV"'
+    description: Pays magasin de livraison
+
+  web_offre_mag_liv:
+    sql: '"WEB_OFFRE_MAG_LIV"'
+    description: Type offre magasin de livraison
+
+  web_contrat_mag_liv:
+    sql: '"WEB_CONTRAT_MAG_LIV"'
+    description: Contrat magasin de livraison
+
+  web_region_mag_liv:
+    sql: '"WEB_REGION_MAG_LIV"'
+    description: Région magasin de livraison
+
+  web_mag_ven_tab_lbl:
+    sql: '"WEB_MAG_VEN_TAB_LBL"'
+    description: Code et libellé magasin vendeur tablette
+
+  web_cp_mag_ven_tab:
+    sql: '"WEB_CP_MAG_VEN_TAB"'
+    description: Code postal magasin vendeur tablette
+
+  web_ville_mag_ven_tab:
+    sql: '"WEB_VILLE_MAG_VEN_TAB"'
+    description: Ville magasin vendeur tablette
+
+  web_pays_mag_ven_tab:
+    sql: '"WEB_PAYS_MAG_VEN_TAB"'
+    description: Pays magasin vendeur tablette
+
+  web_offre_mag_ven_tab:
+    sql: '"WEB_OFFRE_MAG_VEN_TAB"'
+    description: Type offre magasin vendeur tablette
+
+  web_contrat_mag_ven_tab:
+    sql: '"WEB_CONTRAT_MAG_VEN_TAB"'
+    description: Contrat magasin vendeur tablette
+
+  web_region_mag_ven_tab:
+    sql: '"WEB_REGION_MAG_VEN_TAB"'
+    description: Région magasin vendeur tablette
+
+  web_mag_prep_lbl:
+    sql: '"WEB_MAG_PREP_LBL"'
+    description: Code et libellé magasin préparation
+
+  web_cp_mag_prep:
+    sql: '"WEB_CP_MAG_PREP"'
+    description: Code postal magasin préparation
+
+  web_ville_mag_prep:
+    sql: '"WEB_VILLE_MAG_PREP"'
+    description: Ville magasin préparation
+
+  web_pays_mag_prep:
+    sql: '"WEB_PAYS_MAG_PREP"'
+    description: Pays magasin préparation
+
+  web_offre_mag_prep:
+    sql: '"WEB_OFFRE_MAG_PREP"'
+    description: Type offre magasin préparation
+
+  web_contrat_mag_prep:
+    sql: '"WEB_CONTRAT_MAG_PREP"'
+    description: Contrat magasin préparation
+
+  web_region_mag_prep:
+    sql: '"WEB_REGION_MAG_PREP"'
+    description: Région magasin préparation
+
+  web_type_mag_prep:
+    sql: '"WEB_TYPE_MAG_PREP"'
+
+  web_mag_retour_lbl:
+    sql: '"WEB_MAG_RETOUR_LBL"'
+    description: Code et libellé magasin retour
+
+  web_cp_mag_retour:
+    sql: '"WEB_CP_MAG_RETOUR"'
+    description: Code postal magasin retour
+
+  web_ville_mag_retour:
+    sql: '"WEB_VILLE_MAG_RETOUR"'
+    description: Ville magasin retour
+
+  web_pays_mag_retour:
+    sql: '"WEB_PAYS_MAG_RETOUR"'
+    description: Pays magasin retour
+
+  web_offre_mag_retour:
+    sql: '"WEB_OFFRE_MAG_RETOUR"'
+    description: Type offre magasin retour
+
+  web_contrat_mag_retour:
+    sql: '"WEB_CONTRAT_MAG_RETOUR"'
+    description: Contrat magasin retour
+
+  web_region_mag_retour:
+    sql: '"WEB_REGION_MAG_RETOUR"'
+    description: Région magasin retour
+
+  web_mag_ven_tab:
+    sql: '"WEB_MAG_VEN_TAB"'
+    description: Code magasin vendeur tablette
+
+  web_mag_tab:
+    sql: '"WEB_MAG_TAB"'
+    description: Code vendeur (tablette vendeur)
+
+  web_statut_ligne:
+    sql: '"WEB_STATUT_LIGNE"'
+    description: Statut ligne
+
+  web_statut_cmd:
+    sql: '"WEB_STATUT_CMD"'
+    description: Statut commande
+
+  web_mag_gestion:
+    sql: '"WEB_MAG_GESTION"'
+    description: Magasin de gestion
+
+  web_qte_ann_mag:
+    sql: '"WEB_QTE_ANN_MAG"'
+    description: Quantité annulée magasin
+
+  web_mt_ttc_ann_mag:
+    sql: '"WEB_MT_TTC_ANN_MAG"'
+    description: Montant TTC annulé en magasin
+
+  web_qte_ann_erp:
+    sql: '"WEB_QTE_ANN_ERP"'
+    description: DQuantité annulée entrepot
+
+  web_mt_ttc_ann_erp:
+    sql: '"WEB_MT_TTC_ANN_ERP"'
+    description: Montant annulé entrepot
+
+  web_qte_ann:
+    sql: '"WEB_QTE_ANN"'
+    description: Quantité annulée
+
+  web_mt_ttc_ann:
+    sql: '"WEB_MT_TTC_ANN"'
+    description: Montant TTC annulée
+
+  web_qte_retour:
+    sql: '"WEB_QTE_RETOUR"'
+    description: Quantité retour
+
+  web_dep_retour:
+    sql: '"WEB_DEP_RETOUR"'
+    description: Dépôt retour
+
+  web_mt_retour:
+    sql: '"WEB_MT_RETOUR"'
+    description: Montant retour
+
+  web_cons_carte_dep_code:
+    sql: '"WEB_CONS_CARTE_DEP_CODE"'
+    description: Magasin origine de la fidelité
+
+  web_saison:
+    sql: '"WEB_SAISON"'
+    description: Saison
+
+  anciennete_collection:
+    sql: '"ANCIENNETE_COLLECTION"'
+    description: Ancienneté collection
+
+  collection:
+    sql: '"COLLECTION"'
+    description: COLLECTION
+
+  cons_code:
+    sql: '"CONS_CODE"'
+    description: Code consommateur
+
+  cons_nom:
+    sql: '"CONS_NOM"'
+    description: Nom consommateur
+
+  cons_prenom:
+    sql: '"CONS_PRENOM"'
+    description: Prénom consommateur
+
+  cons_telephone_1:
+    sql: '"CONS_TELEPHONE_1"'
+    description: Mobile consommateur
+
+  cons_email:
+    sql: '"CONS_EMAIL"'
+    description: Email consommateur
+
+  cons_adr_princ_ville:
+    sql: '"CONS_ADR_PRINC_VILLE"'
+    description: Ville consommateur
+
+  cons_adr_princ_code_postal:
+    sql: '"CONS_ADR_PRINC_CODE_POSTAL"'
+    description: Code postal consommateur
+
+  pays_libelle:
+    sql: '"PAYS_LIBELLE"'
+    description: Pays consommateur
+
+  web_dt_retour:
+    sql: '"WEB_DT_RETOUR"'
+    description: Date retour
+
+  web_dt_ann:
+    sql: '"WEB_DT_ANN"'
+    description: Date annulation
+
+  flag_promo:
+    sql: '"FLAG_PROMO"'
+    description: Produit en promo
+
+  web_commande_club:
+    sql: '"WEB_COMMANDE_CLUB"'
+    description: Commande club OUI / NON
+
+  web_motif_retour:
+    sql: '"WEB_MOTIF_RETOUR"'
+    description: Motif retour
+
+  web_etat_retour:
+    sql: '"WEB_ETAT_RETOUR"'
+    description: Etat retour
+
+  web_nav_device:
+    sql: '"WEB_NAV_DEVICE"'
+    description: Device
+
+  web_nav_environment:
+    sql: '"WEB_NAV_ENVIRONMENT"'
+    description: Environnment
+
+  web_statut_cmd_sfra:
+    sql: '"WEB_STATUT_CMD_SFRA"'
+    description: Statut commande sfra
+
+  web_statut_ligne_sfra:
+    sql: '"WEB_STATUT_LIGNE_SFRA"'
+    description: Statut ligne sfra
+
+  statut_cmd_web_lib:
+    sql: '"STATUT_CMD_WEB_LIB"'
+    description: Libellé Statut commande web
+
+  statut_lig_web_lib:
+    sql: '"STATUT_LIG_WEB_LIB"'
+    description: Libellé statut ligne de commande
+
+  web_tracking:
+    sql: '"WEB_TRACKING"'
+    description: Tracking commande
+
+  tracking:
+    sql: '"TRACKING"'
+    description: Numéro tracking
+
+  web_date_mdf:
+    sql: '"WEB_DATE_MDF"'
+    description: Date de modification pour incrémental
+
+  prd_longueur:
+    sql: '"PRD_LONGUEUR"'
+    description: Longueur produit
+
+  prd_largeur:
+    sql: '"PRD_LARGEUR"'
+    description: Largeur produit
+
+  prd_hauteur:
+    sql: '"PRD_HAUTEUR"'
+    description: hauteur produit
+
+  prd_poids_brut:
+    sql: '"PRD_POIDS_BRUT"'
+    description: Poids produit
+
+  prd_statut_depot:
+    sql: '"PRD_STATUT_DEPOT"'
+    description: Code statut dépôt
+
+  prd_categorie_budget:
+    sql: '"PRD_CATEGORIE_BUDGET"'
+    description: Catégorie budget
+
+measures:
+  count:
+    aggregate_type: count

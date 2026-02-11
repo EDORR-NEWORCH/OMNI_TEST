@@ -1,0 +1,89 @@
+# Reference this view as dwh_dwh__d_plm_refco
+catalog: DWH
+schema: DWH
+table_name: D_PLM_REFCO
+
+dimensions:
+  refco:
+    sql: '"REFCO"'
+    description: refco du produit
+
+  code_couleur:
+    sql: '"CODE_COULEUR"'
+    description: code couleur
+
+  couleur:
+    sql: '"COULEUR"'
+    description: libellé couleur
+
+  active:
+    sql: '"ACTIVE"'
+    description: flag active
+
+  date_creation:
+    sql: '"DATE_CREATION"'
+    description: Date de création
+
+  date_modification:
+    sql: '"DATE_MODIFICATION"'
+    description: date de modification
+
+  saison:
+    sql: '"SAISON"'
+    description: saison
+
+  reference:
+    sql: '"REFERENCE"'
+    description: référence du produit
+
+  report:
+    sql: '"REPORT"'
+    description: Flag report
+
+  code:
+    sql: '"CODE"'
+    description: refco M3 du prduit
+
+  commentaires:
+    sql: '"COMMENTAIRES"'
+    description: commentaires
+
+  etape_annulee:
+    sql: '"ETAPE_ANNULEE"'
+    description: etape annulée
+
+  op:
+    sql: '"OP"'
+    description: OP
+
+  podium:
+    sql: '"PODIUM"'
+    description: Podium
+
+  presse:
+    sql: '"PRESSE"'
+    description: Flag presse
+
+  surtable:
+    sql: '"SURTABLE"'
+    description: SurTable
+
+  vitrine:
+    sql: '"VITRINE"'
+    description: Vitrine
+
+  vitrine_bis:
+    sql: '"VITRINE_BIS"'
+    description: Vitrine_bis
+
+  permanent:
+    sql: '"PERMANENT"'
+    description: Flag permanent
+
+  date_mep:
+    sql: '"DATE_MEP"'
+    description: date MEP
+
+measures:
+  count:
+    aggregate_type: count

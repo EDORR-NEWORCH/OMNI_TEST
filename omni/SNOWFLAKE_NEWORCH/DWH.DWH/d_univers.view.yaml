@@ -1,0 +1,21 @@
+# Reference this view as dwh_dwh__d_univers
+catalog: DWH
+schema: DWH
+table_name: D_UNIVERS
+
+dimensions:
+  unv_code:
+    sql: '"UNV_CODE"'
+    description: Code hiérarchie
+
+  unv_lib_long:
+    sql: '"UNV_LIB_LONG"'
+    description: Libellé court
+
+  unv_lib_court:
+    sql: '"UNV_LIB_COURT"'
+    description: Libellé long
+
+measures:
+  count:
+    aggregate_type: count

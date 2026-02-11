@@ -1,0 +1,106 @@
+# Reference this view as dwh_dwh__f_commande_retail_entete
+catalog: DWH
+schema: DWH
+table_name: F_COMMANDE_RETAIL_ENTETE
+
+dimensions:
+  cmd_entete_key:
+    sql: '"CMD_ENTETE_KEY"'
+    description: Clé technique d'en tête de commande pour faciliter les contraintes
+      d 'intégrité
+
+  cmd_souche:
+    sql: '"CMD_SOUCHE"'
+    description: Souche de la commande
+
+  cmd_numero:
+    sql: '"CMD_NUMERO"'
+    description: N° de la commande
+
+  cmd_date_cmd:
+    sql: '"CMD_DATE_CMD"'
+    description: Date de la commande
+
+  cmd_date_cmd_num:
+    sql: '"CMD_DATE_CMD_NUM"'
+    description: Date de la commande au format numérique
+
+  cmd_etablissement:
+    sql: '"CMD_ETABLISSEMENT"'
+    description: Code magasin de la prise de la commande
+
+  cmd_client:
+    sql: '"CMD_CLIENT"'
+    description: Code client de la commande
+
+  cmd_statut:
+    sql: '"CMD_STATUT"'
+    description: Statut de la commande
+
+  cmd_type:
+    sql: '"CMD_TYPE"'
+    description: Type de la commande
+
+  cmd_ref_externe:
+    sql: '"CMD_REF_EXTERNE"'
+    description: Référence externe de la commande
+
+  cmd_ref_ldn:
+    sql: '"CMD_REF_LDN"'
+    description: Référence LN de la commande
+
+  cmd_devise:
+    sql: '"CMD_DEVISE"'
+    description: Code devise de la commande
+
+  cmd_mag_retrait:
+    sql: '"CMD_MAG_RETRAIT"'
+    description: Magasin de retrait de la commande
+
+  cmd_qte_cmd:
+    sql: '"CMD_QTE_CMD"'
+    description: Quantité commandée de la commande
+
+  cmd_qte_rec:
+    sql: '"CMD_QTE_REC"'
+    description: Quantité réceptionnée de la commande
+
+  cmd_qte_reg:
+    sql: '"CMD_QTE_REG"'
+    description: Quantité règlée de la commande
+
+  cmd_mt_acompte_loc:
+    sql: '"CMD_MT_ACOMPTE_LOC"'
+    description: Montant acompte de la commande en devise locale
+
+  cmd_mt_acompte_conso:
+    sql: '"CMD_MT_ACOMPTE_CONSO"'
+    description: Montant acompte de la commande en devise EURO
+
+  cmd_mt_reglement_loc:
+    sql: '"CMD_MT_REGLEMENT_LOC"'
+    description: Montant règlement de la commande en devise locale
+
+  cmd_mt_reglement_conso:
+    sql: '"CMD_MT_REGLEMENT_CONSO"'
+    description: Montant règlement de la commande en devise EURO
+
+  cmd_mt_remise_loc:
+    sql: '"CMD_MT_REMISE_LOC"'
+    description: Montant de la remise de la commande en devise locale
+
+  cmd_mt_remise_conso:
+    sql: '"CMD_MT_REMISE_CONSO"'
+    description: Montant de la remise de la commande en devise EURO
+
+  cmd_mt_ligne_loc:
+    sql: '"CMD_MT_LIGNE_LOC"'
+    description: Montant ligne de la commande en devise locale
+
+  cmd_mt_ligne_conso:
+    sql: '"CMD_MT_LIGNE_CONSO"'
+    description: Montant ligne de la commande en devise EURO
+
+measures:
+  count:
+    aggregate_type: count

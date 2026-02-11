@@ -1,0 +1,77 @@
+# Reference this view as dwh_dwh__d_structure_segment
+catalog: DWH
+schema: DWH
+table_name: D_STRUCTURE_SEGMENT
+
+dimensions:
+  sts_div_code:
+    sql: '"STS_DIV_CODE"'
+    description: Code division
+
+  sts_soc_code:
+    sql: '"STS_SOC_CODE"'
+    description: Code société
+
+  sts_struct_segm:
+    sql: '"STS_STRUCT_SEGM"'
+    description: Code structure segment
+
+  sts_id_struct_comptable:
+    sql: '"STS_ID_STRUCT_COMPTABLE"'
+    description: Id structure comptable
+
+  sts_struct_comptable:
+    sql: '"STS_STRUCT_COMPTABLE"'
+    description: Structure comptable
+
+  sts_niv_struct:
+    sql: '"STS_NIV_STRUCT"'
+    description: Niveau structure
+
+  sts_id_segm:
+    sql: '"STS_ID_SEGM"'
+    description: ID Segment
+
+  sts_periode_deb:
+    sql: '"STS_PERIODE_DEB"'
+    description: Période début segment
+
+  sts_periode_fin:
+    sql: '"STS_PERIODE_FIN"'
+    description: Période fin segment
+
+  sts_seq_niv:
+    sql: '"STS_SEQ_NIV"'
+    description: Niveau séquence
+
+  sts_segm_libelle:
+    sql: '"STS_SEGM_LIBELLE"'
+    description: Libellé segment
+
+  sts_segm_nom:
+    sql: '"STS_SEGM_NOM"'
+    description: Nom segment
+
+  sts_date_saisie:
+    sql: '"STS_DATE_SAISIE"'
+    description: Date de saisie du segment
+
+  sts_heure_saisie:
+    sql: '"STS_HEURE_SAISIE"'
+    description: Heure de saisie du segment
+
+  sts_date_mod:
+    sql: '"STS_DATE_MOD"'
+    description: Date de modification
+
+  sts_num_mod:
+    sql: '"STS_NUM_MOD"'
+    description: N° de modification
+
+  sts_user_mod:
+    sql: '"STS_USER_MOD"'
+    description: Utilisateurs à l'origine de la modification
+
+measures:
+  count:
+    aggregate_type: count

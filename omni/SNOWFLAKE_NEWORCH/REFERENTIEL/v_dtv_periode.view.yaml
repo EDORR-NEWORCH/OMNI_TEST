@@ -1,0 +1,19 @@
+# Reference this view as referentiel__v_dtv_periode
+schema: REFERENTIEL
+table_name: V_DTV_PERIODE
+
+dimensions:
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Date calendrier
+
+  periode:
+    sql: '"PERIODE"'
+    description: Période calendrier
+
+  numperiode:
+    sql: '"NUMPERIODE"'
+
+measures:
+  count:
+    aggregate_type: count

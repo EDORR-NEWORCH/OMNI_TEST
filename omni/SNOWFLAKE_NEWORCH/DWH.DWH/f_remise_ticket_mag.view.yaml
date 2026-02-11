@@ -1,0 +1,71 @@
+# Reference this view as dwh_dwh__f_remise_ticket_mag
+catalog: DWH
+schema: DWH
+table_name: F_REMISE_TICKET_MAG
+
+dimensions:
+  rem_tck_id:
+    sql: '"REM_TCK_ID"'
+    format: ID
+    description: ID
+
+  rem_tck_num_ligne:
+    sql: '"REM_TCK_NUM_LIGNE"'
+    description: Numéro de ligne du ticket
+
+  rem_rang:
+    sql: '"REM_RANG"'
+    description: Rang de la remise
+
+  rem_tck_date:
+    sql: '"REM_TCK_DATE"'
+    description: Date
+
+  rem_prd_id:
+    sql: '"REM_PRD_ID"'
+    format: ID
+    description: ID produit
+
+  rem_ett_id:
+    sql: '"REM_ETT_ID"'
+    format: ID
+    description: ID magasin
+
+  rem_id:
+    sql: '"REM_ID"'
+    format: ID
+    description: ID remise
+
+  rem_org_id:
+    sql: '"REM_ORG_ID"'
+    format: ID
+    description: ID type de la remise
+
+  rem_cond_id:
+    sql: '"REM_COND_ID"'
+    format: ID
+    description: ID condition commerciale
+
+  rem_mt:
+    sql: '"REM_MT"'
+    description: MT remise locale
+
+  rem_mt_conso:
+    sql: '"REM_MT_CONSO"'
+    description: MT remise consolidée
+
+  rem_dev_loc:
+    sql: '"REM_DEV_LOC"'
+    description: Devise locale
+
+  rem_dev_conso:
+    sql: '"REM_DEV_CONSO"'
+    description: Devise consolidée
+
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Date
+
+measures:
+  count:
+    aggregate_type: count

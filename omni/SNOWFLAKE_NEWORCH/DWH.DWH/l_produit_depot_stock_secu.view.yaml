@@ -1,0 +1,21 @@
+# Reference this view as dwh_dwh__l_produit_depot_stock_secu
+catalog: DWH
+schema: DWH
+table_name: L_PRODUIT_DEPOT_STOCK_SECU
+
+dimensions:
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  stk_secu:
+    sql: '"STK_SECU"'
+    description: Stock sécurité
+
+measures:
+  count:
+    aggregate_type: count

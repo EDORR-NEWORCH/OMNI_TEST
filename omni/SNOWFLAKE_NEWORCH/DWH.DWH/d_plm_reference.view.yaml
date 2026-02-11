@@ -1,0 +1,237 @@
+# Reference this view as dwh_dwh__d_plm_reference
+catalog: DWH
+schema: DWH
+table_name: D_PLM_REFERENCE
+
+dimensions:
+  reference:
+    sql: '"REFERENCE"'
+    description: référence du produit
+
+  ref_actif:
+    sql: '"REF_ACTIF"'
+    description: Flag référence active
+
+  ref_description:
+    sql: '"REF_DESCRIPTION"'
+    description: Description référence
+
+  ref_date_creat:
+    sql: '"REF_DATE_CREAT"'
+    description: Date de création de la référence
+
+  code_produit:
+    sql: '"CODE_PRODUIT"'
+    description: référence du produit M3
+
+  saison:
+    sql: '"SAISON"'
+    description: Code saison de la référence
+
+  saison_lib:
+    sql: '"SAISON_LIB"'
+    description: Libellé saison de la référence
+
+  statut_saison:
+    sql: '"STATUT_SAISON"'
+    description: Statut de la saison de la référence
+
+  code_act:
+    sql: '"CODE_ACT"'
+    description: Code activité/univers de la référence
+
+  act_univers:
+    sql: '"ACT_UNIVERS"'
+    description: Libellé activité/univers de la référence
+
+  code_rayon:
+    sql: '"CODE_RAYON"'
+    description: Code rayon de la référence
+
+  rayon:
+    sql: '"RAYON"'
+    description: Libellé rayon de la référence
+
+  code_sous_fam:
+    sql: '"CODE_SOUS_FAM"'
+    description: Code famille/sous-famille de la référence
+
+  sous_famille:
+    sql: '"SOUS_FAMILLE"'
+    description: libellé famille/sous-famille de la référence
+
+  code_theme:
+    sql: '"CODE_THEME"'
+    description: Code thème de la référence
+
+  theme:
+    sql: '"THEME"'
+    description: Libellé thème de la référence
+
+  acheteur:
+    sql: '"ACHETEUR"'
+    description: L'acheteur
+
+  chefproduit:
+    sql: '"CHEFPRODUIT"'
+    description: Le/la chef de produit
+
+  modeliste:
+    sql: '"MODELISTE"'
+    description: Le/la modéliste
+
+  styliste:
+    sql: '"STYLISTE"'
+    description: Le/la styliste
+
+  licence:
+    sql: '"LICENCE"'
+    description: Code licence de la référence
+
+  personnage:
+    sql: '"PERSONNAGE"'
+    description: Code personnage de la référence
+
+  royalties:
+    sql: '"ROYALTIES"'
+    description: Royalties
+
+  ok_m3:
+    sql: '"OK_M3"'
+    description: Flag export vers M3
+
+  ok_target:
+    sql: '"OK_TARGET"'
+    description: Fmag cible PA atteinte
+
+  composant_1:
+    sql: '"COMPOSANT_1"'
+    description: Composant no 1
+
+  composant_2:
+    sql: '"COMPOSANT_2"'
+    description: Composant no 2
+
+  composant_3:
+    sql: '"COMPOSANT_3"'
+    description: Composant no 3
+
+  composant_4:
+    sql: '"COMPOSANT_4"'
+    description: Composant no 4
+
+  composant_5:
+    sql: '"COMPOSANT_5"'
+    description: Composant no 5
+
+  composant_6:
+    sql: '"COMPOSANT_6"'
+    description: Composant no 6
+
+  composant_7:
+    sql: '"COMPOSANT_7"'
+    description: Composant no 7
+
+  actua:
+    sql: '"ACTUA"'
+    description: Flag traitement de la référence à la fin de la saison
+
+  nomenclature:
+    sql: '"NOMENCLATURE"'
+    description: Nomenclature
+
+  madein:
+    sql: '"MADEIN"'
+    description: Pays de fabrication
+
+  testqualite:
+    sql: '"TESTQUALITE"'
+    description: Statut des tests de qualités
+
+  seminaire:
+    sql: '"SEMINAIRE"'
+    description: Période du séminaire
+
+  saisonnalite:
+    sql: '"SAISONNALITE"'
+    description: Entrée, milieu ou fin de saison
+
+  lot:
+    sql: '"LOT"'
+    description: lot
+
+  libelle_licence:
+    sql: '"LIBELLE_LICENCE"'
+    description: Libellé licence
+
+  libelle_personnage:
+    sql: '"LIBELLE_PERSONNAGE"'
+    description: Libellé personnage
+
+  grille_taille:
+    sql: '"GRILLE_TAILLE"'
+    description: Grille de taille
+
+  fonction:
+    sql: '"FONCTION"'
+    description: Code fonction
+
+  libelle_fonction:
+    sql: '"LIBELLE_FONCTION"'
+    description: Libellé fonction
+
+  userid:
+    sql: '"USERID"'
+    description: Utilisateur PLM
+
+  hs_code:
+    sql: '"HS_CODE"'
+    description: Code douanier
+
+  procede_fabrication:
+    sql: '"PROCEDE_FABRICATION"'
+    description: Procédé de fabrication
+
+  soumis_royalties:
+    sql: '"SOUMIS_ROYALTIES"'
+    description: Flah soulis au royalties
+
+  saisonoriginal:
+    sql: '"SAISONORIGINAL"'
+    description: Premiere saison
+
+  famille:
+    sql: '"FAMILLE"'
+    description: Code famille
+
+  libelle_famille:
+    sql: '"LIBELLE_FAMILLE"'
+    description: Libellé famille
+
+  permanent:
+    sql: '"PERMANENT"'
+    description: Flag permanent
+
+  reconduit:
+    sql: '"RECONDUIT"'
+    description: Flag reconduit
+
+  report_non_recept:
+    sql: '"REPORT_NON_RECEPT"'
+    description: Report de saison sur non reception
+
+  report_recept:
+    sql: '"REPORT_RECEPT"'
+    description: Report de saison sur reception
+
+  typologie:
+    sql: '"TYPOLOGIE"'
+    description: Typologie
+
+  libelle_groupe_famille:
+    sql: '"LIBELLE_GROUPE_FAMILLE"'
+    description: Libellé groupe de famille
+
+measures:
+  count:
+    aggregate_type: count

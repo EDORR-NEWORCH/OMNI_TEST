@@ -1,0 +1,49 @@
+# Reference this view as dwh_dwh__d_plm_utilisateurs
+catalog: DWH
+schema: DWH
+table_name: D_PLM_UTILISATEURS
+
+dimensions:
+  userid:
+    sql: '"USERID"'
+    description: Code utilisateur
+
+  nom:
+    sql: '"NOM"'
+    description: Nom utilisateur
+
+  prenom:
+    sql: '"PRENOM"'
+    description: Prénom utilisateur
+
+  est_acheteur:
+    sql: '"EST_ACHETEUR"'
+    description: Flag acheteur
+
+  est_ass_prod:
+    sql: '"EST_ASS_PROD"'
+    description: Flag assistante production
+
+  est_chef_produit:
+    sql: '"EST_CHEF_PRODUIT"'
+    description: Flag chef de produit
+
+  est_modeliste:
+    sql: '"EST_MODELISTE"'
+    description: Flag modéliste
+
+  est_styliste:
+    sql: '"EST_STYLISTE"'
+    description: Flag styliste
+
+  email:
+    sql: '"EMAIL"'
+    description: Email
+
+  actif:
+    sql: '"ACTIF"'
+    description: Flag actif
+
+measures:
+  count:
+    aggregate_type: count

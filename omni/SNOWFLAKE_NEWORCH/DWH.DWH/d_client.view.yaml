@@ -1,0 +1,109 @@
+# Reference this view as dwh_dwh__d_client
+catalog: DWH
+schema: DWH
+table_name: D_CLIENT
+
+dimensions:
+  cli_key:
+    sql: '"CLI_KEY"'
+    description: Code client
+
+  cli_code:
+    sql: '"CLI_CODE"'
+    description: Code client
+
+  cli_lib:
+    sql: '"CLI_LIB"'
+    description: Libellé client
+
+  cli_soc_code:
+    sql: '"CLI_SOC_CODE"'
+    description: Code société
+
+  cli_groupe_code:
+    sql: '"CLI_GROUPE_CODE"'
+    description: Code groupe
+
+  cli_groupe_lib:
+    sql: '"CLI_GROUPE_LIB"'
+    description: Libellé groupe
+
+  cli_statut_code:
+    sql: '"CLI_STATUT_CODE"'
+    description: Code statut client
+
+  cli_statut_lib:
+    sql: '"CLI_STATUT_LIB"'
+    description: Libellé statut client
+
+  cli_type_code:
+    sql: '"CLI_TYPE_CODE"'
+    description: Code type client
+
+  cli_type_lib:
+    sql: '"CLI_TYPE_LIB"'
+    description: Libellé type client
+
+  cli_adresse_ligne1:
+    sql: '"CLI_ADRESSE_LIGNE1"'
+    description: Adresse 1
+
+  cli_adresse_ligne2:
+    sql: '"CLI_ADRESSE_LIGNE2"'
+    description: Adresse 2
+
+  cli_adresse_ligne3:
+    sql: '"CLI_ADRESSE_LIGNE3"'
+    description: Adresse 3
+
+  cli_adresse_ligne4:
+    sql: '"CLI_ADRESSE_LIGNE4"'
+    description: Adresse 4
+
+  cli_tel1:
+    sql: '"CLI_TEL1"'
+    description: Téléphone 1
+
+  cli_tel2:
+    sql: '"CLI_TEL2"'
+    description: Téléphone 2
+
+  cli_fax:
+    sql: '"CLI_FAX"'
+    description: Fax
+
+  cli_num_organisme1:
+    sql: '"CLI_NUM_ORGANISME1"'
+    description: Numéro organisme
+
+  cli_num_organisme2:
+    sql: '"CLI_NUM_ORGANISME2"'
+    description: Numéro organisme
+
+  cli_reference_fournisseur:
+    sql: '"CLI_REFERENCE_FOURNISSEUR"'
+    description: Référence fournisseur
+
+  cli_tva_code:
+    sql: '"CLI_TVA_CODE"'
+    description: Code TVA
+
+  cli_tva_lib:
+    sql: '"CLI_TVA_LIB"'
+    description: Libellé TVA
+
+  cli_taxe_applicable_code:
+    sql: '"CLI_TAXE_APPLICABLE_CODE"'
+    description: Code taxe applicable
+
+  cli_taxe_applicable_lib:
+    sql: '"CLI_TAXE_APPLICABLE_LIB"'
+    description: Libellé taxe applicable
+
+  cli_tva_numero_enregistrement:
+    sql: '"CLI_TVA_NUMERO_ENREGISTREMENT"'
+    description: Numéro enregistrement TVA
+
+measures:
+  count:
+    aggregate_type: count

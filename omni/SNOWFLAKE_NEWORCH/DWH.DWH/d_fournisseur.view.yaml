@@ -1,0 +1,189 @@
+# Reference this view as dwh_dwh__d_fournisseur
+catalog: DWH
+schema: DWH
+table_name: D_FOURNISSEUR
+
+dimensions:
+  four_code:
+    sql: '"FOUR_CODE"'
+    description: Code fournisseur
+
+  four_key:
+    sql: '"FOUR_KEY"'
+    description: Clé technique du fournisseur
+
+  four_type:
+    sql: '"FOUR_TYPE"'
+    description: Type du fournisseur
+
+  four_type_lib:
+    sql: '"FOUR_TYPE_LIB"'
+    description: Libellé du type du fournisseur
+
+  four_nom:
+    sql: '"FOUR_NOM"'
+    description: Nom fournisseur
+
+  four_statut:
+    sql: '"FOUR_STATUT"'
+    description: Statut fournisseur
+
+  four_statut_lib:
+    sql: '"FOUR_STATUT_LIB"'
+    description: Libellé du statut fournisseur
+
+  four_langue_code:
+    sql: '"FOUR_LANGUE_CODE"'
+    description: Code langue associée au fournisseur
+
+  four_langue_lib:
+    sql: '"FOUR_LANGUE_LIB"'
+    description: Libellé langue associée au fournisseur
+
+  four_tel1:
+    sql: '"FOUR_TEL1"'
+    description: Téléphone 1
+
+  four_tel2:
+    sql: '"FOUR_TEL2"'
+    description: Téléphone 2
+
+  four_fax:
+    sql: '"FOUR_FAX"'
+    description: Fax
+
+  four_pays_code:
+    sql: '"FOUR_PAYS_CODE"'
+    description: Code Pays associé au fournisseur
+
+  four_pays_lib:
+    sql: '"FOUR_PAYS_LIB"'
+    description: Libellé Pays associé au fournisseur
+
+  four_etat_code:
+    sql: '"FOUR_ETAT_CODE"'
+    description: Code état associé au fournisseur
+
+  four_format_dt:
+    sql: '"FOUR_FORMAT_DT"'
+    description: Format de date associé au fournisseur
+
+  four_num_tva:
+    sql: '"FOUR_NUM_TVA"'
+    description: Numéro TVA
+
+  four_code_grp_fournisseur:
+    sql: '"FOUR_CODE_GRP_FOURNISSEUR"'
+    description: Code groupe du fournisseur
+
+  four_adr_liaison_info:
+    sql: '"FOUR_ADR_LIAISON_INFO"'
+    description: Adresse email contact fournisseur
+
+  four_profil_support_code:
+    sql: '"FOUR_PROFIL_SUPPORT_CODE"'
+    description: Code support communication fournisseur
+
+  four_profil_support_lib:
+    sql: '"FOUR_PROFIL_SUPPORT_LIB"'
+    description: Code support communication fournisseur(email par exemple)
+
+  four_delai_postal:
+    sql: '"FOUR_DELAI_POSTAL"'
+    description: Délai postal fournisseur
+
+  four_qualification_usine_code:
+    sql: '"FOUR_QUALIFICATION_USINE_CODE"'
+    description: Code qualification usine reliée au fournisseur
+
+  four_qualification_usine_lib:
+    sql: '"FOUR_QUALIFICATION_USINE_LIB"'
+    description: Libellé qualification usine reliée au fournisseur (bon, excellent,…)
+
+  four_zone_libre_2:
+    sql: '"FOUR_ZONE_LIBRE_2"'
+    description: Montant Franco
+
+  four_partner_code:
+    sql: '"FOUR_PARTNER_CODE"'
+    description: Code partner (code société)
+
+  four_partner_lib:
+    sql: '"FOUR_PARTNER_LIB"'
+    description: Libellé partner (libellé société)
+
+  four_mode_edition_oa_code:
+    sql: '"FOUR_MODE_EDITION_OA_CODE"'
+    description: Code mode édition des ordres d'achats
+
+  four_mode_edition_oa_lib:
+    sql: '"FOUR_MODE_EDITION_OA_LIB"'
+    description: Libellé mode édition des ordres d'achats
+
+  four_activite_principal_code:
+    sql: '"FOUR_ACTIVITE_PRINCIPAL_CODE"'
+    description: Code activité principale fournisseur (H, P,…)
+
+  four_activite_principal_lib:
+    sql: '"FOUR_ACTIVITE_PRINCIPAL_LIB"'
+    description: Activité principale fournisseur (HABILLEMENT, PUERICULTURE…)
+
+  four_port_code:
+    sql: '"FOUR_PORT_CODE"'
+    description: Code du port associé au fournisseur
+
+  four_port_lib:
+    sql: '"FOUR_PORT_LIB"'
+    description: Libellé du port associé au fournisseur
+
+  four_code_geo:
+    sql: '"FOUR_CODE_GEO"'
+    description: TODO
+
+  four_cp_groupe_code:
+    sql: '"FOUR_CP_GROUPE_CODE"'
+    description: Code groupe fournisseur
+
+  four_cp_groupe_lib:
+    sql: '"FOUR_CP_GROUPE_LIB"'
+    description: Libellé groupe fournisseur
+
+  four_cp_code_tva:
+    sql: '"FOUR_CP_CODE_TVA"'
+    description: Code TVA fournisseur
+
+  four_cp_code_tva_lib:
+    sql: '"FOUR_CP_CODE_TVA_LIB"'
+    description: Libellé TBA fournisseur
+
+  four_cp_condition_paiement_code:
+    sql: '"FOUR_CP_CONDITION_PAIEMENT_CODE"'
+    description: Code condition paiement fournisseur
+
+  four_cp_condition_paiement_lib:
+    sql: '"FOUR_CP_CONDITION_PAIEMENT_LIB"'
+    description: Libellé condition paiement fournisseur
+
+  four_cp_mode_paiement_code:
+    sql: '"FOUR_CP_MODE_PAIEMENT_CODE"'
+    description: Code mode paiement fournisseur
+
+  four_cp_mode_paiement_lib:
+    sql: '"FOUR_CP_MODE_PAIEMENT_LIB"'
+    description: Libellé mode paiement fournisseur
+
+  four_cp_condition_livraison_code:
+    sql: '"FOUR_CP_CONDITION_LIVRAISON_CODE"'
+    description: Code condition livraison fournisseur
+
+  four_cp_condition_livraison_lib:
+    sql: '"FOUR_CP_CONDITION_LIVRAISON_LIB"'
+    description: Libellé condition livraison fournisseur
+
+  four_societe_code:
+    sql: '"FOUR_SOCIETE_CODE"'
+    description: Code société fournisseur
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,41 @@
+# Reference this view as dwh_dwh__f_indisponibilite
+catalog: DWH
+schema: DWH
+table_name: F_INDISPONIBILITE
+
+dimensions:
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Clé dépôt
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Clé produit
+
+  ind_date:
+    sql: '"IND_DATE"'
+    description: Date indisponibilité
+
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Clé date indisponibilité
+
+  ind_motif:
+    sql: '"IND_MOTIF"'
+    description: Motif indisponibilité
+
+  ind_qte:
+    sql: '"IND_QTE"'
+    description: Quantité indisponibilité
+
+measures:
+  count:
+    aggregate_type: count

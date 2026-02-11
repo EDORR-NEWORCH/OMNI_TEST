@@ -1,0 +1,41 @@
+# Reference this view as dwh_dwh__v_cal_cons_club_master_2
+catalog: DWH
+schema: DWH
+table_name: V_CAL_CONS_CLUB_MASTER_2
+
+dimensions:
+  cal_key:
+    sql: '"CAL_KEY"'
+
+  cons_code:
+    sql: '"CONS_CODE"'
+    description: Code client
+
+  cons_carte_fidelite_code:
+    sql: '"CONS_CARTE_FIDELITE_CODE"'
+    description: Code carte
+
+  cons_date_debut:
+    sql: '"CONS_DATE_DEBUT"'
+
+  cons_date_fin:
+    sql: '"CONS_DATE_FIN"'
+
+  cons_dt_fin_fidelite:
+    sql: '"CONS_DT_FIN_FIDELITE"'
+
+  cons_carte_dep_code:
+    sql: '"CONS_CARTE_DEP_CODE"'
+    description: Code dépôt
+
+  cons_sit_ori_carte:
+    sql: '"CONS_SIT_ORI_CARTE"'
+    description: Site WEB Origine carte
+
+  cons_prog_fidelite:
+    sql: '"CONS_PROG_FIDELITE"'
+    description: Programme de fidelité
+
+measures:
+  count:
+    aggregate_type: count

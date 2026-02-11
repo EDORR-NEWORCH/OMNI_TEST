@@ -1,0 +1,61 @@
+# Reference this view as digital__v_dtv_lst_part
+schema: DIGITAL
+table_name: V_DTV_LST_PART
+
+dimensions:
+  lst_id:
+    sql: '"LST_ID"'
+    format: ID
+    description: ID de la liste
+
+  date_participation:
+    sql: '"DATE_PARTICIPATION"'
+    description: Date de la participation
+
+  annee_semaine_participation:
+    sql: '"ANNEE_SEMAINE_PARTICIPATION"'
+    description: Année semaine de la participation
+
+  annee_mois_participation:
+    sql: '"ANNEE_MOIS_PARTICIPATION"'
+    description: Année mois de la participation
+
+  date_participation_n1:
+    sql: '"DATE_PARTICIPATION_N1"'
+    description: Date de participation N-1
+
+  mag_contrat_participation:
+    sql: '"MAG_CONTRAT_PARTICIPATION"'
+    description: Contrat magasin lié à la participation
+
+  pays_participation:
+    sql: '"PAYS_PARTICIPATION"'
+    description: Pays de la participation
+
+  region_participation:
+    sql: '"REGION_PARTICIPATION"'
+    description: Région de la participation
+
+  mag_participation:
+    sql: '"MAG_PARTICIPATION"'
+    description: Libellé magasin de la participation
+
+  code_mag_participation:
+    sql: '"CODE_MAG_PARTICIPATION"'
+    description: Code magasin de la participation
+
+  type_part:
+    sql: '"TYPE_PART"'
+    description: Type de participation
+
+  part_montant:
+    sql: '"PART_MONTANT"'
+    description: Montant de la participation
+
+  date_mdf_part:
+    sql: '"DATE_MDF_PART"'
+    description: Date de modification de la ligne de participation pour incrémental qlik
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,134 @@
+# Reference this view as dwh_dwh__f_conso_adh_mag
+catalog: DWH
+schema: DWH
+table_name: F_CONSO_ADH_MAG
+
+dimensions:
+  adh_mag:
+    sql: '"ADH_MAG"'
+    description: Code magasin
+
+  adh_mag_lib:
+    sql: '"ADH_MAG_LIB"'
+    description: Code - Libellé magasin
+
+  adh_jour:
+    sql: '"ADH_JOUR"'
+
+  adh_dt_jour:
+    sql: '"ADH_DT_JOUR"'
+    description: Date du jour
+
+  adh_fid:
+    sql: '"ADH_FID"'
+    description: Programme de fidélité
+
+  adh_fid_lib:
+    sql: '"ADH_FID_LIB"'
+    description: Libellé programme de fidélité en français
+
+  adh_fid_lib_es:
+    sql: '"ADH_FID_LIB_ES"'
+    description: Libellé programme de fidélité en espagnol
+
+  adh_fid_lib_gr:
+    sql: '"ADH_FID_LIB_GR"'
+    description: Libellé programme de fidélité en grec
+
+  adh_fid_lib_nl:
+    sql: '"ADH_FID_LIB_NL"'
+    description: Libellé programme de fidélité en néerlandais
+
+  adh_regr_fid:
+    sql: '"ADH_REGR_FID"'
+    description: Regroupement programme adhésion (carte, abonnement, autre)
+
+  adh_ca_ttc_cre:
+    sql: '"ADH_CA_TTC_CRE"'
+    description: CA TTC de nouvelles adhésions
+
+  adh_ca_ttc_ren:
+    sql: '"ADH_CA_TTC_REN"'
+    description: CA TTC de renouvellements adhésions
+
+  adh_ca_ttc_renauto:
+    sql: '"ADH_CA_TTC_RENAUTO"'
+    description: CA TTC de renouvellements automatiques adhésions
+
+  adh_ca_ttc_prev:
+    sql: '"ADH_CA_TTC_PREV"'
+    description: CA TTC prévisionnel (prévu)
+
+  adh_ca_ttc_retour:
+    sql: '"ADH_CA_TTC_RETOUR"'
+    description: CA TTC correspondant aux retours (rétractations)
+
+  adh_ca_ht_cre:
+    sql: '"ADH_CA_HT_CRE"'
+    description: CA HT de nouvelles adhésions
+
+  adh_ca_ht_ren:
+    sql: '"ADH_CA_HT_REN"'
+    description: CA HT de renouvellements adhésions
+
+  adh_ca_ht_renauto:
+    sql: '"ADH_CA_HT_RENAUTO"'
+    description: CA HT de renouvellements automatiques adhésions
+
+  adh_ca_ht_retour:
+    sql: '"ADH_CA_HT_RETOUR"'
+    description: CA HT correspondant aux retours (rétractations)
+
+  adh_ca_ht_prev:
+    sql: '"ADH_CA_HT_PREV"'
+    description: CA HT prévisionnel (prévu)
+
+  adh_nbe_cre:
+    sql: '"ADH_NBE_CRE"'
+    description: Nombres de nouvelle adhésions
+
+  adh_nbe_ren:
+    sql: '"ADH_NBE_REN"'
+    description: Nombres de renouvellement adhésions
+
+  adh_nbe_renauto:
+    sql: '"ADH_NBE_RENAUTO"'
+    description: Nombres de renouvellement automatique adhésions
+
+  adh_nbe_expi:
+    sql: '"ADH_NBE_EXPI"'
+    description: Nombre d'expirations
+
+  adh_nbe_susp:
+    sql: '"ADH_NBE_SUSP"'
+    description: Nombre de suspensions
+
+  adh_nbe_chang:
+    sql: '"ADH_NBE_CHANG"'
+    description: Nombre de changement de programme
+
+  adh_nbe_dem_resi:
+    sql: '"ADH_NBE_DEM_RESI"'
+    description: Nombres de demande de résiliation
+
+  adh_nbe_retour:
+    sql: '"ADH_NBE_RETOUR"'
+    description: Nombres de retours (rétractations)
+
+  adh_nbe_mbr_act_fid:
+    sql: '"ADH_NBE_MBR_ACT_FID"'
+
+  adh_nbe_mbr_act_pref:
+    sql: '"ADH_NBE_MBR_ACT_PREF"'
+
+  adh_nb_prog_vendus:
+    sql: '"ADH_NB_PROG_VENDUS"'
+    description: Nombres de programmes vendus
+
+  date_mdf_adh:
+    sql: '"DATE_MDF_ADH"'
+    description: date technique de modification pour incrémental Qlik
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,21 @@
+# Reference this view as dwh_dwh__d_rayon
+catalog: DWH
+schema: DWH
+table_name: D_RAYON
+
+dimensions:
+  ray_code:
+    sql: '"RAY_CODE"'
+    description: Code hiérarchie
+
+  ray_lib_long:
+    sql: '"RAY_LIB_LONG"'
+    description: Libellé court
+
+  ray_lib_court:
+    sql: '"RAY_LIB_COURT"'
+    description: Libellé long
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,140 @@
+# Reference this view as dwh_dwh__f_ligne_lst_naiss
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_LST_NAISS
+
+dimensions:
+  lst_id:
+    sql: '"LST_ID"'
+    format: ID
+    description: ID de la liste
+
+  lst_num_ligne:
+    sql: '"LST_NUM_LIGNE"'
+    description: Numéro de ligne
+
+  lst_prd_id:
+    sql: '"LST_PRD_ID"'
+    format: ID
+    description: ID du produit
+
+  lst_prd_lib_fr:
+    sql: '"LST_PRD_LIB_FR"'
+    description: Libellé du produit
+
+  lst_sta_ligne:
+    sql: '"LST_STA_LIGNE"'
+    description: Statut de la ligne
+
+  lst_sta_ligne_lib_fr:
+    sql: '"LST_STA_LIGNE_LIB_FR"'
+    description: Libellé statut de la ligne
+
+  lst_date_mdf_sta_ligne:
+    sql: '"LST_DATE_MDF_STA_LIGNE"'
+    description: Date de modification de la ligne
+
+  lst_date_mdf_sta_ligne_key:
+    sql: '"LST_DATE_MDF_STA_LIGNE_KEY"'
+    description: Clé date de modification de la ligne
+
+  lst_prx_boutique:
+    sql: '"LST_PRX_BOUTIQUE"'
+    description: Prix
+
+  lst_prx_club:
+    sql: '"LST_PRX_CLUB"'
+    description: Prix club
+
+  lst_prx_paye:
+    sql: '"LST_PRX_PAYE"'
+    description: Prix payé
+
+  lst_prx_force:
+    sql: '"LST_PRX_FORCE"'
+    description: Prix forcé
+
+  lst_rais_prx_force:
+    sql: '"LST_RAIS_PRX_FORCE"'
+    description: Raison du prix forcé
+
+  lst_date_mise_cmde:
+    sql: '"LST_DATE_MISE_CMDE"'
+    description: Date de la commande
+
+  lst_date_recep_cmde:
+    sql: '"LST_DATE_RECEP_CMDE"'
+    description: Date réception de la commande
+
+  lst_date_recep_souhaitee:
+    sql: '"LST_DATE_RECEP_SOUHAITEE"'
+    description: Date réception souhaitée
+
+  lst_etb_pai:
+    sql: '"LST_ETB_PAI"'
+    description: Magasin de paiement
+
+  lst_etb_pai_lib:
+    sql: '"LST_ETB_PAI_LIB"'
+    description: Libellé magasin de paiement
+
+  lst_date_pai:
+    sql: '"LST_DATE_PAI"'
+    description: Date de paiement
+
+  lst_etb_ret:
+    sql: '"LST_ETB_RET"'
+    description: Magasin de retrait
+
+  lst_etb_ret_lib:
+    sql: '"LST_ETB_RET_LIB"'
+    description: Libellé magasin de retrait
+
+  lst_date_ret:
+    sql: '"LST_DATE_RET"'
+    description: Date de retrait
+
+  lst_date_ret_key:
+    sql: '"LST_DATE_RET_KEY"'
+    description: Clé date de retrait
+
+  lst_mt_acpt:
+    sql: '"LST_MT_ACPT"'
+    description: Montant de l'acompte
+
+  lst_etb_acpt:
+    sql: '"LST_ETB_ACPT"'
+    description: Magasin de l'acompte
+
+  lst_etb_acpt_lib:
+    sql: '"LST_ETB_ACPT_LIB"'
+    description: Libellé magasin de l'acompte
+
+  lst_cmd_id:
+    sql: '"LST_CMD_ID"'
+    format: ID
+    description: ID de la commande
+
+  lst_mis_cote:
+    sql: '"LST_MIS_COTE"'
+    description: Flag mis de côté
+
+  lst_empl_mis_cote:
+    sql: '"LST_EMPL_MIS_COTE"'
+    description: Libellé de la mise de côté
+
+  lst_commande_emporte:
+    sql: '"LST_COMMANDE_EMPORTE"'
+    description: Flag commande emporté
+
+  lst_date_emport:
+    sql: '"LST_DATE_EMPORT"'
+    description: Date emporté
+
+  lst_exclu_bc:
+    sql: '"LST_EXCLU_BC"'
+    description: Flag éligilble au bon de cloture
+
+measures:
+  count:
+    aggregate_type: count

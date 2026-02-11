@@ -1,0 +1,21 @@
+# Reference this view as dwh_dwh__v_aging_puer_jour
+catalog: DWH
+schema: DWH
+table_name: V_AGING_PUER_JOUR
+
+dimensions:
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code depot
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code Produit
+
+  aging:
+    sql: '"AGING"'
+    description: AGING
+
+measures:
+  count:
+    aggregate_type: count

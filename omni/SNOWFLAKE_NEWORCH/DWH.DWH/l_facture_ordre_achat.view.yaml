@@ -1,0 +1,80 @@
+# Reference this view as dwh_dwh__l_facture_ordre_achat
+catalog: DWH
+schema: DWH
+table_name: L_FACTURE_ORDRE_ACHAT
+
+dimensions:
+  soc_code:
+    sql: '"SOC_CODE"'
+    description: Code société
+
+  four_code:
+    sql: '"FOUR_CODE"'
+    description: Code fournisseur
+
+  facf_numero_facture_fournisseur:
+    sql: '"FACF_NUMERO_FACTURE_FOURNISSEUR"'
+    description: N° facture fournisseur
+
+  facf_annee_facture:
+    sql: '"FACF_ANNEE_FACTURE"'
+    description: Année facture
+
+  oa_numero_ordre_achat:
+    sql: '"OA_NUMERO_ORDRE_ACHAT"'
+    description: N° ordre achat
+
+  oa_ligne_ordre_achat:
+    sql: '"OA_LIGNE_ORDRE_ACHAT"'
+    description: Ligne ordre achat
+
+  oa_sous_numero_ligne:
+    sql: '"OA_SOUS_NUMERO_LIGNE"'
+    description: Sous ligne ordre achat
+
+  lie_oa_ff_numero_reception:
+    sql: '"LIE_OA_FF_NUMERO_RECEPTION"'
+    description: N° réception
+
+  lie_oa_ff_type_recu:
+    sql: '"LIE_OA_FF_TYPE_RECU"'
+    description: Type reçu
+
+  lie_oa_ff_type_ligne_facture_code:
+    sql: '"LIE_OA_FF_TYPE_LIGNE_FACTURE_CODE"'
+    description: Type ligne facture
+
+  lie_oa_ff_statut_qte_facture_code:
+    sql: '"LIE_OA_FF_STATUT_QTE_FACTURE_CODE"'
+    description: Code statut quantité facture
+
+  lie_oa_ff_statut_qte_facture_lib:
+    sql: '"LIE_OA_FF_STATUT_QTE_FACTURE_LIB"'
+    description: Libellé statut quantité facture
+
+  lie_oa_ff_qte_facturee:
+    sql: '"LIE_OA_FF_QTE_FACTUREE"'
+    description: Quantité facturée
+
+  lie_oa_ff_montant_net:
+    sql: '"LIE_OA_FF_MONTANT_NET"'
+    description: Montant net
+
+  lie_oa_ff_taux_change:
+    sql: '"LIE_OA_FF_TAUX_CHANGE"'
+    description: Taux de change
+
+  lie_oa_ff_montant_recu_devise_locale:
+    sql: '"LIE_OA_FF_MONTANT_RECU_DEVISE_LOCALE"'
+    description: Montant reçu en devise locale
+
+  lie_oa_ff_montant_facture_devise_local:
+    sql: '"LIE_OA_FF_MONTANT_FACTURE_DEVISE_LOCAL"'
+    description: Montant facturé en devise locale
+
+  tech_date_crea:
+    sql: '"TECH_DATE_CREA"'
+
+measures:
+  count:
+    aggregate_type: count

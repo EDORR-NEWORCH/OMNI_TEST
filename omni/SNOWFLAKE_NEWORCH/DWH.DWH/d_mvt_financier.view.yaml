@@ -1,0 +1,29 @@
+# Reference this view as dwh_dwh__d_mvt_financier
+catalog: DWH
+schema: DWH
+table_name: D_MVT_FINANCIER
+
+dimensions:
+  mvt_fin_code:
+    sql: '"MVT_FIN_CODE"'
+    description: Code
+
+  mvt_fin_lib:
+    sql: '"MVT_FIN_LIB"'
+    description: Libellé
+
+  mvt_fin_code_grp:
+    sql: '"MVT_FIN_CODE_GRP"'
+    description: Code groupe
+
+  mvt_type_mvt:
+    sql: '"MVT_TYPE_MVT"'
+    description: Code type
+
+  mvt_fin_code_m3:
+    sql: '"MVT_FIN_CODE_M3"'
+    description: Code produit M3
+
+measures:
+  count:
+    aggregate_type: count

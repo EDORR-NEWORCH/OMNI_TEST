@@ -1,0 +1,41 @@
+# Reference this view as dwh_dwh__d_comp_periode
+catalog: DWH
+schema: DWH
+table_name: D_COMP_PERIODE
+
+dimensions:
+  cmp_per_annee_ref:
+    sql: '"CMP_PER_ANNEE_REF"'
+    description: Comparaison période année référence
+
+  cmp_per_annee_hist:
+    sql: '"CMP_PER_ANNEE_HIST"'
+    description: Comparaison période année historique
+
+  cmp_per_typ:
+    sql: '"CMP_PER_TYP"'
+    description: Comparaison période type
+
+  cmp_per_num:
+    sql: '"CMP_PER_NUM"'
+    description: Comparaison période N° jour
+
+  cmp_per_date_ref_debut:
+    sql: '"CMP_PER_DATE_REF_DEBUT"'
+    description: Comparaison période date référence début
+
+  cmp_per_date_ref_fin:
+    sql: '"CMP_PER_DATE_REF_FIN"'
+    description: Comparaison période date référence fin
+
+  cmp_per_date_hist_debut:
+    sql: '"CMP_PER_DATE_HIST_DEBUT"'
+    description: Comparaison période date historique début
+
+  cmp_per_date_hist_fin:
+    sql: '"CMP_PER_DATE_HIST_FIN"'
+    description: Comparaison période date historique fin
+
+measures:
+  count:
+    aggregate_type: count

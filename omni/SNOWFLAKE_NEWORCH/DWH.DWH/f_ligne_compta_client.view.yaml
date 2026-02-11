@@ -1,0 +1,165 @@
+# Reference this view as dwh_dwh__f_ligne_compta_client
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_COMPTA_CLIENT
+
+dimensions:
+  cptc_div_code:
+    sql: '"CPTC_DIV_CODE"'
+    description: Code division
+
+  cptc_soc_code:
+    sql: '"CPTC_SOC_CODE"'
+    description: Code société
+
+  cptc_annee:
+    sql: '"CPTC_ANNEE"'
+    description: Année
+
+  cptc_num_journal:
+    sql: '"CPTC_NUM_JOURNAL"'
+    description: N° journal comptable
+
+  cptc_num_seq_journal:
+    sql: '"CPTC_NUM_SEQ_JOURNAL"'
+    description: N° séquence journal comptable
+
+  cptc_trans_code:
+    sql: '"CPTC_TRANS_CODE"'
+    description: Code transformation
+
+  cptc_payeur:
+    sql: '"CPTC_PAYEUR"'
+    description: Payeur
+
+  cptc_client:
+    sql: '"CPTC_CLIENT"'
+    description: Client
+
+  cptc_num_fact:
+    sql: '"CPTC_NUM_FACT"'
+    description: N° facture
+
+  cptc_annee_fact:
+    sql: '"CPTC_ANNEE_FACT"'
+    description: Année de la facture
+
+  cptc_piece_just_type:
+    sql: '"CPTC_PIECE_JUST_TYPE"'
+    description: Type pièce justificative
+
+  cptc_piece_just_num:
+    sql: '"CPTC_PIECE_JUST_NUM"'
+    description: N° pièce justificative
+
+  cptc_type_info:
+    sql: '"CPTC_TYPE_INFO"'
+    description: Type info
+
+  cptc_grp_cli:
+    sql: '"CPTC_GRP_CLI"'
+    description: Groupe client
+
+  cptc_devise:
+    sql: '"CPTC_DEVISE"'
+    description: Code devise
+
+  cptc_type_taux:
+    sql: '"CPTC_TYPE_TAUX"'
+    description: Type taux
+
+  cptc_taux:
+    sql: '"CPTC_TAUX"'
+    description: Taux
+
+  cptc_mt_dev:
+    sql: '"CPTC_MT_DEV"'
+    description: Montant en devise locale
+
+  cptc_mt_tva:
+    sql: '"CPTC_MT_TVA"'
+    description: Montant TVA
+
+  cptc_date_fact:
+    sql: '"CPTC_DATE_FACT"'
+    description: Date facturation
+
+  cptc_date_echea:
+    sql: '"CPTC_DATE_ECHEA"'
+    description: Date échéance
+
+  cptc_date_compta:
+    sql: '"CPTC_DATE_COMPTA"'
+    description: Date comptable
+
+  cptc_type_paie:
+    sql: '"CPTC_TYPE_PAIE"'
+    description: Type de paiement
+
+  cptc_mod_paie:
+    sql: '"CPTC_MOD_PAIE"'
+    description: Mode de paiement
+
+  cptc_cond_paie:
+    sql: '"CPTC_COND_PAIE"'
+    description: Condition de paiement
+
+  cptc_code_lettrage:
+    sql: '"CPTC_CODE_LETTRAGE"'
+    description: Code lettrage
+
+  cptc_date_lettrage:
+    sql: '"CPTC_DATE_LETTRAGE"'
+    description: Date lettrage
+
+  cptc_code_blocage:
+    sql: '"CPTC_CODE_BLOCAGE"'
+    description: Code blocage
+
+  cptc_user_blocage:
+    sql: '"CPTC_USER_BLOCAGE"'
+    description: Utilisateur lié au blocage
+
+  cptc_date_blocage:
+    sql: '"CPTC_DATE_BLOCAGE"'
+    description: Date du blocage
+
+  cptc_fact_grp_penalites:
+    sql: '"CPTC_FACT_GRP_PENALITES"'
+    description: Groupe de pénalités
+
+  cptc_bloc_fact_penalites:
+    sql: '"CPTC_BLOC_FACT_PENALITES"'
+    description: Bloc facture pnalités
+
+  cptc_date_paie:
+    sql: '"CPTC_DATE_PAIE"'
+    description: Date de paiement
+
+  cptc_date_saisie:
+    sql: '"CPTC_DATE_SAISIE"'
+    description: Date de saisie
+
+  cptc_heure_saisie:
+    sql: '"CPTC_HEURE_SAISIE"'
+    description: Heure de saisie
+
+  cptc_date_mod:
+    sql: '"CPTC_DATE_MOD"'
+    description: Date de modification
+
+  cptc_num_mod:
+    sql: '"CPTC_NUM_MOD"'
+    description: N° de modification
+
+  cptc_user_mod:
+    sql: '"CPTC_USER_MOD"'
+    description: Utilisateur à l'origine de la modification
+
+  cptc_liv_date:
+    sql: '"CPTC_LIV_DATE"'
+    description: Date de livraison
+
+measures:
+  count:
+    aggregate_type: count

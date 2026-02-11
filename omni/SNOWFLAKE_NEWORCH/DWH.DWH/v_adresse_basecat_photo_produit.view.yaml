@@ -1,0 +1,57 @@
+# Reference this view as dwh_dwh__v_adresse_basecat_photo_produit
+catalog: DWH
+schema: DWH
+table_name: V_ADRESSE_BASECAT_PHOTO_PRODUIT
+
+dimensions:
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Code produit
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  prd_reference_basecat:
+    sql: '"PRD_REFERENCE_BASECAT"'
+    description: Reference produit
+
+  couleur_m3:
+    sql: '"COULEUR_M3"'
+    description: Code couleur
+
+  prd_date_creation:
+    sql: '"PRD_DATE_CREATION"'
+    description: Date de création du produit
+
+  couleur_basecat:
+    sql: '"COULEUR_BASECAT"'
+    description: Code couleur
+
+  adresse_basecat:
+    sql: '"ADRESSE_BASECAT"'
+    description: URL de l'image
+
+  adresse_basecat_1l:
+    sql: '"ADRESSE_BASECAT_1L"'
+    description: URL de l'image
+
+  adresse_basecat_1x:
+    sql: '"ADRESSE_BASECAT_1X"'
+    description: URL de l'image
+
+  adresse_basecat_2s:
+    sql: '"ADRESSE_BASECAT_2S"'
+    description: URL de l'image
+
+  adresse_basecat_2l:
+    sql: '"ADRESSE_BASECAT_2L"'
+    description: URL de l'image
+
+  adresse_basecat_2x:
+    sql: '"ADRESSE_BASECAT_2X"'
+    description: URL de l'image
+
+measures:
+  count:
+    aggregate_type: count

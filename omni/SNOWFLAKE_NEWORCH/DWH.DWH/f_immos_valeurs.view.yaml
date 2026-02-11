@@ -1,0 +1,57 @@
+# Reference this view as dwh_dwh__f_immos_valeurs
+catalog: DWH
+schema: DWH
+table_name: F_IMMOS_VALEURS
+
+dimensions:
+  imv_div_code:
+    sql: '"IMV_DIV_CODE"'
+    description: Code division
+
+  imv_soc_code:
+    sql: '"IMV_SOC_CODE"'
+    description: Code société
+
+  imv_num_immos:
+    sql: '"IMV_NUM_IMMOS"'
+    description: N° immos
+
+  imv_sous_num_immos:
+    sql: '"IMV_SOUS_NUM_IMMOS"'
+    description: Sous numéro
+
+  imv_type_val:
+    sql: '"IMV_TYPE_VAL"'
+    description: Type
+
+  imv_val_immos_devise:
+    sql: '"IMV_VAL_IMMOS_DEVISE"'
+    description: Devise valeur immos
+
+  imv_devise:
+    sql: '"IMV_DEVISE"'
+    description: Devise
+
+  imv_date_saisie:
+    sql: '"IMV_DATE_SAISIE"'
+    description: Date de saisie
+
+  imv_heure_saisie:
+    sql: '"IMV_HEURE_SAISIE"'
+    description: Heure de saisie
+
+  imv_date_mod:
+    sql: '"IMV_DATE_MOD"'
+    description: Date de modification
+
+  imv_num_mod:
+    sql: '"IMV_NUM_MOD"'
+    description: N° de modification
+
+  imv_user_mod:
+    sql: '"IMV_USER_MOD"'
+    description: Utilisateur à l'origine de la modification
+
+measures:
+  count:
+    aggregate_type: count

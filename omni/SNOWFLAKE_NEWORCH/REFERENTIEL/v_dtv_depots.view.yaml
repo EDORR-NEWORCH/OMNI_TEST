@@ -1,0 +1,220 @@
+# Reference this view as referentiel__v_dtv_depots
+schema: REFERENTIEL
+table_name: V_DTV_DEPOTS
+
+dimensions:
+  dep_key:
+    sql: '"DEP_KEY"'
+    label: Clé dépôt
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    label: Code dépôt
+
+  etab_key:
+    sql: '"ETAB_KEY"'
+    label: Clé établissement
+
+  etab_code:
+    sql: '"ETAB_CODE"'
+    label: Code établissement
+
+  dep_type_code:
+    sql: '"DEP_TYPE_CODE"'
+    label: Code type dépôt
+
+  mag_cat_vol_stockage_code:
+    sql: '"MAG_CAT_VOL_STOCKAGE_CODE"'
+    label: Code catégorie volume de stockage
+
+  mag_type_cbr:
+    sql: '"MAG_TYPE_CBR"'
+    label: Type magasin CBR
+
+  dep_nom:
+    sql: '"DEP_NOM"'
+    label: Libellé dépôt
+
+  pays_libelle:
+    sql: '"PAYS_LIBELLE"'
+    label: Libellé pays
+
+  dep_pays:
+    sql: '"DEP_PAYS"'
+    label: Code pays
+
+  depadr_ville:
+    sql: '"DEPADR_VILLE"'
+    label: Ville dépôt
+
+  depadr_code_postal:
+    sql: '"DEPADR_CODE_POSTAL"'
+    label: Code postal dépôt
+
+  dep_type_lib:
+    sql: '"DEP_TYPE_LIB"'
+    label: Libellé type dépôt
+
+  mag_dir_regional:
+    sql: '"MAG_DIR_REGIONAL"'
+    label: Direction régionale
+
+  mag_contrat_code:
+    sql: '"MAG_CONTRAT_CODE"'
+    label: Code contrat magasin
+
+  mag_contrat_lib:
+    sql: '"MAG_CONTRAT_LIB"'
+    label: Libellé contrat magasin
+
+  mag_reseau_gest_lib:
+    sql: '"MAG_RESEAU_GEST_LIB"'
+    label: Libellé réseau de gestion
+
+  mag_situation:
+    sql: '"MAG_SITUATION"'
+    label: Situation magasin (centre ville, ...)
+
+  mag_offre_magasin:
+    sql: '"MAG_OFFRE_MAGASIN"'
+    label: Offre magasin (TEXTILE, MIXTE, ...)
+
+  mag_zone_rattachement:
+    sql: '"MAG_ZONE_RATTACHEMENT"'
+    label: Zone de rattachement magasin
+
+  mag_actif_sfs:
+    sql: '"MAG_ACTIF_SFS"'
+    label: Ship From Store
+
+  mag_actif_ckc:
+    sql: '"MAG_ACTIF_CKC"'
+    label: Clic And Collect
+
+  mag_achat_direct_four:
+    sql: '"MAG_ACHAT_DIRECT_FOUR"'
+    label: Achat direct fournisseur
+
+  mag_date_cmd_four_direct:
+    sql: '"MAG_DATE_CMD_FOUR_DIRECT"'
+    label: Date commande fournisseur direct
+
+  mag_date_ouverture:
+    sql: '"MAG_DATE_OUVERTURE"'
+    label: Date ouverture magasin
+
+  mag_date_1er_tck:
+    sql: '"MAG_DATE_1ER_TCK"'
+    label: Date du 1er ticket du magasin
+
+  mag_date_fermeture:
+    sql: '"MAG_DATE_FERMETURE"'
+    label: Date de fermeture du magasin
+
+  mag_actif:
+    sql: '"MAG_ACTIF"'
+    label: Magasin actif
+
+  mag_cluster_pueri:
+    sql: '"MAG_CLUSTER_PUERI"'
+    label: Cluster puériculture
+
+  dep_code_clb:
+    sql: '"DEP_CODE_CLB"'
+    label: Code CLB magasin
+
+  mag_code_cbr:
+    sql: '"MAG_CODE_CBR"'
+    label: Code CBR magasin
+
+  mag_surface_vente:
+    sql: '"MAG_SURFACE_VENTE"'
+    label: Surface de vente
+
+  mag_surface_pueri:
+    sql: '"MAG_SURFACE_PUERI"'
+    label: Surface de puériculture
+
+  surface_textile:
+    sql: '"SURFACE_TEXTILE"'
+    label: Surface textile
+
+  depot_ouvert:
+    sql: '"DEPOT_OUVERT"'
+    label: Dépôt ouvert
+
+  depot_type_hie3:
+    sql: '"DEPOT_TYPE_HIE3"'
+    label: Type hiérarchie 3
+
+  depot_type_hie2:
+    sql: '"DEPOT_TYPE_HIE2"'
+    label: Type hiérarchie 2
+
+  depot_type_hie1:
+    sql: '"DEPOT_TYPE_HIE1"'
+    label: Type hiérarchie 1
+
+  depot_preference_kpi_stock:
+    sql: '"DEPOT_PREFERENCE_KPI_STOCK"'
+    label: Dépôt référence KPI STOCK
+
+  dep_pays_regr:
+    sql: '"DEP_PAYS_REGR"'
+    label: regroupement pays
+
+  dep_date_deb:
+    sql: '"DEP_DATE_DEB"'
+    label: Date début validité
+
+  dep_date_fin:
+    sql: '"DEP_DATE_FIN"'
+    label: Date fin validité
+
+  type_site:
+    sql: '"TYPE_SITE"'
+    label: Type de site (WEB, RESEAU, ...)
+
+  format_site:
+    sql: '"FORMAT_SITE"'
+    label: Format du site (MIXTE, TEXTILE, MEGASTORE, ...)
+
+  type_juridique:
+    sql: '"TYPE_JURIDIQUE"'
+    label: Type juridique (SUCC, AFF, ...)
+
+  dir_commercia:
+    sql: '"DIR_COMMERCIA"'
+    label: Directeur commercial
+
+  region:
+    sql: '"REGION"'
+    label: Région magasin
+
+  dep_date_mdf:
+    sql: '"DEP_DATE_MDF"'
+    label: Date de modification du dépôt pour incrémental Qlik
+
+  flag_derniere_image_depot:
+    sql: '"FLAG_DERNIERE_IMAGE_DEPOT"'
+    label: Flag utilisé dans Qlik afin de filtrer sur la dernière image du dépôt
+
+  mag_physique_actif_bool:
+    sql: '"MAG_PHYSIQUE_ACTIF_BOOL"'
+    label: Magasin physique actif (Oui/Non)
+
+  site_web_actif_bool:
+    sql: '"SITE_WEB_ACTIF_BOOL"'
+    label: Site Web actif (Oui/Non)
+
+  mag_physique_actif_int:
+    sql: '"MAG_PHYSIQUE_ACTIF_INT"'
+    label: Magasin physique actif (1 / 0)
+
+  site_web_actif_int:
+    sql: '"SITE_WEB_ACTIF_INT"'
+    label: Site Web actif (1 / 0)
+
+measures:
+  count:
+    aggregate_type: count

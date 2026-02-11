@@ -1,0 +1,88 @@
+# Reference this view as dwh_dwh__f_ligne_livraison
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_LIVRAISON
+
+dimensions:
+  liv_code:
+    sql: '"LIV_CODE"'
+    description: Code livraison
+
+  liv_categorie_ordre_ref_code:
+    sql: '"LIV_CATEGORIE_ORDRE_REF_CODE"'
+    description: Catégorie de l'ordre de référence ordre
+
+  liv_ordre_ref_code:
+    sql: '"LIV_ORDRE_REF_CODE"'
+    description: Ordre de référence
+
+  liv_ligne_ordre_ref_code:
+    sql: '"LIV_LIGNE_ORDRE_REF_CODE"'
+    description: Numéro de ligne de l'ordre de référence
+
+  liv_suffixe_ordre_ref_code:
+    sql: '"LIV_SUFFIXE_ORDRE_REF_CODE"'
+    description: Ligne suffixe
+
+  dep_code:
+    sql: '"DEP_CODE"'
+
+  dep_fin_code:
+    sql: '"DEP_FIN_CODE"'
+    description: Code dépôt final
+
+  cli_fin_code:
+    sql: '"CLI_FIN_CODE"'
+    description: Code client final
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  liv_date_depart:
+    sql: '"LIV_DATE_DEPART"'
+    description: Date de départ
+
+  liv_date_livraison:
+    sql: '"LIV_DATE_LIVRAISON"'
+    description: date de livraison
+
+  liv_date_reception:
+    sql: '"LIV_DATE_RECEPTION"'
+    description: Date de réception
+
+  liv_quantite_transaction:
+    sql: '"LIV_QUANTITE_TRANSACTION"'
+    description: Quantité
+
+  liv_num_chargement:
+    sql: '"LIV_NUM_CHARGEMENT"'
+    description: Numéro de chargement
+
+  liv_type_transaction_stock_code:
+    sql: '"LIV_TYPE_TRANSACTION_STOCK_CODE"'
+    description: type de transaction de stock
+
+  liv_statut_livraison_code:
+    sql: '"LIV_STATUT_LIVRAISON_CODE"'
+    description: Statut livraison
+
+  liv_expe_code:
+    sql: '"LIV_EXPE_CODE"'
+    description: Code expédition
+
+  liv_categorie_ordre_ref_lib:
+    sql: '"LIV_CATEGORIE_ORDRE_REF_LIB"'
+    description: Libellé de la catégorie de l'ordre de référence ordre
+
+  liv_type_transaction_stock_lib:
+    sql: '"LIV_TYPE_TRANSACTION_STOCK_LIB"'
+    description: Libellé du type de transaction de stock
+
+  liv_statut_livraison_lib:
+    sql: '"LIV_STATUT_LIVRAISON_LIB"'
+    description: Libellé du statut livraison
+
+measures:
+  count:
+    aggregate_type: count

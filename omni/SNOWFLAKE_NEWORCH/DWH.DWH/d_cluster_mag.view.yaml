@@ -1,0 +1,21 @@
+# Reference this view as dwh_dwh__d_cluster_mag
+catalog: DWH
+schema: DWH
+table_name: D_CLUSTER_MAG
+
+dimensions:
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  hier1_code:
+    sql: '"HIER1_CODE"'
+    description: Code hiérarchie 1
+
+  niv_assor_mag:
+    sql: '"NIV_ASSOR_MAG"'
+    description: Niveau assortiment magasin
+
+measures:
+  count:
+    aggregate_type: count

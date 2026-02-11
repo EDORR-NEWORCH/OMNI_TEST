@@ -1,0 +1,289 @@
+# Reference this view as dwh_dwh__f_ligne_commande
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_COMMANDE
+
+dimensions:
+  cmd_key:
+    sql: '"CMD_KEY"'
+    description: Numéro de commande
+
+  cmd_code:
+    sql: '"CMD_CODE"'
+    description: Numéro de commande
+
+  soc_key:
+    sql: '"SOC_KEY"'
+    description: Code société
+
+  soc_code:
+    sql: '"SOC_CODE"'
+    description: Code société
+
+  type_cmd_key:
+    sql: '"TYPE_CMD_KEY"'
+    description: Type de commande
+
+  type_cmd_code:
+    sql: '"TYPE_CMD_CODE"'
+    description: Type de commande
+
+  date_key:
+    sql: '"DATE_KEY"'
+    description: Date de la commande
+
+  date_oa_key:
+    sql: '"DATE_OA_KEY"'
+    description: Date de l'ordre d'achat
+
+  date_liv_demande_key:
+    sql: '"DATE_LIV_DEMANDE_KEY"'
+    description: Date de livraison demandée
+
+  heure_liv_demande_key:
+    sql: '"HEURE_LIV_DEMANDE_KEY"'
+    description: Heure de livraison demandée
+
+  date_liv_finale_key:
+    sql: '"DATE_LIV_FINALE_KEY"'
+    description: Date de livraison finale
+
+  heure_liv_finale_key:
+    sql: '"HEURE_LIV_FINALE_KEY"'
+    description: Heure de livraison finale
+
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Code produit
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  client_key:
+    sql: '"CLIENT_KEY"'
+    description: Code client
+
+  cli_code:
+    sql: '"CLI_CODE"'
+    description: Code client
+
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Code dépôt
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  statut_cmd_key:
+    sql: '"STATUT_CMD_KEY"'
+    description: Code statut de la commande
+
+  statut_cmd_code:
+    sql: '"STATUT_CMD_CODE"'
+    description: Code statut de la commande
+
+  devise_key:
+    sql: '"DEVISE_KEY"'
+    description: Code devise
+
+  devise_code:
+    sql: '"DEVISE_CODE"'
+    description: Code devise
+
+  cmp_key:
+    sql: '"CMP_KEY"'
+    description: Campagne
+
+  four_key:
+    sql: '"FOUR_KEY"'
+    description: Code fournisseur
+
+  four_code:
+    sql: '"FOUR_CODE"'
+    description: Code fournisseur
+
+  trf_key:
+    sql: '"TRF_KEY"'
+    description: Code tarif
+
+  trf_code:
+    sql: '"TRF_CODE"'
+    description: Code tarif
+
+  tva_key:
+    sql: '"TVA_KEY"'
+    description: Code TVA
+
+  payeur_key:
+    sql: '"PAYEUR_KEY"'
+    description: Code client payeur
+
+  payeur_code:
+    sql: '"PAYEUR_CODE"'
+    description: Code client payeur
+
+  sais_key:
+    sql: '"SAIS_KEY"'
+    description: Code saison
+
+  sais_code:
+    sql: '"SAIS_CODE"'
+    description: Code saison
+
+  cmd_num_ligne:
+    sql: '"CMD_NUM_LIGNE"'
+    description: Numéro de ligne de la commande
+
+  cmd_suffix_ligne:
+    sql: '"CMD_SUFFIX_LIGNE"'
+    description: Suffixe de la ligne
+
+  cmd_prix_vente_loc:
+    sql: '"CMD_PRIX_VENTE_LOC"'
+    description: Prix unitaire TTC en devise locale
+
+  cmd_prix_vente_conso:
+    sql: '"CMD_PRIX_VENTE_CONSO"'
+    description: Prix unitaire TTC en devise consolidée
+
+  cmd_prix_net_loc:
+    sql: '"CMD_PRIX_NET_LOC"'
+    description: Prix unitaire HT en devise locale
+
+  cmd_prix_net_conso:
+    sql: '"CMD_PRIX_NET_CONSO"'
+    description: Prix unitaire HT devise consolidée
+
+  cmd_pcb_vente:
+    sql: '"CMD_PCB_VENTE"'
+    description: PCB vente
+
+  cmd_mt_vente_loc:
+    sql: '"CMD_MT_VENTE_LOC"'
+    description: Montant TTC de la ligne en devise locale
+
+  cmd_mt_vente_conso:
+    sql: '"CMD_MT_VENTE_CONSO"'
+    description: Montant TTC de la ligne en devise consolidée
+
+  cmd_mt_net_loc:
+    sql: '"CMD_MT_NET_LOC"'
+    description: Montant HT de la ligne en devise locale
+
+  cmd_mt_net_conso:
+    sql: '"CMD_MT_NET_CONSO"'
+    description: Montant HT de la ligne en devise consolidée
+
+  cmd_remise_fournisseur_loc:
+    sql: '"CMD_REMISE_FOURNISSEUR_LOC"'
+    description: Montant de remise fournisseur en devise locale
+
+  cmd_remise_fournisseur_conso:
+    sql: '"CMD_REMISE_FOURNISSEUR_CONSO"'
+    description: Montant de remise fournisseur en devise consolidée
+
+  cmd_prix_cession_loc:
+    sql: '"CMD_PRIX_CESSION_LOC"'
+    description: Prix de cession en devise locale
+
+  cmd_prix_cession_conso:
+    sql: '"CMD_PRIX_CESSION_CONSO"'
+    description: Prix de cession en devise consolidée
+
+  cmd_ordre_ref_code:
+    sql: '"CMD_ORDRE_REF_CODE"'
+    description: Référence externe de la commande
+
+  cmd_ordre_ref_code_ss:
+    sql: '"CMD_ORDRE_REF_CODE_SS"'
+    description: Référence externe de la commande
+
+  cmd_ligne_ordre_ref_code:
+    sql: '"CMD_LIGNE_ORDRE_REF_CODE"'
+    description: Numéro de ligne externe de la commande
+
+  cmd_reference_ln:
+    sql: '"CMD_REFERENCE_LN"'
+    description: Référence LN
+
+  cmd_nom_client:
+    sql: '"CMD_NOM_CLIENT"'
+    description: Nom client
+
+  cmd_tournee:
+    sql: '"CMD_TOURNEE"'
+    description: Tournée
+
+  cmd_priorite:
+    sql: '"CMD_PRIORITE"'
+    description: Priorité
+
+  cmd_mode_livraison:
+    sql: '"CMD_MODE_LIVRAISON"'
+    description: Méthode de livraison
+
+  cmd_condition_livraison:
+    sql: '"CMD_CONDITION_LIVRAISON"'
+    description: Conditions de livraison
+
+  cmd_modele_remise_code:
+    sql: '"CMD_MODELE_REMISE_CODE"'
+    description: Code du modèle de remise
+
+  cmd_valeur_brute_totale:
+    sql: '"CMD_VALEUR_BRUTE_TOTALE"'
+    description: Valeur brute de la commande
+
+  cmd_valeur_nette_totale:
+    sql: '"CMD_VALEUR_NETTE_TOTALE"'
+    description: Valeur nette de la commande
+
+  cmd_valeur_brute_restante_a_facturer:
+    sql: '"CMD_VALEUR_BRUTE_RESTANTE_A_FACTURER"'
+    description: Valeur brute à facturer
+
+  cmd_valeur_nette_restante_a_facturer:
+    sql: '"CMD_VALEUR_NETTE_RESTANTE_A_FACTURER"'
+    description: Valeur nette à facturer
+
+  cdo_code:
+    sql: '"CDO_CODE"'
+    description: CDO code
+
+  cmd_categorie:
+    sql: '"CMD_CATEGORIE"'
+    description: Catégorie
+
+  cmd_mono_multi:
+    sql: '"CMD_MONO_MULTI"'
+    description: Mono multi
+
+  cmd_qte_prep:
+    sql: '"CMD_QTE_PREP"'
+    description: Quantité préparée
+
+  cmd_qte_expe:
+    sql: '"CMD_QTE_EXPE"'
+    description: Quantité expédiée
+
+  cmd_qte_reservee:
+    sql: '"CMD_QTE_RESERVEE"'
+    description: Quantité réservée
+
+  cmd_qte_affectee:
+    sql: '"CMD_QTE_AFFECTEE"'
+    description: Quantité affectée
+
+  cmd_qte_facturee:
+    sql: '"CMD_QTE_FACTUREE"'
+    description: Quantité facturée
+
+  cmd_qte_commandee:
+    sql: '"CMD_QTE_COMMANDEE"'
+    description: Quantité commandée
+
+measures:
+  count:
+    aggregate_type: count

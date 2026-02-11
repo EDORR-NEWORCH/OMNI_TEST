@@ -1,0 +1,77 @@
+# Reference this view as dwh_dwh__f_reference_croisees
+catalog: DWH
+schema: DWH
+table_name: F_REFERENCE_CROISEES
+
+dimensions:
+  refc_div_code:
+    sql: '"REFC_DIV_CODE"'
+    description: Code division
+
+  refc_soc_code:
+    sql: '"REFC_SOC_CODE"'
+    description: Code société
+
+  refc_segm_num:
+    sql: '"REFC_SEGM_NUM"'
+    description: N° segment comptable
+
+  refc_segm_valeur:
+    sql: '"REFC_SEGM_VALEUR"'
+    description: Valeur segment comptable
+
+  refc_ctrl_cc:
+    sql: '"REFC_CTRL_CC"'
+    description: Objet du motif de contrôle
+
+  refc_segm_a_valider:
+    sql: '"REFC_SEGM_A_VALIDER"'
+    description: Segment comptable à valider
+
+  refc_cpte_ref_croisee:
+    sql: '"REFC_CPTE_REF_CROISEE"'
+    description: Code de l’identité comptable
+
+  refc_interval:
+    sql: '"REFC_INTERVAL"'
+    description: Intervalle
+
+  refc_segm_valeur_deb:
+    sql: '"REFC_SEGM_VALEUR_DEB"'
+    description: Valeur début de l'identité comptable
+
+  refc_segm_valeur_fin:
+    sql: '"REFC_SEGM_VALEUR_FIN"'
+    description: Valeur fin de l'identité comptable
+
+  refc_code_tva_deb:
+    sql: '"REFC_CODE_TVA_DEB"'
+    description: Code TVA début
+
+  refc_code_tva_fin:
+    sql: '"REFC_CODE_TVA_FIN"'
+    description: Code TVA fin
+
+  refc_date_saisie:
+    sql: '"REFC_DATE_SAISIE"'
+    description: Date de saisie
+
+  refc_heure_saisie:
+    sql: '"REFC_HEURE_SAISIE"'
+    description: Heure de saisie
+
+  refc_date_mod:
+    sql: '"REFC_DATE_MOD"'
+    description: Date de modification
+
+  refc_num_mod:
+    sql: '"REFC_NUM_MOD"'
+    description: N° de modification
+
+  refc_user_mod:
+    sql: '"REFC_USER_MOD"'
+    description: Utilisateur à l'origine de la modification
+
+measures:
+  count:
+    aggregate_type: count

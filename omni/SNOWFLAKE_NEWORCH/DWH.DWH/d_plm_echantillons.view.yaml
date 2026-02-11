@@ -1,0 +1,89 @@
+# Reference this view as dwh_dwh__d_plm_echantillons
+catalog: DWH
+schema: DWH
+table_name: D_PLM_ECHANTILLONS
+
+dimensions:
+  reference:
+    sql: '"REFERENCE"'
+    description: Code référence du produit
+
+  saison:
+    sql: '"SAISON"'
+    description: Code saison du produit
+
+  echantillon_numero:
+    sql: '"ECHANTILLON_NUMERO"'
+    description: Numéro de l'échantillon
+
+  echantillon_nom:
+    sql: '"ECHANTILLON_NOM"'
+    description: Nom de l'échantillon
+
+  date_creation:
+    sql: '"DATE_CREATION"'
+    description: Date de création
+
+  date_modification:
+    sql: '"DATE_MODIFICATION"'
+    description: Date de modification
+
+  commentaires:
+    sql: '"COMMENTAIRES"'
+    description: Commentaires
+
+  taille:
+    sql: '"TAILLE"'
+    description: Taille du produit
+
+  echantillon_usine:
+    sql: '"ECHANTILLON_USINE"'
+    description: Usine
+
+  type_echantillon_composant:
+    sql: '"TYPE_ECHANTILLON_COMPOSANT"'
+    description: Type de l'échantillon
+
+  fournisseur:
+    sql: '"FOURNISSEUR"'
+    description: Fournisseur de l'échantillon
+
+  agent:
+    sql: '"AGENT"'
+    description: Agent de l'échantillon
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code M3 de la refco
+
+  spec_couleur:
+    sql: '"SPEC_COULEUR"'
+    description: Couleur
+
+  refco:
+    sql: '"REFCO"'
+    description: Refco
+
+  refcoactif:
+    sql: '"REFCOACTIF"'
+    description: Refco active
+
+  code_frs:
+    sql: '"CODE_FRS"'
+    description: Code fournisseur
+
+  qte_demandees:
+    sql: '"QTE_DEMANDEES"'
+    description: Quantités Demandées
+
+  qte_recues:
+    sql: '"QTE_RECUES"'
+    description: Quantités Reçues
+
+  date_reception_echantillon:
+    sql: '"DATE_RECEPTION_ECHANTILLON"'
+    description: Date de réception de l'échantillon
+
+measures:
+  count:
+    aggregate_type: count

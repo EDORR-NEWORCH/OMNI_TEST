@@ -1,0 +1,46 @@
+# Reference this view as dwh_dwh__f_ligne_part_naiss
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_PART_NAISS
+
+dimensions:
+  part_id:
+    sql: '"PART_ID"'
+    format: ID
+    description: ID de la liste
+
+  part_num_ligne:
+    sql: '"PART_NUM_LIGNE"'
+    description: Numéro de ligne
+
+  part_id_mvt:
+    sql: '"PART_ID_MVT"'
+    description: ID du mouvement
+
+  part_typ_mvt:
+    sql: '"PART_TYP_MVT"'
+    description: Type du mouvement
+
+  part_montant:
+    sql: '"PART_MONTANT"'
+    description: Montant participation
+
+  part_bon_cloture:
+    sql: '"PART_BON_CLOTURE"'
+    description: Flag de clôture
+
+  part_etb_vers:
+    sql: '"PART_ETB_VERS"'
+    description: Magasin de versement
+
+  part_etb_vers_lib:
+    sql: '"PART_ETB_VERS_LIB"'
+    description: Libellé magasin de versement
+
+  part_date_vers:
+    sql: '"PART_DATE_VERS"'
+    description: Date participation
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,53 @@
+# Reference this view as dwh_dwh__d_tva
+catalog: DWH
+schema: DWH
+table_name: D_TVA
+
+dimensions:
+  tva_code:
+    sql: '"TVA_CODE"'
+    description: Code TVA
+
+  tva_pays:
+    sql: '"TVA_PAYS"'
+    description: Pays
+
+  tva_date_debut:
+    sql: '"TVA_DATE_DEBUT"'
+    description: Date de début de validité du taux
+
+  tva_date_fin:
+    sql: '"TVA_DATE_FIN"'
+    description: Date de fin de validité du taux
+
+  tva_taux1:
+    sql: '"TVA_TAUX1"'
+    description: TVA taux 1
+
+  tva_taux2:
+    sql: '"TVA_TAUX2"'
+    description: TVA taux 2
+
+  tva_ded_taux1:
+    sql: '"TVA_DED_TAUX1"'
+    description: TVA taux déductible 1
+
+  tva_ded_taux2:
+    sql: '"TVA_DED_TAUX2"'
+    description: TVA taux déductible 2
+
+  tva_libc:
+    sql: '"TVA_LIBC"'
+    description: Libellé court
+
+  tva_libl:
+    sql: '"TVA_LIBL"'
+    description: Libellé
+
+  tva_region:
+    sql: '"TVA_REGION"'
+    description: Région
+
+measures:
+  count:
+    aggregate_type: count

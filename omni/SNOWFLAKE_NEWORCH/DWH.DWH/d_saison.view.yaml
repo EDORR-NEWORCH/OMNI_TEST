@@ -1,0 +1,65 @@
+# Reference this view as dwh_dwh__d_saison
+catalog: DWH
+schema: DWH
+table_name: D_SAISON
+
+dimensions:
+  sais_code:
+    sql: '"SAIS_CODE"'
+    description: Code saison
+
+  sais_designation:
+    sql: '"SAIS_DESIGNATION"'
+    description: Désignation saison
+
+  sais_date_debut:
+    sql: '"SAIS_DATE_DEBUT"'
+    description: Date de début de la saison
+
+  sais_date_fin:
+    sql: '"SAIS_DATE_FIN"'
+    description: Date de fin de la saison
+
+  sais_statut_code:
+    sql: '"SAIS_STATUT_CODE"'
+    description: Statut
+
+  sais_statut_lib:
+    sql: '"SAIS_STATUT_LIB"'
+    description: Libellé statut
+
+  sais_date_premiere_cmd:
+    sql: '"SAIS_DATE_PREMIERE_CMD"'
+    description: Date de première commande
+
+  sais_date_derniere_cmd:
+    sql: '"SAIS_DATE_DERNIERE_CMD"'
+    description: Date de dernière commande
+
+  sais_date_debut_vte:
+    sql: '"SAIS_DATE_DEBUT_VTE"'
+    description: Date de début de la saison de vente
+
+  sais_date_fin_vte:
+    sql: '"SAIS_DATE_FIN_VTE"'
+    description: Date de fin de la saison de vente
+
+  sais_date_debut_vte_rec:
+    sql: '"SAIS_DATE_DEBUT_VTE_REC"'
+    description: Date de début de la saison de vente des reconduits
+
+  sais_date_fin_vte_rec:
+    sql: '"SAIS_DATE_FIN_VTE_REC"'
+    description: Date de fin de la saison de vente des reconduits
+
+  sais_date_fin_vte_n_1:
+    sql: '"SAIS_DATE_FIN_VTE_N_1"'
+    description: Date de fin de la saison de vente N-1
+
+  sais_date_fin_vte_n_2:
+    sql: '"SAIS_DATE_FIN_VTE_N_2"'
+    description: Date de fin de la saison de vente N-2
+
+measures:
+  count:
+    aggregate_type: count

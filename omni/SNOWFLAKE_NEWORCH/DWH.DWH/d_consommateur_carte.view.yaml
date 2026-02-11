@@ -1,0 +1,52 @@
+# Reference this view as dwh_dwh__d_consommateur_carte
+catalog: DWH
+schema: DWH
+table_name: D_CONSOMMATEUR_CARTE
+
+dimensions:
+  consh_key:
+    sql: '"CONSH_KEY"'
+    description: Clé technique duo Client / carte
+
+  cons_code:
+    sql: '"CONS_CODE"'
+    description: Code client
+
+  cons_key:
+    sql: '"CONS_KEY"'
+    description: Clé technique client
+
+  cons_carte_fidelite_code:
+    sql: '"CONS_CARTE_FIDELITE_CODE"'
+    description: Code carte
+
+  cons_date_debut:
+    sql: '"CONS_DATE_DEBUT"'
+    description: Date début validité
+
+  cons_dt_fin_fidelite:
+    sql: '"CONS_DT_FIN_FIDELITE"'
+    description: Date de fin de fidélité
+
+  cons_statut_fidelite:
+    sql: '"CONS_STATUT_FIDELITE"'
+    description: Statut fidélité
+
+  cons_carte_dep_code:
+    sql: '"CONS_CARTE_DEP_CODE"'
+    description: Code dépôt
+
+  cons_sit_ori_carte:
+    sql: '"CONS_SIT_ORI_CARTE"'
+    description: Site WEB Origine carte
+
+  cons_carte_dt_modif:
+    sql: '"CONS_CARTE_DT_MODIF"'
+
+  cons_prog_fidelite:
+    sql: '"CONS_PROG_FIDELITE"'
+    description: Programme de fidelité
+
+measures:
+  count:
+    aggregate_type: count

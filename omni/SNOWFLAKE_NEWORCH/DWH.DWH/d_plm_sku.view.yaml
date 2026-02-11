@@ -1,0 +1,57 @@
+# Reference this view as dwh_dwh__d_plm_sku
+catalog: DWH
+schema: DWH
+table_name: D_PLM_SKU
+
+dimensions:
+  sku:
+    sql: '"SKU"'
+    description: SKU du produit
+
+  sku_refco:
+    sql: '"SKU_REFCO"'
+    description: Refco du produit
+
+  saison:
+    sql: '"SAISON"'
+    description: Saison du produit
+
+  poids_brut:
+    sql: '"POIDS_BRUT"'
+    description: Poids Brut du produit
+
+  poids_net:
+    sql: '"POIDS_NET"'
+    description: Poids Net du produit
+
+  refid:
+    sql: '"REFID"'
+    description: REFID du produit
+
+  code_m3:
+    sql: '"CODE_M3"'
+    description: SKU M3 du produit
+
+  realizedsize:
+    sql: '"REALIZEDSIZE"'
+    description: Taille du produit
+
+  style:
+    sql: '"STYLE"'
+    description: Style du produit
+
+  orc_skuattr_pv_dou:
+    sql: '"ORC_SKUATTR_PV_DOU"'
+    description: PV du produit
+
+  orc_skuattr_colisage:
+    sql: '"ORC_SKUATTR_COLISAGE"'
+    description: Colisage du produit
+
+  hscode:
+    sql: '"HSCODE"'
+    description: Code douanier du produit
+
+measures:
+  count:
+    aggregate_type: count

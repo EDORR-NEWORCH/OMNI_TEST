@@ -1,0 +1,76 @@
+# Reference this view as dwh_dwh__d_depot_adr
+catalog: DWH
+schema: DWH
+table_name: D_DEPOT_ADR
+
+dimensions:
+  depadr_key:
+    sql: '"DEPADR_KEY"'
+    description: Clé adresse dépôt
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Clé dépôt
+
+  depadr_cle1:
+    sql: '"DEPADR_CLE1"'
+    description: Clé adresse dépôt
+
+  depadr_type_code:
+    sql: '"DEPADR_TYPE_CODE"'
+    description: Code type adresse dépôt
+
+  depadr_type_lib:
+    sql: '"DEPADR_TYPE_LIB"'
+
+  depadr_enseigne:
+    sql: '"DEPADR_ENSEIGNE"'
+    description: Enseigne adresse dépôt
+
+  depadr_adresse_1:
+    sql: '"DEPADR_ADRESSE_1"'
+    description: Ligne adresse 1
+
+  depadr_adresse_2:
+    sql: '"DEPADR_ADRESSE_2"'
+    description: Ligne adresse 2
+
+  depadr_adresse_3:
+    sql: '"DEPADR_ADRESSE_3"'
+    description: Ligne adresse 3
+
+  depadr_adresse_4:
+    sql: '"DEPADR_ADRESSE_4"'
+    description: Ligne adresse 4
+
+  depadr_ville:
+    sql: '"DEPADR_VILLE"'
+    description: Ville adresse
+
+  depadr_code_postal:
+    sql: '"DEPADR_CODE_POSTAL"'
+    description: Code postal Adresse
+
+  depadr_pays_code:
+    sql: '"DEPADR_PAYS_CODE"'
+    description: Code pays adresse
+
+  depadr_pays_lib:
+    sql: '"DEPADR_PAYS_LIB"'
+    description: Libellé pays adresse
+
+  depadr_etat_code:
+    sql: '"DEPADR_ETAT_CODE"'
+    description: Etat code adresse
+
+  depadr_etat_lib:
+    sql: '"DEPADR_ETAT_LIB"'
+    description: Etat libellé adresse
+
+measures:
+  count:
+    aggregate_type: count

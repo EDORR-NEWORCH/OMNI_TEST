@@ -1,0 +1,17 @@
+# Reference this view as dwh_dwh__d_cat_mode_regl
+catalog: DWH
+schema: DWH
+table_name: D_CAT_MODE_REGL
+
+dimensions:
+  cat_regl_code:
+    sql: '"CAT_REGL_CODE"'
+    description: Code catégorie mode règlement
+
+  cat_regl_lib:
+    sql: '"CAT_REGL_LIB"'
+    description: Libellé catégorie mode règlement
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,157 @@
+# Reference this view as dwh_dwh__f_commande_fournisseur
+catalog: DWH
+schema: DWH
+table_name: F_COMMANDE_FOURNISSEUR
+
+dimensions:
+  cmd_type_doc:
+    sql: '"CMD_TYPE_DOC"'
+    description: Type du document
+
+  cmd_souche:
+    sql: '"CMD_SOUCHE"'
+    description: Souche
+
+  cmd_numero:
+    sql: '"CMD_NUMERO"'
+    description: Numéro de ligne
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  four_code:
+    sql: '"FOUR_CODE"'
+    description: Code fournisseur
+
+  dev_code:
+    sql: '"DEV_CODE"'
+    description: Code devise
+
+  cmd_statut_sup:
+    sql: '"CMD_STATUT_SUP"'
+    description: Statut suppression
+
+  cmd_statut_valid:
+    sql: '"CMD_STATUT_VALID"'
+    description: statut validation
+
+  cmd_numero_ligne:
+    sql: '"CMD_NUMERO_LIGNE"'
+    description: Numéro ligne
+
+  cmd_statut_solde:
+    sql: '"CMD_STATUT_SOLDE"'
+    description: Statut soldé
+
+  cmd_bloc_note:
+    sql: '"CMD_BLOC_NOTE"'
+    description: Bloc note
+
+  cmd_cal_key_cmd:
+    sql: '"CMD_CAL_KEY_CMD"'
+    description: Date création
+
+  cmd_cal_key_exp:
+    sql: '"CMD_CAL_KEY_EXP"'
+    description: Date expédition
+
+  cmd_cal_key_rec:
+    sql: '"CMD_CAL_KEY_REC"'
+    description: Date réception
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  cmd_qte_cmd:
+    sql: '"CMD_QTE_CMD"'
+    description: Qte commandée
+
+  cmd_qte_exp:
+    sql: '"CMD_QTE_EXP"'
+    description: Qte expédiée
+
+  cmd_qte_rec:
+    sql: '"CMD_QTE_REC"'
+    description: Qte réceptionnée
+
+  cmd_puht_cmd:
+    sql: '"CMD_PUHT_CMD"'
+    description: PU HT commandé
+
+  cmd_puht_exp:
+    sql: '"CMD_PUHT_EXP"'
+    description: PU HT expédié
+
+  cmd_puht_rec:
+    sql: '"CMD_PUHT_REC"'
+    description: PU HT réceptionné
+
+  cmd_remise_cmd:
+    sql: '"CMD_REMISE_CMD"'
+    description: Remise commandée
+
+  cmd_remise_exp:
+    sql: '"CMD_REMISE_EXP"'
+    description: Remise expédiée
+
+  cmd_remise_rec:
+    sql: '"CMD_REMISE_REC"'
+    description: Remise réceptionnée
+
+  cmd_precedent:
+    sql: '"CMD_PRECEDENT"'
+    description: Document précédent
+
+  cmd_ref_externe_piece:
+    sql: '"CMD_REF_EXTERNE_PIECE"'
+    description: Référence externe
+
+  cmd_ref_externe_ligne:
+    sql: '"CMD_REF_EXTERNE_LIGNE"'
+    description: Référence externe ligne
+
+  cmd_type_doc_prec:
+    sql: '"CMD_TYPE_DOC_PREC"'
+    description: Type document précédent
+
+  cmd_souche_prec:
+    sql: '"CMD_SOUCHE_PREC"'
+    description: Souche précédent
+
+  cmd_numero_prec:
+    sql: '"CMD_NUMERO_PREC"'
+    description: Numéro précédent
+
+  cmd_numero_ligne_prec:
+    sql: '"CMD_NUMERO_LIGNE_PREC"'
+    description: Numéro ligne précédent
+
+  cmd_type_doc_ori:
+    sql: '"CMD_TYPE_DOC_ORI"'
+    description: Type document origine
+
+  cmd_souche_ori:
+    sql: '"CMD_SOUCHE_ORI"'
+    description: Souche origine
+
+  cmd_numero_ori:
+    sql: '"CMD_NUMERO_ORI"'
+    description: Numéro origine
+
+  cmd_numero_ligne_ori:
+    sql: '"CMD_NUMERO_LIGNE_ORI"'
+    description: Numéro ligne origine
+
+  cmd_statut_ligne:
+    sql: '"CMD_STATUT_LIGNE"'
+    description: Statut ligne
+
+  cmd_statut_cmd:
+    sql: '"CMD_STATUT_CMD"'
+    description: Statut commande
+
+measures:
+  count:
+    aggregate_type: count

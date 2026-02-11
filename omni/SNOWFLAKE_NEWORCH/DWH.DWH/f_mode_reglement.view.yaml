@@ -1,0 +1,92 @@
+# Reference this view as dwh_dwh__f_mode_reglement
+catalog: DWH
+schema: DWH
+table_name: F_MODE_REGLEMENT
+
+dimensions:
+  reg_tck_id:
+    sql: '"REG_TCK_ID"'
+    format: ID
+    description: ID ticket
+
+  reg_num_ligne:
+    sql: '"REG_NUM_LIGNE"'
+    description: Numéro ligne règlement
+
+  reg_regl_id:
+    sql: '"REG_REGL_ID"'
+    format: ID
+    description: Code mode règlement
+
+  reg_ett_id:
+    sql: '"REG_ETT_ID"'
+    format: ID
+    description: Code établissement
+
+  reg_date:
+    sql: '"REG_DATE"'
+    description: Date règlement
+
+  reg_cli_id:
+    sql: '"REG_CLI_ID"'
+    format: ID
+    description: Code client
+
+  reg_cli_id_master:
+    sql: '"REG_CLI_ID_MASTER"'
+
+  reg_devise_id_conso:
+    sql: '"REG_DEVISE_ID_CONSO"'
+    description: Code devise consolidée
+
+  reg_devise_id_tck:
+    sql: '"REG_DEVISE_ID_TCK"'
+    description: Code devise ticket de vente
+
+  reg_devise_id_loc:
+    sql: '"REG_DEVISE_ID_LOC"'
+    description: Code devise locale
+
+  reg_mt_loc:
+    sql: '"REG_MT_LOC"'
+    description: Montant règlement en devise locale
+
+  reg_mt_conso:
+    sql: '"REG_MT_CONSO"'
+    description: Montant règlement en devise consolidée
+
+  reg_mt_tck:
+    sql: '"REG_MT_TCK"'
+    description: Montant règlement en devise du ticket de vente
+
+  reg_date_en_banque:
+    sql: '"REG_DATE_EN_BANQUE"'
+    description: Date en banque
+
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Clé calendrier
+
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Clé technique du dépôt
+
+  dev_key_conso:
+    sql: '"DEV_KEY_CONSO"'
+    description: Clé technique de la devise consolidée
+
+  dev_key:
+    sql: '"DEV_KEY"'
+    description: Clé technique de la devise locale
+
+  dev_key_tck:
+    sql: '"DEV_KEY_TCK"'
+    description: Clé technique de la devise du ticket de vente
+
+  cons_key:
+    sql: '"CONS_KEY"'
+    description: Clé technique du consommateur
+
+measures:
+  count:
+    aggregate_type: count

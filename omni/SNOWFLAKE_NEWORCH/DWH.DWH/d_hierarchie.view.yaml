@@ -1,0 +1,49 @@
+# Reference this view as dwh_dwh__d_hierarchie
+catalog: DWH
+schema: DWH
+table_name: D_HIERARCHIE
+
+dimensions:
+  hier_niveau:
+    sql: '"HIER_NIVEAU"'
+    description: Niveau de hiérarchie
+
+  hier_code:
+    sql: '"HIER_CODE"'
+    description: Code hiérarchie
+
+  hier_lib_court:
+    sql: '"HIER_LIB_COURT"'
+    description: Libellé court
+
+  hier_lib_long:
+    sql: '"HIER_LIB_LONG"'
+    description: Libellé long
+
+  hier_niveau_sup:
+    sql: '"HIER_NIVEAU_SUP"'
+    description: Niveau de hiérarchie supérieur
+
+  hier_code_sup:
+    sql: '"HIER_CODE_SUP"'
+    description: Code hiérarchie supérieur
+
+  hier_grp_code:
+    sql: '"HIER_GRP_CODE"'
+    description: Code groupe
+
+  hier_lib_gb:
+    sql: '"HIER_LIB_GB"'
+    description: Libellé GB
+
+  hier_lib_nl:
+    sql: '"HIER_LIB_NL"'
+    description: Libellé NL
+
+  hier_lib_gr:
+    sql: '"HIER_LIB_GR"'
+    description: Libellé GR
+
+measures:
+  count:
+    aggregate_type: count

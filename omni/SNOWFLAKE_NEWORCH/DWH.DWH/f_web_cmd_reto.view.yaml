@@ -1,0 +1,53 @@
+# Reference this view as dwh_dwh__f_web_cmd_reto
+catalog: DWH
+schema: DWH
+table_name: F_WEB_CMD_RETO
+
+dimensions:
+  web_cmd:
+    sql: '"WEB_CMD"'
+    description: Numéro de la commande WEB
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code magasin
+
+  web_dep_prep:
+    sql: '"WEB_DEP_PREP"'
+    description: Code magasin
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  web_prd_code:
+    sql: '"WEB_PRD_CODE"'
+    description: Code produit
+
+  web_id_ligne_oms:
+    sql: '"WEB_ID_LIGNE_OMS"'
+    description: Id ligne OMS
+
+  web_date:
+    sql: '"WEB_DATE"'
+    description: Date de modification de la ligne retour/abandon
+
+  web_qte:
+    sql: '"WEB_QTE"'
+    description: Quantité annulée
+
+  web_etat_art:
+    sql: '"WEB_ETAT_ART"'
+    description: Etat article
+
+  web_motif:
+    sql: '"WEB_MOTIF"'
+    description: Motif retour / abandon
+
+  web_etat_reto:
+    sql: '"WEB_ETAT_RETO"'
+    description: Etat retour
+
+measures:
+  count:
+    aggregate_type: count

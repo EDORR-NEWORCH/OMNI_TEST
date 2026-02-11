@@ -1,0 +1,17 @@
+# Reference this view as dwh_dwh__v_statut_lig_web
+catalog: DWH
+schema: DWH
+table_name: V_STATUT_LIG_WEB
+
+dimensions:
+  statut_lig_web_key:
+    sql: '"STATUT_LIG_WEB_KEY"'
+    description: Code statut des lignes des commandes WEB
+
+  statut_lig_web_lib:
+    sql: '"STATUT_LIG_WEB_LIB"'
+    description: Libellé statut des lignes des commandes WEB
+
+measures:
+  count:
+    aggregate_type: count

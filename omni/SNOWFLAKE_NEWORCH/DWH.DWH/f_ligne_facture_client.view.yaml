@@ -1,0 +1,133 @@
+# Reference this view as dwh_dwh__f_ligne_facture_client
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_FACTURE_CLIENT
+
+dimensions:
+  facc_soc_code:
+    sql: '"FACC_SOC_CODE"'
+    description: Code société
+
+  facc_code:
+    sql: '"FACC_CODE"'
+    description: Code facture
+
+  facc_annee:
+    sql: '"FACC_ANNEE"'
+    description: Année facture
+
+  facc_type_info_code:
+    sql: '"FACC_TYPE_INFO_CODE"'
+    description: Code type info facture
+
+  facc_type_info_lib:
+    sql: '"FACC_TYPE_INFO_LIB"'
+    description: Libellé type info facture
+
+  facc_cmd_code:
+    sql: '"FACC_CMD_CODE"'
+    description: Code commande
+
+  facc_liv_code:
+    sql: '"FACC_LIV_CODE"'
+    description: C ode livraison
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  facc_reference:
+    sql: '"FACC_REFERENCE"'
+    description: Référence facture
+
+  date:
+    sql: '"DATE"'
+    description: Date facture
+
+  date_echeance:
+    sql: '"DATE_ECHEANCE"'
+    description: Date échéance
+
+  date_comptable:
+    sql: '"DATE_COMPTABLE"'
+    description: Date comptable
+
+  payeur_code:
+    sql: '"PAYEUR_CODE"'
+    description: Code payeur
+
+  facc_statut:
+    sql: '"FACC_STATUT"'
+    description: Statut facture
+
+  dev_code:
+    sql: '"DEV_CODE"'
+    description: Code devise
+
+  facc_taux_fac:
+    sql: '"FACC_TAUX_FAC"'
+    description: Taux facture
+
+  facc_piece_just_num:
+    sql: '"FACC_PIECE_JUST_NUM"'
+    description: Numéro pièce justificative
+
+  beneficiaire_code:
+    sql: '"BENEFICIAIRE_CODE"'
+    description: Code bénéficiaire
+
+  facc_mt_ht_loc_cmd:
+    sql: '"FACC_MT_HT_LOC_CMD"'
+    description: Montant Hors Taxe commande devise locale
+
+  facc_mt_ht_loc:
+    sql: '"FACC_MT_HT_LOC"'
+    description: Montant Hors Taxe facture devise locale
+
+  facc_mt_base_ht_loc_cmd:
+    sql: '"FACC_MT_BASE_HT_LOC_CMD"'
+    description: Montant de base Hors Taxe commande devise locale
+
+  facc_mt_tva_calc1:
+    sql: '"FACC_MT_TVA_CALC1"'
+    description: Montant TVA calculé 1
+
+  facc_mt_tva_calc2:
+    sql: '"FACC_MT_TVA_CALC2"'
+    description: Montant TVA calculé 2
+
+  facc_mt_tva:
+    sql: '"FACC_MT_TVA"'
+    description: Montant TVA facture
+
+  facc_mt_ttc_loc:
+    sql: '"FACC_MT_TTC_LOC"'
+    description: Montant TTC facture devise locale
+
+  facc_pays_code:
+    sql: '"FACC_PAYS_CODE"'
+    description: Code pays facture
+
+  tva_code:
+    sql: '"TVA_CODE"'
+    description: Code TVA
+
+  facc_tx_tva1:
+    sql: '"FACC_TX_TVA1"'
+    description: Taux TVA 1
+
+  facc_tx_tva2:
+    sql: '"FACC_TX_TVA2"'
+    description: Taux TVA 2
+
+  facc_ligne_ordre:
+    sql: '"FACC_LIGNE_ORDRE"'
+    description: Numero ligne ordre de la livraison CDV
+
+  facc_ligne_suffixe:
+    sql: '"FACC_LIGNE_SUFFIXE"'
+    description: Numero ligne suffixe de la livraison CDV
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,609 @@
+# Reference this view as dwh_dwh__f_ligne_ordre_achat
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_ORDRE_ACHAT
+
+dimensions:
+  oa_key:
+    sql: '"OA_KEY"'
+    description: Clé technique ligne ordre achat
+
+  soc_code:
+    sql: '"SOC_CODE"'
+    description: Code société
+
+  soc_key:
+    sql: '"SOC_KEY"'
+    description: Code société
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Code dépôt
+
+  oa_numero_ordre_achat:
+    sql: '"OA_NUMERO_ORDRE_ACHAT"'
+    description: Numéro ordre d'achat
+
+  oa_ligne_ordre_achat:
+    sql: '"OA_LIGNE_ORDRE_ACHAT"'
+    description: Numéro de ligne ordre d'achat
+
+  oa_sous_numero_ligne:
+    sql: '"OA_SOUS_NUMERO_LIGNE"'
+    description: Sous-numéro de ligne
+
+  type_cf_code:
+    sql: '"TYPE_CF_CODE"'
+    description: Type CF
+
+  type_cf_key:
+    sql: '"TYPE_CF_KEY"'
+    description: Type CF
+
+  oa_type_ligne_code:
+    sql: '"OA_TYPE_LIGNE_CODE"'
+    description: Code type ligne
+
+  oa_type_ligne_lib:
+    sql: '"OA_TYPE_LIGNE_LIB"'
+    description: Libellé type ligne
+
+  oa_statut_bas_oa:
+    sql: '"OA_STATUT_BAS_OA"'
+    description: Statut bas
+
+  oa_statut_haut_oa:
+    sql: '"OA_STATUT_HAUT_OA"'
+    description: Statut haut
+
+  four_code:
+    sql: '"FOUR_CODE"'
+    description: Code fournisseur
+
+  four_key:
+    sql: '"FOUR_KEY"'
+    description: Code fournisseur
+
+  oa_code_fournisseur_contrat:
+    sql: '"OA_CODE_FOURNISSEUR_CONTRAT"'
+    description: Code fournisseur contrat
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Code produit
+
+  oa_profil_support:
+    sql: '"OA_PROFIL_SUPPORT"'
+    description: Profil support
+
+  oa_date_commande:
+    sql: '"OA_DATE_COMMANDE"'
+    description: Date commande
+
+  oa_langue_code:
+    sql: '"OA_LANGUE_CODE"'
+    description: Code langue
+
+  oa_langue_lib:
+    sql: '"OA_LANGUE_LIB"'
+    description: Libellé langue
+
+  oa_devise:
+    sql: '"OA_DEVISE"'
+    description: Code devise
+
+  oa_condition_paiement_code:
+    sql: '"OA_CONDITION_PAIEMENT_CODE"'
+    description: Code condition paiement
+
+  oa_condition_paiement_lib:
+    sql: '"OA_CONDITION_PAIEMENT_LIB"'
+    description: Libellé condition paiement
+
+  oa_mode_paiement_code:
+    sql: '"OA_MODE_PAIEMENT_CODE"'
+    description: Code mode paiement
+
+  oa_mode_paiement_lib:
+    sql: '"OA_MODE_PAIEMENT_LIB"'
+    description: Libellé mode paiement
+
+  oa_condition_transport_code:
+    sql: '"OA_CONDITION_TRANSPORT_CODE"'
+    description: Code condition transport
+
+  oa_condition_transport_lib:
+    sql: '"OA_CONDITION_TRANSPORT_LIB"'
+    description: Libellé condition transport
+
+  oa_modalite_conditionnement_code:
+    sql: '"OA_MODALITE_CONDITIONNEMENT_CODE"'
+    description: Code modalité conditionnement
+
+  oa_modalite_conditionnement_lib:
+    sql: '"OA_MODALITE_CONDITIONNEMENT_LIB"'
+    description: Libellé modalité conditionnement
+
+  oa_contact_fournisseur:
+    sql: '"OA_CONTACT_FOURNISSEUR"'
+    description: Contact fournisseur
+
+  oa_dernier_jour_livraison:
+    sql: '"OA_DERNIER_JOUR_LIVRAISON"'
+    description: Dernier jour livraison
+
+  oa_beneficiaire_paiement:
+    sql: '"OA_BENEFICIAIRE_PAIEMENT"'
+    description: Bénéficiaire paiement
+
+  oa_beneficiaire_type_contrat:
+    sql: '"OA_BENEFICIAIRE_TYPE_CONTRAT"'
+    description: Type contrat bénéficiaire
+
+  oa_valeur_nette_commande:
+    sql: '"OA_VALEUR_NETTE_COMMANDE"'
+    description: Valeur nette commande
+
+  oa_valeur_brute_commande:
+    sql: '"OA_VALEUR_BRUTE_COMMANDE"'
+    description: Valeur brute commande
+
+  oa_premiere_date_edition:
+    sql: '"OA_PREMIERE_DATE_EDITION"'
+    description: Première date édition
+
+  oa_liste_suivi_activites:
+    sql: '"OA_LISTE_SUIVI_ACTIVITES"'
+    description: Liste suivi activités
+
+  oa_cout_total_commande:
+    sql: '"OA_COUT_TOTAL_COMMANDE"'
+    description: Cout total commande
+
+  oa_montant_remise_total:
+    sql: '"OA_MONTANT_REMISE_TOTAL"'
+    description: Montant remise total
+
+  oa_remise_total_commande:
+    sql: '"OA_REMISE_TOTAL_COMMANDE"'
+    description: Remise total commande
+
+  oa_volume:
+    sql: '"OA_VOLUME"'
+    description: Volume
+
+  oa_poids_brut:
+    sql: '"OA_POIDS_BRUT"'
+    description: Poids brut
+
+  oa_quantite_totale:
+    sql: '"OA_QUANTITE_TOTALE"'
+    description: Quantité totale
+
+  oa_texte_conditions:
+    sql: '"OA_TEXTE_CONDITIONS"'
+    description: Texte conditions
+
+  oa_date_echeance:
+    sql: '"OA_DATE_ECHEANCE"'
+    description: Date échéance
+
+  oa_conditions_devise:
+    sql: '"OA_CONDITIONS_DEVISE"'
+    description: Devise conditions
+
+  oa_taux_contractuel:
+    sql: '"OA_TAUX_CONTRACTUEL"'
+    description: Taux contractuel
+
+  oa_operation_service:
+    sql: '"OA_OPERATION_SERVICE"'
+    description: Opération service
+
+  oa_service:
+    sql: '"OA_SERVICE"'
+    description: Service
+
+  oa_code_article_fournisseur:
+    sql: '"OA_CODE_ARTICLE_FOURNISSEUR"'
+    description: Code article fournisseur
+
+  oa_nom_article_oa:
+    sql: '"OA_NOM_ARTICLE_OA"'
+    description: Nom article OA
+
+  oa_designation_article_oa:
+    sql: '"OA_DESIGNATION_ARTICLE_OA"'
+    description: Désignation article OA
+
+  oa_numero_commande_fournisseur:
+    sql: '"OA_NUMERO_COMMANDE_FOURNISSEUR"'
+    description: Numéro commande fournisseur
+
+  oa_fabricant:
+    sql: '"OA_FABRICANT"'
+    description: Fabricant
+
+  oa_edition_numero_version:
+    sql: '"OA_EDITION_NUMERO_VERSION"'
+    description: Edition numéro version
+
+  oa_edition_numero_version_lib:
+    sql: '"OA_EDITION_NUMERO_VERSION_LIB"'
+    description: Libellé edition numéro version
+
+  oa_prix_achat:
+    sql: '"OA_PRIX_ACHAT"'
+    description: Prix d'achat
+
+  oa_remise_1:
+    sql: '"OA_REMISE_1"'
+    description: Remise 1
+
+  oa_remise_2:
+    sql: '"OA_REMISE_2"'
+    description: Remise 2
+
+  oa_remise_3:
+    sql: '"OA_REMISE_3"'
+    description: Remise 3
+
+  oa_prix_achat_confirme:
+    sql: '"OA_PRIX_ACHAT_CONFIRME"'
+    description: Prix d'achat confirmé
+
+  oa_remise_1_confirmee:
+    sql: '"OA_REMISE_1_CONFIRMEE"'
+    description: Remise 1 confirmée
+
+  oa_remise_2_confirmee:
+    sql: '"OA_REMISE_2_CONFIRMEE"'
+    description: Remise 2 confirmée
+
+  oa_remise_3_confirmee:
+    sql: '"OA_REMISE_3_CONFIRMEE"'
+    description: Remise 3 confirmée
+
+  oa_unite_achat:
+    sql: '"OA_UNITE_ACHAT"'
+    description: Unité d'achat
+
+  oa_unite_prix_achat:
+    sql: '"OA_UNITE_PRIX_ACHAT"'
+    description: Unité prix d'achat
+
+  oa_quantite_prix_achat:
+    sql: '"OA_QUANTITE_PRIX_ACHAT"'
+    description: Quantité prix d'achat
+
+  oa_pcb_prix_achat_confirme:
+    sql: '"OA_PCB_PRIX_ACHAT_CONFIRME"'
+    description: PCB prix d'achat confirmé
+
+  oa_texte_prix_achat_code:
+    sql: '"OA_TEXTE_PRIX_ACHAT_CODE"'
+    description: Code texte prix d'achat
+
+  oa_texte_prix_achat_lib:
+    sql: '"OA_TEXTE_PRIX_ACHAT_LIB"'
+    description: Libellé texte prix d'achat
+
+  oa_pourcentage_remise_totale:
+    sql: '"OA_POURCENTAGE_REMISE_TOTALE"'
+    description: Pourcentage remise totale
+
+  oa_montant_devise:
+    sql: '"OA_MONTANT_DEVISE"'
+    description: Montant devise
+
+  oa_date_livraison_demandee:
+    sql: '"OA_DATE_LIVRAISON_DEMANDEE"'
+    description: Date livraison demandée
+
+  oa_date_livraison_confirmee:
+    sql: '"OA_DATE_LIVRAISON_CONFIRMEE"'
+    description: Date livraison confirmée
+
+  oa_date_livraison_confirmee_precedante:
+    sql: '"OA_DATE_LIVRAISON_CONFIRMEE_PRECEDANTE"'
+    description: Date livraison confirmée précédente
+
+  oa_date_livraison_validee:
+    sql: '"OA_DATE_LIVRAISON_VALIDEE"'
+    description: Date livraison validée
+
+  oa_quantite_commandee_unm_remplacement:
+    sql: '"OA_QUANTITE_COMMANDEE_UNM_REMPLACEMENT"'
+    description: Quantité commandée UNM remplacement
+
+  oa_quantite_confirmee:
+    sql: '"OA_QUANTITE_CONFIRMEE"'
+    description: Quantité confirmée
+
+  oa_quantite_conseil_remplacement:
+    sql: '"OA_QUANTITE_CONSEIL_REMPLACEMENT"'
+    description: Quantité conseil remplacement
+
+  oa_quantite_signalee_transport:
+    sql: '"OA_QUANTITE_SIGNALEE_TRANSPORT"'
+    description: Quantité signalée transport
+
+  oa_quantite_recue:
+    sql: '"OA_QUANTITE_RECUE"'
+    description: Quantité reçue
+
+  oa_date_reception:
+    sql: '"OA_DATE_RECEPTION"'
+    description: Date de réception
+
+  oa_quantite_approuvee_remplacement:
+    sql: '"OA_QUANTITE_APPROUVEE_REMPLACEMENT"'
+    description: Quantité approuvée remplacement
+
+  oa_quantite_rejetee:
+    sql: '"OA_QUANTITE_REJETEE"'
+    description: Quantité rejetée
+
+  oa_quantite_stockee:
+    sql: '"OA_QUANTITE_STOCKEE"'
+    description: Quantité stockée
+
+  oa_derniere_date_rangement:
+    sql: '"OA_DERNIERE_DATE_RANGEMENT"'
+    description: Dernière date rangement
+
+  oa_quantite_facturee_unm_remplacement:
+    sql: '"OA_QUANTITE_FACTUREE_UNM_REMPLACEMENT"'
+    description: Quantité facturée UNM remplacement
+
+  oa_date_facture:
+    sql: '"OA_DATE_FACTURE"'
+    description: Date facture
+
+  oa_num_ordre_ref:
+    sql: '"OA_NUM_ORDRE_REF"'
+    description: Numéro d'ordre de référence
+
+  oa_ligne_ordre_ref:
+    sql: '"OA_LIGNE_ORDRE_REF"'
+    description: Numéro de ligne d'ordre de référence
+
+  oa_numero_reference:
+    sql: '"OA_NUMERO_REFERENCE"'
+    description: Numéro de référence
+
+  oa_type_reference_code:
+    sql: '"OA_TYPE_REFERENCE_CODE"'
+    description: Code type de référence
+
+  oa_type_reference_lib:
+    sql: '"OA_TYPE_REFERENCE_LIB"'
+    description: Libellé type de référence
+
+  oa_priorite_code:
+    sql: '"OA_PRIORITE_CODE"'
+    description: Code priorité
+
+  oa_priorite_lib:
+    sql: '"OA_PRIORITE_LIB"'
+    description: Libellé priorité
+
+  oa_ordre_planifie:
+    sql: '"OA_ORDRE_PLANIFIE"'
+    description: Ordre planifié
+
+  oa_sous_numero_ordre_planifie:
+    sql: '"OA_SOUS_NUMERO_ORDRE_PLANIFIE"'
+    description: Sous-numéro ordre planifié
+
+  oa_demandeur:
+    sql: '"OA_DEMANDEUR"'
+    description: Demandeur
+
+  oa_acheteur:
+    sql: '"OA_ACHETEUR"'
+    description: Acheteur
+
+  rmt_code:
+    sql: '"RMT_CODE"'
+    description: Code RMT
+
+  rmt_key:
+    sql: '"RMT_KEY"'
+    description: Code RMT
+
+  rmt_nom:
+    sql: '"RMT_NOM"'
+    description: Nom RMT
+
+  rmt_designation:
+    sql: '"RMT_DESIGNATION"'
+    description: Désignation RMT
+
+  oa_numero_bon_livraison:
+    sql: '"OA_NUMERO_BON_LIVRAISON"'
+    description: Numéro du bon de livraison
+
+  oa_conditionnement_code:
+    sql: '"OA_CONDITIONNEMENT_CODE"'
+    description: Code conditionnement
+
+  oa_conditionnement_lib:
+    sql: '"OA_CONDITIONNEMENT_LIB"'
+    description: Libellé conditionnement
+
+  oa_tva_code:
+    sql: '"OA_TVA_CODE"'
+    description: Code TVA
+
+  oa_tva_lib:
+    sql: '"OA_TVA_LIB"'
+    description: Libellé TVA
+
+  oa_frais_externes:
+    sql: '"OA_FRAIS_EXTERNES"'
+    description: Frais externes
+
+  oa_frais_internes:
+    sql: '"OA_FRAIS_INTERNES"'
+    description: Frais internes
+
+  oa_date_planifiee:
+    sql: '"OA_DATE_PLANIFIEE"'
+    description: Date planifiée
+
+  oa_numero_statistique_douane:
+    sql: '"OA_NUMERO_STATISTIQUE_DOUANE"'
+    description: Numéro statistique douane
+
+  oa_tache_statistique_vente_code:
+    sql: '"OA_TACHE_STATISTIQUE_VENTE_CODE"'
+    description: Code tache statistique vente
+
+  oa_tache_statistique_vente_lib:
+    sql: '"OA_TACHE_STATISTIQUE_VENTE_LIB"'
+    description: Libellé tache statistique vente
+
+  oa_type_activite_statistique_code:
+    sql: '"OA_TYPE_ACTIVITE_STATISTIQUE_CODE"'
+    description: Code type activité statistique
+
+  oa_type_activite_statistique_lib:
+    sql: '"OA_TYPE_ACTIVITE_STATISTIQUE_LIB"'
+    description: Libellé type activité statistique
+
+  oa_procedures_douanes_import_code:
+    sql: '"OA_PROCEDURES_DOUANES_IMPORT_CODE"'
+    description: Code procédures douanes import
+
+  oa_procedures_douanes_import_lib:
+    sql: '"OA_PROCEDURES_DOUANES_IMPORT_LIB"'
+    description: Libellé procédures douanes import
+
+  oa_port_aeroport_code:
+    sql: '"OA_PORT_AEROPORT_CODE"'
+    description: Code port aéroport
+
+  oa_port_aeroport_lib:
+    sql: '"OA_PORT_AEROPORT_LIB"'
+    description: Libellé port aéroport
+
+  oa_code_taxe_client:
+    sql: '"OA_CODE_TAXE_CLIENT"'
+    description: Code taxe client
+
+  oa_produit_principal:
+    sql: '"OA_PRODUIT_PRINCIPAL"'
+    description: Produit principal
+
+  oa_groupe_achat:
+    sql: '"OA_GROUPE_ACHAT"'
+    description: Groupe achat
+
+  oa_suffixe_ligne:
+    sql: '"OA_SUFFIXE_LIGNE"'
+    description: Suffixe ligne
+
+  oa_reference:
+    sql: '"OA_REFERENCE"'
+    description: Référence
+
+  oa_pays_origine:
+    sql: '"OA_PAYS_ORIGINE"'
+    description: Pays origine
+
+  mode_trans_code:
+    sql: '"MODE_TRANS_CODE"'
+    description: Code mode trans
+
+  mode_trans_key:
+    sql: '"MODE_TRANS_KEY"'
+    description: Code mode trans
+
+  mode_trans_nom:
+    sql: '"MODE_TRANS_NOM"'
+    description: Nom mode trans
+
+  mode_trans_designation:
+    sql: '"MODE_TRANS_DESIGNATION"'
+    description: Désignation mode trans
+
+  oa_condition_livraison_code:
+    sql: '"OA_CONDITION_LIVRAISON_CODE"'
+    description: Code condition livraison
+
+  oa_condition_livraison_lib:
+    sql: '"OA_CONDITION_LIVRAISON_LIB"'
+    description: Libellé condition livraison
+
+  oa_date_bon_livraison:
+    sql: '"OA_DATE_BON_LIVRAISON"'
+    description: Date bon livraison
+
+  oa_type_reference_transport_code:
+    sql: '"OA_TYPE_REFERENCE_TRANSPORT_CODE"'
+    description: Code type référence transport
+
+  oa_type_reference_transport_lib:
+    sql: '"OA_TYPE_REFERENCE_TRANSPORT_LIB"'
+    description: Libellé type référence transport
+
+  oa_ref_transport:
+    sql: '"OA_REF_TRANSPORT"'
+    description: Référence transport
+
+  oa_num_proj:
+    sql: '"OA_NUM_PROJ"'
+    description: Numéro proj
+
+  oa_code_transit_plan:
+    sql: '"OA_CODE_TRANSIT_PLAN"'
+    description: Code transit plan
+
+  oa_code_transit_prev:
+    sql: '"OA_CODE_TRANSIT_PREV"'
+    description: Code transit prev
+
+  oa_poids_brut_container:
+    sql: '"OA_POIDS_BRUT_CONTAINER"'
+    description: Poids brut container
+
+  oa_poids_net_container:
+    sql: '"OA_POIDS_NET_CONTAINER"'
+    description: Poids net container
+
+  oa_volume_container:
+    sql: '"OA_VOLUME_CONTAINER"'
+    description: Volume container
+
+  oa_nb_colis_container:
+    sql: '"OA_NB_COLIS_CONTAINER"'
+    description: Nombre colis container
+
+  oa_nb_palette_container:
+    sql: '"OA_NB_PALETTE_CONTAINER"'
+    description: Nombre palette container
+
+  oa_centre_cout:
+    sql: '"OA_CENTRE_COUT"'
+    description: Centre cout
+
+  oa_marque_fin:
+    sql: '"OA_MARQUE_FIN"'
+    description: Marque fin
+
+  oa_destinataire:
+    sql: '"OA_DESTINATAIRE"'
+    description: Destinataire
+
+measures:
+  count:
+    aggregate_type: count

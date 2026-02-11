@@ -1,0 +1,21 @@
+# Reference this view as dwh_dwh__d_activite
+catalog: DWH
+schema: DWH
+table_name: D_ACTIVITE
+
+dimensions:
+  act_code:
+    sql: '"ACT_CODE"'
+    description: Code hiérarchie
+
+  act_lib_long:
+    sql: '"ACT_LIB_LONG"'
+    description: Libellé court
+
+  act_lib_court:
+    sql: '"ACT_LIB_COURT"'
+    description: Libellé long
+
+measures:
+  count:
+    aggregate_type: count

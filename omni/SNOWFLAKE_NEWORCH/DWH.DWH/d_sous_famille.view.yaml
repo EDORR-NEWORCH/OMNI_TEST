@@ -1,0 +1,21 @@
+# Reference this view as dwh_dwh__d_sous_famille
+catalog: DWH
+schema: DWH
+table_name: D_SOUS_FAMILLE
+
+dimensions:
+  soufa_code:
+    sql: '"SOUFA_CODE"'
+    description: Code hiérarchie
+
+  soufa_lib_long:
+    sql: '"SOUFA_LIB_LONG"'
+    description: Libellé court
+
+  soufa_lib_court:
+    sql: '"SOUFA_LIB_COURT"'
+    description: Libellé long
+
+measures:
+  count:
+    aggregate_type: count

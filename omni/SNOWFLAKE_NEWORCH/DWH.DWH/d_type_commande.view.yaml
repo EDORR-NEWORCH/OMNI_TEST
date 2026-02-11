@@ -1,0 +1,37 @@
+# Reference this view as dwh_dwh__d_type_commande
+catalog: DWH
+schema: DWH
+table_name: D_TYPE_COMMANDE
+
+dimensions:
+  type_cmd_key:
+    sql: '"TYPE_CMD_KEY"'
+    description: Code du type commande
+
+  type_cmd_code:
+    sql: '"TYPE_CMD_CODE"'
+    description: Code du type commande
+
+  type_cmd_lib:
+    sql: '"TYPE_CMD_LIB"'
+    description: Libellé du type commande
+
+  type_cmd_cat_code:
+    sql: '"TYPE_CMD_CAT_CODE"'
+    description: Code catégorie
+
+  type_cmd_cat_lib:
+    sql: '"TYPE_CMD_CAT_LIB"'
+    description: Libellé catégorie
+
+  type_cmd_fonction_suivante_code:
+    sql: '"TYPE_CMD_FONCTION_SUIVANTE_CODE"'
+    description: Code fonction suivante
+
+  type_cmd_fonction_suivante_lib:
+    sql: '"TYPE_CMD_FONCTION_SUIVANTE_LIB"'
+    description: Libellé fonction suivante
+
+measures:
+  count:
+    aggregate_type: count

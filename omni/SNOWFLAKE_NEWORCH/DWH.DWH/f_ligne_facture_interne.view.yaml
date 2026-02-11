@@ -1,0 +1,209 @@
+# Reference this view as dwh_dwh__f_ligne_facture_interne
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_FACTURE_INTERNE
+
+dimensions:
+  faci_cat_ordre_reference:
+    sql: '"FACI_CAT_ORDRE_REFERENCE"'
+    description: Référence catégorie ordre
+
+  faci_numero_ordre:
+    sql: '"FACI_NUMERO_ORDRE"'
+    description: N° ordre
+
+  faci_ligne_ordre:
+    sql: '"FACI_LIGNE_ORDRE"'
+    description: Ligne ordre
+
+  faci_index_ordre:
+    sql: '"FACI_INDEX_ORDRE"'
+    description: Index ordre
+
+  faci_date_saisie_mittra:
+    sql: '"FACI_DATE_SAISIE_MITTRA"'
+    description: Date de saisie
+
+  faci_heure_saisie_mittra:
+    sql: '"FACI_HEURE_SAISIE_MITTRA"'
+    description: Heure de saisie
+
+  faci_suffixe_temps:
+    sql: '"FACI_SUFFIXE_TEMPS"'
+    description: Suffixe temps
+
+  faci_dep_debut_code:
+    sql: '"FACI_DEP_DEBUT_CODE"'
+    description: Code entrepôt Début
+
+  faci_dep_fin_code:
+    sql: '"FACI_DEP_FIN_CODE"'
+    description: Code entrepôt Fin
+
+  faci_article_code:
+    sql: '"FACI_ARTICLE_CODE"'
+    description: Code produit
+
+  faci_client_exter_code:
+    sql: '"FACI_CLIENT_EXTER_CODE"'
+    description: Code client
+
+  faci_payeur_code:
+    sql: '"FACI_PAYEUR_CODE"'
+    description: Code payeur
+
+  faci_quantite_livree:
+    sql: '"FACI_QUANTITE_LIVREE"'
+    description: Quantité livrée
+
+  faci_date_livraison_planifiee:
+    sql: '"FACI_DATE_LIVRAISON_PLANIFIEE"'
+    description: Date de livraison planifiée
+
+  faci_soc_debut_code:
+    sql: '"FACI_SOC_DEBUT_CODE"'
+    description: Code société début
+
+  faci_soc_fin_code:
+    sql: '"FACI_SOC_FIN_CODE"'
+    description: Code société fin
+
+  faci_etab_debut_code:
+    sql: '"FACI_ETAB_DEBUT_CODE"'
+    description: Code établissement début
+
+  faci_etab_fin_code:
+    sql: '"FACI_ETAB_FIN_CODE"'
+    description: Code établissement fin
+
+  faci_pays_reception:
+    sql: '"FACI_PAYS_RECEPTION"'
+    description: Pays de réception
+
+  faci_prix_cession_interne:
+    sql: '"FACI_PRIX_CESSION_INTERNE"'
+    description: Prix de transfert interne
+
+  faci_devise_cession_interne:
+    sql: '"FACI_DEVISE_CESSION_INTERNE"'
+    description: Devise de transfert interne
+
+  faci_prix_cession_interne_ori:
+    sql: '"FACI_PRIX_CESSION_INTERNE_ORI"'
+    description: Prix de cession interne d'origine
+
+  faci_numero_facture_interne:
+    sql: '"FACI_NUMERO_FACTURE_INTERNE"'
+    description: N° facture interne
+
+  faci_annee_facture:
+    sql: '"FACI_ANNEE_FACTURE"'
+    description: Année facture
+
+  faci_code_statut_interne:
+    sql: '"FACI_CODE_STATUT_INTERNE"'
+    description: Code statut interne
+
+  faci_date_saisie:
+    sql: '"FACI_DATE_SAISIE"'
+    description: Date de saisie
+
+  faci_date_changement:
+    sql: '"FACI_DATE_CHANGEMENT"'
+    description: Date de changement
+
+  faci_suffixe_ligne:
+    sql: '"FACI_SUFFIXE_LIGNE"'
+    description: Suffixe ligne
+
+  faci_num_transac_recla:
+    sql: '"FACI_NUM_TRANSAC_RECLA"'
+    description: N° de transaction de réclamation
+
+  faci_num_transac_debit:
+    sql: '"FACI_NUM_TRANSAC_DEBIT"'
+    description: N° de transaction de débit
+
+  faci_qte_cout:
+    sql: '"FACI_QTE_COUT"'
+    description: Cout quantité
+
+  faci_poids_variable:
+    sql: '"FACI_POIDS_VARIABLE"'
+    description: Poids variable
+
+  faci_numero_facture_interne_ori:
+    sql: '"FACI_NUMERO_FACTURE_INTERNE_ORI"'
+    description: N° facture interne origine
+
+  faci_prix_transf_interne:
+    sql: '"FACI_PRIX_TRANSF_INTERNE"'
+    description: Prix transfert interne
+
+  faci_base_facture_correc:
+    sql: '"FACI_BASE_FACTURE_CORREC"'
+    description: Montant de base pour facture corrective
+
+  faci_numero_commande_ori:
+    sql: '"FACI_NUMERO_COMMANDE_ORI"'
+    description: N° commande origine
+
+  faci_numero_ligne_ori:
+    sql: '"FACI_NUMERO_LIGNE_ORI"'
+    description: N° ligne origine
+
+  faci_suffixe_ligne_ori:
+    sql: '"FACI_SUFFIXE_LIGNE_ORI"'
+    description: Suffixe ligne origine
+
+  faci_code_livraison_ori:
+    sql: '"FACI_CODE_LIVRAISON_ORI"'
+    description: Code livraison d'origine
+
+  faci_tva_code:
+    sql: '"FACI_TVA_CODE"'
+    description: Code TVA
+
+  faci_tva1:
+    sql: '"FACI_TVA1"'
+    description: Taux de TVA 1
+
+  faci_tva2:
+    sql: '"FACI_TVA2"'
+    description: Taux de TVA 2
+
+  faci_mt_tva1:
+    sql: '"FACI_MT_TVA1"'
+    description: Montant TVA calculé 1
+
+  faci_mt_tva2:
+    sql: '"FACI_MT_TVA2"'
+    description: Montant TVA calculé 2
+
+  faci_tx_prx_trans_soc_ori:
+    sql: '"FACI_TX_PRX_TRANS_SOC_ORI"'
+    description: Taux de change division source vers référence
+
+  faci_tx_prx_trans_soc_cible:
+    sql: '"FACI_TX_PRX_TRANS_SOC_CIBLE"'
+    description: Taux de change division source vers destination
+
+  faci_date_facture_ori:
+    sql: '"FACI_DATE_FACTURE_ORI"'
+    description: Date de facturation
+
+  faci_annee_ori:
+    sql: '"FACI_ANNEE_ORI"'
+    description: Année facturation
+
+  faci_cli_inter_code:
+    sql: '"FACI_CLI_INTER_CODE"'
+    description: Code client interne
+
+  faci_four_inter_code:
+    sql: '"FACI_FOUR_INTER_CODE"'
+    description: Code fournisseur interne
+
+measures:
+  count:
+    aggregate_type: count

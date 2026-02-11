@@ -1,0 +1,93 @@
+# Reference this view as dwh_dwh__d_plm_fournisseurs
+catalog: DWH
+schema: DWH
+table_name: D_PLM_FOURNISSEURS
+
+dimensions:
+  code_frs:
+    sql: '"CODE_FRS"'
+    description: Code fournisseur
+
+  nom_frs:
+    sql: '"NOM_FRS"'
+    description: Nom fournisseur
+
+  agent:
+    sql: '"AGENT"'
+    description: Nom agent
+
+  pays:
+    sql: '"PAYS"'
+    description: Pays
+
+  devise_frs:
+    sql: '"DEVISE_FRS"'
+    description: Code devise
+
+  estagent:
+    sql: '"ESTAGENT"'
+    description: Flag agent
+
+  est_frs:
+    sql: '"EST_FRS"'
+    description: Flag fournisseur
+
+  email:
+    sql: '"EMAIL"'
+    description: Email
+
+  modalite_paiement:
+    sql: '"MODALITE_PAIEMENT"'
+    description: Modalité de paiement
+
+  incoterm:
+    sql: '"INCOTERM"'
+    description: Incoterm
+
+  frais_collection:
+    sql: '"FRAIS_COLLECTION"'
+    description: Frais de collection
+
+  com_qualite:
+    sql: '"COM_QUALITE"'
+    description: Commission qualité
+
+  frais_transp_frs:
+    sql: '"FRAIS_TRANSP_FRS"'
+    description: Frais de transport fournisseur
+
+  frais_douane_frs:
+    sql: '"FRAIS_DOUANE_FRS"'
+    description: Frais de douane fournisseur
+
+  frais_financier:
+    sql: '"FRAIS_FINANCIER"'
+    description: Frais financier
+
+  agent_commission:
+    sql: '"AGENT_COMMISSION"'
+    description: Agent commission
+
+  commission_financiere:
+    sql: '"COMMISSION_FINANCIERE"'
+    description: Commission financière
+
+  commissionpct:
+    sql: '"COMMISSIONPCT"'
+    description: Pourcentage commission
+
+  total_frais:
+    sql: '"TOTAL_FRAIS"'
+    description: Frais total
+
+  delais:
+    sql: '"DELAIS"'
+    description: Délais
+
+  state:
+    sql: '"STATE"'
+    description: Etat
+
+measures:
+  count:
+    aggregate_type: count

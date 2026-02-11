@@ -1,0 +1,89 @@
+# Reference this view as dwh_dwh__f_web_stock_online
+catalog: DWH
+schema: DWH
+table_name: F_WEB_STOCK_ONLINE
+
+dimensions:
+  sop_prd:
+    sql: '"SOP_PRD"'
+    description: Code produit
+
+  sop_date:
+    sql: '"SOP_DATE"'
+    description: Date du stock online
+
+  sop_site:
+    sql: '"SOP_SITE"'
+    description: Code site
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  etab_code:
+    sql: '"ETAB_CODE"'
+    description: Code établissement
+
+  sop_pays:
+    sql: '"SOP_PAYS"'
+    description: Code pays
+
+  sop_prix:
+    sql: '"SOP_PRIX"'
+    description: Prix unitaire produit
+
+  sop_cat:
+    sql: '"SOP_CAT"'
+    description: Catégorie
+
+  sop_col:
+    sql: '"SOP_COL"'
+    description: Couleur
+
+  sop_qte:
+    sql: '"SOP_QTE"'
+    description: Quantité
+
+  sop_avl:
+    sql: '"SOP_AVL"'
+    description: Disponibilité
+
+  sop_prx_clb:
+    sql: '"SOP_PRX_CLB"'
+    description: Prix club
+
+  sop_frm:
+    sql: '"SOP_FRM"'
+    description: Code site online
+
+  fichier:
+    sql: '"FICHIER"'
+    description: Nom du fichier
+
+  sop_statut:
+    sql: '"SOP_STATUT"'
+    description: Statut du stock du produit
+
+  sop_flag_online:
+    sql: '"SOP_FLAG_ONLINE"'
+    description: Flag online (1 ou 0)
+
+  sop_qte_online:
+    sql: '"SOP_QTE_ONLINE"'
+    description: Quantité Online
+
+  sop_courant:
+    sql: '"SOP_COURANT"'
+    description: dernière image du stock (1 ou 0)
+
+  psa_saison_code:
+    sql: '"PSA_SAISON_CODE"'
+    description: Code saison du produit
+
+  date_mdf:
+    sql: '"DATE_MDF"'
+    description: Date de modification pour incrémental Qlik
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,42 @@
+# Reference this view as dwh_dwh__tbv_parametres
+catalog: DWH
+schema: DWH
+table_name: TBV_PARAMETRES
+
+dimensions:
+  tbv_surrogate_key:
+    sql: '"TBV_SURROGATE_KEY"'
+    description: Clé technique qui concatène TBV_GROUPE|TBV_CODE_CHAR OU
+      TBV_GROUPE|TBV_CODE_INT selon le cas
+
+  tbv_groupe:
+    sql: '"TBV_GROUPE"'
+    description: Tag du paramètre
+
+  tbv_code_char:
+    sql: '"TBV_CODE_CHAR"'
+    description: Code valeur paramètre en CHAR
+
+  tbv_code_int:
+    sql: '"TBV_CODE_INT"'
+    description: Code valeur paramètre en INT
+
+  tbv_lib:
+    sql: '"TBV_LIB"'
+    description: Libellé paramètre
+
+  tbv_lib_es:
+    sql: '"TBV_LIB_ES"'
+    description: Libellé paramètre en espagnol
+
+  tbv_lib_nl:
+    sql: '"TBV_LIB_NL"'
+    description: Libellé paramètre en néerlandais
+
+  tbv_lib_gr:
+    sql: '"TBV_LIB_GR"'
+    description: Libellé paramètre en grec
+
+measures:
+  count:
+    aggregate_type: count

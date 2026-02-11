@@ -1,0 +1,85 @@
+# Reference this view as dwh_dwh__d_tarif
+catalog: DWH
+schema: DWH
+table_name: D_TARIF
+
+dimensions:
+  trf_code:
+    sql: '"TRF_CODE"'
+    description: Code tarif
+
+  trf_key:
+    sql: '"TRF_KEY"'
+    description: Clé tarif
+
+  trf_date_debut_validite:
+    sql: '"TRF_DATE_DEBUT_VALIDITE"'
+    description: Date début validité tarif
+
+  trf_client:
+    sql: '"TRF_CLIENT"'
+    description: Tarif client
+
+  trf_devise:
+    sql: '"TRF_DEVISE"'
+    description: Tarif devise
+
+  trf_date_fin_validite:
+    sql: '"TRF_DATE_FIN_VALIDITE"'
+    description: Date fin validité tarif
+
+  trf_nom:
+    sql: '"TRF_NOM"'
+    description: Tarif nom
+
+  trf_designation:
+    sql: '"TRF_DESIGNATION"'
+    description: Tarif désignation
+
+  cmp_code:
+    sql: '"CMP_CODE"'
+    description: Code saison
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  trf_base_calcul_code:
+    sql: '"TRF_BASE_CALCUL_CODE"'
+    description: Code calcul de base tarif
+
+  trf_prix_net_fixe:
+    sql: '"TRF_PRIX_NET_FIXE"'
+    description: Prix net fixe tarif
+
+  trf_type_calcul_prix_revient_code:
+    sql: '"TRF_TYPE_CALCUL_PRIX_REVIENT_CODE"'
+    description: Code type de calcul Px de revient
+
+  trf_type_calcul_prix_revient_lib:
+    sql: '"TRF_TYPE_CALCUL_PRIX_REVIENT_LIB"'
+    description: Libellé type de calcul Px de revient
+
+  trf_modele_cout_code:
+    sql: '"TRF_MODELE_COUT_CODE"'
+    description: Code modèle coût
+
+  trf_modele_cout_lib:
+    sql: '"TRF_MODELE_COUT_LIB"'
+    description: Libellé modèle coût
+
+  trf_base_code:
+    sql: '"TRF_BASE_CODE"'
+    description: Code tarif de base
+
+  trf_base_devise:
+    sql: '"TRF_BASE_DEVISE"'
+    description: Devise tarif de base
+
+  trf_base_calcul_lib:
+    sql: '"TRF_BASE_CALCUL_LIB"'
+    description: Libellé calcul de base tarif
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,77 @@
+# Reference this view as dwh_dwh__d_produit_complement
+catalog: DWH
+schema: DWH
+table_name: D_PRODUIT_COMPLEMENT
+
+dimensions:
+  prd_compl_key:
+    sql: '"PRD_COMPL_KEY"'
+    description: Code Produit
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code Produit
+
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Code Produit
+
+  prd_annee_modele:
+    sql: '"PRD_ANNEE_MODELE"'
+    description: Année modèle
+
+  prd_couleur_four:
+    sql: '"PRD_COULEUR_FOUR"'
+    description: Couleur fournisseur
+
+  prd_codif_ecomob:
+    sql: '"PRD_CODIF_ECOMOB"'
+    description: Codification éco-mobilier
+
+  prd_mont_ecomob:
+    sql: '"PRD_MONT_ECOMOB"'
+    description: Montant cotisation TTC (€)
+
+  prd_codif_ecosyst:
+    sql: '"PRD_CODIF_ECOSYST"'
+    description: Codification éco-systèmes (Fr)
+
+  prd_mont_ecosyst:
+    sql: '"PRD_MONT_ECOSYST"'
+    description: Montant TTC éco-systèmes (€)
+
+  prd_codif_recupel:
+    sql: '"PRD_CODIF_RECUPEL"'
+    description: Codification Recupel (Be)
+
+  prd_mont_recupel:
+    sql: '"PRD_MONT_RECUPEL"'
+    description: Montant TTC Recupel (€)
+
+  prd_codif_ecotrel:
+    sql: '"PRD_CODIF_ECOTREL"'
+    description: Codification Ecotrel (Lux)
+
+  prd_mont_ecotrel:
+    sql: '"PRD_MONT_ECOTREL"'
+    description: Montant TTC Ecotrel (€)
+
+  prd_type_batterie:
+    sql: '"PRD_TYPE_BATTERIE"'
+    description: Type de batterie (Piles)
+
+  prd_nb_batterie:
+    sql: '"PRD_NB_BATTERIE"'
+    description: Nombre de piles/batteries
+
+  prd_poids_batteries:
+    sql: '"PRD_POIDS_BATTERIES"'
+    description: Poids Batteries
+
+  prd_compo:
+    sql: '"PRD_COMPO"'
+    description: Composition de l'article
+
+measures:
+  count:
+    aggregate_type: count

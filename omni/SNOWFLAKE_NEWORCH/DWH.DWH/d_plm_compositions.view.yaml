@@ -1,0 +1,49 @@
+# Reference this view as dwh_dwh__d_plm_compositions
+catalog: DWH
+schema: DWH
+table_name: D_PLM_COMPOSITIONS
+
+dimensions:
+  reference:
+    sql: '"REFERENCE"'
+    description: Référence produit de la composition
+
+  saison:
+    sql: '"SAISON"'
+    description: Saison de la composition
+
+  placement:
+    sql: '"PLACEMENT"'
+    description: Placement de la composition
+
+  actual:
+    sql: '"ACTUAL"'
+    description: Matière de la composition
+
+  product_type:
+    sql: '"PRODUCT_TYPE"'
+    description: Type produit de la composition
+
+  description:
+    sql: '"DESCRIPTION"'
+    description: Description de la composition
+
+  maincompo:
+    sql: '"MAINCOMPO"'
+    description: Flag principal de la composition
+
+  composition:
+    sql: '"COMPOSITION"'
+    description: Composition
+
+  weightgr:
+    sql: '"WEIGHTGR"'
+    description: Poids (g)
+
+  weightoz:
+    sql: '"WEIGHTOZ"'
+    description: Code référence du produit
+
+measures:
+  count:
+    aggregate_type: count

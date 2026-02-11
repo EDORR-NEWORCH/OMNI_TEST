@@ -1,0 +1,196 @@
+# Reference this view as magasin__f_dtv_magasin
+schema: MAGASIN
+table_name: F_DTV_MAGASIN
+
+dimensions:
+  lst_id:
+    sql: '"LST_ID"'
+    format: ID
+    description: Id liste de naissance
+
+  dep_pays:
+    sql: '"DEP_PAYS"'
+    description: Code pays
+
+  mag_dir_regional:
+    sql: '"MAG_DIR_REGIONAL"'
+    description: Direction régionale
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code magasin
+
+  dep_lib:
+    sql: '"DEP_LIB"'
+    description: Libellé magasin
+
+  cal_dt_jour:
+    sql: '"CAL_DT_JOUR"'
+    description: Date du jour
+
+  statut_liste:
+    sql: '"STATUT_LISTE"'
+    description: Statut de la liste de naissance
+
+  typ_obj:
+    sql: '"TYP_OBJ"'
+    description: Type objet
+
+  adh_regr_fid:
+    sql: '"ADH_REGR_FID"'
+    description: Regroupement programme de fidélité
+
+  adh_fid:
+    sql: '"ADH_FID"'
+    description: Programme de fidélité
+
+  adh_fid_lib:
+    sql: '"ADH_FID_LIB"'
+    description: Libellé programme de fidélité
+
+  nb_lst_naiss:
+    sql: '"NB_LST_NAISS"'
+    description: Nombre de liste de naissance
+
+  ca_ttc_lst_naiss_emp:
+    sql: '"CA_TTC_LST_NAISS_EMP"'
+    description: Chiffre d'affaire TTC emporté
+
+  ca_ttc_lst_naiss_paye:
+    sql: '"CA_TTC_LST_NAISS_PAYE"'
+    description: Chiffre d'affaire TTC payé
+
+  ca_ttc_lst_naiss_pot:
+    sql: '"CA_TTC_LST_NAISS_POT"'
+    description: Chiffre d'affaire TTC potentiel
+
+  ca_ttc_mis_de_cote:
+    sql: '"CA_TTC_MIS_DE_COTE"'
+    description: Chiffre d'affaire TTC mis de côté
+
+  ca_ttc_en_commande:
+    sql: '"CA_TTC_EN_COMMANDE"'
+    description: Chiffre d'affaire TTC en commande
+
+  nb_art_lst_naiss:
+    sql: '"NB_ART_LST_NAISS"'
+    description: Nbre d'articles de la liste de naissance
+
+  nb_art_emp_lst_naiss:
+    sql: '"NB_ART_EMP_LST_NAISS"'
+    description: Nbre d'articles emportés
+
+  nb_art_ajt_lst_naiss:
+    sql: '"NB_ART_AJT_LST_NAISS"'
+    description: Nbre d'articles ajoutés
+
+  adh_ca_ttc_cre:
+    sql: '"ADH_CA_TTC_CRE"'
+    description: Chiffre d'affaire TTC sur la création de programme
+
+  adh_ca_ttc_ren:
+    sql: '"ADH_CA_TTC_REN"'
+    description: Chiffre d'affaire TTC sur le renouvellement de programme
+
+  adh_ca_ttc_renauto:
+    sql: '"ADH_CA_TTC_RENAUTO"'
+    description: Chiffre d'affaire TTC sur le renouvellement automatique de programme
+
+  adh_ca_ttc_prev:
+    sql: '"ADH_CA_TTC_PREV"'
+    description: Chiffre d'affaire TTC prévu
+
+  adh_ca_ttc_retour:
+    sql: '"ADH_CA_TTC_RETOUR"'
+    description: Chiffre d'affaire TTC sur les retours
+
+  adh_ca_ht_cre:
+    sql: '"ADH_CA_HT_CRE"'
+    description: Chiffre d'affaire HT sur la création de programme
+
+  adh_ca_ht_ren:
+    sql: '"ADH_CA_HT_REN"'
+    description: Chiffre d'affaire HT sur le renouvellement de programme
+
+  adh_ca_ht_renauto:
+    sql: '"ADH_CA_HT_RENAUTO"'
+    description: Chiffre d'affaire HT sur le renouvellement automatique de programme
+
+  adh_ca_ht_retour:
+    sql: '"ADH_CA_HT_RETOUR"'
+    description: Chiffre d'affaire HT sur les retours
+
+  adh_ca_ht_prev:
+    sql: '"ADH_CA_HT_PREV"'
+    description: Chiffre d'affaire HT prévu
+
+  adh_nbe_cre:
+    sql: '"ADH_NBE_CRE"'
+    description: Nombre de création de programme
+
+  adh_nbe_ren:
+    sql: '"ADH_NBE_REN"'
+    description: Nombre de renouvellement de programme
+
+  adh_nbe_renauto:
+    sql: '"ADH_NBE_RENAUTO"'
+    description: Nombre de renouvellement automatique de programme
+
+  adh_nbe_expi:
+    sql: '"ADH_NBE_EXPI"'
+    description: Nombre d'expiration
+
+  adh_nbe_susp:
+    sql: '"ADH_NBE_SUSP"'
+    description: Nombre de suspension
+
+  adh_nbe_chang:
+    sql: '"ADH_NBE_CHANG"'
+    description: Nombre de changement de programme
+
+  adh_nbe_dem_resi:
+    sql: '"ADH_NBE_DEM_RESI"'
+    description: Nombre de demandes de résiliation
+
+  adh_nbe_retou:
+    sql: '"ADH_NBE_RETOU"'
+    description: Nombre de retours
+
+  adh_nbe_mbr_act_crt:
+    sql: '"ADH_NBE_MBR_ACT_CRT"'
+    description: Nombre de membres actifs par magasin de fidélité
+
+  adh_nbe_mbr_act_prf:
+    sql: '"ADH_NBE_MBR_ACT_PRF"'
+    description: Nombre de membres actifs par magasin préféré
+
+  adh_nb_prog_vendus:
+    sql: '"ADH_NB_PROG_VENDUS"'
+    description: Nombre de programmes vendus
+
+  nb_tick_recrut:
+    sql: '"NB_TICK_RECRUT"'
+    description: Nombre de tickets recrutables
+
+  nb_depots:
+    sql: '"NB_DEPOTS"'
+    description: Nombre de dépôts
+
+  date_mdf:
+    sql: '"DATE_MDF"'
+    description: Date de modification
+
+  ca_ttc_puer:
+    sql: '"CA_TTC_PUER"'
+    description: Chiffre d'affaire TTC sur la PUER
+
+  nb_depots_lst_naiss:
+    sql: '"NB_DEPOTS_LST_NAISS"'
+    description: Nombre de dépôts qui gèrent les liste de naissances
+
+  cletechqlik:
+    sql: '"CLETECHQLIK"'
+
+measures:
+  count:
+    aggregate_type: count

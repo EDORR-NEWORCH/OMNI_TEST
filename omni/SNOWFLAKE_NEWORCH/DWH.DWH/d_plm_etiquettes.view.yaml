@@ -1,0 +1,25 @@
+# Reference this view as dwh_dwh__d_plm_etiquettes
+catalog: DWH
+schema: DWH
+table_name: D_PLM_ETIQUETTES
+
+dimensions:
+  reference:
+    sql: '"REFERENCE"'
+    description: Code référence du produit
+
+  saison:
+    sql: '"SAISON"'
+    description: Code saison du produit
+
+  description:
+    sql: '"DESCRIPTION"'
+    description: Description de l'entretien
+
+  type_entretien:
+    sql: '"TYPE_ENTRETIEN"'
+    description: Type de l'entretien
+
+measures:
+  count:
+    aggregate_type: count

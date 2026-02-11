@@ -1,0 +1,36 @@
+# Reference this view as dwh_dwh__d_type_od
+catalog: DWH
+schema: DWH
+table_name: D_TYPE_OD
+
+dimensions:
+  type_od_code:
+    sql: '"TYPE_OD_CODE"'
+    description: Code type ordre distribution
+
+  type_od_key:
+    sql: '"TYPE_OD_KEY"'
+
+  type_od_lib:
+    sql: '"TYPE_OD_LIB"'
+    description: Libellé  type ordre distribution
+
+  type_od_transaction_stock_code:
+    sql: '"TYPE_OD_TRANSACTION_STOCK_CODE"'
+    description: Type de transaction ordre distribution
+
+  type_od_transaction_stock_lib:
+    sql: '"TYPE_OD_TRANSACTION_STOCK_LIB"'
+    description: Libellé de transaction ordre distribution
+
+  type_od_signe_transaction:
+    sql: '"TYPE_OD_SIGNE_TRANSACTION"'
+    description: Signe transaction ordre distribution
+
+  type_od_code_transaction:
+    sql: '"TYPE_OD_CODE_TRANSACTION"'
+    description: Code transaction ordre distribution
+
+measures:
+  count:
+    aggregate_type: count

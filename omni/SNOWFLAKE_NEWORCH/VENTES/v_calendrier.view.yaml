@@ -1,0 +1,84 @@
+# Reference this view as ventes__v_calendrier
+schema: VENTES
+table_name: V_CALENDRIER
+
+dimensions:
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Clé calendrier
+
+  cal_dt_jour:
+    sql: '"CAL_DT_JOUR"'
+    description: Date jour calendrier
+
+  cal_annee:
+    sql: '"CAL_ANNEE"'
+    description: Année calendrier
+
+  cal_trim:
+    sql: '"CAL_TRIM"'
+    description: Trimestre calendrier
+
+  cal_mois:
+    sql: '"CAL_MOIS"'
+    description: Numéro mois calendrier
+
+  cal_sem_iso:
+    sql: '"CAL_SEM_ISO"'
+    description: Numéro semaine ISO calendrier
+
+  cal_annee_mois:
+    sql: '"CAL_ANNEE_MOIS"'
+    description: Année-Mois calendrier (yyyy-mm)
+
+  cal_annee_sem:
+    sql: '"CAL_ANNEE_SEM"'
+    description: Année-Semaine calendrier (yyyy-ww)
+
+  cal_jour_lib:
+    sql: '"CAL_JOUR_LIB"'
+    description: Libellé jour calendrier
+
+  cal_mois_lib:
+    sql: '"CAL_MOIS_LIB"'
+    description: Libellé Mois calendrier
+
+  cal_no_jour_an:
+    sql: '"CAL_NO_JOUR_AN"'
+    description: Numéro jour de l'année
+
+  cal_no_jour_mois:
+    sql: '"CAL_NO_JOUR_MOIS"'
+    description: Numéro jour du mois
+
+  cal_no_jour_semaine:
+    sql: '"CAL_NO_JOUR_SEMAINE"'
+    description: Numéro jour semaine
+
+  cal_nb_jour_mois:
+    sql: '"CAL_NB_JOUR_MOIS"'
+    description: Nombre de jours dans le mois
+
+  cal_fisc_annee:
+    sql: '"CAL_FISC_ANNEE"'
+    description: Année fiscale calendrier
+
+  cal_fisc_trim:
+    sql: '"CAL_FISC_TRIM"'
+    description: Trimestre fiscal calendrier
+
+  cal_fisc_mois:
+    sql: '"CAL_FISC_MOIS"'
+    description: Mois fiscal calendrier
+
+  cal_fisc_annee_mois:
+    sql: '"CAL_FISC_ANNEE_MOIS"'
+    description: Année-mois fiscal calendrier (yyyy-mm)
+
+  cal_fisc_no_jour_an:
+    sql: '"CAL_FISC_NO_JOUR_AN"'
+    description: Numéro jour de l'année fiscale
+
+measures:
+  count:
+    aggregate_type: count

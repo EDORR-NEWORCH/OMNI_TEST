@@ -1,0 +1,175 @@
+# Reference this view as digital__v_dtv_lst_naiss
+schema: DIGITAL
+table_name: V_DTV_LST_NAISS
+
+dimensions:
+  cletechqlik:
+    sql: '"CLETECHQLIK"'
+
+  lst_id:
+    sql: '"LST_ID"'
+    format: ID
+
+  cons_code:
+    sql: '"CONS_CODE"'
+
+  lst_num_ligne:
+    sql: '"LST_NUM_LIGNE"'
+
+  dep_code:
+    sql: '"DEP_CODE"'
+
+  cal_dt_jour:
+    sql: '"CAL_DT_JOUR"'
+
+  date_ouverture:
+    sql: '"DATE_OUVERTURE"'
+
+  date_paiement:
+    sql: '"DATE_PAIEMENT"'
+
+  date_retrait:
+    sql: '"DATE_RETRAIT"'
+
+  mag_ouverture:
+    sql: '"MAG_OUVERTURE"'
+
+  mag_retrait:
+    sql: '"MAG_RETRAIT"'
+
+  mag_paiement:
+    sql: '"MAG_PAIEMENT"'
+
+  cal_key:
+    sql: '"CAL_KEY"'
+
+  statut_liste:
+    sql: '"STATUT_LISTE"'
+
+  prd_code:
+    sql: '"PRD_CODE"'
+
+  lst_carte_fidelite_id:
+    sql: '"LST_CARTE_FIDELITE_ID"'
+    format: ID
+
+  lst_part_rest:
+    sql: '"LST_PART_REST"'
+
+  code_statut_ligne:
+    sql: '"CODE_STATUT_LIGNE"'
+
+  statut_ligne:
+    sql: '"STATUT_LIGNE"'
+
+  canal:
+    sql: '"CANAL"'
+
+  flag_mis_de_cote:
+    sql: '"FLAG_MIS_DE_COTE"'
+
+  flag_commande:
+    sql: '"FLAG_COMMANDE"'
+
+  date_fermeture:
+    sql: '"DATE_FERMETURE"'
+
+  nb_jours_ouverts:
+    sql: '"NB_JOURS_OUVERTS"'
+
+  prd_activite_lib:
+    sql: '"PRD_ACTIVITE_LIB"'
+
+  prd_univers_lib:
+    sql: '"PRD_UNIVERS_LIB"'
+
+  prd_rayon_lib:
+    sql: '"PRD_RAYON_LIB"'
+
+  prd_famille_lib:
+    sql: '"PRD_FAMILLE_LIB"'
+
+  prd_sous_famille_lib:
+    sql: '"PRD_SOUS_FAMILLE_LIB"'
+
+  prd_marque_lib:
+    sql: '"PRD_MARQUE_LIB"'
+
+  prd_cdt_stat_vente_code:
+    sql: '"PRD_CDT_STAT_VENTE_CODE"'
+
+  prd_top_1400:
+    sql: '"PRD_TOP_1400"'
+
+  prd_type_puer:
+    sql: '"PRD_TYPE_PUER"'
+
+  prd_description_courte:
+    sql: '"PRD_DESCRIPTION_COURTE"'
+
+  prd_description_longue:
+    sql: '"PRD_DESCRIPTION_LONGUE"'
+
+  prd_type_marque:
+    sql: '"PRD_TYPE_MARQUE"'
+
+  prd_ln_type:
+    sql: '"PRD_LN_TYPE"'
+
+  prd_ln_type_lib:
+    sql: '"PRD_LN_TYPE_LIB"'
+
+  mag_contrat:
+    sql: '"MAG_CONTRAT"'
+
+  mag_libelle:
+    sql: '"MAG_LIBELLE"'
+
+  mag_region:
+    sql: '"MAG_REGION"'
+
+  ville:
+    sql: '"VILLE"'
+
+  code_postal:
+    sql: '"CODE_POSTAL"'
+
+  date_n1:
+    sql: '"DATE_N1"'
+
+  annee_semaine:
+    sql: '"ANNEE_SEMAINE"'
+
+  annee_mois:
+    sql: '"ANNEE_MOIS"'
+
+  pays_regr:
+    sql: '"PAYS_REGR"'
+
+  stk_magasin:
+    sql: '"STK_MAGASIN"'
+
+  prd_dereference:
+    sql: '"PRD_DEREFERENCE"'
+
+  lien_photo:
+    sql: '"LIEN_PHOTO"'
+
+  flag_courtoisie:
+    sql: '"FLAG_COURTOISIE"'
+
+  flag_liste_sans_emport:
+    sql: '"FLAG_LISTE_SANS_EMPORT"'
+
+  ca_potentiel:
+    sql: '"CA_POTENTIEL"'
+
+  ca_ttc:
+    sql: '"CA_TTC"'
+
+  prix_paye:
+    sql: '"PRIX_PAYE"'
+
+measures:
+  count:
+    aggregate_type: count

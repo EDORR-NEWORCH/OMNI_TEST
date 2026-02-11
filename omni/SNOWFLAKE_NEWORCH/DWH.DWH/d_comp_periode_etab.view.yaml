@@ -1,0 +1,49 @@
+# Reference this view as dwh_dwh__d_comp_periode_etab
+catalog: DWH
+schema: DWH
+table_name: D_COMP_PERIODE_ETAB
+
+dimensions:
+  cmp_per_annee_ref:
+    sql: '"CMP_PER_ANNEE_REF"'
+    description: Année référentiel
+
+  cmp_per_annee_hist:
+    sql: '"CMP_PER_ANNEE_HIST"'
+    description: Année historique
+
+  cmp_per_ett_typ:
+    sql: '"CMP_PER_ETT_TYP"'
+    description: Type de la période de comparabilité
+
+  cmp_per_num:
+    sql: '"CMP_PER_NUM"'
+    description: Numéro de la période
+
+  cmp_per_ett_dep_code:
+    sql: '"CMP_PER_ETT_DEP_CODE"'
+    description: Code du dépôt
+
+  cmp_per_ett_date_ref_debut:
+    sql: '"CMP_PER_ETT_DATE_REF_DEBUT"'
+    description: Début de la période référentiel
+
+  cmp_per_ett_date_ref_fin:
+    sql: '"CMP_PER_ETT_DATE_REF_FIN"'
+    description: Fin de la période référentiel
+
+  cmp_per_date_hist_debut:
+    sql: '"CMP_PER_DATE_HIST_DEBUT"'
+    description: Début de la période historique
+
+  cmp_per_date_hist_fin:
+    sql: '"CMP_PER_DATE_HIST_FIN"'
+    description: Fin de la période historique
+
+  cmp_per_ett_flag_comp:
+    sql: '"CMP_PER_ETT_FLAG_COMP"'
+    description: Flag de comparabilité
+
+measures:
+  count:
+    aggregate_type: count

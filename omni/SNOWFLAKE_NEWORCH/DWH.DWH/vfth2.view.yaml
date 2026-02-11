@@ -1,0 +1,156 @@
+# Reference this view as dwh_dwh__vfth2
+catalog: DWH
+schema: DWH
+table_name: VFTH2
+
+dimensions:
+  tck_key:
+    sql: '"TCK_KEY"'
+
+  tck_id:
+    sql: '"TCK_ID"'
+    format: ID
+
+  tck_num_ligne:
+    sql: '"TCK_NUM_LIGNE"'
+
+  tck_annee:
+    sql: '"TCK_ANNEE"'
+
+  tck_date:
+    sql: '"TCK_DATE"'
+
+  tck_heure:
+    sql: '"TCK_HEURE"'
+
+  tck_date_ss_heure:
+    sql: '"TCK_DATE_SS_HEURE"'
+
+  tck_prd_id:
+    sql: '"TCK_PRD_ID"'
+    format: ID
+
+  tck_ett_id:
+    sql: '"TCK_ETT_ID"'
+    format: ID
+
+  tck_cons_id:
+    sql: '"TCK_CONS_ID"'
+    format: ID
+
+  tck_vend_id:
+    sql: '"TCK_VEND_ID"'
+    format: ID
+
+  tck_dev_id_conso:
+    sql: '"TCK_DEV_ID_CONSO"'
+
+  tck_dev_id_loc:
+    sql: '"TCK_DEV_ID_LOC"'
+
+  tck_nature_ligne:
+    sql: '"TCK_NATURE_LIGNE"'
+
+  tck_tx_tax:
+    sql: '"TCK_TX_TAX"'
+
+  tck_tx_op:
+    sql: '"TCK_TX_OP"'
+
+  tck_qte:
+    sql: '"TCK_QTE"'
+
+  tck_prx_unit_ttc_conso:
+    sql: '"TCK_PRX_UNIT_TTC_CONSO"'
+
+  tck_prx_unit_ttc_loc:
+    sql: '"TCK_PRX_UNIT_TTC_LOC"'
+
+  tck_prx_unit_ht_conso:
+    sql: '"TCK_PRX_UNIT_HT_CONSO"'
+
+  tck_prx_unit_ht_loc:
+    sql: '"TCK_PRX_UNIT_HT_LOC"'
+
+  tck_mt_remise_conso:
+    sql: '"TCK_MT_REMISE_CONSO"'
+
+  tck_mt_remise_loc:
+    sql: '"TCK_MT_REMISE_LOC"'
+
+  tck_mt_ht_conso:
+    sql: '"TCK_MT_HT_CONSO"'
+
+  tck_mt_ht_loc:
+    sql: '"TCK_MT_HT_LOC"'
+
+  tck_mt_ttc_conso:
+    sql: '"TCK_MT_TTC_CONSO"'
+
+  tck_mt_ttc_loc:
+    sql: '"TCK_MT_TTC_LOC"'
+
+  tck_motif_ret_id:
+    sql: '"TCK_MOTIF_RET_ID"'
+    format: ID
+
+  tck_motif_ret_lib:
+    sql: '"TCK_MOTIF_RET_LIB"'
+
+  tck_num_ref_externe:
+    sql: '"TCK_NUM_REF_EXTERNE"'
+
+  tck_num_ref_interne:
+    sql: '"TCK_NUM_REF_INTERNE"'
+
+  dep_key:
+    sql: '"DEP_KEY"'
+
+  prd_key:
+    sql: '"PRD_KEY"'
+
+  cal_key:
+    sql: '"CAL_KEY"'
+
+  dev_key_conso:
+    sql: '"DEV_KEY_CONSO"'
+
+  dev_key:
+    sql: '"DEV_KEY"'
+
+  cons_key:
+    sql: '"CONS_KEY"'
+
+  tck_club:
+    sql: '"TCK_CLUB"'
+
+  tck_canal:
+    sql: '"TCK_CANAL"'
+
+  tck_mt_prx_vente_loc:
+    sql: '"TCK_MT_PRX_VENTE_LOC"'
+
+  tck_mt_prx_vente_conso:
+    sql: '"TCK_MT_PRX_VENTE_CONSO"'
+
+  tck_mt_prx_revient_loc:
+    sql: '"TCK_MT_PRX_REVIENT_LOC"'
+
+  tck_mt_prx_revient_conso:
+    sql: '"TCK_MT_PRX_REVIENT_CONSO"'
+
+  tck_mt_marge_loc:
+    sql: '"TCK_MT_MARGE_LOC"'
+
+  tck_mt_marge_conso:
+    sql: '"TCK_MT_MARGE_CONSO"'
+
+  tck_per_saison:
+    sql: '"TCK_PER_SAISON"'
+
+  tck_per_periode:
+    sql: '"TCK_PER_PERIODE"'
+
+measures:
+  count:
+    aggregate_type: count

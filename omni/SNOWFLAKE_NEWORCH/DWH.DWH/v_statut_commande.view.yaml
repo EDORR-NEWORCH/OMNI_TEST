@@ -1,0 +1,17 @@
+# Reference this view as dwh_dwh__v_statut_commande
+catalog: DWH
+schema: DWH
+table_name: V_STATUT_COMMANDE
+
+dimensions:
+  statut_cmd_key:
+    sql: '"STATUT_CMD_KEY"'
+    description: Code statut de l'en-tête de la commande
+
+  statut_cmd_lib:
+    sql: '"STATUT_CMD_LIB"'
+    description: Libellé statut de l'en-tête de la commande
+
+measures:
+  count:
+    aggregate_type: count

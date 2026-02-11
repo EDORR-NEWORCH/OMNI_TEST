@@ -1,0 +1,61 @@
+# Reference this view as dwh_dwh__v_cal_taux_change
+catalog: DWH
+schema: DWH
+table_name: V_CAL_TAUX_CHANGE
+
+dimensions:
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Clé calendrier
+
+  tx_chge_soc_code:
+    sql: '"TX_CHGE_SOC_CODE"'
+    description: Code société
+
+  tx_chge_soc_key:
+    sql: '"TX_CHGE_SOC_KEY"'
+    description: Clé société
+
+  tx_chge_type_code:
+    sql: '"TX_CHGE_TYPE_CODE"'
+    description: Type de taux de change
+
+  tx_chge_type_lib:
+    sql: '"TX_CHGE_TYPE_LIB"'
+    description: Libellé du type
+
+  tx_chge_devise_code:
+    sql: '"TX_CHGE_DEVISE_CODE"'
+    description: Code devise cible
+
+  tx_chge_devise_key:
+    sql: '"TX_CHGE_DEVISE_KEY"'
+    description: Clé devise cible
+
+  tx_chge_devise_loc_code:
+    sql: '"TX_CHGE_DEVISE_LOC_CODE"'
+    description: Code devise de base
+
+  tx_chge_devise_loc_key:
+    sql: '"TX_CHGE_DEVISE_LOC_KEY"'
+    description: Clé devise de base
+
+  tx_chge_taux:
+    sql: '"TX_CHGE_TAUX"'
+    description: Taux de change
+
+  tx_chge_date_debut:
+    sql: '"TX_CHGE_DATE_DEBUT"'
+    description: Date de début de validité du taux
+
+  tx_chge_date_fin:
+    sql: '"TX_CHGE_DATE_FIN"'
+    description: Date de fin de validité du taux (non inclue)
+
+  tech_iscurrent:
+    sql: '"TECH_ISCURRENT"'
+    description: Flag taux actuel
+
+measures:
+  count:
+    aggregate_type: count

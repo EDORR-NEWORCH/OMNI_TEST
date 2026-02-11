@@ -1,0 +1,45 @@
+# Reference this view as dwh_dwh__d_mag_evt_mag
+catalog: DWH
+schema: DWH
+table_name: D_MAG_EVT_MAG
+
+dimensions:
+  mag_code:
+    sql: '"MAG_CODE"'
+    description: Code magasin
+
+  mag_evt_date:
+    sql: '"MAG_EVT_DATE"'
+    description: Date évènement
+
+  mag_evt_ferm_per:
+    sql: '"MAG_EVT_FERM_PER"'
+    description: Evènement périodique
+
+  mag_evt_mag_key_ferm:
+    sql: '"MAG_EVT_MAG_KEY_FERM"'
+    description: Evènement de fermeture
+
+  mag_evt_statut_mag_key_ferm:
+    sql: '"MAG_EVT_STATUT_MAG_KEY_FERM"'
+    description: Statut évènement de fermeture
+
+  mag_evt_mag_key_ouv:
+    sql: '"MAG_EVT_MAG_KEY_OUV"'
+    description: Evènement d'ouverture
+
+  mag_evt_statut_mag_key_ouv:
+    sql: '"MAG_EVT_STATUT_MAG_KEY_OUV"'
+    description: Satut Evènement d'ouverture
+
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Code magasin
+
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Clé date
+
+measures:
+  count:
+    aggregate_type: count

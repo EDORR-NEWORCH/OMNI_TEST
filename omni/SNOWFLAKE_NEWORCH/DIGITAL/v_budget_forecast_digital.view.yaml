@@ -1,0 +1,40 @@
+# Reference this view as digital__v_budget_forecast_digital
+schema: DIGITAL
+table_name: V_BUDGET_FORECAST_DIGITAL
+
+dimensions:
+  site_budget:
+    sql: '"SITE_BUDGET"'
+    description: Site Web
+
+  annee_fiscale_budget:
+    sql: '"ANNEE_FISCALE_BUDGET"'
+    description: Année fiscale du budget
+
+  annee_mois_num_budget:
+    sql: '"ANNEE_MOIS_NUM_BUDGET"'
+    description: Année mois budget
+
+  budget:
+    sql: '"BUDGET"'
+    description: Montant budget
+
+  type_budget:
+    sql: '"TYPE_BUDGET"'
+    description: Type budget
+
+  categorie_budget:
+    sql: '"CATEGORIE_BUDGET"'
+    description: Catégorie budget
+
+  groupe_categorie_budget:
+    sql: '"GROUPE_CATEGORIE_BUDGET"'
+    description: Regroupement catégorie budget
+
+  annee_mois_budget:
+    sql: '"ANNEE_MOIS_BUDGET"'
+    description: Année Mois budget (en VARCHAR)
+
+measures:
+  count:
+    aggregate_type: count

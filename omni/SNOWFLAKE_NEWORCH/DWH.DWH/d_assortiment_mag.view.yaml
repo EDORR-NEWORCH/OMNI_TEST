@@ -1,0 +1,25 @@
+# Reference this view as dwh_dwh__d_assortiment_mag
+catalog: DWH
+schema: DWH
+table_name: D_ASSORTIMENT_MAG
+
+dimensions:
+  code_struc_orga:
+    sql: '"CODE_STRUC_ORGA"'
+    description: Structure organisationnelle
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  hier5_code:
+    sql: '"HIER5_CODE"'
+    description: Code hiérarchie 5
+
+  niv_assor_mag:
+    sql: '"NIV_ASSOR_MAG"'
+    description: Niveau assortiment magasin
+
+measures:
+  count:
+    aggregate_type: count

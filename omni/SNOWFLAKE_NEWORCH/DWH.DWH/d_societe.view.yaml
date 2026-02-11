@@ -1,0 +1,29 @@
+# Reference this view as dwh_dwh__d_societe
+catalog: DWH
+schema: DWH
+table_name: D_SOCIETE
+
+dimensions:
+  soc_key:
+    sql: '"SOC_KEY"'
+    description: Clé société
+
+  soc_code:
+    sql: '"SOC_CODE"'
+    description: Code société
+
+  soc_description:
+    sql: '"SOC_DESCRIPTION"'
+    description: Description société
+
+  soc_nom:
+    sql: '"SOC_NOM"'
+    description: Nom société
+
+  soc_devise:
+    sql: '"SOC_DEVISE"'
+    description: Devise société
+
+measures:
+  count:
+    aggregate_type: count

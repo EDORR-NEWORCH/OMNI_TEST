@@ -1,0 +1,37 @@
+# Reference this view as dwh_dwh__d_assortiment_art
+catalog: DWH
+schema: DWH
+table_name: D_ASSORTIMENT_ART
+
+dimensions:
+  code_struc_orga:
+    sql: '"CODE_STRUC_ORGA"'
+    description: Structure organisationnelle
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code Produit
+
+  niv_assor_art:
+    sql: '"NIV_ASSOR_ART"'
+    description: Niveau assortiment article
+
+  date_deb_assort:
+    sql: '"DATE_DEB_ASSORT"'
+    description: Date début assortiment
+
+  date_fin_assort:
+    sql: '"DATE_FIN_ASSORT"'
+    description: Date fin assortiment
+
+  date_deb_refe:
+    sql: '"DATE_DEB_REFE"'
+    description: Date début référencement
+
+  date_fin_refe:
+    sql: '"DATE_FIN_REFE"'
+    description: Date fin référencement
+
+measures:
+  count:
+    aggregate_type: count

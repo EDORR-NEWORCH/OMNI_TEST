@@ -1,0 +1,176 @@
+# Reference this view as magasin__v_dtv_magasin_aggr_v2
+schema: MAGASIN
+table_name: V_DTV_MAGASIN_AGGR_V2
+
+dimensions:
+  cal_dt_jour:
+    sql: '"CAL_DT_JOUR"'
+    description: Date du jour
+
+  dep_pays:
+    sql: '"DEP_PAYS"'
+    description: Code pays
+
+  region:
+    sql: '"REGION"'
+    description: Région
+
+  pays_libelle:
+    sql: '"PAYS_LIBELLE"'
+    description: Libellé pays
+
+  format_site:
+    sql: '"FORMAT_SITE"'
+    description: Format du magasin
+
+  statut_liste:
+    sql: '"STATUT_LISTE"'
+    description: Statut de la liste de naissance
+
+  adh_regr_fid:
+    sql: '"ADH_REGR_FID"'
+    description: Regroupement programme de fidélité
+
+  adh_fid:
+    sql: '"ADH_FID"'
+    description: Programme de fidélité
+
+  adh_fid_lib:
+    sql: '"ADH_FID_LIB"'
+    description: Libellé programme de fidélité
+
+  nb_lst_naiss_aggr:
+    sql: '"NB_LST_NAISS_AGGR"'
+    description: Nombre de liste de naissance
+
+  ca_ttc_lst_naiss_emp_aggr:
+    sql: '"CA_TTC_LST_NAISS_EMP_AGGR"'
+    description: Chiffre d'affaire TTC emporté
+
+  ca_ttc_lst_naiss_pot_aggr:
+    sql: '"CA_TTC_LST_NAISS_POT_AGGR"'
+    description: Chiffre d'affaire TTC potentiel
+
+  nb_art_lst_naiss_aggr:
+    sql: '"NB_ART_LST_NAISS_AGGR"'
+    description: Nbre d'articles de la liste de naissance
+
+  nb_art_emp_lst_naiss_aggr:
+    sql: '"NB_ART_EMP_LST_NAISS_AGGR"'
+    description: Nbre d'articles emportés
+
+  nb_art_ajt_lst_naiss_aggr:
+    sql: '"NB_ART_AJT_LST_NAISS_AGGR"'
+    description: Nbre d'articles ajoutés
+
+  adh_ca_ttc_cre_aggr:
+    sql: '"ADH_CA_TTC_CRE_AGGR"'
+    description: Chiffre d'affaire TTC sur la création de programme
+
+  adh_ca_ttc_ren_aggr:
+    sql: '"ADH_CA_TTC_REN_AGGR"'
+    description: Chiffre d'affaire TTC sur le renouvellement de programme
+
+  adh_ca_ttc_renauto_aggr:
+    sql: '"ADH_CA_TTC_RENAUTO_AGGR"'
+    description: Chiffre d'affaire TTC sur le renouvellement automatique de programme
+
+  adh_ca_ttc_prev_aggr:
+    sql: '"ADH_CA_TTC_PREV_AGGR"'
+    description: Chiffre d'affaire TTC prévu
+
+  adh_ca_ttc_retour_aggr:
+    sql: '"ADH_CA_TTC_RETOUR_AGGR"'
+    description: Chiffre d'affaire TTC sur les retours
+
+  adh_ca_ht_cre_aggr:
+    sql: '"ADH_CA_HT_CRE_AGGR"'
+    description: Chiffre d'affaire HT sur la création de programme
+
+  adh_ca_ht_ren_aggr:
+    sql: '"ADH_CA_HT_REN_AGGR"'
+    description: Chiffre d'affaire HT sur le renouvellement de programme
+
+  adh_ca_ht_renauto_aggr:
+    sql: '"ADH_CA_HT_RENAUTO_AGGR"'
+    description: Chiffre d'affaire HT sur le renouvellement automatique de programme
+
+  adh_ca_ht_retour_aggr:
+    sql: '"ADH_CA_HT_RETOUR_AGGR"'
+    description: Chiffre d'affaire HT sur les retours
+
+  adh_ca_ht_prev_aggr:
+    sql: '"ADH_CA_HT_PREV_AGGR"'
+    description: Chiffre d'affaire HT prévu
+
+  adh_nbe_cre_aggr:
+    sql: '"ADH_NBE_CRE_AGGR"'
+    description: Nombre de création de programme
+
+  adh_nbe_ren_aggr:
+    sql: '"ADH_NBE_REN_AGGR"'
+    description: Nombre de renouvellement de programme
+
+  adh_nbe_renauto_aggr:
+    sql: '"ADH_NBE_RENAUTO_AGGR"'
+    description: Nombre de renouvellement automatique de programme
+
+  adh_nbe_expi_aggr:
+    sql: '"ADH_NBE_EXPI_AGGR"'
+    description: Nombre d'expiration
+
+  adh_nbe_susp_aggr:
+    sql: '"ADH_NBE_SUSP_AGGR"'
+    description: Nombre de suspension
+
+  adh_nbe_chang_aggr:
+    sql: '"ADH_NBE_CHANG_AGGR"'
+    description: Nombre de changement de programme
+
+  adh_nbe_dem_resi_aggr:
+    sql: '"ADH_NBE_DEM_RESI_AGGR"'
+    description: Nombre de demandes de résiliation
+
+  adh_nbe_retou_aggr:
+    sql: '"ADH_NBE_RETOU_AGGR"'
+    description: Nombre de retours
+
+  adh_nbe_mbr_act_crt_aggr:
+    sql: '"ADH_NBE_MBR_ACT_CRT_AGGR"'
+    description: Nombre de membres actifs par magasin de fidélité
+
+  adh_nbe_mbr_act_prf_aggr:
+    sql: '"ADH_NBE_MBR_ACT_PRF_AGGR"'
+    description: Nombre de membres actifs par magasin préféré
+
+  adh_nb_prog_vendus_aggr:
+    sql: '"ADH_NB_PROG_VENDUS_AGGR"'
+    description: Nombre de programmes vendus
+
+  nb_tick_recrut_aggr:
+    sql: '"NB_TICK_RECRUT_AGGR"'
+    description: Nombre de tickets recrutables
+
+  ca_ttc_puer_aggr:
+    sql: '"CA_TTC_PUER_AGGR"'
+    description: Chiffre d'affaire TTC sur la PUER
+
+  nb_depots_aggr:
+    sql: '"NB_DEPOTS_AGGR"'
+    description: Nombre de dépôts
+
+  nb_depots_lst_naiss_aggr:
+    sql: '"NB_DEPOTS_LST_NAISS_AGGR"'
+    description: Nombre de dépôts qui gèrent les liste de naissances
+
+  date_mdf:
+    sql: '"DATE_MDF"'
+    description: Date de modification
+
+  cletechqlik:
+    sql: '"CLETECHQLIK"'
+    description: Clé technique pour incrémental Qlik
+
+measures:
+  count:
+    aggregate_type: count

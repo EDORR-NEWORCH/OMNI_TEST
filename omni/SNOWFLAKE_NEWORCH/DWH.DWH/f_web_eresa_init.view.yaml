@@ -1,0 +1,49 @@
+# Reference this view as dwh_dwh__f_web_eresa_init
+catalog: DWH
+schema: DWH
+table_name: F_WEB_ERESA_INIT
+
+dimensions:
+  cons_email:
+    sql: '"CONS_EMAIL"'
+    description: Email client
+
+  cons_nom:
+    sql: '"CONS_NOM"'
+    description: Nom client
+
+  cons_prenom:
+    sql: '"CONS_PRENOM"'
+    description: Prénom client
+
+  cons_tel:
+    sql: '"CONS_TEL"'
+    description: Téléphone client
+
+  web_dt_hr_eresa:
+    sql: '"WEB_DT_HR_ERESA"'
+    description: Date-Heure de la ERESA
+
+  web_date:
+    sql: '"WEB_DATE"'
+    description: Date de la ERESA
+
+  web_eresa:
+    sql: '"WEB_ERESA"'
+    description: Code de la ERESA
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  statut:
+    sql: '"STATUT"'
+    description: Statut de la ERESA
+
+measures:
+  count:
+    aggregate_type: count

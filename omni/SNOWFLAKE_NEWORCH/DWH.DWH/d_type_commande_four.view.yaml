@@ -1,0 +1,33 @@
+# Reference this view as dwh_dwh__d_type_commande_four
+catalog: DWH
+schema: DWH
+table_name: D_TYPE_COMMANDE_FOUR
+
+dimensions:
+  type_cf_key:
+    sql: '"TYPE_CF_KEY"'
+    description: Code du type commande
+
+  type_cf_code:
+    sql: '"TYPE_CF_CODE"'
+    description: Code du type commande
+
+  type_cf_nom:
+    sql: '"TYPE_CF_NOM"'
+    description: Nom du type commande fournisseur
+
+  type_cf_designation:
+    sql: '"TYPE_CF_DESIGNATION"'
+    description: Désignation du type commande fournisseur
+
+  type_cf_cat_oa_code:
+    sql: '"TYPE_CF_CAT_OA_CODE"'
+    description: Code catégorie
+
+  type_cf_cat_oa_lib:
+    sql: '"TYPE_CF_CAT_OA_LIB"'
+    description: Libellé catégorie
+
+measures:
+  count:
+    aggregate_type: count

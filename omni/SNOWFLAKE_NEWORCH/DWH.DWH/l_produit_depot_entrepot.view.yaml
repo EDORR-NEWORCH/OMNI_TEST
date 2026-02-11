@@ -1,0 +1,49 @@
+# Reference this view as dwh_dwh__l_produit_depot_entrepot
+catalog: DWH
+schema: DWH
+table_name: L_PRODUIT_DEPOT_ENTREPOT
+
+dimensions:
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  code_statut:
+    sql: '"CODE_STATUT"'
+    description: Code statut
+
+  stk_secu:
+    sql: '"STK_SECU"'
+    description: Stock sécurité
+
+  code_meth_planif:
+    sql: '"CODE_METH_PLANIF"'
+    description: Code méthode de planification
+
+  delai_transport:
+    sql: '"DELAI_TRANSPORT"'
+    description: Délais transport
+
+  delai_appro:
+    sql: '"DELAI_APPRO"'
+    description: Délais approvisionnement
+
+  delai_controle:
+    sql: '"DELAI_CONTROLE"'
+    description: Délais contrôle
+
+  delai_administration:
+    sql: '"DELAI_ADMINISTRATION"'
+    description: Délais administration
+
+  delai:
+    sql: '"DELAI"'
+    description: Délais (la somme)
+
+measures:
+  count:
+    aggregate_type: count

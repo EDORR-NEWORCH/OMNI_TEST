@@ -1,0 +1,129 @@
+# Reference this view as dwh_dwh__d_immos
+catalog: DWH
+schema: DWH
+table_name: D_IMMOS
+
+dimensions:
+  imm_soc_code:
+    sql: '"IMM_SOC_CODE"'
+    description: Code société
+
+  imm_num_immos:
+    sql: '"IMM_NUM_IMMOS"'
+    description: N° immos
+
+  imm_sous_num_immos:
+    sql: '"IMM_SOUS_NUM_IMMOS"'
+    description: Sous numéro
+
+  imm_statut:
+    sql: '"IMM_STATUT"'
+    description: Statut
+
+  imm_text1:
+    sql: '"IMM_TEXT1"'
+    description: Texte 1
+
+  imm_nom:
+    sql: '"IMM_NOM"'
+    description: Nom
+
+  imm_text2:
+    sql: '"IMM_TEXT2"'
+    description: Texte 2
+
+  imm_type:
+    sql: '"IMM_TYPE"'
+    description: Type
+
+  imm_groupe:
+    sql: '"IMM_GROUPE"'
+    description: Groupe
+
+  imm_date_activation:
+    sql: '"IMM_DATE_ACTIVATION"'
+    description: Date activation
+
+  imm_beneficiaire:
+    sql: '"IMM_BENEFICIAIRE"'
+    description: Bénéficiaire
+
+  imm_piece_just_num_serie:
+    sql: '"IMM_PIECE_JUST_NUM_SERIE"'
+    description: N° série pièce justificative
+
+  imm_piece_just_num:
+    sql: '"IMM_PIECE_JUST_NUM"'
+    description: N° pièce justificative
+
+  imm_devise:
+    sql: '"IMM_DEVISE"'
+    description: Devise
+
+  imm_taux:
+    sql: '"IMM_TAUX"'
+    description: Taux
+
+  imm_date_acquisition:
+    sql: '"IMM_DATE_ACQUISITION"'
+    description: Date acquisition
+
+  imm_segment2:
+    sql: '"IMM_SEGMENT2"'
+    description: Segment comptable 2
+
+  imm_segment3:
+    sql: '"IMM_SEGMENT3"'
+    description: Segment comptable 3
+
+  imm_segment4:
+    sql: '"IMM_SEGMENT4"'
+    description: Segment comptable 4
+
+  imm_segment5:
+    sql: '"IMM_SEGMENT5"'
+    description: Segment comptable 5
+
+  imm_segment6:
+    sql: '"IMM_SEGMENT6"'
+    description: Segment comptable 6
+
+  imm_segment7:
+    sql: '"IMM_SEGMENT7"'
+    description: Segment comptable 7
+
+  imm_date_vente:
+    sql: '"IMM_DATE_VENTE"'
+    description: Date de vente
+
+  imm_qte:
+    sql: '"IMM_QTE"'
+    description: Quantité
+
+  imm_id_texte:
+    sql: '"IMM_ID_TEXTE"'
+    description: Texte ID
+
+  imm_date_saisie:
+    sql: '"IMM_DATE_SAISIE"'
+    description: Date de saisie
+
+  imm_heure_saisie:
+    sql: '"IMM_HEURE_SAISIE"'
+    description: Heure de saisie
+
+  imm_date_mod:
+    sql: '"IMM_DATE_MOD"'
+    description: Date de modification
+
+  imm_num_mod:
+    sql: '"IMM_NUM_MOD"'
+    description: N° de modification
+
+  imm_usr_mod:
+    sql: '"IMM_USR_MOD"'
+    description: Utilisateur à l'origine de la modification
+
+measures:
+  count:
+    aggregate_type: count

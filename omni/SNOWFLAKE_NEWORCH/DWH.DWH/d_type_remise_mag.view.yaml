@@ -1,0 +1,18 @@
+# Reference this view as dwh_dwh__d_type_remise_mag
+catalog: DWH
+schema: DWH
+table_name: D_TYPE_REMISE_MAG
+
+dimensions:
+  trem_id:
+    sql: '"TREM_ID"'
+    format: ID
+    description: Code remise
+
+  trem_libelle:
+    sql: '"TREM_LIBELLE"'
+    description: Libellé remise
+
+measures:
+  count:
+    aggregate_type: count

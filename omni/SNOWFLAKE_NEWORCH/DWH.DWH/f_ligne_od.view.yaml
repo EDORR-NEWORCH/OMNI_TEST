@@ -1,0 +1,216 @@
+# Reference this view as dwh_dwh__f_ligne_od
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_OD
+
+dimensions:
+  date_transaction_key:
+    sql: '"DATE_TRANSACTION_KEY"'
+    description: Date de transaction
+
+  heure_transaction_key:
+    sql: '"HEURE_TRANSACTION_KEY"'
+    description: Heure de transaction
+
+  date_reception_key:
+    sql: '"DATE_RECEPTION_KEY"'
+    description: Date de réception
+
+  heure_reception_key:
+    sql: '"HEURE_RECEPTION_KEY"'
+    description: Heure de réception
+
+  soc_key:
+    sql: '"SOC_KEY"'
+    description: Code société
+
+  soc_code:
+    sql: '"SOC_CODE"'
+    description: Code société
+
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Code dépôt
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  loge_key:
+    sql: '"LOGE_KEY"'
+
+  loge_code:
+    sql: '"LOGE_CODE"'
+    description: Code loge
+
+  dep_fin_key:
+    sql: '"DEP_FIN_KEY"'
+    description: Code dépôt final
+
+  dep_fin_code:
+    sql: '"DEP_FIN_CODE"'
+    description: Code dépôt final
+
+  type_od_key:
+    sql: '"TYPE_OD_KEY"'
+    description: Code type
+
+  type_od_code:
+    sql: '"TYPE_OD_CODE"'
+    description: Code type
+
+  cmd_key:
+    sql: '"CMD_KEY"'
+    description: Code commande
+
+  sais_key:
+    sql: '"SAIS_KEY"'
+    description: Code saison
+
+  sais_code:
+    sql: '"SAIS_CODE"'
+    description: Code saison
+
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Code produit
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  devise_key:
+    sql: '"DEVISE_KEY"'
+    description: Code devise
+
+  devise_code:
+    sql: '"DEVISE_CODE"'
+    description: Code devise
+
+  statut_od_code:
+    sql: '"STATUT_OD_CODE"'
+    description: Code statut
+
+  statut_od_key:
+    sql: '"STATUT_OD_KEY"'
+    description: Code statut
+
+  od_code:
+    sql: '"OD_CODE"'
+    description: Code commande
+
+  od_ligne:
+    sql: '"OD_LIGNE"'
+    description: Numéro de la ligne
+
+  od_suffixe_ligne:
+    sql: '"OD_SUFFIXE_LIGNE"'
+    description: Suffixe de la ligne
+
+  od_categorie_ordre_code:
+    sql: '"OD_CATEGORIE_ORDRE_CODE"'
+    description: Code catégorie
+
+  od_categorie_ordre_lib:
+    sql: '"OD_CATEGORIE_ORDRE_LIB"'
+    description: Libellé catégorie
+
+  od_ordre_ref_code:
+    sql: '"OD_ORDRE_REF_CODE"'
+    description: Référence externe
+
+  od_ligne_ordre_ref_code:
+    sql: '"OD_LIGNE_ORDRE_REF_CODE"'
+    description: Numéro de ligne externe
+
+  od_autorise:
+    sql: '"OD_AUTORISE"'
+    description: Autorisé
+
+  od_priorite_code:
+    sql: '"OD_PRIORITE_CODE"'
+    description: Priorité
+
+  od_priorite_lib:
+    sql: '"OD_PRIORITE_LIB"'
+    description: Code priorité
+
+  od_quantite_transaction:
+    sql: '"OD_QUANTITE_TRANSACTION"'
+    description: Quantité transaction
+
+  od_quantite_transaction_rempl:
+    sql: '"OD_QUANTITE_TRANSACTION_REMPL"'
+    description: Quantité transaction rempl
+
+  od_gestion_stock_code:
+    sql: '"OD_GESTION_STOCK_CODE"'
+    description: Code de gestion des stocks
+
+  od_gestion_stock_lib:
+    sql: '"OD_GESTION_STOCK_LIB"'
+    description: Libellé de gestion des stocks
+
+  od_indicateur_cmd_retard:
+    sql: '"OD_INDICATEUR_CMD_RETARD"'
+    description: Indicateur de retard
+
+  od_marque_fin:
+    sql: '"OD_MARQUE_FIN"'
+    description: Flag terminé
+
+  od_livraison_groupee:
+    sql: '"OD_LIVRAISON_GROUPEE"'
+    description: Livraison groupée
+
+  od_motif_transaction:
+    sql: '"OD_MOTIF_TRANSACTION"'
+    description: Motif de la transaction
+
+  od_atelier_code:
+    sql: '"OD_ATELIER_CODE"'
+    description: Code atelier
+
+  od_atelier_lib:
+    sql: '"OD_ATELIER_LIB"'
+    description: Libellé atelier
+
+  od_statut_identite_stock_code:
+    sql: '"OD_STATUT_IDENTITE_STOCK_CODE"'
+    description: Code statut stock
+
+  od_statut_identite_stock_lib:
+    sql: '"OD_STATUT_IDENTITE_STOCK_LIB"'
+    description: Libellé statut stock
+
+  od_suffix_ligne_ordre_ref_code:
+    sql: '"OD_SUFFIX_LIGNE_ORDRE_REF_CODE"'
+    description: Suffixe externe
+
+  od_date_crea:
+    sql: '"OD_DATE_CREA"'
+    description: Date de création
+
+  od_qte_affectee:
+    sql: '"OD_QTE_AFFECTEE"'
+    description: Quantité affectée
+
+  od_qte_prelevee:
+    sql: '"OD_QTE_PRELEVEE"'
+    description: Quantité prélevée
+
+  od_qte_transferee:
+    sql: '"OD_QTE_TRANSFEREE"'
+    description: Quantité transférée
+
+  od_qte_expediee:
+    sql: '"OD_QTE_EXPEDIEE"'
+    description: Quantité expédiée
+
+  od_qte_realisee:
+    sql: '"OD_QTE_REALISEE"'
+    description: Quantité réalisée
+
+measures:
+  count:
+    aggregate_type: count

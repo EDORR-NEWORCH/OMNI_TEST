@@ -1,0 +1,59 @@
+# Reference this view as dwh_dwh__f_matrice_quantites
+catalog: DWH
+schema: DWH
+table_name: F_MATRICE_QUANTITES
+
+dimensions:
+  id:
+    sql: '"ID"'
+    format: ID
+    description: Identifiant de la demande de commande
+    primary_key: true
+
+  color:
+    sql: '"COLOR"'
+    description: Couleur
+
+  collection:
+    sql: '"COLLECTION"'
+    description: Collection
+
+  sku:
+    sql: '"SKU"'
+    description: Code sku
+
+  eta:
+    sql: '"ETA"'
+    description: Livraison (ETA)
+
+  ordertype:
+    sql: '"ORDERTYPE"'
+    description: Type ordre d'achat
+
+  type:
+    sql: '"TYPE"'
+    description: Type (Taille CO ou Unité Logistique)
+
+  nbul:
+    sql: '"NBUL"'
+    description: Nbre d'UL (unité logistique)
+
+  taille:
+    sql: '"TAILLE"'
+    description: Taille UL / taille CO
+
+  quantity:
+    sql: '"QUANTITY"'
+    description: Quantité à livrer
+
+  cadence:
+    sql: '"CADENCE"'
+    description: Quantité à livrer
+
+  code_m3:
+    sql: '"CODE_M3"'
+    description: Code article M3
+
+measures:
+  count:
+    aggregate_type: count

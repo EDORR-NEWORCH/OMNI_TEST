@@ -1,0 +1,101 @@
+# Reference this view as dwh_dwh__d_produit_saison
+catalog: DWH
+schema: DWH
+table_name: D_PRODUIT_SAISON
+
+dimensions:
+  psa_prd_key:
+    sql: '"PSA_PRD_KEY"'
+    description: Code saison
+
+  psa_saison_code:
+    sql: '"PSA_SAISON_CODE"'
+    description: Code saison
+
+  psa_date_debut:
+    sql: '"PSA_DATE_DEBUT"'
+    description: Date début historisation
+
+  psa_date_fin:
+    sql: '"PSA_DATE_FIN"'
+    description: Date fin historisation
+
+  psa_prd_code:
+    sql: '"PSA_PRD_CODE"'
+    description: Code produit
+
+  psa_permanent:
+    sql: '"PSA_PERMANENT"'
+    description: Permanent
+
+  psa_activite_code:
+    sql: '"PSA_ACTIVITE_CODE"'
+    description: Code activité
+
+  psa_univers_code:
+    sql: '"PSA_UNIVERS_CODE"'
+    description: Code univers
+
+  psa_rayon_code:
+    sql: '"PSA_RAYON_CODE"'
+    description: Code rayon
+
+  psa_famille_code:
+    sql: '"PSA_FAMILLE_CODE"'
+    description: Code famille
+
+  psa_sous_famille_code:
+    sql: '"PSA_SOUS_FAMILLE_CODE"'
+    description: Code sous-famille
+
+  psa_theme:
+    sql: '"PSA_THEME"'
+    description: Thème
+
+  psa_fonction:
+    sql: '"PSA_FONCTION"'
+    description: Fonction
+
+  psa_marque:
+    sql: '"PSA_MARQUE"'
+    description: Marque
+
+  psa_licence:
+    sql: '"PSA_LICENCE"'
+    description: Licence
+
+  psa_pers_licence:
+    sql: '"PSA_PERS_LICENCE"'
+    description: Licence
+
+  psa_saisonnalite:
+    sql: '"PSA_SAISONNALITE"'
+    description: Saisonnalité
+
+  psa_typologie:
+    sql: '"PSA_TYPOLOGIE"'
+    description: Typlogie
+
+  psa_nom_appel:
+    sql: '"PSA_NOM_APPEL"'
+    description: Nom d'appel
+
+  psa_specif_pays:
+    sql: '"PSA_SPECIF_PAYS"'
+    description: Spécifique pays
+
+  psa_seminaire:
+    sql: '"PSA_SEMINAIRE"'
+    description: Séminaire
+
+  psa_report:
+    sql: '"PSA_REPORT"'
+    description: Report
+
+  psa_best_price:
+    sql: '"PSA_BEST_PRICE"'
+    description: Best price
+
+measures:
+  count:
+    aggregate_type: count

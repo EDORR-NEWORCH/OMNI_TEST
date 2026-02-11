@@ -1,0 +1,11 @@
+base_view: ventes__v_ventes_comp
+label: Ventes V Ventes Comp
+
+fields: [ all_views.*, -referentiel__v_dtv_calendrier.cal_fisc_annee ]
+auto_run: false
+
+joins:
+  referentiel__v_dtv_depots: {}
+  referentiel__v_dtv_calendrier: {}
+  referentiel__v_dtv_produit: {}
+  referentiel__mv_entree_client: {}

@@ -1,0 +1,272 @@
+# Reference this view as digital__f_web_conso
+schema: DIGITAL
+table_name: F_WEB_CONSO
+
+dimensions:
+  web_cmd:
+    sql: '"WEB_CMD"'
+    description: Numéro commande
+
+  web_prd_key:
+    sql: '"WEB_PRD_KEY"'
+    description: Code article
+
+  web_lig_tech:
+    sql: '"WEB_LIG_TECH"'
+    description: Numéro ligne technique
+
+  cletechqlik:
+    sql: '"CLETECHQLIK"'
+    description: Clé technique pour incrémental Qlik
+
+  web_prx_unit:
+    sql: '"WEB_PRX_UNIT"'
+    description: Prix unitaire payé
+
+  web_prx_base:
+    sql: '"WEB_PRX_BASE"'
+    description: Prix de base
+
+  web_tx_tva:
+    sql: '"WEB_TX_TVA"'
+    description: Taux TVA
+
+  web_dt_cmd:
+    sql: '"WEB_DT_CMD"'
+    description: Date & heure de commande
+
+  web_qte_cmd:
+    sql: '"WEB_QTE_CMD"'
+    description: Quantité
+
+  web_mt_ht_cmd:
+    sql: '"WEB_MT_HT_CMD"'
+    description: Montant HT commande WEB
+
+  web_mt_ttc_cmd:
+    sql: '"WEB_MT_TTC_CMD"'
+    description: Montant TTC commande WEB
+
+  web_rem_cmd:
+    sql: '"WEB_REM_CMD"'
+    description: Montant remise commande WEB
+
+  web_marge_cmd:
+    sql: '"WEB_MARGE_CMD"'
+    description: Marge commande WEB
+
+  web_pre_cmd:
+    sql: '"WEB_PRE_CMD"'
+    description: Prix revient commande WEB
+
+  web_dep_pre:
+    sql: '"WEB_DEP_PRE"'
+    description: Code dépôt préparation commande WEB
+
+  web_dt_exp:
+    sql: '"WEB_DT_EXP"'
+    description: Date expédition commande WEB
+
+  web_qte_exp:
+    sql: '"WEB_QTE_EXP"'
+    description: Quantité expédiée commande WEB
+
+  web_mt_ht_exp:
+    sql: '"WEB_MT_HT_EXP"'
+    description: Montant HT expédié
+
+  web_mt_ttc_exp:
+    sql: '"WEB_MT_TTC_EXP"'
+    description: Montant TTC expédié
+
+  web_rem_exp:
+    sql: '"WEB_REM_EXP"'
+    description: Montant remise expédié
+
+  web_marge_exp:
+    sql: '"WEB_MARGE_EXP"'
+    description: Montant marge expédié
+
+  web_delai_exp:
+    sql: '"WEB_DELAI_EXP"'
+    description: Délai expédition
+
+  web_qte_ann_mag:
+    sql: '"WEB_QTE_ANN_MAG"'
+    description: Quantité annulée magasin
+
+  web_mt_ttc_ann_mag:
+    sql: '"WEB_MT_TTC_ANN_MAG"'
+    description: Montant TTC annulé en magasin
+
+  web_qte_ann_erp:
+    sql: '"WEB_QTE_ANN_ERP"'
+    description: DQuantité annulée entrepot
+
+  web_mt_ttc_ann_erp:
+    sql: '"WEB_MT_TTC_ANN_ERP"'
+    description: Montant annulé entrepot
+
+  web_sit_ori:
+    sql: '"WEB_SIT_ORI"'
+    description: Site WEB
+
+  web_canal_ori:
+    sql: '"WEB_CANAL_ORI"'
+    description: Canal origine
+
+  web_club:
+    sql: '"WEB_CLUB"'
+    description: Club
+
+  web_devise:
+    sql: '"WEB_DEVISE"'
+    description: Devise
+
+  web_statut:
+    sql: '"WEB_STATUT"'
+    description: Statut
+
+  web_mono_multi:
+    sql: '"WEB_MONO_MULTI"'
+    description: Cmd MONO / MULT
+
+  web_cat_cmd:
+    sql: '"WEB_CAT_CMD"'
+    description: Catégorie commande
+
+  web_sais_actuel:
+    sql: '"WEB_SAIS_ACTUEL"'
+    description: Saison actue
+
+  web_saison:
+    sql: '"WEB_SAISON"'
+    description: Saison
+
+  web_mod_liv:
+    sql: '"WEB_MOD_LIV"'
+    description: Mode livraison
+
+  web_transport:
+    sql: '"WEB_TRANSPORT"'
+    description: Transport
+
+  web_mag_liv:
+    sql: '"WEB_MAG_LIV"'
+    description: Magasin livraison
+
+  web_client:
+    sql: '"WEB_CLIENT"'
+    description: Code client
+
+  web_mag_ven_tab:
+    sql: '"WEB_MAG_VEN_TAB"'
+    description: Code magasin (tablette vendeur)
+
+  web_mag_tab:
+    sql: '"WEB_MAG_TAB"'
+    description: Code vendeur (tablette vendeur)
+
+  web_qte_retour:
+    sql: '"WEB_QTE_RETOUR"'
+    description: Quantité retour
+
+  web_dep_retour:
+    sql: '"WEB_DEP_RETOUR"'
+    description: Dépôt retour
+
+  web_mt_retour:
+    sql: '"WEB_MT_RETOUR"'
+    description: Montant retour
+
+  web_statut_ligne:
+    sql: '"WEB_STATUT_LIGNE"'
+    description: Statut ligne
+
+  web_statut_cmd:
+    sql: '"WEB_STATUT_CMD"'
+    description: Statut commande
+
+  web_mag_gestion:
+    sql: '"WEB_MAG_GESTION"'
+    description: Magasin de gestion
+
+  web_site_ori_key:
+    sql: '"WEB_SITE_ORI_KEY"'
+    description: Site origine
+
+  web_prd_code:
+    sql: '"WEB_PRD_CODE"'
+    description: Produit
+
+  web_cons_carte_dep_code:
+    sql: '"WEB_CONS_CARTE_DEP_CODE"'
+    description: Magasin origine de la fidelité
+
+  web_dt_heure_cmd:
+    sql: '"WEB_DT_HEURE_CMD"'
+    description: Date heure de la commande
+
+  web_dt_ann:
+    sql: '"WEB_DT_ANN"'
+    description: Date annulation
+
+  web_dt_retour:
+    sql: '"WEB_DT_RETOUR"'
+    description: Date retour
+
+  web_etat_art_retour:
+    sql: '"WEB_ETAT_ART_RETOUR"'
+    description: Statut retour abandon
+
+  web_motif_retour:
+    sql: '"WEB_MOTIF_RETOUR"'
+    description: Motif retour
+
+  web_etat_retour:
+    sql: '"WEB_ETAT_RETOUR"'
+    description: Etat retour
+
+  web_statut_ligne_sfra:
+    sql: '"WEB_STATUT_LIGNE_SFRA"'
+    description: Statut ligne sfra
+
+  web_statut_cmd_sfra:
+    sql: '"WEB_STATUT_CMD_SFRA"'
+    description: Statut commande sfra
+
+  web_qte_abandon:
+    sql: '"WEB_QTE_ABANDON"'
+    description: Quantité abandonnée
+
+  web_dep_abandon:
+    sql: '"WEB_DEP_ABANDON"'
+    description: Dépôt d'abandon
+
+  web_mt_abandon:
+    sql: '"WEB_MT_ABANDON"'
+    description: Montant abandonné
+
+  web_dt_abandon:
+    sql: '"WEB_DT_ABANDON"'
+    description: Date de l'abandon
+
+  web_nav_device:
+    sql: '"WEB_NAV_DEVICE"'
+    description: Device
+
+  web_nav_environment:
+    sql: '"WEB_NAV_ENVIRONMENT"'
+    description: Environnment
+
+  web_tracking:
+    sql: '"WEB_TRACKING"'
+    description: Tracking
+
+  web_date_mdf:
+    sql: '"WEB_DATE_MDF"'
+    description: Date de modification pour incrémental
+
+measures:
+  count:
+    aggregate_type: count

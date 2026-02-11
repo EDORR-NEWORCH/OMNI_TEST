@@ -1,0 +1,268 @@
+# Reference this view as referentiel__v_dtv_prodsaison
+schema: REFERENTIEL
+table_name: V_DTV_PRODSAISON
+
+dimensions:
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  prd_reference:
+    sql: '"PRD_REFERENCE"'
+    description: Référence produit
+
+  prd_parent:
+    sql: '"PRD_PARENT"'
+    description: Code parent produit
+
+  prd_description_courte:
+    sql: '"PRD_DESCRIPTION_COURTE"'
+    description: Description courte produit
+
+  prd_description_longue:
+    sql: '"PRD_DESCRIPTION_LONGUE"'
+    description: Description longue produit
+
+  prd_code_bar_princ:
+    sql: '"PRD_CODE_BAR_PRINC"'
+    description: Code barre principal
+
+  prd_statut_code:
+    sql: '"PRD_STATUT_CODE"'
+    description: Code statut produit
+
+  prd_theme_code:
+    sql: '"PRD_THEME_CODE"'
+    description: Code thème produit
+
+  prd_theme_lib:
+    sql: '"PRD_THEME_LIB"'
+    description: Libellé thème produit
+
+  prd_fonction_code:
+    sql: '"PRD_FONCTION_CODE"'
+    description: Code fonction
+
+  prd_fonction_lib:
+    sql: '"PRD_FONCTION_LIB"'
+    description: Libellé fonction
+
+  prd_marque_code:
+    sql: '"PRD_MARQUE_CODE"'
+    description: Code marque
+
+  prd_marque_lib:
+    sql: '"PRD_MARQUE_LIB"'
+    description: Libellé marque
+
+  prd_cdt_stat_vente_code:
+    sql: '"PRD_CDT_STAT_VENTE_CODE"'
+    description: Marque ou MDD
+
+  prd_cdt_stat_vente_lib:
+    sql: '"PRD_CDT_STAT_VENTE_LIB"'
+    description: Libellé marque ou MDD
+
+  prd_perimetre:
+    sql: '"PRD_PERIMETRE"'
+    description: Périmètre produit
+
+  prd_colisage:
+    sql: '"PRD_COLISAGE"'
+    description: Colisage
+
+  prd_type_ensemble:
+    sql: '"PRD_TYPE_ENSEMBLE"'
+    description: Type ensemble produit
+
+  prd_type_ensemble_parent:
+    sql: '"PRD_TYPE_ENSEMBLE_PARENT"'
+    description: Type ensemble parent
+
+  prd_date_mep:
+    sql: '"PRD_DATE_MEP"'
+    description: Date de mise en production du produit
+
+  prd_categorie:
+    sql: '"PRD_CATEGORIE"'
+    description: Regroupement catégorie
+
+  prd_hierarchie_niveau_1_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_1_LIB"'
+    description: Libellé hiérarchie niveau 1
+
+  prd_hierarchie_niveau_2_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_2_LIB"'
+    description: Libellé hiérarchie niveau 2
+
+  prd_hierarchie_niveau_3_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_3_LIB"'
+    description: Libellé hiérarchie niveau 3
+
+  prd_hierarchie_niveau_4_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_4_LIB"'
+    description: Libellé hiérarchie niveau 4
+
+  prd_hierarchie_niveau_5_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_5_LIB"'
+    description: Libellé hiérarchie niveau 5
+
+  prd_activite_lib:
+    sql: '"PRD_ACTIVITE_LIB"'
+    description: Libellé activité
+
+  prd_univers_lib:
+    sql: '"PRD_UNIVERS_LIB"'
+    description: Libellé univers
+
+  prd_rayon_lib:
+    sql: '"PRD_RAYON_LIB"'
+    description: Libellé rayon
+
+  prd_famille_lib:
+    sql: '"PRD_FAMILLE_LIB"'
+    description: Libellé famille
+
+  prd_sous_famille_lib:
+    sql: '"PRD_SOUS_FAMILLE_LIB"'
+    description: Libellé sous famille
+
+  prd_couleur_code:
+    sql: '"PRD_COULEUR_CODE"'
+    description: Code couleur
+
+  prd_couleur_lib:
+    sql: '"PRD_COULEUR_LIB"'
+    description: Libellé couleur
+
+  prd_taille_code:
+    sql: '"PRD_TAILLE_CODE"'
+    description: Code taille
+
+  prd_taille_lib:
+    sql: '"PRD_TAILLE_LIB"'
+    description: Libellé taille
+
+  prd_compo:
+    sql: '"PRD_COMPO"'
+    description: Composition de l'article
+
+  prd_statut_depot:
+    sql: '"PRD_STATUT_DEPOT"'
+    description: Statut dépôt
+
+  prd_appli_ori:
+    sql: '"PRD_APPLI_ORI"'
+    description: Origine
+
+  prd_saison:
+    sql: '"PRD_SAISON"'
+    description: Saison
+
+  prd_type_puer:
+    sql: '"PRD_TYPE_PUER"'
+    description: Type puériculture (HARD, SOFT)
+
+  prd_poids_net:
+    sql: '"PRD_POIDS_NET"'
+    description: Poids net
+
+  prd_poids_brut:
+    sql: '"PRD_POIDS_BRUT"'
+    description: Poids brut
+
+  prd_volume:
+    sql: '"PRD_VOLUME"'
+    description: Volume
+
+  prd_hauteur:
+    sql: '"PRD_HAUTEUR"'
+    description: Hauteur
+
+  prd_longueur:
+    sql: '"PRD_LONGUEUR"'
+    description: Longueur
+
+  prd_largeur:
+    sql: '"PRD_LARGEUR"'
+    description: Largeur
+
+  prd_nom_appel:
+    sql: '"PRD_NOM_APPEL"'
+    description: Nom produit
+
+  prd_date_creation:
+    sql: '"PRD_DATE_CREATION"'
+    description: Date de création
+
+  prd_description_courte_parent:
+    sql: '"PRD_DESCRIPTION_COURTE_PARENT"'
+    description: Description courte parent
+
+  prd_statut_code_parent:
+    sql: '"PRD_STATUT_CODE_PARENT"'
+    description: Statut parent
+
+  prd_description:
+    sql: '"PRD_DESCRIPTION"'
+    description: Description
+
+  prd_ref:
+    sql: '"PRD_REF"'
+    description: Référence
+
+  adresse_basecat:
+    sql: '"ADRESSE_BASECAT"'
+    description: Lien photo produit
+
+  prd_date_mdf:
+    sql: '"PRD_DATE_MDF"'
+    description: Date de modification du produit pour incrémental Qlik
+
+  type_marque:
+    sql: '"TYPE_MARQUE"'
+    description: Type marque
+
+  psa_date_debut:
+    sql: '"PSA_DATE_DEBUT"'
+    description: Date début historisation
+
+  psa_date_fin:
+    sql: '"PSA_DATE_FIN"'
+    description: Date fin historisation
+
+  psa_typologie:
+    sql: '"PSA_TYPOLOGIE"'
+    description: Typologie
+
+  psa_seminaire:
+    sql: '"PSA_SEMINAIRE"'
+    description: Séminaire
+
+  psa_saison_collection:
+    sql: '"PSA_SAISON_COLLECTION"'
+    description: Saison collection
+
+  sais_code:
+    sql: '"SAIS_CODE"'
+    description: Code saison
+
+  psa_master_key:
+    sql: '"PSA_MASTER_KEY"'
+    description: Clé technique qlik
+
+  psa_master_key_text:
+    sql: '"PSA_MASTER_KEY_TEXT"'
+    description: Type de clé technique qlik
+
+  psa_saison:
+    sql: '"PSA_SAISON"'
+    description: Saison
+
+  psa_saison_stock:
+    sql: '"PSA_SAISON_STOCK"'
+    description: Stock saison
+
+measures:
+  count:
+    aggregate_type: count

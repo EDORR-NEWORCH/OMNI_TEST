@@ -1,0 +1,22 @@
+# Reference this view as referentiel__mv_entree_client
+schema: REFERENTIEL
+table_name: MV_ENTREE_CLIENT
+
+dimensions:
+  code_depot:
+    sql: '"CODE_DEPOT"'
+
+  date_jour:
+    sql: '"DATE_JOUR"'
+
+  nb_entree:
+    sql: '"NB_ENTREE"'
+
+measures:
+  count:
+    aggregate_type: count
+
+  nb_entree_sum:
+    sql: ${referentiel__mv_entree_client.nb_entree}
+    label: Somme des entrées client
+    aggregate_type: sum

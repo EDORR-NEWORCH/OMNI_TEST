@@ -1,0 +1,57 @@
+# Reference this view as dwh_dwh__f_web_cmd_remise
+catalog: DWH
+schema: DWH
+table_name: F_WEB_CMD_REMISE
+
+dimensions:
+  web_cmd:
+    sql: '"WEB_CMD"'
+    description: Numéro de la commande WEB
+
+  rem_date:
+    sql: '"REM_DATE"'
+    description: Date de la remise
+
+  web_ligne:
+    sql: '"WEB_LIGNE"'
+    description: N° de la ligne de la commande
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  rem_ligne:
+    sql: '"REM_LIGNE"'
+    description: N° de la ligne de remise
+
+  rem_type:
+    sql: '"REM_TYPE"'
+    description: Type de remise
+
+  rem_nom:
+    sql: '"REM_NOM"'
+    description: Nom de la remise
+
+  rem_cnd_com:
+    sql: '"REM_CND_COM"'
+    description: Condition commerciale de la remise
+
+  rem_mnt:
+    sql: '"REM_MNT"'
+    description: Montant de la remise
+
+  rem_dev:
+    sql: '"REM_DEV"'
+    description: Devise de la remise
+
+  rem_code_promo:
+    sql: '"REM_CODE_PROMO"'
+    description: Code promo remise
+
+  date_mdf:
+    sql: '"DATE_MDF"'
+    description: Date de modification pour incrémental Qlik
+
+measures:
+  count:
+    aggregate_type: count

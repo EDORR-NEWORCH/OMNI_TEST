@@ -1,0 +1,108 @@
+# Reference this view as dwh_dwh__f_immos_hist
+catalog: DWH
+schema: DWH
+table_name: F_IMMOS_HIST
+
+dimensions:
+  imh_div_code:
+    sql: '"IMH_DIV_CODE"'
+    description: Code division
+
+  imh_soc_code:
+    sql: '"IMH_SOC_CODE"'
+    description: Code société
+
+  imh_num_immos:
+    sql: '"IMH_NUM_IMMOS"'
+    description: N° immos
+
+  imh_sous_num_immos:
+    sql: '"IMH_SOUS_NUM_IMMOS"'
+    description: N° sous immos
+
+  imh_segment1:
+    sql: '"IMH_SEGMENT1"'
+    description: Segment 1
+
+  imh_segment2:
+    sql: '"IMH_SEGMENT2"'
+    description: Segment 2
+
+  imh_segment3:
+    sql: '"IMH_SEGMENT3"'
+    description: Segment 3
+
+  imh_segment4:
+    sql: '"IMH_SEGMENT4"'
+    description: Segment 4
+
+  imh_segment5:
+    sql: '"IMH_SEGMENT5"'
+    description: Segment 5
+
+  imh_segment6:
+    sql: '"IMH_SEGMENT6"'
+    description: Segment 6
+
+  imh_segment7:
+    sql: '"IMH_SEGMENT7"'
+    description: Segment 7
+
+  imh_periode:
+    sql: '"IMH_PERIODE"'
+    description: Période
+
+  imh_type:
+    sql: '"IMH_TYPE"'
+    description: Type
+
+  imh_val_immos_dev:
+    sql: '"IMH_VAL_IMMOS_DEV"'
+    description: Devise valeur immos
+
+  imh_devise:
+    sql: '"IMH_DEVISE"'
+    description: Devise
+
+  imh_piece_just_num_serie:
+    sql: '"IMH_PIECE_JUST_NUM_SERIE"'
+    description: N° de série de la pièce justificative
+
+  imh_piece_just_num:
+    sql: '"IMH_PIECE_JUST_NUM"'
+    description: N° de la pièce justificative
+
+  imh_piece_just_nom:
+    sql: '"IMH_PIECE_JUST_NOM"'
+    description: Nom de la pièce justificative
+
+  imh_code_recodif:
+    sql: '"IMH_CODE_RECODIF"'
+    description: Code recodif
+
+  imh_date_saisie:
+    sql: '"IMH_DATE_SAISIE"'
+    description: Date de saisie
+
+  imh_heure_saisie:
+    sql: '"IMH_HEURE_SAISIE"'
+    description: Heur de saisie
+
+  imh_date_mod:
+    sql: '"IMH_DATE_MOD"'
+
+  imh_num_mod:
+    sql: '"IMH_NUM_MOD"'
+    description: N° de modification
+
+  imh_user_mod:
+    sql: '"IMH_USER_MOD"'
+    description: Utilisateur à l'origine de la modification
+
+  imh_horodatage:
+    sql: '"IMH_HORODATAGE"'
+    description: Horodatage
+
+measures:
+  count:
+    aggregate_type: count

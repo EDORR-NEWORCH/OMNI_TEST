@@ -1,0 +1,153 @@
+# Reference this view as dwh_dwh__vfth
+catalog: DWH
+schema: DWH
+table_name: VFTH
+
+dimensions:
+  ticket:
+    sql: '"TICKET"'
+
+  dep_code:
+    sql: '"DEP_CODE"'
+
+  cal_key:
+    sql: '"CAL_KEY"'
+
+  cal_dt_jour:
+    sql: '"CAL_DT_JOUR"'
+
+  qte:
+    sql: '"QTE"'
+
+  qte_retour:
+    sql: '"QTE_RETOUR"'
+
+  mt_ht_conso:
+    sql: '"MT_HT_CONSO"'
+
+  mt_ht_loc:
+    sql: '"MT_HT_LOC"'
+
+  mt_ttc_conso:
+    sql: '"MT_TTC_CONSO"'
+
+  mt_ttc_loc:
+    sql: '"MT_TTC_LOC"'
+
+  mt_pv_conso:
+    sql: '"MT_PV_CONSO"'
+
+  mt_pv_loc:
+    sql: '"MT_PV_LOC"'
+
+  mt_pre_conso:
+    sql: '"MT_PRE_CONSO"'
+
+  mt_pre_loc:
+    sql: '"MT_PRE_LOC"'
+
+  marge_conso:
+    sql: '"MARGE_CONSO"'
+
+  marge_loc:
+    sql: '"MARGE_LOC"'
+
+  demarque_conso:
+    sql: '"DEMARQUE_CONSO"'
+
+  demarque_loc:
+    sql: '"DEMARQUE_LOC"'
+
+  qte_club:
+    sql: '"QTE_CLUB"'
+
+  qte_retour_club:
+    sql: '"QTE_RETOUR_CLUB"'
+
+  mt_ht_conso_club:
+    sql: '"MT_HT_CONSO_CLUB"'
+
+  mt_ht_loc_club:
+    sql: '"MT_HT_LOC_CLUB"'
+
+  mt_ttc_conso_club:
+    sql: '"MT_TTC_CONSO_CLUB"'
+
+  mt_ttc_loc_club:
+    sql: '"MT_TTC_LOC_CLUB"'
+
+  mt_pv_conso_club:
+    sql: '"MT_PV_CONSO_CLUB"'
+
+  mt_pv_loc_club:
+    sql: '"MT_PV_LOC_CLUB"'
+
+  mt_pre_conso_club:
+    sql: '"MT_PRE_CONSO_CLUB"'
+
+  mt_pre_loc_club:
+    sql: '"MT_PRE_LOC_CLUB"'
+
+  marge_conso_club:
+    sql: '"MARGE_CONSO_CLUB"'
+
+  marge_loc_club:
+    sql: '"MARGE_LOC_CLUB"'
+
+  demarque_conso_club:
+    sql: '"DEMARQUE_CONSO_CLUB"'
+
+  demarque_loc_club:
+    sql: '"DEMARQUE_LOC_CLUB"'
+
+  nb_tick_total:
+    sql: '"NB_TICK_TOTAL"'
+
+  nb_tick_net:
+    sql: '"NB_TICK_NET"'
+
+  nb_tick_ret:
+    sql: '"NB_TICK_RET"'
+
+  nb_tick_club:
+    sql: '"NB_TICK_CLUB"'
+
+  nb_tick_hors_club:
+    sql: '"NB_TICK_HORS_CLUB"'
+
+  nb_crea_carte:
+    sql: '"NB_CREA_CARTE"'
+
+  nb_vte_carte:
+    sql: '"NB_VTE_CARTE"'
+
+  nb_renouv_carte:
+    sql: '"NB_RENOUV_CARTE"'
+
+  ca_vte_carte:
+    sql: '"CA_VTE_CARTE"'
+
+  devise_loc:
+    sql: '"DEVISE_LOC"'
+
+  nb_tick_adh_abo:
+    sql: '"NB_TICK_ADH_ABO"'
+
+  nb_renouv_adh_abo:
+    sql: '"NB_RENOUV_ADH_ABO"'
+
+  mt_adh_abo:
+    sql: '"MT_ADH_ABO"'
+
+  mt_adh_autres:
+    sql: '"MT_ADH_AUTRES"'
+
+  nb_renouv_adh_abo_annuel:
+    sql: '"NB_RENOUV_ADH_ABO_ANNUEL"'
+
+  nb_tick_recrut:
+    sql: '"NB_TICK_RECRUT"'
+
+measures:
+  count:
+    aggregate_type: count

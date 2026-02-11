@@ -1,0 +1,124 @@
+# Reference this view as dwh_dwh__f_web_cmd_init
+catalog: DWH
+schema: DWH
+table_name: F_WEB_CMD_INIT
+
+dimensions:
+  web_cmd:
+    sql: '"WEB_CMD"'
+    description: Numéro commande
+
+  web_ligne:
+    sql: '"WEB_LIGNE"'
+    description: Numéro ligne
+
+  web_prd_key:
+    sql: '"WEB_PRD_KEY"'
+    description: Code article
+
+  web_prx_unit:
+    sql: '"WEB_PRX_UNIT"'
+    description: Prix unitaire payé
+
+  web_prx_base:
+    sql: '"WEB_PRX_BASE"'
+    description: Prix de base
+
+  web_dt_hr_cmd:
+    sql: '"WEB_DT_HR_CMD"'
+    description: Date & Heure de commande
+
+  web_dt_cmd:
+    sql: '"WEB_DT_CMD"'
+    description: Date de commande
+
+  web_qte_cmd:
+    sql: '"WEB_QTE_CMD"'
+    description: Quantité
+
+  web_sit_ori:
+    sql: '"WEB_SIT_ORI"'
+    description: Site WEB
+
+  web_canal_ori:
+    sql: '"WEB_CANAL_ORI"'
+    description: Canal origine
+
+  web_club:
+    sql: '"WEB_CLUB"'
+    description: Club
+
+  web_devise:
+    sql: '"WEB_DEVISE"'
+    description: Devise
+
+  web_mono_multi:
+    sql: '"WEB_MONO_MULTI"'
+    description: Cmd MONO / MULT
+
+  web_cat_cmd:
+    sql: '"WEB_CAT_CMD"'
+    description: Catégorie commande
+
+  web_sais_actuel:
+    sql: '"WEB_SAIS_ACTUEL"'
+    description: Saison actue
+
+  web_saison:
+    sql: '"WEB_SAISON"'
+    description: Saison
+
+  web_mod_liv:
+    sql: '"WEB_MOD_LIV"'
+    description: Mode livraison
+
+  web_transport:
+    sql: '"WEB_TRANSPORT"'
+    description: Transport
+
+  web_mag_liv:
+    sql: '"WEB_MAG_LIV"'
+    description: Magasin livraison
+
+  web_client:
+    sql: '"WEB_CLIENT"'
+    description: Code client
+
+  web_mag_vent_tab:
+    sql: '"WEB_MAG_VENT_TAB"'
+    description: Code magasin (tablette vendeur)
+
+  web_mag_tab:
+    sql: '"WEB_MAG_TAB"'
+    description: Code vendeur (tablette vendeur)
+
+  web_mt_net:
+    sql: '"WEB_MT_NET"'
+    description: Montant net
+
+  web_mt_base:
+    sql: '"WEB_MT_BASE"'
+    description: Montant de base
+
+  web_mt_reg_cmd:
+    sql: '"WEB_MT_REG_CMD"'
+    description: Montant total reglement
+
+  web_statut_cmd:
+    sql: '"WEB_STATUT_CMD"'
+    description: Statut commande
+
+  web_statut_ligne:
+    sql: '"WEB_STATUT_LIGNE"'
+    description: Statut ligne
+
+  web_nav_device:
+    sql: '"WEB_NAV_DEVICE"'
+    description: Device
+
+  web_nav_environnement:
+    sql: '"WEB_NAV_ENVIRONNEMENT"'
+
+measures:
+  count:
+    aggregate_type: count

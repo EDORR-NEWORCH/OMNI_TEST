@@ -1,0 +1,137 @@
+# Reference this view as dwh_dwh__f_ligne_facture_fournisseur
+catalog: DWH
+schema: DWH
+table_name: F_LIGNE_FACTURE_FOURNISSEUR
+
+dimensions:
+  soc_code:
+    sql: '"SOC_CODE"'
+    description: Code société
+
+  facf_annee:
+    sql: '"FACF_ANNEE"'
+    description: Année
+
+  facf_numero_journal:
+    sql: '"FACF_NUMERO_JOURNAL"'
+    description: N° journal
+
+  facf_numero_seq_journal:
+    sql: '"FACF_NUMERO_SEQ_JOURNAL"'
+    description: N° séquence journal
+
+  facf_code_transaction:
+    sql: '"FACF_CODE_TRANSACTION"'
+    description: Code transaction
+
+  facf_beneficiaire_paiement:
+    sql: '"FACF_BENEFICIAIRE_PAIEMENT"'
+    description: Bénéficiaire paiement
+
+  four_code:
+    sql: '"FOUR_CODE"'
+    description: Code fournisseur
+
+  facf_numero_facture_fournisseur:
+    sql: '"FACF_NUMERO_FACTURE_FOURNISSEUR"'
+    description: N° facture fournisseur
+
+  facf_annee_facture:
+    sql: '"FACF_ANNEE_FACTURE"'
+    description: Année facture
+
+  facf_numero_serie_piece_justificative:
+    sql: '"FACF_NUMERO_SERIE_PIECE_JUSTIFICATIVE"'
+    description: N° série pièce justificative
+
+  facf_numero_piece_justificative:
+    sql: '"FACF_NUMERO_PIECE_JUSTIFICATIVE"'
+    description: N° pièce justificative
+
+  facf_designation_transaction:
+    sql: '"FACF_DESIGNATION_TRANSACTION"'
+    description: Désignation transaction
+
+  facf_blocage_paiement:
+    sql: '"FACF_BLOCAGE_PAIEMENT"'
+    description: Blocage paiement
+
+  facf_approuve_paiement:
+    sql: '"FACF_APPROUVE_PAIEMENT"'
+    description: Paiement approuvé
+
+  facf_groupe_fournisseur:
+    sql: '"FACF_GROUPE_FOURNISSEUR"'
+    description: Groupe fournisseur
+
+  facf_devise:
+    sql: '"FACF_DEVISE"'
+    description: Devise
+
+  facf_type_taux_change_code:
+    sql: '"FACF_TYPE_TAUX_CHANGE_CODE"'
+    description: Code type taux change
+
+  facf_type_taux_change_lib:
+    sql: '"FACF_TYPE_TAUX_CHANGE_LIB"'
+    description: Libellé type taux change
+
+  facf_taux_change:
+    sql: '"FACF_TAUX_CHANGE"'
+    description: Taux change
+
+  facf_montant_devise:
+    sql: '"FACF_MONTANT_DEVISE"'
+    description: Montant devise
+
+  facf_tva:
+    sql: '"FACF_TVA"'
+    description: TVA
+
+  facf_date_facture:
+    sql: '"FACF_DATE_FACTURE"'
+    description: Date facture
+
+  facf_date_echeance:
+    sql: '"FACF_DATE_ECHEANCE"'
+    description: Date échéance
+
+  facf_condition_escompte_code:
+    sql: '"FACF_CONDITION_ESCOMPTE_CODE"'
+    description: Code condition escompte
+
+  facf_type_paiement_code:
+    sql: '"FACF_TYPE_PAIEMENT_CODE"'
+    description: Code type paiement
+
+  facf_mode_paiement_code:
+    sql: '"FACF_MODE_PAIEMENT_CODE"'
+    description: Code mode paiement
+
+  facf_condition_paiement_code:
+    sql: '"FACF_CONDITION_PAIEMENT_CODE"'
+    description: Code condition paiement
+
+  facf_statut_paiement_code:
+    sql: '"FACF_STATUT_PAIEMENT_CODE"'
+    description: Code statut paiement
+
+  facf_statut_remise_paiement_code:
+    sql: '"FACF_STATUT_REMISE_PAIEMENT_CODE"'
+    description: Code statut remise paiement
+
+  facf_statut_paiement_lib:
+    sql: '"FACF_STATUT_PAIEMENT_LIB"'
+    description: Libellé statut paiement
+
+  facf_statut_remise_paiement_lib:
+    sql: '"FACF_STATUT_REMISE_PAIEMENT_LIB"'
+    description: Libellé statut remise paiement
+
+  tech_date_crea:
+    sql: '"TECH_DATE_CREA"'
+    description: Date de création technique
+
+measures:
+  count:
+    aggregate_type: count

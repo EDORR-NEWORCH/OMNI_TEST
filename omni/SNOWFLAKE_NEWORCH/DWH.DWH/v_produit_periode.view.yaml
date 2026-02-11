@@ -1,0 +1,41 @@
+# Reference this view as dwh_dwh__v_produit_periode
+catalog: DWH
+schema: DWH
+table_name: V_PRODUIT_PERIODE
+
+dimensions:
+  per_date:
+    sql: '"PER_DATE"'
+    description: Date (int)
+
+  per_saison:
+    sql: '"PER_SAISON"'
+    description: Code saison
+
+  per_periode:
+    sql: '"PER_PERIODE"'
+    description: Ref co
+
+  pre_prd_key:
+    sql: '"PRE_PRD_KEY"'
+    description: Code produit
+
+  per_prd_code:
+    sql: '"PER_PRD_CODE"'
+    description: Code produit
+
+  per_date_dt:
+    sql: '"PER_DATE_DT"'
+    description: Date
+
+  per_n_n1_n2:
+    sql: '"PER_N_N1_N2"'
+    description: Période
+
+  per_n_n1_n2_n3:
+    sql: '"PER_N_N1_N2_N3"'
+    description: Période
+
+measures:
+  count:
+    aggregate_type: count

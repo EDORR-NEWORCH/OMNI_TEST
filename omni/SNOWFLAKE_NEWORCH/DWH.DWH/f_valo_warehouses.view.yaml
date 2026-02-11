@@ -1,0 +1,113 @@
+# Reference this view as dwh_dwh__f_valo_warehouses
+catalog: DWH
+schema: DWH
+table_name: F_VALO_WAREHOUSES
+
+dimensions:
+  societe:
+    sql: '"SOCIETE"'
+    description: Société
+
+  etablissement:
+    sql: '"ETABLISSEMENT"'
+    description: Etablissement
+
+  code_depot:
+    sql: '"CODE_DEPOT"'
+    description: Code dépôt
+
+  article:
+    sql: '"ARTICLE"'
+    description: Code article
+
+  depot_label:
+    sql: '"DEPOT_LABEL"'
+    description: Nom du dépôt
+
+  style_code:
+    sql: '"STYLE_CODE"'
+    description: Référence couleur article
+
+  reference_code:
+    sql: '"REFERENCE_CODE"'
+    description: Référence article
+
+  theme_code:
+    sql: '"THEME_CODE"'
+    description: Code thème
+
+  theme_label:
+    sql: '"THEME_LABEL"'
+    description: Libellé thème
+
+  product_name:
+    sql: '"PRODUCT_NAME"'
+    description: Nom d'appel
+
+  description_fr:
+    sql: '"DESCRIPTION_FR"'
+    description: Libellé article
+
+  saison:
+    sql: '"SAISON"'
+    description: Saison
+
+  code_acquisition_depot:
+    sql: '"CODE_ACQUISITION_DEPOT"'
+    description: Code acquisition du dépôt
+
+  depot_fournisseur_1:
+    sql: '"DEPOT_FOURNISSEUR_1"'
+    description: 1er Dépôt fournisseur
+
+  code_acquisition_depot_fournisseur_1:
+    sql: '"CODE_ACQUISITION_DEPOT_FOURNISSEUR_1"'
+    description: Code acquisition du 1er dépôt fournisseur
+
+  depot_fournisseur_2:
+    sql: '"DEPOT_FOURNISSEUR_2"'
+    description: 2ème Dépôt fournisseur
+
+  depot_fournisseur_calc:
+    sql: '"DEPOT_FOURNISSEUR_CALC"'
+    description: Dépôt fournisseur calculé
+
+  trqt:
+    sql: '"TRQT"'
+    description: Quantité
+
+  trqt_transit:
+    sql: '"TRQT_TRANSIT"'
+    description: Quantité en transit
+
+  pre_loc:
+    sql: '"PRE_LOC"'
+    description: Prix de revient locale
+
+  valo_loc:
+    sql: '"VALO_LOC"'
+    description: Valorisation locale
+
+  devise_pre:
+    sql: '"DEVISE_PRE"'
+    description: Devise
+
+  taux_change:
+    sql: '"TAUX_CHANGE"'
+    description: Taux de change
+
+  pre_consolide:
+    sql: '"PRE_CONSOLIDE"'
+    description: Prix de revient consolidé
+
+  valo_consolide:
+    sql: '"VALO_CONSOLIDE"'
+    description: Valorisation consolidée
+
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Date de la photo de stock
+
+measures:
+  count:
+    aggregate_type: count

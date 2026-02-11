@@ -1,0 +1,61 @@
+# Reference this view as ventes__dt_ventes_comp
+schema: VENTES
+table_name: DT_VENTES_COMP
+
+dimensions:
+  periode:
+    sql: '"PERIODE"'
+    description: Période de la vente (N, N-1 ORCHESTRA, N-1 CALENDAIRE)
+
+  date_comp:
+    sql: '"DATE_COMP"'
+    description: Date de comparaison de la période
+
+  comp_j:
+    sql: '"COMP_J"'
+    description: Flag de comparabilité au jour
+
+  date_jour:
+    sql: '"DATE_JOUR"'
+    description: Date du jour de la vente
+
+  code_depot:
+    sql: '"CODE_DEPOT"'
+    description: Code magasin
+
+  code_produit:
+    sql: '"CODE_PRODUIT"'
+    description: Code produit
+
+  club:
+    sql: '"CLUB"'
+    description: Flag de fidelité du ticket (club ou non club)
+
+  code_saison:
+    sql: '"CODE_SAISON"'
+    description: Code saison du produit
+
+  mtt_ttc_eur:
+    sql: '"MTT_TTC_EUR"'
+    description: Montant TTC en EURO
+
+  mtt_ht_eur:
+    sql: '"MTT_HT_EUR"'
+    description: Montant HT en EURO
+
+  marge_eur:
+    sql: '"MARGE_EUR"'
+    description: Marge en EURO
+
+  qte:
+    sql: '"QTE"'
+    description: Quantité vendue ou retournée
+
+  tck_id:
+    sql: '"TCK_ID"'
+    format: ID
+    description: Identifiant du ticket
+
+measures:
+  count:
+    aggregate_type: count

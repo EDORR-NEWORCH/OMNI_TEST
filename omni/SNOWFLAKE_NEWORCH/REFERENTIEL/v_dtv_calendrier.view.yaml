@@ -1,0 +1,144 @@
+# Reference this view as referentiel__v_dtv_calendrier
+schema: REFERENTIEL
+table_name: V_DTV_CALENDRIER
+
+dimensions:
+  cal_rank:
+    sql: '"CAL_RANK"'
+    label: Rang date
+
+  cal_key:
+    sql: '"CAL_KEY"'
+    label: Clé calendrier
+
+  cal_dt_jour:
+    sql: '"CAL_DT_JOUR"'
+    label: Date jour calendrier
+
+  cal_annee:
+    sql: '"CAL_ANNEE"'
+    label: Année calendrier
+
+  cal_trim:
+    sql: '"CAL_TRIM"'
+    label: Trimestre calendrier
+
+  cal_mois:
+    sql: '"CAL_MOIS"'
+    label: Numéro mois calendrier
+
+  cal_sem_iso:
+    sql: '"CAL_SEM_ISO"'
+    label: Numéro semaine ISO calendrier
+
+  cal_annee_mois:
+    sql: '"CAL_ANNEE_MOIS"'
+    label: Année-Mois calendrier (yyyy-mm)
+
+  cal_annee_sem:
+    sql: '"CAL_ANNEE_SEM"'
+    label: Année-Semaine calendrier (yyyy-ww)
+
+  cal_jour_lib:
+    sql: '"CAL_JOUR_LIB"'
+    label: Libellé jour calendrier
+
+  cal_mois_lib:
+    sql: '"CAL_MOIS_LIB"'
+    label: Libellé Mois calendrier
+
+  cal_no_jour_an:
+    sql: '"CAL_NO_JOUR_AN"'
+    label: Numéro jour de l'année
+
+  cal_no_jour_mois:
+    sql: '"CAL_NO_JOUR_MOIS"'
+    label: Numéro jour du mois
+
+  cal_no_jour_semaine:
+    sql: '"CAL_NO_JOUR_SEMAINE"'
+    label: Numéro jour semaine
+
+  cal_nb_jour_mois:
+    sql: '"CAL_NB_JOUR_MOIS"'
+    label: Nombre de jours dans le mois
+
+  cal_fisc_annee:
+    sql: '"CAL_FISC_ANNEE"'
+    label: Année fiscale calendrier
+
+  cal_fisc_trim:
+    sql: '"CAL_FISC_TRIM"'
+    label: Trimestre fiscal calendrier
+
+  cal_fisc_mois:
+    sql: '"CAL_FISC_MOIS"'
+    label: Mois fiscal calendrier
+
+  cal_fisc_annee_mois:
+    sql: '"CAL_FISC_ANNEE_MOIS"'
+    label: Année-mois fiscal calendrier (yyyy-mm)
+
+  cal_fisc_no_jour_an:
+    sql: '"CAL_FISC_NO_JOUR_AN"'
+    label: Numéro jour de l'année fiscale
+
+  cal_dt_jour_n1:
+    sql: '"CAL_DT_JOUR_N1"'
+    label: Date du jour à l'année N-1
+
+  cal_dt_jour_n2:
+    sql: '"CAL_DT_JOUR_N2"'
+    label: Date du jour à l'année N-2
+
+  cal_sel_jour:
+    sql: '"CAL_SEL_JOUR"'
+    label: Flag jour courant
+
+  cal_sel_veille:
+    sql: '"CAL_SEL_VEILLE"'
+    label: Flag veille du jour courant
+
+  cal_sel_cumulsem:
+    sql: '"CAL_SEL_CUMULSEM"'
+    label: Flag Semaine en cours
+
+  cal_sel_cumulmois:
+    sql: '"CAL_SEL_CUMULMOIS"'
+    label: Flag Mois en cours
+
+  cal_sel_ytd:
+    sql: '"CAL_SEL_YTD"'
+    label: Flag Année fiscale en cours
+
+  cal_sel_semaine:
+    sql: '"CAL_SEL_SEMAINE"'
+    label: Flag Semaine précédente
+
+  cal_sel_mois:
+    sql: '"CAL_SEL_MOIS"'
+    label: Flag Mois précédent
+
+  cal_sel_cumulan:
+    sql: '"CAL_SEL_CUMULAN"'
+    label: Flag Année en cours
+
+  cal_sel_annee_prec:
+    sql: '"CAL_SEL_ANNEE_PREC"'
+    label: Flag Année précédente
+
+  cal_sel_annee_fisc_prec:
+    sql: '"CAL_SEL_ANNEE_FISC_PREC"'
+    label: Flag Année fiscale précédente
+
+  cal_sel_annee:
+    sql: '"CAL_SEL_ANNEE"'
+    label: Flag 12 derniers mois complets
+
+  cal_sel_12m:
+    sql: '"CAL_SEL_12M"'
+    label: Flag 12 derniers mois (avec le mois en cours non complet)
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,28 @@
+# Reference this view as dwh_dwh__d_etablissement
+catalog: DWH
+schema: DWH
+table_name: D_ETABLISSEMENT
+
+dimensions:
+  etab_code:
+    sql: '"ETAB_CODE"'
+    description: Code établissement
+
+  etab_key:
+    sql: '"ETAB_KEY"'
+
+  etab_nom:
+    sql: '"ETAB_NOM"'
+    description: Nom établissement
+
+  etab_dep_principal_code:
+    sql: '"ETAB_DEP_PRINCIPAL_CODE"'
+    description: Dépôt principal établissement
+
+  soc_code:
+    sql: '"SOC_CODE"'
+    description: Code société
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,33 @@
+# Reference this view as dwh_dwh__d_pays
+catalog: DWH
+schema: DWH
+table_name: D_PAYS
+
+dimensions:
+  pays_code:
+    sql: '"PAYS_CODE"'
+    description: Code pays
+
+  pays_key:
+    sql: '"PAYS_KEY"'
+    description: Clé pays
+
+  pays_code_iso:
+    sql: '"PAYS_CODE_ISO"'
+    description: Code iso pays
+
+  pays_code_iso3:
+    sql: '"PAYS_CODE_ISO3"'
+    description: Code iso 3 pays
+
+  pays_libelle:
+    sql: '"PAYS_LIBELLE"'
+    description: Libellé pays
+
+  pays_regr:
+    sql: '"PAYS_REGR"'
+    description: Regroupement pays
+
+measures:
+  count:
+    aggregate_type: count

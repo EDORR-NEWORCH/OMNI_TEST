@@ -1,0 +1,296 @@
+# Reference this view as referentiel__v_dtv_produit
+schema: REFERENTIEL
+table_name: V_DTV_PRODUIT
+
+dimensions:
+  prd_key:
+    sql: '"PRD_KEY"'
+    label: Clé produit
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    label: Code produit
+
+  prd_reference:
+    sql: '"PRD_REFERENCE"'
+    label: Référence produit
+
+  prd_parent:
+    sql: '"PRD_PARENT"'
+    label: Parent produit
+
+  prd_nom_appel:
+    sql: '"PRD_NOM_APPEL"'
+    label: Nom produit
+
+  prd_code_bar_princ:
+    sql: '"PRD_CODE_BAR_PRINC"'
+    label: Code barre principal
+
+  prd_code_bar_sec:
+    sql: '"PRD_CODE_BAR_SEC"'
+    label: Code barre secondaire
+
+  prd_statut_code:
+    sql: '"PRD_STATUT_CODE"'
+    label: Code statut produit
+
+  prd_date_mep:
+    sql: '"PRD_DATE_MEP"'
+    label: Date de mise en production du produit
+
+  prd_label_courte:
+    sql: '"PRD_DESCRIPTION_COURTE"'
+    label: Description courte
+
+  prd_label_longue:
+    sql: '"PRD_DESCRIPTION_LONGUE"'
+    label: Description longue
+
+  prd_collection:
+    sql: '"PRD_COLLECTION"'
+    label: Collection produit
+
+  prd_type_ensemble:
+    sql: '"PRD_TYPE_ENSEMBLE"'
+    label: Type ensemble produit
+
+  prd_type_ensemble_parent:
+    sql: '"PRD_TYPE_ENSEMBLE_PARENT"'
+    label: Type ensemble parent
+
+  prd_colisage:
+    sql: '"PRD_COLISAGE"'
+    label: Colisage
+
+  prd_partenaire:
+    sql: '"PRD_PARTENAIRE"'
+    label: Partenaire produit
+
+  prd_activite_code:
+    sql: '"PRD_ACTIVITE_CODE"'
+    label: Code activité
+
+  prd_activite_lib:
+    sql: '"PRD_ACTIVITE_LIB"'
+    label: Libellé activité
+
+  prd_univers_code:
+    sql: '"PRD_UNIVERS_CODE"'
+    label: Code univers
+
+  prd_univers_lib:
+    sql: '"PRD_UNIVERS_LIB"'
+    label: Libellé univers
+
+  prd_rayon_code:
+    sql: '"PRD_RAYON_CODE"'
+    label: Code ayon
+
+  prd_rayon_lib:
+    sql: '"PRD_RAYON_LIB"'
+    label: Libellé rayon
+
+  prd_famille_code:
+    sql: '"PRD_FAMILLE_CODE"'
+    label: Code famille
+
+  prd_famille_lib:
+    sql: '"PRD_FAMILLE_LIB"'
+    label: Libellé famille
+
+  prd_sous_famille_code:
+    sql: '"PRD_SOUS_FAMILLE_CODE"'
+    label: Code sous famille
+
+  prd_sous_famille_lib:
+    sql: '"PRD_SOUS_FAMILLE_LIB"'
+    label: Libellé sous famille
+
+  prd_theme_code:
+    sql: '"PRD_THEME_CODE"'
+    label: Code thème
+
+  prd_theme_lib:
+    sql: '"PRD_THEME_LIB"'
+    label: Libellé thème
+
+  prd_fonction_code:
+    sql: '"PRD_FONCTION_CODE"'
+    label: Code fonction
+
+  prd_fonction_lib:
+    sql: '"PRD_FONCTION_LIB"'
+    label: Libellé fonction
+
+  prd_marque_code:
+    sql: '"PRD_MARQUE_CODE"'
+    label: Code marque
+
+  prd_marque_lib:
+    sql: '"PRD_MARQUE_LIB"'
+    label: Libellé marque
+
+  prd_taille_code:
+    sql: '"PRD_TAILLE_CODE"'
+    label: Code taille
+
+  prd_taille_lib:
+    sql: '"PRD_TAILLE_LIB"'
+    label: Libellé taille
+
+  prd_couleur_code:
+    sql: '"PRD_COULEUR_CODE"'
+    label: Code couleur
+
+  prd_couleur_lib:
+    sql: '"PRD_COULEUR_LIB"'
+    label: Libellé couleur
+
+  prd_cdt_stat_vente_code:
+    sql: '"PRD_CDT_STAT_VENTE_CODE"'
+    label: Marque ou MDD
+
+  prd_cdt_stat_vente_lib:
+    sql: '"PRD_CDT_STAT_VENTE_LIB"'
+    label: Libellé marque ou MDD
+
+  prd_top_1400:
+    sql: '"PRD_TOP_1400"'
+    label: Puériculture textile
+
+  type_mdd:
+    sql: '"TYPE_MDD"'
+    label: Type MDD
+
+  type_marque:
+    sql: '"TYPE_MARQUE"'
+    label: Type marque
+
+  prd_perimetre:
+    sql: '"PRD_PERIMETRE"'
+    label: Périmètre produit
+
+  prd_activite_bis:
+    sql: '"PRD_ACTIVITE_BIS"'
+    label: Activité bis
+
+  adresse_basecat:
+    sql: '"ADRESSE_BASECAT"'
+    label: Lien photo produit
+
+  prd_rayon_bis:
+    sql: '"PRD_RAYON_BIS"'
+    label: Rayon bis
+
+  prd_categorie:
+    sql: '"PRD_CATEGORIE"'
+    label: Catégorie produit
+
+  derniere_saison:
+    sql: '"DERNIERE_SAISON"'
+    label: Dernière saison
+
+  prd_poids_net:
+    sql: '"PRD_POIDS_NET"'
+    label: Poids net
+
+  prd_poids_brut:
+    sql: '"PRD_POIDS_BRUT"'
+    label: Poids brut
+
+  prd_volume:
+    sql: '"PRD_VOLUME"'
+    label: Volume
+
+  prd_hauteur:
+    sql: '"PRD_HAUTEUR"'
+    label: Hauteur
+
+  prd_longueur:
+    sql: '"PRD_LONGUEUR"'
+    label: Longueur
+
+  prd_largeur:
+    sql: '"PRD_LARGEUR"'
+    label: Largeur
+
+  prd_statut_depot:
+    sql: '"PRD_STATUT_DEPOT"'
+    label: Statut dépôt
+
+  prd_cat_douaniere:
+    sql: '"PRD_CAT_DOUANIERE"'
+    label: Catégorie douanière
+
+  prd_licence_lib:
+    sql: '"PRD_LICENCE_LIB"'
+    label: Libellé licence
+
+  prd_licence_code:
+    sql: '"PRD_LICENCE_CODE"'
+    label: Code licence
+
+  prd_soumis_royalties:
+    sql: '"PRD_SOUMIS_ROYALTIES"'
+    label: Soumission royalties
+
+  prd_date_creation:
+    sql: '"PRD_DATE_CREATION"'
+    label: Date de création
+
+  prd_date_mdf:
+    sql: '"PRD_DATE_MDF"'
+    label: Date de modification du produit pour incrémental Qlik
+
+  prd_hierarchie_niveau_1:
+    sql: '"PRD_HIERARCHIE_NIVEAU_1"'
+    label: Code hiérarchie niveau 1
+
+  prd_hierarchie_niveau_2:
+    sql: '"PRD_HIERARCHIE_NIVEAU_2"'
+    label: Code hiérarchie niveau 2
+
+  prd_hierarchie_niveau_3:
+    sql: '"PRD_HIERARCHIE_NIVEAU_3"'
+    label: Code hiérarchie niveau 3
+
+  prd_hierarchie_niveau_4:
+    sql: '"PRD_HIERARCHIE_NIVEAU_4"'
+    label: Code hiérarchie niveau 4
+
+  prd_hierarchie_niveau_5:
+    sql: '"PRD_HIERARCHIE_NIVEAU_5"'
+    label: Code hiérarchie niveau 5
+
+  prd_hierarchie_niveau_1_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_1_LIB"'
+    label: Libellé hiérarchie niveau 1
+
+  prd_hierarchie_niveau_2_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_2_LIB"'
+    label: Libellé hiérarchie niveau 2
+
+  prd_hierarchie_niveau_3_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_3_LIB"'
+    label: Libellé hiérarchie niveau 3
+
+  prd_hierarchie_niveau_4_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_4_LIB"'
+    label: Libellé hiérarchie niveau 4
+
+  prd_hierarchie_niveau_5_lib:
+    sql: '"PRD_HIERARCHIE_NIVEAU_5_LIB"'
+    label: Libellé hiérarchie niveau 5
+
+  prd_appli_ori:
+    sql: '"PRD_APPLI_ORI"'
+    label: Origine
+
+  prd_saison:
+    sql: '"PRD_SAISON"'
+    label: Saison
+
+measures:
+  count:
+    aggregate_type: count

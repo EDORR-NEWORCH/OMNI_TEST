@@ -1,0 +1,29 @@
+# Reference this view as dwh_dwh__l_consommateur_uc
+catalog: DWH
+schema: DWH
+table_name: L_CONSOMMATEUR_UC
+
+dimensions:
+  actif:
+    sql: '"ACTIF"'
+    description: statut
+
+  master_gold:
+    sql: '"MASTER_GOLD"'
+    description: GodenID du client master
+
+  master_y2:
+    sql: '"MASTER_Y2"'
+    description: GodenID du client slave
+
+  slave_gold:
+    sql: '"SLAVE_GOLD"'
+    description: Code Y2 du client master
+
+  slave_y2:
+    sql: '"SLAVE_Y2"'
+    description: Code Y2 du client slave
+
+measures:
+  count:
+    aggregate_type: count

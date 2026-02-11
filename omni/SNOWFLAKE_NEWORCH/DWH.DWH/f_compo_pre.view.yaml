@@ -1,0 +1,69 @@
+# Reference this view as dwh_dwh__f_compo_pre
+catalog: DWH
+schema: DWH
+table_name: F_COMPO_PRE
+
+dimensions:
+  cou_code_etab:
+    sql: '"COU_CODE_ETAB"'
+    description: Code établissement
+
+  cou_code_prd:
+    sql: '"COU_CODE_PRD"'
+    description: Code produit
+
+  cou_date:
+    sql: '"COU_DATE"'
+    description: Date de la compo
+
+  cou_pa:
+    sql: '"COU_PA"'
+    description: Prix d'achat en euros
+
+  cou_pre:
+    sql: '"COU_PRE"'
+    description: Prix de revient en euros
+
+  cou_code_modele:
+    sql: '"COU_CODE_MODELE"'
+    description: Code du modèle
+
+  cou_lib_modele:
+    sql: '"COU_LIB_MODELE"'
+    description: Libellé du modèle
+
+  cou_code_four:
+    sql: '"COU_CODE_FOUR"'
+    description: Code du fournisseur
+
+  cou_code_elem:
+    sql: '"COU_CODE_ELEM"'
+    description: Code élément de coût
+
+  cou_lib_elem:
+    sql: '"COU_LIB_ELEM"'
+    description: Libellé élément de coût
+
+  cou_base_calcul:
+    sql: '"COU_BASE_CALCUL"'
+    description: base de coût
+
+  cou_markup:
+    sql: '"COU_MARKUP"'
+    description: Taux markup
+
+  cou_calcul:
+    sql: '"COU_CALCUL"'
+    description: Coût en euros
+
+  cou_dev_calcul:
+    sql: '"COU_DEV_CALCUL"'
+    description: Devise de calcul
+
+  cou_tx_change:
+    sql: '"COU_TX_CHANGE"'
+    description: Taux de change
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,36 @@
+# Reference this view as digital__objectifs_ln
+schema: DIGITAL
+table_name: OBJECTIFS_LN
+
+dimensions:
+  type_objectif:
+    sql: '"TYPE_OBJECTIF"'
+    description: Type objectif
+
+  region:
+    sql: '"REGION"'
+    description: Région magasin
+
+  code:
+    sql: '"CODE"'
+    description: Code magasin
+
+  code_m3:
+    sql: '"CODE_M3"'
+    description: Code M3 magasin
+
+  magasin:
+    sql: '"MAGASIN"'
+    description: Libellé magasin
+
+  mois:
+    sql: '"MOIS"'
+    description: Mois objectif au format MM
+
+  objectif:
+    sql: '"OBJECTIF"'
+    description: valeur objectif (nombre ouverture de liste)
+
+measures:
+  count:
+    aggregate_type: count

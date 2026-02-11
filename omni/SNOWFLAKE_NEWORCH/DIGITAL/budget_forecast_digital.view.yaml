@@ -1,0 +1,32 @@
+# Reference this view as digital__budget_forecast_digital
+schema: DIGITAL
+table_name: BUDGET_FORECAST_DIGITAL
+
+dimensions:
+  site_budget:
+    sql: '"SITE_BUDGET"'
+
+  annee_fiscale_budget:
+    sql: '"ANNEE_FISCALE_BUDGET"'
+
+  annee_mois_num_budget:
+    sql: '"ANNEE_MOIS_NUM_BUDGET"'
+
+  budget:
+    sql: '"BUDGET"'
+
+  type_budget:
+    sql: '"TYPE_BUDGET"'
+
+  categorie_budget:
+    sql: '"CATEGORIE_BUDGET"'
+
+  groupe_categorie_budget:
+    sql: '"GROUPE_CATEGORIE_BUDGET"'
+
+  annee_mois_budget:
+    sql: '"ANNEE_MOIS_BUDGET"'
+
+measures:
+  count:
+    aggregate_type: count

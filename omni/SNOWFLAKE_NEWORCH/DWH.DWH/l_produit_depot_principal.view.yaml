@@ -1,0 +1,37 @@
+# Reference this view as dwh_dwh__l_produit_depot_principal
+catalog: DWH
+schema: DWH
+table_name: L_PRODUIT_DEPOT_PRINCIPAL
+
+dimensions:
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  code_statut:
+    sql: '"CODE_STATUT"'
+    description: Code statut
+
+  code_acquisition:
+    sql: '"CODE_ACQUISITION"'
+    description: Code acquisition
+
+  four_code:
+    sql: '"FOUR_CODE"'
+    description: Code fournisseur
+
+  four_dep_code:
+    sql: '"FOUR_DEP_CODE"'
+    description: Code dépôt fournisseur
+
+  code_tva:
+    sql: '"CODE_TVA"'
+    description: Code TVA
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,430 @@
+# Reference this view as dwh_dwh__d_depots
+catalog: DWH
+schema: DWH
+table_name: D_DEPOTS
+
+dimensions:
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Code dépôt
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  dep_nom:
+    sql: '"DEP_NOM"'
+    description: Nom
+
+  etab_key:
+    sql: '"ETAB_KEY"'
+    description: Code établissement
+
+  etab_code:
+    sql: '"ETAB_CODE"'
+    description: Code établissement
+
+  div_key:
+    sql: '"DIV_KEY"'
+    description: Code division
+
+  div_code:
+    sql: '"DIV_CODE"'
+    description: Code division
+
+  soc_key:
+    sql: '"SOC_KEY"'
+    description: Code société
+
+  soc_code:
+    sql: '"SOC_CODE"'
+    description: Code société
+
+  mag_code_cbr:
+    sql: '"MAG_CODE_CBR"'
+    description: Code CBR
+
+  dep_code_clb:
+    sql: '"DEP_CODE_CLB"'
+    description: Code COLOMBUS
+
+  mag_code_prec:
+    sql: '"MAG_CODE_PREC"'
+    description: Code COLOMBUS précédent
+
+  mag_type:
+    sql: '"MAG_TYPE"'
+    description: Type dépôt
+
+  mag_actif:
+    sql: '"MAG_ACTIF"'
+    description: Actif ou non
+
+  mag_date_ouverture:
+    sql: '"MAG_DATE_OUVERTURE"'
+    description: Date ouverture
+
+  mag_date_fermeture:
+    sql: '"MAG_DATE_FERMETURE"'
+    description: Date fermeture
+
+  mag_contrat_code:
+    sql: '"MAG_CONTRAT_CODE"'
+    description: Code contrat
+
+  mag_contrat_lib:
+    sql: '"MAG_CONTRAT_LIB"'
+    description: Libellé contrat
+
+  mag_offre_magasin:
+    sql: '"MAG_OFFRE_MAGASIN"'
+    description: Offre
+
+  mag_structure_organisationnelle_code:
+    sql: '"MAG_STRUCTURE_ORGANISATIONNELLE_CODE"'
+    description: Code structure organisationnelle
+
+  mag_structure_organisationnelle_libelle:
+    sql: '"MAG_STRUCTURE_ORGANISATIONNELLE_LIBELLE"'
+    description: Libellé structure organisationnelle
+
+  mag_situation:
+    sql: '"MAG_SITUATION"'
+    description: Situation
+
+  mag_reseau_gest_id:
+    sql: '"MAG_RESEAU_GEST_ID"'
+    format: ID
+    description: Code réseau de gestion
+
+  mag_reseau_gest_lib:
+    sql: '"MAG_RESEAU_GEST_LIB"'
+    description: Libellé réseau de gestion
+
+  mag_blocage_compta:
+    sql: '"MAG_BLOCAGE_COMPTA"'
+    description: Blocage comptable
+
+  mag_region:
+    sql: '"MAG_REGION"'
+    description: Directeur régional
+
+  mag_dir_commercial:
+    sql: '"MAG_DIR_COMMERCIAL"'
+    description: Directeur commercial
+
+  mag_dir_regional:
+    sql: '"MAG_DIR_REGIONAL"'
+    description: Région
+
+  mag_resp_logistique:
+    sql: '"MAG_RESP_LOGISTIQUE"'
+    description: Responsable logistique
+
+  dep_pays:
+    sql: '"DEP_PAYS"'
+    description: Code Pays
+
+  dep_etat:
+    sql: '"DEP_ETAT"'
+    description: Région TVA
+
+  dep_tarif_vente_cbr:
+    sql: '"DEP_TARIF_VENTE_CBR"'
+    description: Tarif vente Y2
+
+  dep_tarif_club_cbr:
+    sql: '"DEP_TARIF_CLUB_CBR"'
+    description: Tarif club Y2
+
+  dep_tarif_vente:
+    sql: '"DEP_TARIF_VENTE"'
+    description: Tarif vente
+
+  dep_tarif_club:
+    sql: '"DEP_TARIF_CLUB"'
+    description: Tarif club
+
+  mag_surface_totale:
+    sql: '"MAG_SURFACE_TOTALE"'
+    description: Surface totale
+
+  mag_email:
+    sql: '"MAG_EMAIL"'
+    description: Email
+
+  mag_email_ln:
+    sql: '"MAG_EMAIL_LN"'
+    description: Email LN
+
+  mag_typ_cpt_passage:
+    sql: '"MAG_TYP_CPT_PASSAGE"'
+    description: Type Cpt de passage
+
+  mag_reception:
+    sql: '"MAG_RECEPTION"'
+    description: Avec reception
+
+  mag_statut:
+    sql: '"MAG_STATUT"'
+    description: Statut
+
+  mag_force_textile:
+    sql: '"MAG_FORCE_TEXTILE"'
+    description: Vente textile
+
+  mag_force_chaussure:
+    sql: '"MAG_FORCE_CHAUSSURE"'
+    description: Vente chaussure
+
+  mag_force_maternite:
+    sql: '"MAG_FORCE_MATERNITE"'
+    description: Vente maternité
+
+  mag_force_puericulture:
+    sql: '"MAG_FORCE_PUERICULTURE"'
+    description: Vente puériculture
+
+  mag_force_verchant:
+    sql: '"MAG_FORCE_VERCHANT"'
+    description: Vente Verchant
+
+  mag_force_cosmetique:
+    sql: '"MAG_FORCE_COSMETIQUE"'
+    description: Vente cosmétique
+
+  mag_connecte_erp:
+    sql: '"MAG_CONNECTE_ERP"'
+    description: Connection ERP
+
+  mag_connecte_log:
+    sql: '"MAG_CONNECTE_LOG"'
+    description: Connection logistique
+
+  mag_magasin_club:
+    sql: '"MAG_MAGASIN_CLUB"'
+    description: Club ou non
+
+  mag_surface_reserve:
+    sql: '"MAG_SURFACE_RESERVE"'
+    description: Surface réserve
+
+  mag_surface_vente:
+    sql: '"MAG_SURFACE_VENTE"'
+    description: Surface vente
+
+  mag_surface_pueri:
+    sql: '"MAG_SURFACE_PUERI"'
+    description: Surface puériculture
+
+  mag_surface_mater:
+    sql: '"MAG_SURFACE_MATER"'
+    description: Surface maternité
+
+  mag_surface_chaussure:
+    sql: '"MAG_SURFACE_CHAUSSURE"'
+    description: Surface chaussure
+
+  mag_surface_jeux:
+    sql: '"MAG_SURFACE_JEUX"'
+    description: Surface jeux
+
+  mag_connecte_ln:
+    sql: '"MAG_CONNECTE_LN"'
+    description: Connection LN
+
+  dep_type_code:
+    sql: '"DEP_TYPE_CODE"'
+    description: Type
+
+  dep_type_lib:
+    sql: '"DEP_TYPE_LIB"'
+    description: Libellé type
+
+  dep_langue:
+    sql: '"DEP_LANGUE"'
+    description: Code langue
+
+  dep_gestionnaire_stk_pueri:
+    sql: '"DEP_GESTIONNAIRE_STK_PUERI"'
+    description: Directeur régional
+
+  dep_gestionnaire_stk_textile:
+    sql: '"DEP_GESTIONNAIRE_STK_TEXTILE"'
+    description: Gestionnaire stock
+
+  dep_numero_tel:
+    sql: '"DEP_NUMERO_TEL"'
+    description: Numéro de téléphone
+
+  dep_referent:
+    sql: '"DEP_REFERENT"'
+    description: Référent
+
+  dep_lieu_chargement_code:
+    sql: '"DEP_LIEU_CHARGEMENT_CODE"'
+    description: Code lieu de chargement
+
+  dep_lieu_chargement_lib:
+    sql: '"DEP_LIEU_CHARGEMENT_LIB"'
+    description: Libellé lieu de chargement
+
+  dep_num_enregistrement_tva:
+    sql: '"DEP_NUM_ENREGISTREMENT_TVA"'
+    description: Numéro enregistrement TVA
+
+  cli_key:
+    sql: '"CLI_KEY"'
+    description: Code client
+
+  cli_code:
+    sql: '"CLI_CODE"'
+    description: Code client
+
+  four_key:
+    sql: '"FOUR_KEY"'
+    description: Code fournisseur
+
+  four_code:
+    sql: '"FOUR_CODE"'
+    description: Code fournisseur
+
+  dep_information:
+    sql: '"DEP_INFORMATION"'
+    description: Information
+
+  dep_copie_depot_code:
+    sql: '"DEP_COPIE_DEPOT_CODE"'
+    description: Code dépôt de la copie
+
+  dep_ajout_autorise:
+    sql: '"DEP_AJOUT_AUTORISE"'
+    description: Ajout autorisé
+
+  dep_copier_modele_article:
+    sql: '"DEP_COPIER_MODELE_ARTICLE"'
+    description: Copie modèle article
+
+  dep_responsable:
+    sql: '"DEP_RESPONSABLE"'
+    description: Directeur régional
+
+  dep_loge_destination_code:
+    sql: '"DEP_LOGE_DESTINATION_CODE"'
+    description: Loge de destination
+
+  dep_arret_cbn:
+    sql: '"DEP_ARRET_CBN"'
+    description: Arret CBN
+
+  dep_groupe_de_ca_code:
+    sql: '"DEP_GROUPE_DE_CA_CODE"'
+    description: Code groupe de CA
+
+  dep_priorite_affectation_corrige:
+    sql: '"DEP_PRIORITE_AFFECTATION_CORRIGE"'
+    description: Priorité affectation corrigé
+
+  mag_local_social:
+    sql: '"MAG_LOCAL_SOCIAL"'
+    description: Local social
+
+  mag_secteur_activite_code:
+    sql: '"MAG_SECTEUR_ACTIVITE_CODE"'
+    description: Code secteur activité
+
+  mag_secteur_activite_lib:
+    sql: '"MAG_SECTEUR_ACTIVITE_LIB"'
+    description: Libellé secteur activité
+
+  mag_cat_stock_code:
+    sql: '"MAG_CAT_STOCK_CODE"'
+    description: Code catégorie stockage
+
+  mag_cat_vol_stockage_code:
+    sql: '"MAG_CAT_VOL_STOCKAGE_CODE"'
+    description: Code catégorie voulme stockage
+
+  mag_cat_vol_stockage_lib:
+    sql: '"MAG_CAT_VOL_STOCKAGE_LIB"'
+    description: Libellé catégorie volume stockage
+
+  mag_enseigne_histo:
+    sql: '"MAG_ENSEIGNE_HISTO"'
+    description: Enseigne histo
+
+  mag_critere_export_code:
+    sql: '"MAG_CRITERE_EXPORT_CODE"'
+    description: Code critère export
+
+  mag_prio_wms:
+    sql: '"MAG_PRIO_WMS"'
+    description: Priorité WMS
+
+  mag_flag_aerien:
+    sql: '"MAG_FLAG_AERIEN"'
+    description: Flag aérien
+
+  mag_type_support_code:
+    sql: '"MAG_TYPE_SUPPORT_CODE"'
+    description: Code type support
+
+  mag_ouverture:
+    sql: '"MAG_OUVERTURE"'
+    description: Flag magasin ouvert
+
+  dep_devise:
+    sql: '"DEP_DEVISE"'
+    description: Code devise
+
+  dep_code_clb_fe:
+    sql: '"DEP_CODE_CLB_FE"'
+    description: Code colombus
+
+  mag_type_cbr:
+    sql: '"MAG_TYPE_CBR"'
+    description: Type CBR
+
+  dep_seuil_acceptation:
+    sql: '"DEP_SEUIL_ACCEPTATION"'
+    description: Seuil acceptation
+
+  mag_magasin_tel_puer:
+    sql: '"MAG_MAGASIN_TEL_PUER"'
+    description: Offre
+
+  mag_date_cmd_four_direct:
+    sql: '"MAG_DATE_CMD_FOUR_DIRECT"'
+    description: Date passage magasin en commande fournisseur directe
+
+  mag_dir_rattachement:
+    sql: '"MAG_DIR_RATTACHEMENT"'
+    description: Directeur régional
+
+  mag_zone_rattachement:
+    sql: '"MAG_ZONE_RATTACHEMENT"'
+    description: Zone rattachement
+
+  mag_cluster_pueri:
+    sql: '"MAG_CLUSTER_PUERI"'
+    description: Cluster puériculture
+
+  mag_cmd_four_m3:
+    sql: '"MAG_CMD_FOUR_M3"'
+    description: Flag remontée commande fournisseur directe M3
+
+  mag_flag_ln:
+    sql: '"MAG_FLAG_LN"'
+    description: Flag LN magasin
+
+  mag_latitude:
+    sql: '"MAG_LATITUDE"'
+    description: Latitude
+
+  mag_longitude:
+    sql: '"MAG_LONGITUDE"'
+    description: Longitude
+
+measures:
+  count:
+    aggregate_type: count

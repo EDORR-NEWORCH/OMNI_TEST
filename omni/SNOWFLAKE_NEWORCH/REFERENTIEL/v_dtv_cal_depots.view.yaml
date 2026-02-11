@@ -1,0 +1,208 @@
+# Reference this view as referentiel__v_dtv_cal_depots
+schema: REFERENTIEL
+table_name: V_DTV_CAL_DEPOTS
+
+dimensions:
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Date du jour
+
+  dep_key:
+    sql: '"DEP_KEY"'
+    description: Clé dépôt
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code dépôt
+
+  etab_key:
+    sql: '"ETAB_KEY"'
+    description: Clé établissement
+
+  etab_code:
+    sql: '"ETAB_CODE"'
+    description: Code établissement
+
+  dep_type_code:
+    sql: '"DEP_TYPE_CODE"'
+    description: Code type dépôt
+
+  mag_cat_vol_stockage_code:
+    sql: '"MAG_CAT_VOL_STOCKAGE_CODE"'
+    description: Code catégorie volume de stockage
+
+  mag_type_cbr:
+    sql: '"MAG_TYPE_CBR"'
+    description: Type magasin CBR
+
+  dep_nom:
+    sql: '"DEP_NOM"'
+    description: Libellé dépôt
+
+  pays_libelle:
+    sql: '"PAYS_LIBELLE"'
+    description: Libellé pays
+
+  dep_pays:
+    sql: '"DEP_PAYS"'
+    description: Code pays
+
+  depadr_ville:
+    sql: '"DEPADR_VILLE"'
+    description: Ville dépôt
+
+  depadr_code_postal:
+    sql: '"DEPADR_CODE_POSTAL"'
+    description: Code postal dépôt
+
+  dep_type_lib:
+    sql: '"DEP_TYPE_LIB"'
+    description: Libellé type dépôt
+
+  mag_dir_regional:
+    sql: '"MAG_DIR_REGIONAL"'
+    description: Direction régionale
+
+  mag_contrat_code:
+    sql: '"MAG_CONTRAT_CODE"'
+    description: Code contrat magasin
+
+  mag_contrat_lib:
+    sql: '"MAG_CONTRAT_LIB"'
+    description: Libellé contrat magasin
+
+  mag_reseau_gest_lib:
+    sql: '"MAG_RESEAU_GEST_LIB"'
+    description: Libellé réseau de gestion
+
+  mag_situation:
+    sql: '"MAG_SITUATION"'
+    description: Situation magasin (centre ville, ...)
+
+  mag_offre_magasin:
+    sql: '"MAG_OFFRE_MAGASIN"'
+    description: Offre magasin (TEXTILE, MIXTE, ...)
+
+  mag_zone_rattachement:
+    sql: '"MAG_ZONE_RATTACHEMENT"'
+    description: Zone de rattachement magasin
+
+  mag_actif_sfs:
+    sql: '"MAG_ACTIF_SFS"'
+    description: Ship From Store
+
+  mag_actif_ckc:
+    sql: '"MAG_ACTIF_CKC"'
+    description: Clic And Collect
+
+  mag_achat_direct_four:
+    sql: '"MAG_ACHAT_DIRECT_FOUR"'
+    description: Achat direct fournisseur
+
+  mag_date_cmd_four_direct:
+    sql: '"MAG_DATE_CMD_FOUR_DIRECT"'
+    description: Date commande fournisseur direct
+
+  mag_date_ouverture:
+    sql: '"MAG_DATE_OUVERTURE"'
+    description: Date ouverture magasin
+
+  mag_date_1er_tck:
+    sql: '"MAG_DATE_1ER_TCK"'
+    description: Date du 1er ticket du magasin
+
+  mag_date_fermeture:
+    sql: '"MAG_DATE_FERMETURE"'
+    description: Date de fermeture du magasin
+
+  mag_actif:
+    sql: '"MAG_ACTIF"'
+    description: Magasin actif
+
+  mag_cluster_pueri:
+    sql: '"MAG_CLUSTER_PUERI"'
+    description: Cluster puériculture
+
+  dep_code_clb:
+    sql: '"DEP_CODE_CLB"'
+    description: Code CLB magasin
+
+  mag_code_cbr:
+    sql: '"MAG_CODE_CBR"'
+    description: Code CBR magasin
+
+  mag_surface_vente:
+    sql: '"MAG_SURFACE_VENTE"'
+    description: Surface de vente
+
+  mag_surface_pueri:
+    sql: '"MAG_SURFACE_PUERI"'
+    description: Surface de puériculture
+
+  surface_textile:
+    sql: '"SURFACE_TEXTILE"'
+    description: Surface textile
+
+  depot_ouvert:
+    sql: '"DEPOT_OUVERT"'
+    description: Dépôt ouvert
+
+  depot_type_hie3:
+    sql: '"DEPOT_TYPE_HIE3"'
+    description: Type hiérarchie 3
+
+  depot_type_hie2:
+    sql: '"DEPOT_TYPE_HIE2"'
+    description: Type hiérarchie 2
+
+  depot_type_hie1:
+    sql: '"DEPOT_TYPE_HIE1"'
+    description: Type hiérarchie 1
+
+  depot_preference_kpi_stock:
+    sql: '"DEPOT_PREFERENCE_KPI_STOCK"'
+    description: Dépôt référence KPI STOCK
+
+  dep_pays_regr:
+    sql: '"DEP_PAYS_REGR"'
+    description: regroupement pays
+
+  type_site:
+    sql: '"TYPE_SITE"'
+    description: Type de site (WEB, RESEAU, ...)
+
+  format_site:
+    sql: '"FORMAT_SITE"'
+    description: Format du site (MIXTE, TEXTILE, MEGASTORE, ...)
+
+  type_juridique:
+    sql: '"TYPE_JURIDIQUE"'
+    description: Type juridique (SUCC, AFF, ...)
+
+  dir_commercia:
+    sql: '"DIR_COMMERCIA"'
+    description: Directeur commercial
+
+  region:
+    sql: '"REGION"'
+    description: Région magasin
+
+  mag_physique_actif_bool:
+    sql: '"MAG_PHYSIQUE_ACTIF_BOOL"'
+    description: Magasin physique actif (Oui/Non)
+
+  site_web_actif_bool:
+    sql: '"SITE_WEB_ACTIF_BOOL"'
+    description: Site Web actif (Oui/Non)
+
+  mag_physique_actif_int:
+    sql: '"MAG_PHYSIQUE_ACTIF_INT"'
+    description: Magasin physique actif (1 / 0)
+
+  site_web_actif_int:
+    sql: '"SITE_WEB_ACTIF_INT"'
+    description: Site Web actif (1 / 0)
+
+measures:
+  count:
+    aggregate_type: count

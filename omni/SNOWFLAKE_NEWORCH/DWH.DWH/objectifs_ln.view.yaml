@@ -1,0 +1,37 @@
+# Reference this view as dwh_dwh__objectifs_ln
+catalog: DWH
+schema: DWH
+table_name: OBJECTIFS_LN
+
+dimensions:
+  type_objectif:
+    sql: '"TYPE_OBJECTIF"'
+    description: Type objectif
+
+  region:
+    sql: '"REGION"'
+    description: Région magasin
+
+  code:
+    sql: '"CODE"'
+    description: Code magasin
+
+  code_m3:
+    sql: '"CODE_M3"'
+    description: Code M3 magasin
+
+  magasin:
+    sql: '"MAGASIN"'
+    description: Libellé magasin
+
+  annee_mois:
+    sql: '"ANNEE_MOIS"'
+    description: Année Mois objectif au format YYYYMM
+
+  objectif:
+    sql: '"OBJECTIF"'
+    description: valeur objectif (nombre ouverture de liste)
+
+measures:
+  count:
+    aggregate_type: count

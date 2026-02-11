@@ -1,0 +1,179 @@
+# Reference this view as dwh_dwh__d_consommateur
+catalog: DWH
+schema: DWH
+table_name: D_CONSOMMATEUR
+
+dimensions:
+  cons_key:
+    sql: '"CONS_KEY"'
+    description: Code
+
+  cons_code:
+    sql: '"CONS_CODE"'
+    description: Code
+
+  cons_type_code:
+    sql: '"CONS_TYPE_CODE"'
+    description: Origine
+
+  cons_nom:
+    sql: '"CONS_NOM"'
+    description: Nom
+
+  cons_prenom:
+    sql: '"CONS_PRENOM"'
+    description: Prénom
+
+  cons_dt_anniv:
+    sql: '"CONS_DT_ANNIV"'
+    description: Date anniversaire
+
+  cons_titre:
+    sql: '"CONS_TITRE"'
+    description: Juridique
+
+  cons_genre_code:
+    sql: '"CONS_GENRE_CODE"'
+    description: Sexe
+
+  cons_dt_creation:
+    sql: '"CONS_DT_CREATION"'
+    description: Date création
+
+  cons_adr_princ_1:
+    sql: '"CONS_ADR_PRINC_1"'
+    description: Adresse1
+
+  cons_adr_princ_2:
+    sql: '"CONS_ADR_PRINC_2"'
+    description: Adresse2
+
+  cons_adr_princ_3:
+    sql: '"CONS_ADR_PRINC_3"'
+    description: Adresse3
+
+  cons_adr_princ_code_postal:
+    sql: '"CONS_ADR_PRINC_CODE_POSTAL"'
+    description: Code postal
+
+  cons_adr_princ_ville:
+    sql: '"CONS_ADR_PRINC_VILLE"'
+    description: Ville
+
+  pays_code:
+    sql: '"PAYS_CODE"'
+
+  cons_telephone_1:
+    sql: '"CONS_TELEPHONE_1"'
+    description: Mobile
+
+  cons_telephone_2:
+    sql: '"CONS_TELEPHONE_2"'
+    description: Telephone1
+
+  cons_telephone_3:
+    sql: '"CONS_TELEPHONE_3"'
+    description: telephone2
+
+  cons_fax:
+    sql: '"CONS_FAX"'
+    description: Fax
+
+  cons_email:
+    sql: '"CONS_EMAIL"'
+    description: Email
+
+  cons_canal_code:
+    sql: '"CONS_CANAL_CODE"'
+    description: Canal
+
+  dep_code:
+    sql: '"DEP_CODE"'
+
+  cons_sit_ori:
+    sql: '"CONS_SIT_ORI"'
+    description: Site origine
+
+  cons_statut_internet:
+    sql: '"CONS_STATUT_INTERNET"'
+    description: Statut internet
+
+  cons_dt_inscrip_web:
+    sql: '"CONS_DT_INSCRIP_WEB"'
+    description: Date inscription web
+
+  cons_carte_activ_web:
+    sql: '"CONS_CARTE_ACTIV_WEB"'
+    description: Carte activée web
+
+  cons_cli_fusion:
+    sql: '"CONS_CLI_FUSION"'
+    description: Client fusionné
+
+  cons_est_fictif:
+    sql: '"CONS_EST_FICTIF"'
+    description: statut
+
+  cons_mag_gest_key:
+    sql: '"CONS_MAG_GEST_KEY"'
+    description: Clé technique magasin de gestion
+
+  cons_nif:
+    sql: '"CONS_NIF"'
+    description: Nif
+
+  cons_code_ean:
+    sql: '"CONS_CODE_EAN"'
+    description: Code EAN
+
+  cons_email2:
+    sql: '"CONS_EMAIL2"'
+    description: Mail 2
+
+  cons_code_optin_email:
+    sql: '"CONS_CODE_OPTIN_EMAIL"'
+    description: Code Optin Mail
+
+  cons_nom_optin_email:
+    sql: '"CONS_NOM_OPTIN_EMAIL"'
+    description: Nom Optin Mail
+
+  cons_code_optin_email2:
+    sql: '"CONS_CODE_OPTIN_EMAIL2"'
+    description: Code Optin Mail2
+
+  cons_nom_optin_email2:
+    sql: '"CONS_NOM_OPTIN_EMAIL2"'
+    description: Nom Optin Mail2
+
+  cons_code_optin_telephone2:
+    sql: '"CONS_CODE_OPTIN_TELEPHONE2"'
+    description: Code Optin Telephone1
+
+  cons_nom_optin_telephone2:
+    sql: '"CONS_NOM_OPTIN_TELEPHONE2"'
+    description: Nom Optin Telephone1
+
+  cons_code_optin_telephone1:
+    sql: '"CONS_CODE_OPTIN_TELEPHONE1"'
+    description: Code Optin Mobile
+
+  cons_nom_optin_telephone1:
+    sql: '"CONS_NOM_OPTIN_TELEPHONE1"'
+    description: Nom optin mobile
+
+  cons_code_optin_adresse:
+    sql: '"CONS_CODE_OPTIN_ADRESSE"'
+    description: Code Optin Adresse principale
+
+  cons_nom_optin_adresse:
+    sql: '"CONS_NOM_OPTIN_ADRESSE"'
+    description: Nom Optin Adresse principale
+
+  cons_client_passage:
+    sql: '"CONS_CLIENT_PASSAGE"'
+    description: Flag de client de passage
+
+measures:
+  count:
+    aggregate_type: count

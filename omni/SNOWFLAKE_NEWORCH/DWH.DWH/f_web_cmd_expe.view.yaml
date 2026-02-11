@@ -1,0 +1,49 @@
+# Reference this view as dwh_dwh__f_web_cmd_expe
+catalog: DWH
+schema: DWH
+table_name: F_WEB_CMD_EXPE
+
+dimensions:
+  web_cmd:
+    sql: '"WEB_CMD"'
+    description: Numéro de la commande WEB
+
+  web_num_split:
+    sql: '"WEB_NUM_SPLIT"'
+    description: Numéro de split de la commande
+
+  web_ref_colis:
+    sql: '"WEB_REF_COLIS"'
+    description: Référence colis
+
+  dep_code:
+    sql: '"DEP_CODE"'
+    description: Code magasin
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  web_date:
+    sql: '"WEB_DATE"'
+    description: Date de l'expédition
+
+  web_qte:
+    sql: '"WEB_QTE"'
+    description: Quantité expédiée
+
+  web_ref_cdv:
+    sql: '"WEB_REF_CDV"'
+    description: Référence de la commande dans l'ERP (si commande entrepôt)
+
+  web_tracking:
+    sql: '"WEB_TRACKING"'
+    description: Tracking
+
+  web_ref_cdv_num_ligne:
+    sql: '"WEB_REF_CDV_NUM_LIGNE"'
+    description: Référence de la ligne commande dans l'ERP (si commande entrepôt)
+
+measures:
+  count:
+    aggregate_type: count

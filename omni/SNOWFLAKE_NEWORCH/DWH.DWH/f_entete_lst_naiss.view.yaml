@@ -1,0 +1,89 @@
+# Reference this view as dwh_dwh__f_entete_lst_naiss
+catalog: DWH
+schema: DWH
+table_name: F_ENTETE_LST_NAISS
+
+dimensions:
+  lst_id:
+    sql: '"LST_ID"'
+    format: ID
+    description: ID de la liste
+
+  lst_date:
+    sql: '"LST_DATE"'
+    description: Date de la liste
+
+  lst_sta:
+    sql: '"LST_STA"'
+    description: Statut de la liste
+
+  tbv_lst_statut_lib_fr:
+    sql: '"TBV_LST_STATUT_LIB_FR"'
+    description: Libellé statut de la liste
+
+  lst_date_mdf_sta:
+    sql: '"LST_DATE_MDF_STA"'
+    description: Date de modification du statut
+
+  lst_date_naiss:
+    sql: '"LST_DATE_NAISS"'
+    description: Date de naissance
+
+  lst_carte_fidelite_id:
+    sql: '"LST_CARTE_FIDELITE_ID"'
+    format: ID
+    description: ID de la carte de fidélité
+
+  lst_etb_crea:
+    sql: '"LST_ETB_CREA"'
+    description: Magasin de création
+
+  lst_etb_crea_lib:
+    sql: '"LST_ETB_CREA_LIB"'
+
+  lst_nom_parent_1:
+    sql: '"LST_NOM_PARENT_1"'
+    description: Nom du 1er parent
+
+  lst_prenom_parent_1:
+    sql: '"LST_PRENOM_PARENT_1"'
+    description: Prénom du 1er parent
+
+  lst_nom_parent_2:
+    sql: '"LST_NOM_PARENT_2"'
+    description: Nom du 2ème parent
+
+  lst_prenom_parent_2:
+    sql: '"LST_PRENOM_PARENT_2"'
+    description: Prénom du 2ème parent
+
+  lst_date_mdf:
+    sql: '"LST_DATE_MDF"'
+    description: Date de modification
+
+  lst_part_rest:
+    sql: '"LST_PART_REST"'
+    description: Montant de la participation restante
+
+  lst_code_origine:
+    sql: '"LST_CODE_ORIGINE"'
+
+  lst_etb_origine:
+    sql: '"LST_ETB_ORIGINE"'
+    description: Code établissement origine
+
+  lst_etb_origine_lib:
+    sql: '"LST_ETB_ORIGINE_LIB"'
+    description: Libellé établissement origine
+
+  lst_date_key:
+    sql: '"LST_DATE_KEY"'
+    description: Clé de la date de la liste
+
+  cons_code:
+    sql: '"CONS_CODE"'
+    description: Code consommateur
+
+measures:
+  count:
+    aggregate_type: count

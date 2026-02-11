@@ -1,0 +1,18 @@
+# Reference this view as dwh_dwh__d_cond_commerciale_mag
+catalog: DWH
+schema: DWH
+table_name: D_COND_COMMERCIALE_MAG
+
+dimensions:
+  ccom_id:
+    sql: '"CCOM_ID"'
+    format: ID
+    description: Code condition commerciale
+
+  ccom_libelle:
+    sql: '"CCOM_LIBELLE"'
+    description: Libellé condition commerciale
+
+measures:
+  count:
+    aggregate_type: count

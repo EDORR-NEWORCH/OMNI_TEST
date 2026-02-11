@@ -1,0 +1,193 @@
+# Reference this view as dwh_dwh__l_produit_fournisseur
+catalog: DWH
+schema: DWH
+table_name: L_PRODUIT_FOURNISSEUR
+
+dimensions:
+  prfo_key:
+    sql: '"PRFO_KEY"'
+    description: Clé technique produit fournisseur
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Clé produit
+
+  four_code:
+    sql: '"FOUR_CODE"'
+    description: Code fournisseur
+
+  four_key:
+    sql: '"FOUR_KEY"'
+    description: Clé fournisseur
+
+  prfo_type:
+    sql: '"PRFO_TYPE"'
+    description: Type produit fournisseur
+
+  prfo_pays_origine:
+    sql: '"PRFO_PAYS_ORIGINE"'
+    description: Pays origine
+
+  prfo_reference_fournisseur:
+    sql: '"PRFO_REFERENCE_FOURNISSEUR"'
+    description: Référence fournisseur
+
+  prfo_prd_lib_fournisseur:
+    sql: '"PRFO_PRD_LIB_FOURNISSEUR"'
+    description: Libellé fournisseur
+
+  prfo_prd_desc_fournisseur:
+    sql: '"PRFO_PRD_DESC_FOURNISSEUR"'
+    description: Description fournisseur
+
+  prfo_statut_code:
+    sql: '"PRFO_STATUT_CODE"'
+    description: Code statut
+
+  prfo_statut_lib:
+    sql: '"PRFO_STATUT_LIB"'
+    description: Libellé statut
+
+  prfo_num_licence:
+    sql: '"PRFO_NUM_LICENCE"'
+    description: N° licence
+
+  prfo_multiple_commande:
+    sql: '"PRFO_MULTIPLE_COMMANDE"'
+    description: Commande multiple
+
+  prfo_quant_min_commande:
+    sql: '"PRFO_QUANT_MIN_COMMANDE"'
+    description: Quantité minimum commande
+
+  prfo_type_commande_code:
+    sql: '"PRFO_TYPE_COMMANDE_CODE"'
+    description: Code type commande
+
+  prfo_type_commande_lib:
+    sql: '"PRFO_TYPE_COMMANDE_LIB"'
+    description: Libellé type commande
+
+  prfo_conditionnement:
+    sql: '"PRFO_CONDITIONNEMENT"'
+    description: Conditionnement
+
+  prfo_classe_qualite:
+    sql: '"PRFO_CLASSE_QUALITE"'
+    description: Classe qualité
+
+  prfo_delai_appro:
+    sql: '"PRFO_DELAI_APPRO"'
+    description: Délais approvisionnement
+
+  prde_delai_transmission:
+    sql: '"PRDE_DELAI_TRANSMISSION"'
+    description: Délais transmission
+
+  prfo_approbation_code:
+    sql: '"PRFO_APPROBATION_CODE"'
+    description: Code approbation
+
+  prfo_approbation_lib:
+    sql: '"PRFO_APPROBATION_LIB"'
+    description: Libellé approbation
+
+  prfo_date_approbation:
+    sql: '"PRFO_DATE_APPROBATION"'
+    description: Date approbation
+
+  prfo_responsable:
+    sql: '"PRFO_RESPONSABLE"'
+    description: Responsable
+
+  prfo_meth_reception_code:
+    sql: '"PRFO_METH_RECEPTION_CODE"'
+    description: Code méthode réception
+
+  prfo_meth_reception_lib:
+    sql: '"PRFO_METH_RECEPTION_LIB"'
+    description: Libellé méthode réception
+
+  prfo_stk_secu_ext:
+    sql: '"PRFO_STK_SECU_EXT"'
+    description: Stock de sécurité fournisseur
+
+  prfo_seuil_tolerance:
+    sql: '"PRFO_SEUIL_TOLERANCE"'
+    description: Seuil tolérance
+
+  prfo_delai_livr_remplacement:
+    sql: '"PRFO_DELAI_LIVR_REMPLACEMENT"'
+    description: Délais livraison remplacement
+
+  prfo_controle_qual_plan:
+    sql: '"PRFO_CONTROLE_QUAL_PLAN"'
+    description: Plan contrôle qualité
+
+  prfo_controle_qual_texte:
+    sql: '"PRFO_CONTROLE_QUAL_TEXTE"'
+    description: Texte contrôle qualité
+
+  prfo_controle_qual_date_dernier:
+    sql: '"PRFO_CONTROLE_QUAL_DATE_DERNIER"'
+    description: Date dernier contrôle qualité
+
+  prfo_controle_qual_resp_dernier:
+    sql: '"PRFO_CONTROLE_QUAL_RESP_DERNIER"'
+    description: Dernier responsable contrôle qualité
+
+  prfo_unite_achat:
+    sql: '"PRFO_UNITE_ACHAT"'
+    description: Unité d'achat
+
+  prfo_unite_prix_achat:
+    sql: '"PRFO_UNITE_PRIX_ACHAT"'
+    description: Unité prix d'achat
+
+  prfo_prix_achat:
+    sql: '"PRFO_PRIX_ACHAT"'
+    description: Prix d'achat
+
+  prfo_devise:
+    sql: '"PRFO_DEVISE"'
+    description: Devise
+
+  prfo_prix_achat_qte:
+    sql: '"PRFO_PRIX_ACHAT_QTE"'
+    description: Quantité prix d'achat
+
+  prfo_date_dernier_calcul_prix:
+    sql: '"PRFO_DATE_DERNIER_CALCUL_PRIX"'
+    description: Date de dernier calcul du prix
+
+  prfo_date_debut_val_contrat:
+    sql: '"PRFO_DATE_DEBUT_VAL_CONTRAT"'
+    description: Date début validité contrat
+
+  prfo_date_fin_val_contrat:
+    sql: '"PRFO_DATE_FIN_VAL_CONTRAT"'
+    description: Date fin validité contrat
+
+  prfo_frais_initiaux:
+    sql: '"PRFO_FRAIS_INITIAUX"'
+    description: Frais initiaux
+
+  prfo_prix_achat_ancien:
+    sql: '"PRFO_PRIX_ACHAT_ANCIEN"'
+    description: Ancien prix d'achat
+
+  prfo_date_debut_val_ancien:
+    sql: '"PRFO_DATE_DEBUT_VAL_ANCIEN"'
+    description: Date début validité ancien prix
+
+  prfo_date_fin_val_ancien:
+    sql: '"PRFO_DATE_FIN_VAL_ANCIEN"'
+    description: Date fin validité ancien prix
+
+measures:
+  count:
+    aggregate_type: count

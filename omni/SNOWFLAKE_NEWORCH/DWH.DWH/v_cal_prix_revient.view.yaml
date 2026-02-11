@@ -1,0 +1,49 @@
+# Reference this view as dwh_dwh__v_cal_prix_revient
+catalog: DWH
+schema: DWH
+table_name: V_CAL_PRIX_REVIENT
+
+dimensions:
+  cal_key:
+    sql: '"CAL_KEY"'
+    description: Code produit
+
+  pre_key:
+    sql: '"PRE_KEY"'
+    description: Clé prix de revient
+
+  prd_code:
+    sql: '"PRD_CODE"'
+    description: Code produit
+
+  prd_key:
+    sql: '"PRD_KEY"'
+    description: Clé produit
+
+  etab_code:
+    sql: '"ETAB_CODE"'
+    description: Code établissement
+
+  etab_key:
+    sql: '"ETAB_KEY"'
+
+  dev_code:
+    sql: '"DEV_CODE"'
+
+  dev_key:
+    sql: '"DEV_KEY"'
+
+  pre_cal_debut:
+    sql: '"PRE_CAL_DEBUT"'
+    description: Date début prix revient
+
+  pre_cal_fin:
+    sql: '"PRE_CAL_FIN"'
+
+  pre_prix:
+    sql: '"PRE_PRIX"'
+    description: Px de revient
+
+measures:
+  count:
+    aggregate_type: count

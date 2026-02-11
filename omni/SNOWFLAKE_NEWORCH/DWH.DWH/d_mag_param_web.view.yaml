@@ -1,0 +1,33 @@
+# Reference this view as dwh_dwh__d_mag_param_web
+catalog: DWH
+schema: DWH
+table_name: D_MAG_PARAM_WEB
+
+dimensions:
+  mag_key:
+    sql: '"MAG_KEY"'
+    description: Code dépôt
+
+  mag_code_m3:
+    sql: '"MAG_CODE_M3"'
+    description: Code dépôt
+
+  mag_sfs:
+    sql: '"MAG_SFS"'
+    description: Flag Ship From Store
+
+  mag_ckc:
+    sql: '"MAG_CKC"'
+    description: Flag Click and collect
+
+  mag_cfs:
+    sql: '"MAG_CFS"'
+    description: Flag Collect From Store
+
+  mag_statut:
+    sql: '"MAG_STATUT"'
+    description: Statut
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,45 @@
+# Reference this view as dwh_dwh__f_conso_client_detail
+catalog: DWH
+schema: DWH
+table_name: F_CONSO_CLIENT_DETAIL
+
+dimensions:
+  cons_code:
+    sql: '"CONS_CODE"'
+    description: Code client
+
+  date_deb:
+    sql: '"DATE_DEB"'
+    description: Date de début de validité de la ligne
+
+  date_fin:
+    sql: '"DATE_FIN"'
+    description: Date de fin de validité de la ligne
+
+  canal_cli:
+    sql: '"CANAL_CLI"'
+    description: Canal client
+
+  prd_fid:
+    sql: '"PRD_FID"'
+    description: Code produit de fidélité
+
+  mag_fid:
+    sql: '"MAG_FID"'
+    description: Magasin de fidélité lié à la carte
+
+  prog_fid:
+    sql: '"PROG_FID"'
+    description: Programme de fidélité
+
+  mag_pref:
+    sql: '"MAG_PREF"'
+    description: Magasin de préférence du client
+
+  club:
+    sql: '"CLUB"'
+    description: Client club 1/0
+
+measures:
+  count:
+    aggregate_type: count
