@@ -1,3 +1,9 @@
+- join_from_view: magasin__f_dtv_magasin_v2
+  join_to_view: referentiel__v_dtv_depots
+  join_type: always_left
+  on_sql: ${magasin__f_dtv_magasin_v2.dep_code} = ${referentiel__v_dtv_depots.dep_code}
+  relationship_type: many_to_many
+
 - join_from_view: ventes__v_ventes_comp
   join_to_view: referentiel__v_dtv_depots
   join_type: always_left

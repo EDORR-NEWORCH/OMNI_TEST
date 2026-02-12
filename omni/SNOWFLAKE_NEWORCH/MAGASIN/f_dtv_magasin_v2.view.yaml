@@ -218,3 +218,18 @@ dimensions:
 measures:
   count:
     aggregate_type: count
+
+  ca_ttc_lst_naiss_paye_sum:
+    sql: ${magasin__f_dtv_magasin_v2.ca_ttc_lst_naiss_paye}
+    description: "(Sum) Ca Ttc Lst Naiss Paye: Chiffre d'affaire TTC payé"
+    aggregate_type: sum
+
+  ca_ttc_lst_naiss_emp_sum:
+    sql: ${magasin__f_dtv_magasin_v2.ca_ttc_lst_naiss_emp}
+    description: "(Sum) Ca Ttc Lst Naiss Emp: Chiffre d'affaire TTC emporté"
+    aggregate_type: sum
+
+  nb_depots_average:
+    sql: ${magasin__f_dtv_magasin_v2.nb_depots}
+    description: "(Average) Nb Depots: Nombre de dépôts"
+    aggregate_type: average
