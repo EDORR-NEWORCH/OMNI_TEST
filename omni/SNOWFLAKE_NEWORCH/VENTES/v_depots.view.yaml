@@ -1,4 +1,6 @@
 # Reference this view as ventes__v_depots
+hidden: true
+
 schema: VENTES
 table_name: V_DEPOTS
 

@@ -1,4 +1,6 @@
 # Reference this view as ventes__v_calendrier
+hidden: true
+
 schema: VENTES
 table_name: V_CALENDRIER
 
