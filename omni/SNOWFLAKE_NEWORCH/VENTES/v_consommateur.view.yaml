@@ -63,6 +63,18 @@ dimensions:
     sql: '"CONS_DT_CREATION"'
     description: Date de création client
 
+  id_uc_master:
+    sql: '"ID_UC_MASTER"'
+    description: Identifiant UC du client master
+
+  id_uc:
+    sql: '"ID_UC"'
+    description: Identifiant UC du client
+
+  codey2_master:
+    sql: '"CODEY2_MASTER"'
+    description: Code client Y2 master
+
 measures:
   count:
     aggregate_type: count
