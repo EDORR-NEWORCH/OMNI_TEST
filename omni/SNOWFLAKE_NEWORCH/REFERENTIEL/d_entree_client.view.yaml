@@ -1,0 +1,22 @@
+# Reference this view as referentiel__d_entree_client
+schema: REFERENTIEL
+table_name: D_ENTREE_CLIENT
+
+dimensions:
+  code_depot:
+    sql: '"CODE_DEPOT"'
+
+  date_jour:
+    sql: '"DATE_JOUR"'
+
+  nb_entree:
+    sql: '"NB_ENTREE"'
+
+measures:
+  count:
+    aggregate_type: count
+custom_compound_primary_key_sql:
+  [
+    "${referentiel__d_entree_client.code_depot}",
+    "${referentiel__d_entree_client.date_jour}"
+  ]

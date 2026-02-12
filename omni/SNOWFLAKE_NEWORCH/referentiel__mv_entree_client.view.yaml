@@ -1,0 +1,6 @@
+# Reference this view as referentiel__mv_entree_client
+measures:
+  nb_entree_sum:
+    sql: ${referentiel__mv_entree_client.nb_entree}
+    label: Somme des entrées client
+    aggregate_type: sum
