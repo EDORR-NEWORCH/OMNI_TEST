@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"><title>Nuageux</title><defs>
+<radialGradient id="sun" cx="40%" cy="38%" r="65%"><stop offset="0" stop-color="#FFE57F"/><stop offset="1" stop-color="#FFA000"/></radialGradient>
+<linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE5EE"/></linearGradient>
+<linearGradient id="cloudgrey" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9D4DE"/><stop offset="1" stop-color="#9FB0C0"/></linearGradient>
+<linearGradient id="cloudrain" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3EAF1"/><stop offset="1" stop-color="#B4C3D1"/></linearGradient>
+<linearGradient id="drop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CC4F5"/><stop offset="1" stop-color="#1E88E5"/></linearGradient>
+</defs><path d="M20 46H46A9 9 0 0 0 47.5 28.1A13 13 0 0 0 22.6 25.6A10.5 10.5 0 0 0 20 46Z" transform="translate(-2 -4) scale(0.85)" fill="url(#cloudgrey)" stroke="#8A9CAD" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 46H46A9 9 0 0 0 47.5 28.1A13 13 0 0 0 22.6 25.6A10.5 10.5 0 0 0 20 46Z" transform="translate(8 6) scale(0.85)" fill="url(#cloud)" stroke="#A9BAC8" stroke-width="1.5" stroke-linejoin="round"/></svg>
